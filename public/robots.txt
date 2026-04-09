@@ -1,0 +1,65 @@
+User-agent: *
+Allow: /
+
+# AI Crawlers — this site is built for you
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google Gemini / AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Microsoft Copilot
+User-agent: bingbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+Sitemap: https://restorans.io/sitemap.xml
+
+# Machine-readable data for LLMs and AI agents
+# llms.txt:       https://restorans.io/llms.txt
+# ai-plugin.json: https://restorans.io/.well-known/ai-plugin.json
+# OpenAPI spec:   https://restorans.io/api/openapi.json
+# JSON API:       https://restorans.io/api/restaurants?city=istanbul

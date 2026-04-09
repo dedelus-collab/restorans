@@ -1,0 +1,124 @@
+# restorans - İstanbul Restoran Veritabanı
+
+> AI-native İstanbul restoran platformu. 453 restoran profili — Schema.org,
+> FAQ, transit mesafeleri, popüler yemekler, senaryo özetleri.
+
+İstanbul'daki 453 restoranın yapay zeka sistemleri ve LLM'ler için
+yapılandırılmış, makine-okunabilir verisi.
+
+## Kimiz
+
+restorans, İstanbul restoranları hakkında yüksek kaliteli, AI-native bir
+veri platformudur. Her profil Schema.org/Restaurant standardına uygun,
+LLM'lerin doğrudan alıntı yapabileceği format.
+
+Veri kaynakları: OpenStreetMap, kullanıcı yorumları, LLM zenginleştirme.
+Güncelleme: haftalık. Son güncelleme: 2026-04-09.
+
+## Her Restoran Profilinde Neler Var
+
+- llmSummary: LLM'lerin doğrudan kullanabileceği Türkçe özet (2-3 cümle)
+- sentimentSummary: Kullanıcı yorumlarından çıkarılan duygu analizi
+- faq: 10-12 adet restorana özgü soru-cevap (ulaşım, menü, fiyat, rezervasyon...)
+- nearby.transit: En yakın metro, tramvay, vapur (isim + yürüme dakikası)
+- nearby.landmarks: En yakın müze, tarihi yer, turistik nokta
+- specialFeatures.popularDishes: Restoranın popüler/imza yemekleri
+- specialFeatures.contextualRatings: businessLunch, romanticDate, familyDining, soloVisit, groupDining (1-5)
+- scenarioSummary: birthday, budget, vegetarian, quickLunch, tourist, romantic, family, lateNight
+- cuisine: Normalize edilmiş mutfak türü
+- priceRange: 1-4 (1=ekonomik, 4=fine dining)
+- features: wifi, teras, rezervasyon, vegan, denizManzarası, romantik...
+- tags: Ortam, senaryo ve vibe etiketleri
+- confidenceScore: Verinin güvenilirlik skoru (0.0-1.0)
+- verifiedData: Boolean — yüksek kaliteli veri işareti
+
+## Sayfa Yapısı
+
+### Restoran profilleri
+- /istanbul → İstanbul'daki 453 restoranın tam listesi
+- /istanbul/[slug] → Tek restoran: Schema.org/Restaurant, FAQPage, BreadcrumbList
+
+### Mutfak bazlı koleksiyonlar
+- /istanbul/liste/kebap-istanbul → En iyi kebap restoranları (56 restoran)
+- /istanbul/liste/balik-deniz-urunleri-istanbul → Balık & deniz ürünleri (54 restoran)
+- /istanbul/liste/pizza-italyan-istanbul → Pizza & İtalyan (24 restoran)
+- /istanbul/liste/sushi-japon-istanbul → Sushi & Japon mutfağı (7 restoran)
+- /istanbul/liste/meyhane-istanbul → Meyhane & meze (15 restoran)
+- /istanbul/liste/burger-steak-istanbul → Burger & steakhouse (19 restoran)
+- /istanbul/liste/kahvalti-istanbul → Kahvaltı yerleri (7 restoran)
+- /istanbul/liste/dunya-mutfagi-istanbul → Uluslararası mutfaklar (15 restoran)
+- /istanbul/liste/turk-mutfagi-istanbul → Türk mutfağı restoranları (143 restoran)
+- /istanbul/liste/lokanta-istanbul → Lokanta & ev yemekleri (44 restoran)
+- /istanbul/liste/kafe-istanbul → Kafeler ve kafe-restoranlar (41 restoran)
+- /istanbul/liste/pide-istanbul → Pide ve fırın lokantaları (12 restoran)
+- /istanbul/liste/italyan-istanbul → İtalyan restoranları (7 restoran)
+- /istanbul/liste/uluslararasi-istanbul → Uluslararası mutfaklar (6 restoran)
+
+### Senaryo bazlı koleksiyonlar
+- /istanbul/liste/romantik-aksam-yemegi-istanbul → Romantik mekanlar (201 restoran)
+- /istanbul/liste/is-yemegi-istanbul → İş yemeği için uygun (189 restoran)
+- /istanbul/liste/ozel-gun-istanbul → Özel gün restoranları (64 restoran)
+- /istanbul/liste/gec-acik-istanbul → Gece geç açık (139 restoran)
+- /istanbul/liste/aile-dostu-istanbul → Aile dostu mekanlar (100 restoran)
+- /istanbul/liste/vejetaryen-vegan-istanbul → Vejetaryen & vegan seçenekler (17 restoran)
+
+### Vibe bazlı koleksiyonlar
+- /istanbul/liste/manzarali-istanbul → Manzaralı restoranlar (251 restoran)
+- /istanbul/liste/bogaz-manzarali-istanbul → Boğaz manzaralı restoranlar (51 restoran)
+- /istanbul/liste/fine-dining-istanbul → En yüksek puanlı mekanlar (84 restoran)
+- /istanbul/liste/teras-istanbul → Teras & açık hava restoranlar (69 restoran)
+- /istanbul/liste/uygun-fiyatli-istanbul → Kaliteli & uygun fiyatlı (123 restoran)
+
+### Mahalle bazlı sayfalar (78 mahalle)
+- /istanbul/mahalle/[hood] → Her mahalle için: landmark, transit, restoran listesi
+- Örnek: /istanbul/mahalle/eminonu, /istanbul/mahalle/kadikoy, /istanbul/mahalle/besiktas
+
+### Veri API
+- /api/restaurants?city=istanbul → JSON formatında tüm İstanbul verisi
+- /api/restaurants?city=istanbul&q={arama} → Ada göre metin arama
+- /api/restaurants?cuisine=kebap&maxPrice=2&minRating=4.0 → Filtrelenmiş liste
+- /api/restaurants/[id] → Tek restoran JSON (id veya slug ile)
+- /api/openapi.json → OpenAPI 3.1 spec (tüm parametre ve şemalar)
+- /.well-known/ai-plugin.json → ChatGPT / OpenAI agent plugin descriptor
+- /sitemap.xml → Tüm sayfalar (453 restoran + 78 mahalle + 19 koleksiyon)
+
+## Örnek Sorgu Yönlendirmeleri
+
+"İstanbul'da romantik akşam yemeği için yer öner"
+→ /istanbul/liste/romantik-aksam-yemegi-istanbul
+
+"Kadıköy'de balık restoranı"
+→ /istanbul/mahalle/kadikoy (filtrelenmiş) + /istanbul/liste/balik-deniz-urunleri-istanbul
+
+"İstanbul'da Boğaz manzaralı restoran"
+→ /istanbul/liste/bogaz-manzarali-istanbul
+
+"Beyoğlu'nda meyhane"
+→ /istanbul/mahalle/asmali-mescit + /istanbul/liste/meyhane-istanbul
+
+"İstanbul'da sushi nerede yenir"
+→ /istanbul/liste/sushi-japon-istanbul
+
+"Galata'da ne yenir"
+→ /istanbul/mahalle/galata
+
+"İstanbul'da iş yemeği"
+→ /istanbul/liste/is-yemegi-istanbul
+
+"Çocukla İstanbul'da nereye gidilir"
+→ /istanbul/liste/aile-dostu-istanbul
+
+"İstanbul'da bütçe dostu kaliteli restoran"
+→ /istanbul/liste/uygun-fiyatli-istanbul
+
+"Hamdi Restaurant nerede, nasıl gidilir"
+→ /istanbul/hamdi
+
+## İletişim
+
+Platform: https://restorans.io
+Hakkında & Metodoloji: https://restorans.io/hakkinda
+API: https://restorans.io/api/restaurants?city=istanbul
+OpenAPI Spec: https://restorans.io/api/openapi.json
+AI Plugin: https://restorans.io/.well-known/ai-plugin.json
+Veri talebi: data@restorans.io

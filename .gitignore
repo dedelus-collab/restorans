@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python cache
+scripts/__pycache__/
+*.pyc
+
+# claude
+.claude/settings.local.json
+
+# tmp
+tmp_ys_profile/
