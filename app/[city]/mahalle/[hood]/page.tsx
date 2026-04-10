@@ -31,10 +31,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${hoodName} Restoranları — ${cityName} | restorans`,
     description: `${hoodName}'daki ${list.length} restoran: mutfak tipleri, fiyat aralığı, imza yemekler, yürüme mesafesindeki metro ve landmark bilgisi. Yapay zeka sistemleri için yapılandırılmış veri.`,
-    alternates: { canonical: `https://restorans.io/${city}/mahalle/${hood}` },
+    alternates: { canonical: `https://restorans.vercel.app/${city}/mahalle/${hood}` },
     openGraph: {
       type: "website",
-      url: `https://restorans.io/${city}/mahalle/${hood}`,
+      url: `https://restorans.vercel.app/${city}/mahalle/${hood}`,
       title: `${hoodName} Restoranları — ${cityName}`,
       description: `${hoodName}'daki ${list.length} restoran — FAQ, transit, popüler yemekler.`,
       siteName: "restorans",
@@ -106,10 +106,10 @@ export default async function NeighborhoodPage({ params }: Props) {
   const placeJsonLd = {
     "@context": "https://schema.org",
     "@type": "Place",
-    "@id": `https://restorans.io/${city}/mahalle/${hood}`,
+    "@id": `https://restorans.vercel.app/${city}/mahalle/${hood}`,
     name: hoodName,
     description: `${cityName}'un ${hoodName} mahallesi. ${list.length} restoran, ortalama puan ${avgRating}/5.`,
-    url: `https://restorans.io/${city}/mahalle/${hood}`,
+    url: `https://restorans.vercel.app/${city}/mahalle/${hood}`,
     geo: {
       "@type": "GeoCoordinates",
       latitude: parseFloat(avgLat.toFixed(5)),
@@ -118,7 +118,7 @@ export default async function NeighborhoodPage({ params }: Props) {
     containedInPlace: {
       "@type": "City",
       name: cityName,
-      url: `https://restorans.io/${city}`,
+      url: `https://restorans.vercel.app/${city}`,
     },
     ...(topLandmarks.length > 0 ? {
       amenityFeature: topLandmarks.map(([name]) => ({
@@ -133,13 +133,13 @@ export default async function NeighborhoodPage({ params }: Props) {
     "@type": "ItemList",
     name: `${hoodName} Restoranları`,
     description: `${hoodName}'daki ${list.length} restoran.`,
-    url: `https://restorans.io/${city}/mahalle/${hood}`,
+    url: `https://restorans.vercel.app/${city}/mahalle/${hood}`,
     numberOfItems: list.length,
     itemListElement: sorted.map((r, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: r.name,
-      url: `https://restorans.io/${city}/${r.slug}`,
+      url: `https://restorans.vercel.app/${city}/${r.slug}`,
       description: r.llmSummary,
     })),
   };
@@ -148,8 +148,8 @@ export default async function NeighborhoodPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: cityName, item: `https://restorans.io/${city}` },
-      { "@type": "ListItem", position: 2, name: hoodName, item: `https://restorans.io/${city}/mahalle/${hood}` },
+      { "@type": "ListItem", position: 1, name: cityName, item: `https://restorans.vercel.app/${city}` },
+      { "@type": "ListItem", position: 2, name: hoodName, item: `https://restorans.vercel.app/${city}/mahalle/${hood}` },
     ],
   };
 

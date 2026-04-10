@@ -9,9 +9,9 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://restorans.io/api/openapi.json"
+    "url": "https://restorans.vercel.app/api/openapi.json"
   },
-  "logo_url": "https://restorans.io/logo.svg",
+  "logo_url": "https://restorans.vercel.app/logo.svg",
   "contact_email": "data@restorans.io",
-  "legal_info_url": "https://restorans.io/hakkinda"
+  "legal_info_url": "https://restorans.vercel.app/hakkinda"
 }

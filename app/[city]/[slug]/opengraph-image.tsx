@@ -127,7 +127,7 @@ export default async function OgImage({
             </div>
           )}
           <div style={{ marginLeft: "auto", color: "#475569", fontSize: "20px", display: "flex" }}>
-            <span>restorans.io</span>
+            <span>restorans.vercel.app</span>
           </div>
         </div>
       </div>

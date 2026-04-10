@@ -67,7 +67,7 @@ export default async function OgImage({
               display: "flex",
             }}
           >
-            <span>Restoranlar · restorans.io</span>
+            <span>Restoranlar · restorans.vercel.app</span>
           </div>
         </div>
       </div>

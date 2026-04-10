@@ -56,10 +56,10 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-Sitemap: https://restorans.io/sitemap.xml
+Sitemap: https://restorans.vercel.app/sitemap.xml
 
 # Machine-readable data for LLMs and AI agents
-# llms.txt:       https://restorans.io/llms.txt
-# ai-plugin.json: https://restorans.io/.well-known/ai-plugin.json
-# OpenAPI spec:   https://restorans.io/api/openapi.json
-# JSON API:       https://restorans.io/api/restaurants?city=istanbul
+# llms.txt:       https://restorans.vercel.app/llms.txt
+# ai-plugin.json: https://restorans.vercel.app/.well-known/ai-plugin.json
+# OpenAPI spec:   https://restorans.vercel.app/api/openapi.json
+# JSON API:       https://restorans.vercel.app/api/restaurants?city=istanbul

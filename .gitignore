@@ -49,3 +49,5 @@ scripts/__pycache__/
 
 # tmp
 tmp_ys_profile/
+
+.vercel

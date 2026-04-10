@@ -65,7 +65,7 @@ export default async function OgImage({
           ))}
         </div>
         <div style={{ position: "absolute", bottom: "60px", right: "80px", color: "#475569", fontSize: "20px", display: "flex" }}>
-          <span>restorans.io</span>
+          <span>restorans.vercel.app</span>
         </div>
       </div>
     ),

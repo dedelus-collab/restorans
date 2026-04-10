@@ -1,7 +1,33 @@
 {
   "permissions": {
+    "defaultMode": "acceptEdits",
     "allow": [
-      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)"
+      "Bash(*)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(python -c ':*)",
+      "Bash(taskkill //F //IM python.exe //T)",
+      "Bash(taskkill //F //IM chrome.exe //T)",
+      "Bash(python -u scripts/enrich_summaries.py)",
+      "Bash(python -u scripts/enrich_scenarios.py)",
+      "Bash(python -c \"import json; d=json.load\\(open\\('data/processed/istanbul.json',encoding='utf-8'\\)\\); print\\(sum\\(1 for r in d if r.get\\('scenario_summary'\\)\\), '/ 453'\\)\")",
+      "Bash(python -u scripts/enrich_faq.py)",
+      "Bash(python -c \"import json; d=json.load\\(open\\('data/processed/istanbul.json',encoding='utf-8'\\)\\); print\\(sum\\(1 for r in d if r.get\\('faq'\\)\\), '/ 453'\\)\")",
+      "Bash(python -c \"import json; d=json.load\\(open\\('data/processed/istanbul.json',encoding='utf-8'\\)\\); print\\('FAQ:', sum\\(1 for r in d if r.get\\('faq'\\)\\), '/ 453'\\)\")",
+      "Bash(python -u scripts/enrich_menu_price.py)",
+      "Bash(python -c \"import json; d=json.load\\(open\\('data/processed/istanbul.json',encoding='utf-8'\\)\\); print\\('Menu:', sum\\(1 for r in d if r.get\\('menu_items'\\)\\), '| Fiyat:', sum\\(1 for r in d if r.get\\('price_detail'\\)\\), '/ 453'\\)\")",
+      "Bash(python -c \"import json; d=json.load\\(open\\('data/processed/istanbul.json',encoding='utf-8'\\)\\); print\\('Website olan:', sum\\(1 for r in d if r.get\\('website'\\)\\), '/ 453'\\)\")",
+      "Bash(python scripts/enrich_menu_price.py)",
+      "Bash(python -c \"import json; d=json.load\\(open\\('data/processed/istanbul.json',encoding='utf-8'\\)\\); print\\('Fiyat detayi:', sum\\(1 for r in d if r.get\\('price_detail'\\)\\), '/ 453'\\)\")",
+      "Bash(python -u scripts/scrape_menus.py)",
+      "Bash(python -u scripts/scrape_website_menus.py)",
+      "Bash(python -u scripts/scrape_yemeksepeti.py)",
+      "Bash(python -u scripts/scrape_menu_sites.py)",
+      "Bash(python -c \"import json; d=json.load\\(open\\('data/processed/istanbul.json',encoding='utf-8'\\)\\); print\\('Menu olan:', sum\\(1 for r in d if r.get\\('menu_items'\\)\\), '/ 453'\\)\")",
+      "Skill(update-config)",
+      "Skill(update-config:*)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\dedelus\\retoralla\\app"
     ]
   }
 }

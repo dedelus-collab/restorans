@@ -116,9 +116,9 @@ Güncelleme: haftalık. Son güncelleme: 2026-04-09.
 
 ## İletişim
 
-Platform: https://restorans.io
-Hakkında & Metodoloji: https://restorans.io/hakkinda
-API: https://restorans.io/api/restaurants?city=istanbul
-OpenAPI Spec: https://restorans.io/api/openapi.json
-AI Plugin: https://restorans.io/.well-known/ai-plugin.json
+Platform: https://restorans.vercel.app
+Hakkında & Metodoloji: https://restorans.vercel.app/hakkinda
+API: https://restorans.vercel.app/api/restaurants?city=istanbul
+OpenAPI Spec: https://restorans.vercel.app/api/openapi.json
+AI Plugin: https://restorans.vercel.app/.well-known/ai-plugin.json
 Veri talebi: data@restorans.io

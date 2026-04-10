@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${cityName} Restoranları — ${restaurants.length} Mekan | restorans`,
     description: `${cityName}'daki ${restaurants.length} restoranın yapay zeka sistemleri için yapılandırılmış verisi. Kebap, balık, manzaralı, romantik ve daha fazla kategori. FAQ, transit mesafesi ve popüler yemeklerle.`,
-    alternates: { canonical: `https://restorans.io/${city}` },
+    alternates: { canonical: `https://restorans.vercel.app/${city}` },
     openGraph: {
       type: "website",
-      url: `https://restorans.io/${city}`,
+      url: `https://restorans.vercel.app/${city}`,
       title: `${cityName} Restoranları — ${restaurants.length} Mekan`,
       description: `${cityName}'daki ${restaurants.length} restoran — AI-ready veri, kuratörlü listeler, mahalle rehberleri.`,
       siteName: "restorans",
@@ -77,13 +77,13 @@ export default async function CityPage({ params }: Props) {
     "@type": "ItemList",
     name: `${cityName} Restoranları`,
     description: `${cityName}'daki ${restaurants.length} restoran: llm_summary, FAQ, transit mesafesi, popüler yemekler ve Schema.org/Restaurant işaretlemesi.`,
-    url: `https://restorans.io/${city}`,
+    url: `https://restorans.vercel.app/${city}`,
     numberOfItems: restaurants.length,
     itemListElement: restaurants.slice(0, 30).map((r, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: r.name,
-      url: `https://restorans.io/${city}/${r.slug}`,
+      url: `https://restorans.vercel.app/${city}/${r.slug}`,
       description: r.llmSummary,
     })),
   };
@@ -93,7 +93,7 @@ export default async function CityPage({ params }: Props) {
     "@type": "Dataset",
     name: `${cityName} Restoran Veritabanı`,
     description: `${cityName}'daki restoranların AI-ready, Schema.org destekli verisi.`,
-    url: `https://restorans.io/${city}`,
+    url: `https://restorans.vercel.app/${city}`,
     creator: { "@type": "Organization", name: "restorans" },
     spatialCoverage: {
       "@type": "City",
@@ -111,8 +111,8 @@ export default async function CityPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "restorans", item: "https://restorans.io" },
-      { "@type": "ListItem", position: 2, name: cityName, item: `https://restorans.io/${city}` },
+      { "@type": "ListItem", position: 1, name: "restorans", item: "https://restorans.vercel.app" },
+      { "@type": "ListItem", position: 2, name: cityName, item: `https://restorans.vercel.app/${city}` },
     ],
   };
 

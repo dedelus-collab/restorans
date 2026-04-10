@@ -16,10 +16,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${r.name} — ${r.neighborhood}, ${r.city} | restorans`,
     description: r.llmSummary,
-    alternates: { canonical: `https://restorans.io/${city}/${slug}` },
+    alternates: { canonical: `https://restorans.vercel.app/${city}/${slug}` },
     openGraph: {
       type: "website",
-      url: `https://restorans.io/${city}/${slug}`,
+      url: `https://restorans.vercel.app/${city}/${slug}`,
       title: `${r.name} — ${r.neighborhood}, ${r.city}`,
       description: r.llmSummary ?? undefined,
       siteName: "restorans",
@@ -41,7 +41,7 @@ export default async function RestaurantPage({ params }: Props) {
   const restaurantJsonLd = {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "@id": `https://restorans.io/${city}/${slug}`,
+    "@id": `https://restorans.vercel.app/${city}/${slug}`,
     name: r.name,
     description: r.llmSummary,
     servesCuisine: r.cuisine,
@@ -67,7 +67,7 @@ export default async function RestaurantPage({ params }: Props) {
     },
     openingHours: r.hoursEstimated ? undefined : r.openingHours,
     telephone: r.phone || undefined,
-    url: r.website || `https://restorans.io/${city}/${slug}`,
+    url: r.website || `https://restorans.vercel.app/${city}/${slug}`,
     ...(r.reservationLinks?.googleMaps ? {
       sameAs: [r.reservationLinks.googleMaps],
       hasMap: r.reservationLinks.googleMaps,
@@ -180,9 +180,9 @@ export default async function RestaurantPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "restorans", item: "https://restorans.io" },
-      { "@type": "ListItem", position: 2, name: r.city, item: `https://restorans.io/${city}` },
-      { "@type": "ListItem", position: 3, name: r.name, item: `https://restorans.io/${city}/${slug}` },
+      { "@type": "ListItem", position: 1, name: "restorans", item: "https://restorans.vercel.app" },
+      { "@type": "ListItem", position: 2, name: r.city, item: `https://restorans.vercel.app/${city}` },
+      { "@type": "ListItem", position: 3, name: r.name, item: `https://restorans.vercel.app/${city}/${slug}` },
     ],
   };
 

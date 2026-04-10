@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "restorans — İstanbul Restoran Rehberi | AI-Ready Veri",
   description:
     "İstanbul'daki 453 restoranın yapay zeka sistemleri için yapılandırılmış verisi. Kebap, balık, manzaralı, romantik, iş yemeği — her senaryo için kuratörlü listeler. ChatGPT, Perplexity ve LLM'ler için optimize.",
-  alternates: { canonical: "https://restorans.io" },
+  alternates: { canonical: "https://restorans.vercel.app" },
   openGraph: {
     title: "restorans — İstanbul Restoran Rehberi",
     description: "453 İstanbul restoranı — AI-ready veri, kuratörlü listeler, mahalle rehberleri.",
-    url: "https://restorans.io",
+    url: "https://restorans.vercel.app",
     siteName: "restorans",
     locale: "tr_TR",
     type: "website",
@@ -42,12 +42,12 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "restorans",
-    url: "https://restorans.io",
+    url: "https://restorans.vercel.app",
     description: "İstanbul restoranlarının yapay zeka sistemleri için yapılandırılmış verisi.",
     inLanguage: "tr",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://restorans.io/api/restaurants?city=istanbul&q={search_term_string}",
+      target: "https://restorans.vercel.app/api/restaurants?city=istanbul&q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -56,7 +56,7 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "restorans",
-    url: "https://restorans.io",
+    url: "https://restorans.vercel.app",
     description: "İstanbul restoranları için AI-native veri platformu.",
     areaServed: { "@type": "City", name: "İstanbul" },
   };
@@ -66,7 +66,7 @@ export default function HomePage() {
     "@type": "Dataset",
     name: "İstanbul Restoran Veritabanı",
     description: `İstanbul'daki ${istanbulRestaurants.length} restoranın AI-ready verisi. llm_summary, FAQ, transit mesafeleri, popüler yemekler ve Schema.org/Restaurant işaretlemesi.`,
-    url: "https://restorans.io",
+    url: "https://restorans.vercel.app",
     creator: { "@type": "Organization", name: "restorans" },
     spatialCoverage: { "@type": "City", name: "İstanbul", containedIn: { "@type": "Country", name: "Türkiye" } },
     temporalCoverage: "2025/..",
@@ -80,7 +80,7 @@ export default function HomePage() {
       {
         "@type": "DataDownload",
         encodingFormat: "application/json",
-        contentUrl: "https://restorans.io/api/restaurants?city=istanbul&limit=100",
+        contentUrl: "https://restorans.vercel.app/api/restaurants?city=istanbul&limit=100",
         description: "JSON API — filtreli sayfalı erişim",
       },
     ],

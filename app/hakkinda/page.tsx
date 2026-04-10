@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Hakkında — restorans",
   description:
     "restorans nedir, veriler nasıl toplanıyor, hangi kaynaklar kullanılıyor? İstanbul restoran veritabanımızın metodolojisi ve güvenilirliği hakkında.",
-  alternates: { canonical: "https://restorans.io/hakkinda" },
+  alternates: { canonical: "https://restorans.vercel.app/hakkinda" },
   openGraph: {
     title: "Hakkında — restorans",
     description: "453 İstanbul restoranının verisi nasıl toplanıyor, nasıl doğrulanıyor?",
-    url: "https://restorans.io/hakkinda",
+    url: "https://restorans.vercel.app/hakkinda",
     siteName: "restorans",
     locale: "tr_TR",
     type: "website",
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
 const aboutJsonLd = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
-  url: "https://restorans.io/hakkinda",
+  url: "https://restorans.vercel.app/hakkinda",
   name: "restorans Hakkında",
   description: "restorans veri metodolojisi, kaynaklar ve güvenilirlik.",
   publisher: {
     "@type": "Organization",
     name: "restorans",
-    url: "https://restorans.io",
+    url: "https://restorans.vercel.app",
   },
 };
 

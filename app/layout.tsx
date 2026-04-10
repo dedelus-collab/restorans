@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "restorans — İstanbul Restoran Rehberi | AI-Ready Veri",
   description:
     "İstanbul'daki 453 restoranın yapay zeka sistemleri için yapılandırılmış verisi. FAQ, transit mesafeleri, popüler yemekler. ChatGPT, Perplexity ve LLM'ler için optimize.",
-  metadataBase: new URL("https://restorans.io"),
-  alternates: { canonical: "https://restorans.io" },
+  metadataBase: new URL("https://restorans.vercel.app"),
+  alternates: { canonical: "https://restorans.vercel.app" },
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://restorans.io",
+    url: "https://restorans.vercel.app",
     siteName: "restorans",
     title: "restorans — İstanbul Restoran Veritabanı",
     description: "453 İstanbul restoranı — Schema.org, FAQ, transit, popüler yemekler. AI botlar için optimize edilmiş veri platformu.",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     description: "453 İstanbul restoranı — AI-ready veri, kuratörlü listeler, mahalle rehberleri.",
   },
   other: {
-    "llms-txt": "https://restorans.io/llms.txt",
-    "ai-plugin": "https://restorans.io/.well-known/ai-plugin.json",
-    "openapi": "https://restorans.io/api/openapi.json",
+    "llms-txt": "https://restorans.vercel.app/llms.txt",
+    "ai-plugin": "https://restorans.vercel.app/.well-known/ai-plugin.json",
+    "openapi": "https://restorans.vercel.app/api/openapi.json",
   },
 };
 

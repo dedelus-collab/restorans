@@ -17,10 +17,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${col.title} | restorans`,
     description: col.description,
-    alternates: { canonical: `https://restorans.io/${city}/liste/${colSlug}` },
+    alternates: { canonical: `https://restorans.vercel.app/${city}/liste/${colSlug}` },
     openGraph: {
       type: "website",
-      url: `https://restorans.io/${city}/liste/${colSlug}`,
+      url: `https://restorans.vercel.app/${city}/liste/${colSlug}`,
       title: col.title,
       description: col.description,
       siteName: "restorans",
@@ -79,13 +79,13 @@ export default async function CollectionPage({ params }: Props) {
     "@type": "ItemList",
     name: col.title,
     description: col.description,
-    url: `https://restorans.io/${city}/liste/${colSlug}`,
+    url: `https://restorans.vercel.app/${city}/liste/${colSlug}`,
     numberOfItems: list.length,
     itemListElement: list.slice(0, 20).map((r, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: r.name,
-      url: `https://restorans.io/${city}/${r.slug}`,
+      url: `https://restorans.vercel.app/${city}/${r.slug}`,
       description: r.llmSummary,
     })),
   };
@@ -94,20 +94,20 @@ export default async function CollectionPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: cityName, item: `https://restorans.io/${city}` },
-      { "@type": "ListItem", position: 2, name: col.title, item: `https://restorans.io/${city}/liste/${colSlug}` },
+      { "@type": "ListItem", position: 1, name: cityName, item: `https://restorans.vercel.app/${city}` },
+      { "@type": "ListItem", position: 2, name: col.title, item: `https://restorans.vercel.app/${city}/liste/${colSlug}` },
     ],
   };
 
   const collectionPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "@id": `https://restorans.io/${city}/liste/${colSlug}`,
+    "@id": `https://restorans.vercel.app/${city}/liste/${colSlug}`,
     name: col.title,
     description: col.description,
-    url: `https://restorans.io/${city}/liste/${colSlug}`,
+    url: `https://restorans.vercel.app/${city}/liste/${colSlug}`,
     about: { "@type": "Restaurant", servesCuisine: col.title },
-    provider: { "@type": "Organization", name: "restorans", url: "https://restorans.io" },
+    provider: { "@type": "Organization", name: "restorans", url: "https://restorans.vercel.app" },
   };
 
   const categoryLabels: Record<string, string> = {
