@@ -49,7 +49,20 @@ function checkRateLimit(key: string): {
   };
 }
 
+const BOT_PATTERN = /GPTBot|OAI-SearchBot|ChatGPT-User|ClaudeBot|anthropic-ai|PerplexityBot|Googlebot|Google-Extended|bingbot|DuckDuckBot|YandexBot|Applebot|cohere-ai|AI2Bot|YouBot|CCBot|Diffbot|Amazonbot/i;
+
+function logBotAccess(request: NextRequest) {
+  const ua = request.headers.get("user-agent") ?? "";
+  if (!BOT_PATTERN.test(ua)) return;
+  const path = request.nextUrl.pathname + (request.nextUrl.search || "");
+  const ip = request.headers.get("x-forwarded-for")?.split(",")[0].trim() ?? "-";
+  console.log(`[BOT] ${new Date().toISOString()} | ${ua} | ${path} | ip:${ip}`);
+}
+
 export function proxy(request: NextRequest) {
+  // Bot erişimini logla
+  logBotAccess(request);
+
   // OPTIONS preflight isteklerini doğrulama olmadan geçir (CORS için gerekli)
   if (request.method === "OPTIONS") {
     return NextResponse.next();
