@@ -38,7 +38,9 @@ export default async function OgImage({
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <div style={{ color: "#64748b", fontSize: "26px" }}>Mahalle Rehberi</div>
+          <div style={{ color: "#64748b", fontSize: "26px", display: "flex" }}>
+            <span>Mahalle Rehberi</span>
+          </div>
           <div
             style={{
               color: "#f8fafc",
@@ -46,9 +48,10 @@ export default async function OgImage({
               fontWeight: 800,
               lineHeight: 1.05,
               letterSpacing: "-3px",
+              display: "flex",
             }}
           >
-            {hoodName}
+            <span>{hoodName}</span>
           </div>
         </div>
 
@@ -61,9 +64,10 @@ export default async function OgImage({
               padding: "10px 24px",
               color: "#94a3b8",
               fontSize: "22px",
+              display: "flex",
             }}
           >
-            Restoranlar · restorans.io
+            <span>Restoranlar · restorans.io</span>
           </div>
         </div>
       </div>

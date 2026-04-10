@@ -39,12 +39,13 @@ export default async function OgImage({
             lineHeight: 1.05,
             letterSpacing: "-3px",
             marginBottom: "20px",
+            display: "flex",
           }}
         >
-          {cityName} Restoranları
+          <span>{cityName} Restoranları</span>
         </div>
-        <div style={{ color: "#94a3b8", fontSize: "30px", marginBottom: "48px" }}>
-          {count} restoran · AI-ready veri · Schema.org
+        <div style={{ color: "#94a3b8", fontSize: "30px", marginBottom: "48px", display: "flex" }}>
+          <span>{count} restoran · AI-ready veri · Schema.org</span>
         </div>
         <div style={{ display: "flex", gap: "16px" }}>
           {["FAQ", "Transit", "Popüler Yemekler", "Senaryo Analizi"].map((s) => (
@@ -63,8 +64,8 @@ export default async function OgImage({
             </div>
           ))}
         </div>
-        <div style={{ position: "absolute", bottom: "60px", right: "80px", color: "#475569", fontSize: "20px" }}>
-          restorans.io
+        <div style={{ position: "absolute", bottom: "60px", right: "80px", color: "#475569", fontSize: "20px", display: "flex" }}>
+          <span>restorans.io</span>
         </div>
       </div>
     ),

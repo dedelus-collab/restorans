@@ -62,12 +62,15 @@ export default async function OgImage({
               fontWeight: 800,
               lineHeight: 1.05,
               letterSpacing: "-2px",
+              display: "flex",
             }}
           >
-            {name}
+            <span>{name}</span>
           </div>
           {neighborhood && (
-            <div style={{ color: "#64748b", fontSize: "28px" }}>{neighborhood}</div>
+            <div style={{ color: "#64748b", fontSize: "28px", display: "flex" }}>
+              <span>{neighborhood}</span>
+            </div>
           )}
           {summary && (
             <div
@@ -77,11 +80,10 @@ export default async function OgImage({
                 lineHeight: 1.5,
                 maxWidth: "900px",
                 marginTop: "8px",
-                display: "-webkit-box",
-                overflow: "hidden",
+                display: "flex",
               }}
             >
-              {summary.length > 140 ? summary.slice(0, 140) + "…" : summary}
+              <span>{summary.length > 140 ? summary.slice(0, 140) + "…" : summary}</span>
             </div>
           )}
         </div>
@@ -118,13 +120,14 @@ export default async function OgImage({
                 padding: "10px 24px",
                 color: "#94a3b8",
                 fontSize: "22px",
+                display: "flex",
               }}
             >
-              {price}
+              <span>{price}</span>
             </div>
           )}
-          <div style={{ marginLeft: "auto", color: "#475569", fontSize: "20px" }}>
-            restorans.io
+          <div style={{ marginLeft: "auto", color: "#475569", fontSize: "20px", display: "flex" }}>
+            <span>restorans.io</span>
           </div>
         </div>
       </div>

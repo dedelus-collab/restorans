@@ -68,13 +68,14 @@ export default async function OgImage({
               lineHeight: 1.1,
               letterSpacing: "-2px",
               maxWidth: "950px",
+              display: "flex",
             }}
           >
-            {title}
+            <span>{title}</span>
           </div>
           {desc && (
-            <div style={{ color: "#94a3b8", fontSize: "22px", lineHeight: 1.5, maxWidth: "900px" }}>
-              {desc.length > 130 ? desc.slice(0, 130) + "…" : desc}
+            <div style={{ color: "#94a3b8", fontSize: "22px", lineHeight: 1.5, maxWidth: "900px", display: "flex" }}>
+              <span>{desc.length > 130 ? desc.slice(0, 130) + "…" : desc}</span>
             </div>
           )}
         </div>
@@ -91,13 +92,14 @@ export default async function OgImage({
                 color: "#f8fafc",
                 fontSize: "22px",
                 fontWeight: 600,
+                display: "flex",
               }}
             >
-              {count} restoran
+              <span>{count} restoran</span>
             </div>
           )}
-          <div style={{ marginLeft: "auto", color: "#475569", fontSize: "20px" }}>
-            restorans.io
+          <div style={{ marginLeft: "auto", color: "#475569", fontSize: "20px", display: "flex" }}>
+            <span>restorans.io</span>
           </div>
         </div>
       </div>

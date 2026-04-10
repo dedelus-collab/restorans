@@ -49,16 +49,17 @@ export default function OgImage() {
             lineHeight: 1.1,
             letterSpacing: "-2px",
             marginBottom: "24px",
+            display: "flex",
+            flexDirection: "column",
           }}
         >
-          İstanbul Restoran
-          <br />
-          Veritabanı
+          <span>İstanbul Restoran</span>
+          <span>Veritabanı</span>
         </div>
 
         {/* Alt yazı */}
-        <div style={{ color: "#94a3b8", fontSize: "26px", marginBottom: "48px" }}>
-          453 restoran · AI-ready veri · Schema.org
+        <div style={{ color: "#94a3b8", fontSize: "26px", marginBottom: "48px", display: "flex" }}>
+          <span>453 restoran · AI-ready veri · Schema.org</span>
         </div>
 
         {/* Stat pills */}
