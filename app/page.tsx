@@ -189,6 +189,61 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* RapidAPI CTA */}
+        <section className="bg-gray-900 rounded-xl p-6 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-1">API Erişimi</p>
+            <h2 className="text-white font-bold text-lg leading-tight">İstanbul Restoran Verisine Anında Erişin</h2>
+            <p className="text-gray-400 text-sm mt-1">453 restoran · JSON API · llm_summary · FAQ · Transit</p>
+          </div>
+          <a
+            href="https://rapidapi.com/cccanguler/api/restorans"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-lg text-sm transition-colors"
+          >
+            RapidAPI&apos;de Abone Ol →
+          </a>
+        </section>
+
+        {/* API Docs + JSON Preview */}
+        <section className="border border-gray-200 rounded-xl p-6 mb-14">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="font-semibold text-gray-900">API — Canlı Veri Örneği</h2>
+            <a
+              href="https://restorans.vercel.app/api/openapi.json"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-blue-500 hover:underline"
+            >
+              OpenAPI Spec →
+            </a>
+          </div>
+          <pre className="bg-gray-50 border border-gray-100 rounded-lg p-4 text-xs text-gray-600 overflow-x-auto leading-relaxed">
+{`GET /api/restaurants?city=istanbul&maxPrice=2&minRating=4.5
+
+{
+  "meta": { "total": 123, "page": 1, "limit": 20 },
+  "data": [{
+    "name": "Hamdi Restaurant",
+    "cuisine": "Kebap",
+    "avg_rating": 4.7,
+    "price_range": 2,
+    "llm_summary": "Eminönü'nde konumlanan Hamdi, ...",
+    "faq": [{ "question": "Rezervasyon gerekli mi?", "answer": "..." }],
+    "nearby": {
+      "transit": [{ "name": "Sirkeci", "type": "tren", "walk_min": 3 }]
+    }
+  }]
+}`}
+          </pre>
+          <div className="mt-4 flex gap-4 text-xs">
+            <a href="/api/restaurants?city=istanbul&limit=3" target="_blank" className="text-blue-500 hover:underline">Canlı dene →</a>
+            <a href="/.well-known/ai-plugin.json" target="_blank" className="text-blue-500 hover:underline">ai-plugin.json</a>
+            <a href="/llms.txt" target="_blank" className="text-blue-500 hover:underline">llms.txt</a>
+          </div>
+        </section>
+
         {/* AI için neden burası */}
         <section className="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-14">
           <h2 className="font-semibold text-gray-900 mb-4">Her Restoran Profilinde Neler Var</h2>
