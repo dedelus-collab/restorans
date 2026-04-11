@@ -56,8 +56,8 @@ const sources = [
   },
   {
     name: "LLM Zenginleştirme (Groq / Llama)",
-    role: "İçerik üretimi",
-    detail: "llmSummary, popularDishes, FAQ soruları. Restoran adı, mutfak, konum ve yorum verisi girdi olarak kullanıldı. Üretilen içerik manuel örnekleme ile kontrol edildi.",
+    role: "AI ile üretilmiş içerik",
+    detail: "llmSummary, popularDishes, FAQ, scenarioSummary ve contextualRatings alanları yapay zeka tarafından üretilmiştir. Gerçek ziyaretçi yorumuna değil, restoran adı, mutfak türü, konum ve agregat rating verisine dayanır. Bu alanlar bilgilendirici amaçlıdır, garanti edilmez.",
   },
 ];
 
@@ -158,6 +158,17 @@ export default function HakkindaPage() {
               </div>
             ))}
           </div>
+        </section>
+
+        {/* AI İçerik Uyarısı */}
+        <section className="mb-12 border border-yellow-200 bg-yellow-50 rounded-xl p-5">
+          <h2 className="text-base font-bold text-yellow-900 mb-2">AI Tarafından Üretilen İçerik Hakkında</h2>
+          <p className="text-sm text-yellow-800 leading-relaxed">
+            <strong>llmSummary, popularDishes, FAQ, scenarioSummary ve contextualRatings</strong> alanları
+            yapay zeka (LLM) tarafından otomatik olarak üretilmiştir. Bu içerikler gerçek ziyaretçi
+            deneyimlerine değil, restoran adı, mutfak türü ve konum bilgisine dayanmaktadır.
+            Menü fiyatları, açılış saatleri ve güncel bilgiler için restoranı doğrudan aramanızı öneririz.
+          </p>
         </section>
 
         {/* Sınırlamalar */}
