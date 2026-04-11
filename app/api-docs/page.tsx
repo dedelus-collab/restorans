@@ -119,7 +119,7 @@ export default function ApiDocsPage() {
         </p>
         <div className="flex gap-3 mt-6">
           <a
-            href="https://rapidapi.com/cccanguler/api/restorans"
+            href="https://rapidapi.com/cccanguler/api/istanbul-restaurants"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors"
@@ -261,7 +261,7 @@ export default function ApiDocsPage() {
         <h2 className="text-white text-2xl font-bold mb-2">Hemen Başlayın</h2>
         <p className="text-gray-400 mb-6 text-sm">RapidAPI üzerinden abone olun — ücretsiz plan mevcut.</p>
         <a
-          href="https://rapidapi.com/cccanguler/api/restorans"
+          href="https://rapidapi.com/cccanguler/api/istanbul-restaurants"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-blue-500 hover:bg-blue-400 text-white font-bold px-8 py-3 rounded-lg transition-colors"

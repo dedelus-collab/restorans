@@ -197,7 +197,7 @@ export default function HomePage() {
             <p className="text-gray-400 text-sm mt-1">453 restoran · JSON API · llm_summary · FAQ · Transit</p>
           </div>
           <a
-            href="https://rapidapi.com/cccanguler/api/restorans"
+            href="https://rapidapi.com/cccanguler/api/istanbul-restaurants"
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-lg text-sm transition-colors"

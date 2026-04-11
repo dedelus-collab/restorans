@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 API Docs
               </Link>
               <a
-                href="https://rapidapi.com/cccanguler/api/restorans"
+                href="https://rapidapi.com/cccanguler/api/istanbul-restaurants"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors hidden sm:block"
