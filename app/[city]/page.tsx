@@ -301,7 +301,7 @@ export default async function CityPage({ params }: Props) {
             {" · "}
             <a href="/sitemap.xml" className="text-blue-500 hover:underline">sitemap.xml</a>
             {" · "}
-            <a href="/.well-known/llms.txt" className="text-blue-500 hover:underline">llms.txt</a>
+            <a href="/llms.txt" className="text-blue-500 hover:underline">llms.txt</a>
           </p>
         </footer>
       </main>

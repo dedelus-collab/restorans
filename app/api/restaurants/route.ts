@@ -82,7 +82,7 @@ export async function GET(request: NextRequest) {
       description: "Türkiye'nin AI-ready restoran veritabanı",
       llms_txt: "https://restorans.vercel.app/llms.txt",
       schema: "https://schema.org/Restaurant",
-      last_updated: "2026-04-09",
+      last_updated: new Date().toISOString().split("T")[0],
     },
     data: paged.map(r => ({
       id: r.id,

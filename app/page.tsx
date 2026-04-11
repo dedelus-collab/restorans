@@ -266,7 +266,7 @@ export default function HomePage() {
           </ul>
           <div className="mt-4 pt-4 border-t border-gray-200 flex gap-4 text-xs text-gray-400">
             <Link href="/api/restaurants?city=istanbul" className="text-blue-500 hover:underline">JSON API</Link>
-            <Link href="/.well-known/llms.txt" className="text-blue-500 hover:underline">llms.txt</Link>
+            <Link href="/llms.txt" className="text-blue-500 hover:underline">llms.txt</Link>
             <Link href="/sitemap.xml" className="text-blue-500 hover:underline">sitemap.xml</Link>
           </div>
         </section>
