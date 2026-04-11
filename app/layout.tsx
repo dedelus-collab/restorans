@@ -51,11 +51,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 Kebap
               </Link>
               <Link
-                href="/api/restaurants?city=istanbul"
-                className="text-blue-500 hover:underline text-xs"
+                href="/api-docs"
+                className="text-blue-500 font-semibold hover:underline text-xs"
               >
-                API
+                API Docs
               </Link>
+              <a
+                href="https://rapidapi.com/cccanguler/api/restorans"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors hidden sm:block"
+              >
+                RapidAPI →
+              </a>
             </div>
           </div>
         </nav>
