@@ -69,13 +69,30 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </nav>
         {children}
         <footer className="border-t border-gray-100 mt-16 py-8 text-xs text-gray-400">
-          <div className="max-w-4xl mx-auto px-6 flex flex-wrap gap-4 justify-between">
-            <span>© 2026 Istanbul Restaurants</span>
-            <div className="flex gap-4">
-              <Link href="/hakkinda" className="hover:underline">Hakkında</Link>
-              <Link href="/llms.txt" className="hover:underline">llms.txt</Link>
-              <Link href="/sitemap.xml" className="hover:underline">sitemap.xml</Link>
-              <Link href="/api/restaurants?city=istanbul" className="hover:underline">JSON API</Link>
+          <div className="max-w-4xl mx-auto px-6 space-y-4">
+            {/* Status bar */}
+            <div className="flex flex-wrap gap-4 items-center text-xs">
+              <span className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-green-400 inline-block"></span>
+                <span className="text-gray-500 font-medium">API Online</span>
+              </span>
+              <span className="text-gray-300">·</span>
+              <span className="text-gray-500">Database last updated: <strong className="text-gray-600">April 2026</strong></span>
+              <span className="text-gray-300">·</span>
+              <span className="text-gray-500">453 restaurants · 78 neighborhoods · 25 collections</span>
+              <span className="text-gray-300">·</span>
+              <span className="text-gray-500">Data sources: OpenStreetMap + LLM enrichment</span>
+            </div>
+            {/* Links */}
+            <div className="flex flex-wrap gap-4 justify-between">
+              <span>© 2026 Istanbul Restaurants</span>
+              <div className="flex gap-4">
+                <Link href="/hakkinda" className="hover:underline">Hakkında</Link>
+                <Link href="/api-docs" className="hover:underline">API Docs</Link>
+                <Link href="/llms.txt" className="hover:underline">llms.txt</Link>
+                <Link href="/sitemap.xml" className="hover:underline">sitemap.xml</Link>
+                <Link href="/api/restaurants?city=istanbul" className="hover:underline">JSON API</Link>
+              </div>
             </div>
           </div>
         </footer>
