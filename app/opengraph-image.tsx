@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "nodejs";
-export const alt = "restorans — İstanbul Restoran Veritabanı";
+export const alt = "Istanbul Restaurants Database | Istanbul Restaurants";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -36,7 +36,7 @@ export default function OgImage() {
             🍽
           </div>
           <span style={{ color: "#f8fafc", fontSize: "36px", fontWeight: 700, letterSpacing: "-1px" }}>
-            restorans
+            Istanbul Restaurants
           </span>
         </div>
 

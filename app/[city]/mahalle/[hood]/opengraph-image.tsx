@@ -33,7 +33,7 @@ export default async function OgImage({
         }}
       >
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <span style={{ color: "#3b82f6", fontSize: "24px", fontWeight: 700 }}>restorans</span>
+          <span style={{ color: "#3b82f6", fontSize: "24px", fontWeight: 700 }}>Istanbul Restaurants</span>
           <span style={{ color: "#475569", fontSize: "22px" }}>{cityName}</span>
         </div>
 

@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://restorans.vercel.app/${city}/mahalle/${hood}`,
       title: `${hoodName} Restoranları — ${cityName}`,
       description: `${hoodName}'daki ${list.length} restoran — FAQ, transit, popüler yemekler.`,
-      siteName: "restorans",
+      siteName: "Istanbul Restaurants",
       locale: "tr_TR",
     },
     twitter: {

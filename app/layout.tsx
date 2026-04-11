@@ -3,7 +3,7 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "restorans — İstanbul Restoran Rehberi | AI-Ready Veri",
+  title: "Istanbul Restaurants — AI-Ready Data | Istanbul Restaurants",
   description:
     "İstanbul'daki 453 restoranın yapay zeka sistemleri için yapılandırılmış verisi. FAQ, transit mesafeleri, popüler yemekler. ChatGPT, Perplexity ve LLM'ler için optimize.",
   metadataBase: new URL("https://restorans.vercel.app"),
@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     url: "https://restorans.vercel.app",
-    siteName: "restorans",
-    title: "restorans — İstanbul Restoran Veritabanı",
+    siteName: "Istanbul Restaurants",
+    title: "Istanbul Restaurants Database | Istanbul Restaurants",
     description: "453 İstanbul restoranı — Schema.org, FAQ, transit, popüler yemekler. AI botlar için optimize edilmiş veri platformu.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "restorans — İstanbul Restoran Veritabanı",
+    title: "Istanbul Restaurants Database | Istanbul Restaurants",
     description: "453 İstanbul restoranı — AI-ready veri, kuratörlü listeler, mahalle rehberleri.",
   },
   other: {
@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav className="border-b border-gray-100 bg-white sticky top-0 z-10">
           <div className="max-w-4xl mx-auto px-6 h-12 flex items-center justify-between">
             <Link href="/" className="font-bold text-gray-900 tracking-tight">
-              restorans
+              Istanbul Restaurants
             </Link>
             <div className="flex items-center gap-5 text-sm text-gray-500">
               <Link href="/istanbul" className="hover:text-gray-900 transition-colors">
@@ -70,7 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <footer className="border-t border-gray-100 mt-16 py-8 text-xs text-gray-400">
           <div className="max-w-4xl mx-auto px-6 flex flex-wrap gap-4 justify-between">
-            <span>© 2026 restorans — İstanbul Restoran Veritabanı</span>
+            <span>© 2026 Istanbul Restaurants</span>
             <div className="flex gap-4">
               <Link href="/hakkinda" className="hover:underline">Hakkında</Link>
               <Link href="/llms.txt" className="hover:underline">llms.txt</Link>

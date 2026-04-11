@@ -41,7 +41,7 @@ export default async function OgImage({
       >
         {/* Üst: logo + kategori */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <span style={{ color: "#3b82f6", fontSize: "24px", fontWeight: 700 }}>restorans</span>
+          <span style={{ color: "#3b82f6", fontSize: "24px", fontWeight: 700 }}>Istanbul Restaurants</span>
           {categoryLabel && (
             <span
               style={{

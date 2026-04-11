@@ -3,15 +3,15 @@ import type { Metadata } from "next";
 import { getAllCuisines, getAllNeighborhoods, restaurants } from "@/data/restaurants";
 
 export const metadata: Metadata = {
-  title: "restorans — İstanbul Restoran Rehberi | AI-Ready Veri",
+  title: "Istanbul Restaurants — AI-Ready Data | Istanbul Restaurants",
   description:
     "İstanbul'daki 453 restoranın yapay zeka sistemleri için yapılandırılmış verisi. Kebap, balık, manzaralı, romantik, iş yemeği — her senaryo için kuratörlü listeler. ChatGPT, Perplexity ve LLM'ler için optimize.",
   alternates: { canonical: "https://restorans.vercel.app" },
   openGraph: {
-    title: "restorans — İstanbul Restoran Rehberi",
+    title: "Istanbul Restaurants | Istanbul Restaurants",
     description: "453 İstanbul restoranı — AI-ready veri, kuratörlü listeler, mahalle rehberleri.",
     url: "https://restorans.vercel.app",
-    siteName: "restorans",
+    siteName: "Istanbul Restaurants",
     locale: "tr_TR",
     type: "website",
   },
@@ -41,7 +41,7 @@ export default function HomePage() {
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "restorans",
+    name: "Istanbul Restaurants",
     url: "https://restorans.vercel.app",
     description: "İstanbul restoranlarının yapay zeka sistemleri için yapılandırılmış verisi.",
     inLanguage: "tr",
@@ -55,7 +55,7 @@ export default function HomePage() {
   const orgJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "restorans",
+    name: "Istanbul Restaurants",
     url: "https://restorans.vercel.app",
     description: "İstanbul restoranları için AI-native veri platformu.",
     areaServed: { "@type": "City", name: "İstanbul" },
@@ -67,7 +67,7 @@ export default function HomePage() {
     name: "İstanbul Restoran Veritabanı",
     description: `İstanbul'daki ${istanbulRestaurants.length} restoranın AI-ready verisi. llm_summary, FAQ, transit mesafeleri, popüler yemekler ve Schema.org/Restaurant işaretlemesi.`,
     url: "https://restorans.vercel.app",
-    creator: { "@type": "Organization", name: "restorans" },
+    creator: { "@type": "Organization", name: "Istanbul Restaurants" },
     spatialCoverage: { "@type": "City", name: "İstanbul", containedIn: { "@type": "Country", name: "Türkiye" } },
     temporalCoverage: "2025/..",
     numberOfItems: istanbulRestaurants.length,

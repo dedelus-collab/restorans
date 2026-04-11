@@ -29,7 +29,7 @@ export default async function OgImage({
         }}
       >
         <span style={{ color: "#3b82f6", fontSize: "24px", fontWeight: 700, marginBottom: "24px" }}>
-          restorans
+          Istanbul Restaurants
         </span>
         <div
           style={{

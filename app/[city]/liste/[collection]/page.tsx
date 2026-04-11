@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://restorans.vercel.app/${city}/liste/${colSlug}`,
       title: col.title,
       description: col.description,
-      siteName: "restorans",
+      siteName: "Istanbul Restaurants",
       locale: "tr_TR",
     },
     twitter: {
@@ -107,7 +107,7 @@ export default async function CollectionPage({ params }: Props) {
     description: col.description,
     url: `https://restorans.vercel.app/${city}/liste/${colSlug}`,
     about: { "@type": "Restaurant", servesCuisine: col.title },
-    provider: { "@type": "Organization", name: "restorans", url: "https://restorans.vercel.app" },
+    provider: { "@type": "Organization", name: "Istanbul Restaurants", url: "https://restorans.vercel.app" },
   };
 
   const categoryLabels: Record<string, string> = {

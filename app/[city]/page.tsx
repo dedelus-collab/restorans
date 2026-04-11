@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://restorans.vercel.app/${city}`,
       title: `${cityName} Restoranları — ${restaurants.length} Mekan`,
       description: `${cityName}'daki ${restaurants.length} restoran — AI-ready veri, kuratörlü listeler, mahalle rehberleri.`,
-      siteName: "restorans",
+      siteName: "Istanbul Restaurants",
       locale: "tr_TR",
     },
     twitter: {
@@ -94,7 +94,7 @@ export default async function CityPage({ params }: Props) {
     name: `${cityName} Restoran Veritabanı`,
     description: `${cityName}'daki restoranların AI-ready, Schema.org destekli verisi.`,
     url: `https://restorans.vercel.app/${city}`,
-    creator: { "@type": "Organization", name: "restorans" },
+    creator: { "@type": "Organization", name: "Istanbul Restaurants" },
     spatialCoverage: {
       "@type": "City",
       name: cityName,
@@ -111,7 +111,7 @@ export default async function CityPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "restorans", item: "https://restorans.vercel.app" },
+      { "@type": "ListItem", position: 1, name: "Istanbul Restaurants", item: "https://restorans.vercel.app" },
       { "@type": "ListItem", position: 2, name: cityName, item: `https://restorans.vercel.app/${city}` },
     ],
   };

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Hakkında — restorans",
     description: "453 İstanbul restoranının verisi nasıl toplanıyor, nasıl doğrulanıyor?",
     url: "https://restorans.vercel.app/hakkinda",
-    siteName: "restorans",
+    siteName: "Istanbul Restaurants",
     locale: "tr_TR",
     type: "website",
   },
@@ -24,7 +24,7 @@ const aboutJsonLd = {
   description: "restorans veri metodolojisi, kaynaklar ve güvenilirlik.",
   publisher: {
     "@type": "Organization",
-    name: "restorans",
+    name: "Istanbul Restaurants",
     url: "https://restorans.vercel.app",
   },
 };

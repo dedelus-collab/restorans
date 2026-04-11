@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://restorans.vercel.app/${city}/${slug}`,
       title: `${r.name} — ${r.neighborhood}, ${r.city}`,
       description: r.llmSummary ?? undefined,
-      siteName: "restorans",
+      siteName: "Istanbul Restaurants",
       locale: "tr_TR",
     },
     twitter: {
@@ -180,7 +180,7 @@ export default async function RestaurantPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "restorans", item: "https://restorans.vercel.app" },
+      { "@type": "ListItem", position: 1, name: "Istanbul Restaurants", item: "https://restorans.vercel.app" },
       { "@type": "ListItem", position: 2, name: r.city, item: `https://restorans.vercel.app/${city}` },
       { "@type": "ListItem", position: 3, name: r.name, item: `https://restorans.vercel.app/${city}/${slug}` },
     ],
