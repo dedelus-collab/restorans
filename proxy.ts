@@ -63,6 +63,15 @@ export function proxy(request: NextRequest) {
   // Bot erişimini logla
   logBotAccess(request);
 
+  // Türkçe birleştirici karakter (i + U+0307 = i%CC%87) URL'leri normalize et
+  // Aksi halde x-next-cache-tags header'ında ERR_INVALID_CHAR hatası oluşur
+  const path = request.nextUrl.pathname;
+  if (path.includes("\u0307")) {
+    const url = request.nextUrl.clone();
+    url.pathname = path.replace(/\u0307/g, "");
+    return NextResponse.redirect(url, 308);
+  }
+
   // OPTIONS preflight isteklerini doğrulama olmadan geçir (CORS için gerekli)
   if (request.method === "OPTIONS") {
     return NextResponse.next();
