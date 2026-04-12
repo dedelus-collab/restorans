@@ -102,7 +102,7 @@ export default async function OgImage({
                 gap: "8px",
               }}
             >
-              <span style={{ color: "#fbbf24", fontSize: "22px" }}>★</span>
+              <span style={{ color: "#fbbf24", fontSize: "20px", fontWeight: 700 }}>*</span>
               <span style={{ color: "#f8fafc", fontSize: "26px", fontWeight: 700 }}>{rating}</span>
               {reviewCount > 0 && (
                 <span style={{ color: "#64748b", fontSize: "18px" }}>
