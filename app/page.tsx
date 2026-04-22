@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { getAllCuisines, getAllNeighborhoods, restaurants } from "@/data/restaurants";
 
 export const metadata: Metadata = {
-  title: "Istanbul Restaurants — AI-Ready Data | Istanbul Restaurants",
+  title: "Restorans — İstanbul Restoran Rehberi | Istanbul Restaurants",
   description:
-    "İstanbul'daki 453 restoranın yapay zeka sistemleri için yapılandırılmış verisi. Kebap, balık, manzaralı, romantik, iş yemeği — her senaryo için kuratörlü listeler. ChatGPT, Perplexity ve LLM'ler için optimize.",
+    "Restorans: İstanbul'daki 453 restoranın rehberi. Kebap, balık, manzaralı, romantik, iş yemeği — her senaryo için kuratörlü listeler. ChatGPT, Perplexity ve AI sistemleri için optimize edilmiş veri.",
   alternates: { canonical: "https://restorans.vercel.app" },
   openGraph: {
     title: "Istanbul Restaurants | Istanbul Restaurants",
