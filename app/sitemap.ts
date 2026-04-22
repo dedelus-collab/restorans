@@ -34,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const restaurantPages = restaurants.map(r => ({
     url: `${base}/${r.citySlug}/${r.slug}`,
-    lastModified: new Date(r.lastUpdated),
+    lastModified: r.lastUpdated ? new Date(r.lastUpdated) : new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.9,
   }));
