@@ -4,19 +4,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "API Docs — restorans Istanbul Restaurant API",
   description: "Istanbul restaurant API documentation. Endpoints, request examples, response schema. Available on RapidAPI.",
-  alternates: { canonical: "https://restorans.vercel.app/api-docs" },
+  alternates: { canonical: "https://restaurantsistanbul.vercel.app/api-docs" },
 };
 
 const CODE_LIST = `curl -X GET \\
-  "https://restorans.vercel.app/api/restaurants?city=istanbul&maxPrice=2&minRating=4.5&limit=5" \\
+  "https://restaurantsistanbul.vercel.app/api/restaurants?city=istanbul&maxPrice=2&minRating=4.5&limit=5" \\
   -H "X-RapidAPI-Key: YOUR_API_KEY"`;
 
 const CODE_DETAIL = `curl -X GET \\
-  "https://restorans.vercel.app/api/restaurants/hamdi" \\
+  "https://restaurantsistanbul.vercel.app/api/restaurants/hamdi" \\
   -H "X-RapidAPI-Key: YOUR_API_KEY"`;
 
 const CODE_NEIGHBORHOOD = `curl -X GET \\
-  "https://restorans.vercel.app/api/restaurants?city=istanbul&neighborhood=kadikoy&cuisine=balik" \\
+  "https://restaurantsistanbul.vercel.app/api/restaurants?city=istanbul&neighborhood=kadikoy&cuisine=balik" \\
   -H "X-RapidAPI-Key: YOUR_API_KEY"`;
 
 const RESPONSE_LIST = `{
@@ -32,7 +32,7 @@ const RESPONSE_LIST = `{
     {
       "id": "hamdi",
       "slug": "hamdi",
-      "url": "https://restorans.vercel.app/istanbul/hamdi",
+      "url": "https://restaurantsistanbul.vercel.app/istanbul/hamdi",
       "name": "Hamdi Restaurant",
       "neighborhood": "Eminönü",
       "cuisine": "Kebap",
@@ -148,7 +148,7 @@ export default function ApiDocsPage() {
       {/* Base URL */}
       <section className="mb-10">
         <h2 className="text-lg font-bold mb-3">Base URL</h2>
-        <CodeBlock code="https://restorans.vercel.app" lang="text" />
+        <CodeBlock code="https://restaurantsistanbul.vercel.app" lang="text" />
       </section>
 
       {/* Endpoints */}

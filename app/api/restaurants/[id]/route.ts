@@ -39,7 +39,7 @@ export async function GET(
     data: {
       id: r.id,
       slug: r.slug,
-      url: `https://restorans.vercel.app/${r.citySlug}/${r.slug}`,
+      url: `https://restaurantsistanbul.vercel.app/${r.citySlug}/${r.slug}`,
       name: r.name,
       city: r.city,
       city_slug: r.citySlug,

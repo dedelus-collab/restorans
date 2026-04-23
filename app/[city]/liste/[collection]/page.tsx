@@ -17,10 +17,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${col.title} | Istanbul Restaurants`,
     description: col.description,
-    alternates: { canonical: `https://restorans.vercel.app/${city}/liste/${colSlug}` },
+    alternates: { canonical: `https://restaurantsistanbul.vercel.app/${city}/liste/${colSlug}` },
     openGraph: {
       type: "website",
-      url: `https://restorans.vercel.app/${city}/liste/${colSlug}`,
+      url: `https://restaurantsistanbul.vercel.app/${city}/liste/${colSlug}`,
       title: col.title,
       description: col.description,
       siteName: "Istanbul Restaurants",
@@ -73,13 +73,13 @@ export default async function CollectionPage({ params }: Props) {
     "@type": "ItemList",
     name: col.title,
     description: col.description,
-    url: `https://restorans.vercel.app/${city}/liste/${colSlug}`,
+    url: `https://restaurantsistanbul.vercel.app/${city}/liste/${colSlug}`,
     numberOfItems: list.length,
     itemListElement: list.slice(0, 20).map((r, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: r.name,
-      url: `https://restorans.vercel.app/${city}/${r.slug}`,
+      url: `https://restaurantsistanbul.vercel.app/${city}/${r.slug}`,
       description: r.llmSummary,
     })),
   };
@@ -88,20 +88,20 @@ export default async function CollectionPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: cityName, item: `https://restorans.vercel.app/${city}` },
-      { "@type": "ListItem", position: 2, name: col.title, item: `https://restorans.vercel.app/${city}/liste/${colSlug}` },
+      { "@type": "ListItem", position: 1, name: cityName, item: `https://restaurantsistanbul.vercel.app/${city}` },
+      { "@type": "ListItem", position: 2, name: col.title, item: `https://restaurantsistanbul.vercel.app/${city}/liste/${colSlug}` },
     ],
   };
 
   const collectionPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "@id": `https://restorans.vercel.app/${city}/liste/${colSlug}`,
+    "@id": `https://restaurantsistanbul.vercel.app/${city}/liste/${colSlug}`,
     name: col.title,
     description: col.description,
-    url: `https://restorans.vercel.app/${city}/liste/${colSlug}`,
+    url: `https://restaurantsistanbul.vercel.app/${city}/liste/${colSlug}`,
     about: { "@type": "Restaurant", servesCuisine: col.title },
-    provider: { "@type": "Organization", name: "Istanbul Restaurants", url: "https://restorans.vercel.app" },
+    provider: { "@type": "Organization", name: "Istanbul Restaurants", url: "https://restaurantsistanbul.vercel.app" },
   };
 
   const categoryLabels: Record<string, string> = {

@@ -31,7 +31,7 @@ export async function GET() {
     },
     servers: [
       {
-        url: "https://restorans.vercel.app",
+        url: "https://restaurantsistanbul.vercel.app",
         description: "Production",
       },
       {
@@ -452,13 +452,13 @@ export async function GET() {
         description: "Restoran listeleme ve detay endpointleri",
         externalDocs: {
           description: "llms.txt",
-          url: "https://restorans.vercel.app/llms.txt",
+          url: "https://restaurantsistanbul.vercel.app/llms.txt",
         },
       },
     ],
     externalDocs: {
       description: "AI dokümantasyonu (llms.txt)",
-      url: "https://restorans.vercel.app/llms.txt",
+      url: "https://restaurantsistanbul.vercel.app/llms.txt",
     },
   };
 

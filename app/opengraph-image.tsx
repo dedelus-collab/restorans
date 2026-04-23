@@ -91,7 +91,7 @@ export default function OgImage() {
             fontSize: "22px",
           }}
         >
-          restorans.vercel.app
+          restaurantsistanbul.vercel.app
         </div>
       </div>
     ),

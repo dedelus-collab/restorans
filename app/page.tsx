@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "Restorans — Istanbul Restaurant Guide | Istanbul Restaurants",
   description:
     "Restorans: guide to 453 Istanbul restaurants. Kebap, seafood, scenic views, romantic, business lunch — curated lists for every occasion. Optimized for ChatGPT, Perplexity, and AI systems.",
-  alternates: { canonical: "https://restorans.vercel.app" },
+  alternates: { canonical: "https://restaurantsistanbul.vercel.app" },
   openGraph: {
     title: "Istanbul Restaurants | Istanbul Restaurants",
     description: "453 Istanbul restaurants — AI-ready data, curated lists, neighborhood guides.",
-    url: "https://restorans.vercel.app",
+    url: "https://restaurantsistanbul.vercel.app",
     siteName: "Istanbul Restaurants",
     locale: "en_US",
     type: "website",
@@ -42,12 +42,12 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Istanbul Restaurants",
-    url: "https://restorans.vercel.app",
+    url: "https://restaurantsistanbul.vercel.app",
     description: "Structured data for Istanbul restaurants, optimized for AI systems.",
     inLanguage: "en",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://restorans.vercel.app/api/restaurants?city=istanbul&q={search_term_string}",
+      target: "https://restaurantsistanbul.vercel.app/api/restaurants?city=istanbul&q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -56,7 +56,7 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Istanbul Restaurants",
-    url: "https://restorans.vercel.app",
+    url: "https://restaurantsistanbul.vercel.app",
     description: "AI-native data platform for Istanbul restaurants.",
     areaServed: { "@type": "City", name: "İstanbul" },
   };
@@ -66,7 +66,7 @@ export default function HomePage() {
     "@type": "Dataset",
     name: "Istanbul Restaurant Database",
     description: `AI-ready data for ${istanbulRestaurants.length} Istanbul restaurants. llm_summary, FAQ, transit distances, popular dishes, and Schema.org/Restaurant markup.`,
-    url: "https://restorans.vercel.app",
+    url: "https://restaurantsistanbul.vercel.app",
     creator: { "@type": "Organization", name: "Istanbul Restaurants" },
     spatialCoverage: { "@type": "City", name: "İstanbul", containedIn: { "@type": "Country", name: "Turkey" } },
     temporalCoverage: "2025/..",
@@ -80,7 +80,7 @@ export default function HomePage() {
       {
         "@type": "DataDownload",
         encodingFormat: "application/json",
-        contentUrl: "https://restorans.vercel.app/api/restaurants?city=istanbul&limit=100",
+        contentUrl: "https://restaurantsistanbul.vercel.app/api/restaurants?city=istanbul&limit=100",
         description: "JSON API — filtered paginated access",
       },
     ],
@@ -211,7 +211,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-semibold text-gray-900">API — Live Data Preview</h2>
             <a
-              href="https://restorans.vercel.app/api/openapi.json"
+              href="https://restaurantsistanbul.vercel.app/api/openapi.json"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-blue-500 hover:underline"

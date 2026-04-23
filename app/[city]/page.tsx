@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${cityName} Restaurants — ${restaurants.length} Places | Istanbul Restaurants`,
     description: `Structured data for ${restaurants.length} ${cityName} restaurants. Kebap, seafood, scenic views, romantic and more. With FAQ, transit distances and popular dishes.`,
-    alternates: { canonical: `https://restorans.vercel.app/${city}` },
+    alternates: { canonical: `https://restaurantsistanbul.vercel.app/${city}` },
     openGraph: {
       type: "website",
-      url: `https://restorans.vercel.app/${city}`,
+      url: `https://restaurantsistanbul.vercel.app/${city}`,
       title: `${cityName} Restaurants — ${restaurants.length} Places`,
       description: `${restaurants.length} ${cityName} restaurants — AI-ready data, curated lists, neighborhood guides.`,
       siteName: "Istanbul Restaurants",
@@ -76,13 +76,13 @@ export default async function CityPage({ params }: Props) {
     "@type": "ItemList",
     name: `${cityName} Restaurants`,
     description: `${restaurants.length} ${cityName} restaurants with llm_summary, FAQ, transit distances, popular dishes and Schema.org/Restaurant markup.`,
-    url: `https://restorans.vercel.app/${city}`,
+    url: `https://restaurantsistanbul.vercel.app/${city}`,
     numberOfItems: restaurants.length,
     itemListElement: restaurants.slice(0, 30).map((r, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: r.name,
-      url: `https://restorans.vercel.app/${city}/${r.slug}`,
+      url: `https://restaurantsistanbul.vercel.app/${city}/${r.slug}`,
       description: r.llmSummary,
     })),
   };
@@ -92,7 +92,7 @@ export default async function CityPage({ params }: Props) {
     "@type": "Dataset",
     name: `${cityName} Restaurant Database`,
     description: `AI-ready, Schema.org-compliant restaurant data for ${cityName}.`,
-    url: `https://restorans.vercel.app/${city}`,
+    url: `https://restaurantsistanbul.vercel.app/${city}`,
     creator: { "@type": "Organization", name: "Istanbul Restaurants" },
     spatialCoverage: {
       "@type": "City",
@@ -110,8 +110,8 @@ export default async function CityPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Istanbul Restaurants", item: "https://restorans.vercel.app" },
-      { "@type": "ListItem", position: 2, name: cityName, item: `https://restorans.vercel.app/${city}` },
+      { "@type": "ListItem", position: 1, name: "Istanbul Restaurants", item: "https://restaurantsistanbul.vercel.app" },
+      { "@type": "ListItem", position: 2, name: cityName, item: `https://restaurantsistanbul.vercel.app/${city}` },
     ],
   };
 
