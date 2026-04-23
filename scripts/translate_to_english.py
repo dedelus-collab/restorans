@@ -303,6 +303,83 @@ def translate_answer(a: str) -> str:
         result, flags=re.IGNORECASE
     )
 
+    # Transit stop patterns: "{Stop} tramvay/metro durağından N dakika"
+    def translate_stop(m):
+        stop = m.group(1).strip().rstrip("'")
+        kind_tr = m.group(2).lower()
+        n = m.group(3)
+        kind = {"tramvay": "tram", "metro": "metro", "otobüs": "bus", "otobus": "bus", "vapur": "ferry", "metrobüs": "metrobus"}.get(kind_tr, kind_tr)
+        return f"{n} min from {stop} {kind} stop"
+    result = re.sub(
+        r"([A-ZÇĞİÖŞÜa-zçğışöşü][^\s,]+(?:\s+[A-ZÇĞİÖŞÜ][^\s,]+)*)'?(?:den|dan|'den|'dan)?\s+(tramvay|metro|otob[üu]s|vapur|metrobüs)\s+dura[ğg][ıi]ndan\s+\(?\s*(\d+)\s*(?:dk|dakika)\s*\)?",
+        translate_stop,
+        result, flags=re.IGNORECASE
+    )
+    # "{Stop} tramvay durağından N dakika" without parens
+    result = re.sub(
+        r"([A-ZÇĞİÖŞÜ][a-zA-ZÇĞİÖŞÜçğışöşü\s]+?)\s+tramvay\s+dura[ğg][ıi]ndan\s+(\d+)\s*(?:dakika|dk)",
+        lambda m: f"{m.group(2)} minutes from {m.group(1).strip()} tram stop",
+        result, flags=re.IGNORECASE
+    )
+    result = re.sub(
+        r"([A-ZÇĞİÖŞÜ][a-zA-ZÇĞİÖŞÜçğışöşü\s]+?)\s+metro\s+dura[ğg][ıi]ndan\s+(\d+)\s*(?:dakika|dk)",
+        lambda m: f"{m.group(2)} minutes from {m.group(1).strip()} metro station",
+        result, flags=re.IGNORECASE
+    )
+    result = re.sub(
+        r"([A-ZÇĞİÖŞÜ][a-zA-ZÇĞİÖŞÜçğışöşü\s]+?)\s+vapur\s+dura[ğg][ıi]ndan\s+(\d+)\s*(?:dakika|dk)",
+        lambda m: f"{m.group(2)} minutes from {m.group(1).strip()} ferry stop",
+        result, flags=re.IGNORECASE
+    )
+    result = re.sub(r'\buzakl[ıi]ktad[ıi]r\b', 'away', result, flags=re.IGNORECASE)
+    result = re.sub(r'\buzakl[ıi]ktay[ıi]z\b', 'away', result, flags=re.IGNORECASE)
+    # "Eminönü'den vapur veya tramvay ile N-M dakika içinde ulaşabilirsiniz."
+    result = re.sub(
+        r"([A-ZÇĞİÖŞÜ][a-zA-ZÇĞİÖŞÜçğışöşü]+)'?(?:den|dan|'den|'dan)\s+(?:vapur\s+veya\s+tramvay|tramvay\s+veya\s+vapur|metro\s+veya\s+tramvay|tramvay\s+veya\s+metro)\s+ile\s+(\d+[-–]\d+|\d+)\s*dakika\s*i[çc]inde\s*ula[şs]abilirsiniz\.?",
+        lambda m: f"Accessible by tram or ferry from {m.group(1)} in {m.group(2)} minutes.",
+        result, flags=re.IGNORECASE
+    )
+
+    # Nearby landmark: "Evet, (sadece) N dakika uzaklıktadır/uzaklıktayız"
+    result = re.sub(
+        r'[Ee]vet[,.]?\s*(?:sadece\s+)?(\d+)\s*dakika\s*uzakl[ıi]ktad[ıi]r\.?',
+        lambda m: f'Yes, only {m.group(1)} minutes away.',
+        result
+    )
+    result = re.sub(
+        r'[Ee]vet[,.]?\s*(?:sadece\s+)?(\d+)\s*dakika\s*uzakl[ıi]ktay[ıi]z\.?',
+        lambda m: f'Yes, only {m.group(1)} minutes away.',
+        result
+    )
+    result = re.sub(
+        r'[Ee]vet[,.]?\s*(?:sadece\s+)?(\d+)\s*dakika\s*yürüme\s*mesafesinde\.?',
+        lambda m: f'Yes, only {m.group(1)} minutes on foot.',
+        result
+    )
+
+    # Vegan / dietary answers
+    result = re.sub(r'[Vv]egan\s*se[çc]ene[ğg]imiz\s*yok[tur]*[,.]?\s*ancak\s*di[ğg]er\s*diyet\s*veya\s*alerji\s*sorunlar[ıi]\s*i[çc]in\s*l[üu]tfen\s*[öo]nceden\s*bilgilendirin\.?',
+                    'No vegan options, but please inform us in advance about any dietary needs or allergies.', result)
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*vegan\s*se[çc]ene[ğg]imiz\s*yoktur\.?', 'No, we don\'t offer vegan options.', result)
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*vegan\s*se[çc]enekler(?:imiz)?\s*mevcut\s*de[ğg]ildir\.?', 'No, vegan options are not available.', result)
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*vegan\s*se[çc]enekler(?:imiz)?\s*yok\.?', 'No vegan options available.', result)
+    result = re.sub(r'[Vv]egan\s*se[çc]ene[ğg]i(?:miz)?\s*yok\.?', 'No vegan options available.', result)
+    result = re.sub(r'[Vv]ejetaryen\s*se[çc]ene[ğg]i(?:miz)?\s*yok\.?', 'No vegetarian options available.', result)
+
+    # Children welcome
+    result = re.sub(r'[Ee]vet[,.]?\s*[çc]ocuklar\s*kabul\s*edilmektedir\.?', 'Yes, children are welcome.', result)
+    result = re.sub(r'[Ee]vet[,.]?\s*[çc]ocuk\s*dostu\s*bir\s*ortam\s*sunmaktad[ıi]r\.?', 'Yes, we offer a family-friendly atmosphere.', result)
+    result = re.sub(r'[Ee]vet[,.]?\s*[çc]ocuklar\s*i[çc]in\s*uygun\s*bir\s*alan\s*mevcuttur\.?', 'Yes, there is a child-friendly area.', result)
+
+    # Nearby landmarks answer
+    result = re.sub(
+        r'[Ee]vet[,.]?\s*(.+?)\s*(?:gibi\s*)?(?:landmark(?:lar)?|kültürel\s*merkezler?|tarihi\s*yerler?|m[üu]ze(?:ler)?|camii?(?:ler)?)\s*(?:restoranın|yakınında|yak[ıi]n[ıi]nda)\s*bulunmaktad[ıi]r\.?',
+        lambda m: f'Yes, located near {m.group(1).strip()} and other landmarks.',
+        result, flags=re.IGNORECASE
+    )
+    result = re.sub(r'\bbulunmaktad[ıi]r\b', 'is nearby', result, flags=re.IGNORECASE)
+    result = re.sub(r'\byak[ıi]n[ıi]nda\s*bulunmaktad[ıi]r\b', 'is nearby', result, flags=re.IGNORECASE)
+
     # Simple yes/no patterns (must come after more specific patterns)
     result = re.sub(r'^[Hh]ay[ıi]r[,.]?\s*mevcut\s*değildir\.?$', 'No, not available.', result.strip())
     result = re.sub(r'^[Hh]ay[ıi]r[,.]?\s*$', 'No.', result.strip())
