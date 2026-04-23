@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { AniHead } from "@/components/AniMascot";
+import { AniHead, AniChibi } from "@/components/AniMascot";
 import {
   getRestaurantsByCity,
   getPriceSymbol,
@@ -176,10 +176,10 @@ export default async function CityPage({ params }: Props) {
                   <Link
                     key={c.slug}
                     href={`/${city}/liste/${c.slug}`}
-                    className="border border-gray-200 rounded-lg px-4 py-4 hover:border-gray-400 hover:shadow-sm transition-all group"
+                    className="border border-gray-200 rounded-xl px-3 py-4 hover:border-gray-300 hover:shadow-md transition-all group flex flex-col items-center text-center"
                   >
-                    <AniHead variant={variant} className="w-10 h-10 mb-2 group-hover:scale-110 transition-transform" />
-                    <div className="font-medium text-sm text-gray-900">{c.title.replace(`${cityName}&apos;da `, "").replace(`${cityName}'da `, "").split(" ").slice(0, 4).join(" ")}</div>
+                    <AniChibi variant={variant} className="w-20 h-auto mb-2 group-hover:scale-105 transition-transform duration-200" />
+                    <div className="font-medium text-sm text-gray-900 leading-tight">{c.title.replace(`${cityName}&apos;da `, "").replace(`${cityName}'da `, "").split(" ").slice(0, 4).join(" ")}</div>
                     <div className="text-xs text-gray-400 mt-0.5">{count} restaurants</div>
                   </Link>
                 );
