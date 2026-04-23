@@ -1,7 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllCuisines, getAllNeighborhoods, restaurants } from "@/data/restaurants";
-import { AniMascot, SpeechBubble, KawaiiIcon } from "@/components/AniMascot";
+import { KawaiiIcon } from "@/components/AniMascot";
+import { MascotChatTrigger } from "@/components/MascotChatTrigger";
 
 export const metadata: Metadata = {
   title: "Restorans — Istanbul Restaurant Guide | Istanbul Restaurants",
@@ -114,20 +115,8 @@ export default function HomePage() {
                 Structured for ChatGPT, Perplexity, and other AI systems.
               </p>
             </div>
-            {/* Mascot side */}
-            <div className="hidden sm:flex flex-col items-center shrink-0 pt-2">
-              <div className="flex items-end gap-2 mb-1">
-                <KawaiiIcon variant="fish" className="w-10 h-10 animate-bounce" style={{ animationDelay: "0.15s", animationDuration: "2s" }} />
-                <SpeechBubble text="453 restaurants! ★" className="mb-3 mr-2" />
-                <KawaiiIcon variant="romantic" className="w-9 h-9 animate-bounce" style={{ animationDelay: "0.4s", animationDuration: "2.3s" }} />
-              </div>
-              <AniMascot className="w-36 h-auto drop-shadow-sm" />
-              <div className="flex gap-4 mt-2">
-                <KawaiiIcon variant="kebap" className="w-8 h-8 animate-bounce" style={{ animationDelay: "0.6s", animationDuration: "1.9s" }} />
-                <KawaiiIcon variant="night" className="w-8 h-8 animate-bounce" style={{ animationDelay: "0.1s", animationDuration: "2.1s" }} />
-                <KawaiiIcon variant="breakfast" className="w-8 h-8 animate-bounce" style={{ animationDelay: "0.5s", animationDuration: "2.4s" }} />
-              </div>
-            </div>
+            {/* Mascot side — clickable, opens chatbot */}
+            <MascotChatTrigger />
           </div>
 
           {/* Stats */}

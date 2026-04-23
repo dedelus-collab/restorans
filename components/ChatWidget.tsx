@@ -23,6 +23,13 @@ export function ChatWidget() {
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  // Listen for mascot click event
+  useEffect(() => {
+    const handler = () => setOpen(true);
+    window.addEventListener("openChat", handler);
+    return () => window.removeEventListener("openChat", handler);
+  }, []);
+
   useEffect(() => {
     if (open && msgs.length === 0) {
       setMsgs([{
