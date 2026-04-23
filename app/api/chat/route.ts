@@ -2,7 +2,11 @@ import { NextRequest, NextResponse } from "next/server";
 import Groq from "groq-sdk";
 import { restaurants } from "@/data/restaurants";
 
-const client = new Groq({ apiKey: process.env.GROQ_API_KEY });
+let client: Groq | null = null;
+function getClient() {
+  if (!client) client = new Groq({ apiKey: process.env.GROQ_API_KEY });
+  return client;
+}
 
 // Smart keyword-based restaurant selector
 function selectRelevantRestaurants(query: string) {
@@ -93,6 +97,7 @@ export async function POST(req: NextRequest) {
   if (!message?.trim()) return NextResponse.json({ error: "No message" }, { status: 400 });
   if (!process.env.GROQ_API_KEY) return NextResponse.json({ error: "API key not configured" }, { status: 500 });
 
+  const groq = getClient();
   const relevant = selectRelevantRestaurants(message);
   const context = buildContext(relevant);
 
@@ -118,7 +123,7 @@ Rules:
     { role: "user" as const, content: message },
   ];
 
-  const stream = await client.chat.completions.create({
+  const stream = await groq.chat.completions.create({
     model: "llama-3.3-70b-versatile",
     max_tokens: 600,
     stream: true,
