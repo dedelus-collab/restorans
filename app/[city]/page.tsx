@@ -161,14 +161,24 @@ export default async function CityPage({ params }: Props) {
               What Are You Looking For?
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-              {scenarioCollections.map(c => {
+              {scenarioCollections.map((c, i) => {
                 const count = restaurants.filter(c.filter).length;
+                const slugVariant: Record<string, "chef"|"reviewer"|"foodie"|"explorer"|"star"> = {
+                  "romantik-aksam-yemegi-istanbul": "star",
+                  "is-yemegi-istanbul": "reviewer",
+                  "ozel-gun-istanbul": "star",
+                  "gec-acik-istanbul": "explorer",
+                  "aile-dostu-istanbul": "foodie",
+                  "vejetaryen-vegan-istanbul": "foodie",
+                };
+                const variant = slugVariant[c.slug] ?? (["chef","reviewer","foodie","explorer","star"] as const)[i % 5];
                 return (
                   <Link
                     key={c.slug}
                     href={`/${city}/liste/${c.slug}`}
-                    className="border border-gray-200 rounded-lg px-4 py-3 hover:border-gray-400 hover:shadow-sm transition-all"
+                    className="border border-gray-200 rounded-lg px-4 py-4 hover:border-gray-400 hover:shadow-sm transition-all group"
                   >
+                    <AniHead variant={variant} className="w-10 h-10 mb-2 group-hover:scale-110 transition-transform" />
                     <div className="font-medium text-sm text-gray-900">{c.title.replace(`${cityName}&apos;da `, "").replace(`${cityName}'da `, "").split(" ").slice(0, 4).join(" ")}</div>
                     <div className="text-xs text-gray-400 mt-0.5">{count} restaurants</div>
                   </Link>
@@ -211,14 +221,23 @@ export default async function CityPage({ params }: Props) {
               Ambiance & Vibe
             </h2>
             <div className="flex flex-wrap gap-2">
-              {vibeCollections.map(c => {
+              {vibeCollections.map((c, i) => {
                 const count = restaurants.filter(c.filter).length;
+                const vibeVariant: Record<string, "chef"|"reviewer"|"foodie"|"explorer"|"star"> = {
+                  "manzarali-istanbul": "explorer",
+                  "bogaz-manzarali-istanbul": "explorer",
+                  "uygun-fiyatli-istanbul": "reviewer",
+                  "fine-dining-istanbul": "star",
+                  "teras-istanbul": "foodie",
+                };
+                const variant = vibeVariant[c.slug] ?? (["explorer","star","foodie","reviewer","chef"] as const)[i % 5];
                 return (
                   <Link
                     key={c.slug}
                     href={`/${city}/liste/${c.slug}`}
-                    className="text-sm bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-700 px-3 py-1.5 rounded-lg transition-colors"
+                    className="text-sm bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-700 px-3 py-1.5 rounded-lg transition-colors flex items-center gap-1.5"
                   >
+                    <AniHead variant={variant} className="w-5 h-5 shrink-0" />
                     {c.title.replace(`${cityName}&apos;da `, "").replace(`${cityName}'da `, "").split(" ").slice(0, 3).join(" ")}
                     <span className="text-gray-400 ml-1.5">({count})</span>
                   </Link>
