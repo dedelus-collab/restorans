@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllCuisines, getAllNeighborhoods, restaurants } from "@/data/restaurants";
+import { AniMascot, SpeechBubble } from "@/components/AniMascot";
 
 export const metadata: Metadata = {
   title: "Restorans — Istanbul Restaurant Guide | Istanbul Restaurants",
@@ -96,19 +97,29 @@ export default function HomePage() {
 
         {/* Hero */}
         <header className="mb-14">
-          <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-3">
-            AI-Native Restaurant Guide
-          </p>
-          <h1 className="text-4xl font-bold mb-4 leading-tight">
-            Where to Eat in Istanbul?
-          </h1>
-          <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
-            453 Istanbul restaurants — each with <strong className="text-gray-900">popular dishes</strong>,{" "}
-            <strong className="text-gray-900">transit distances</strong>,{" "}
-            <strong className="text-gray-900">nearby landmarks</strong>, and{" "}
-            <strong className="text-gray-900">frequently asked questions</strong>.
-            Structured for ChatGPT, Perplexity, and other AI systems.
-          </p>
+          <div className="flex items-start gap-6">
+            {/* Text side */}
+            <div className="flex-1 min-w-0">
+              <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-3">
+                AI-Native Restaurant Guide
+              </p>
+              <h1 className="text-4xl font-bold mb-4 leading-tight">
+                Where to Eat in Istanbul?
+              </h1>
+              <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
+                453 Istanbul restaurants — each with <strong className="text-gray-900">popular dishes</strong>,{" "}
+                <strong className="text-gray-900">transit distances</strong>,{" "}
+                <strong className="text-gray-900">nearby landmarks</strong>, and{" "}
+                <strong className="text-gray-900">frequently asked questions</strong>.
+                Structured for ChatGPT, Perplexity, and other AI systems.
+              </p>
+            </div>
+            {/* Mascot side */}
+            <div className="hidden sm:flex flex-col items-center shrink-0 pt-2">
+              <SpeechBubble text="453 restaurants! ★" className="mb-2 mr-4" />
+              <AniMascot className="w-36 h-auto drop-shadow-sm" />
+            </div>
+          </div>
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-gray-100 pt-8">
@@ -132,12 +143,16 @@ export default function HomePage() {
             What Are You Looking For?
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {FEATURED_COLLECTIONS.map(c => (
+            {FEATURED_COLLECTIONS.map((c, i) => (
               <Link
                 key={c.slug}
                 href={`/istanbul/liste/${c.slug}`}
-                className="group border border-gray-200 rounded-lg p-4 hover:border-gray-400 hover:shadow-sm transition-all"
+                className="group relative border border-gray-200 rounded-lg p-4 hover:border-gray-400 hover:shadow-sm transition-all overflow-hidden"
               >
+                {/* anime sparkle accent on hover */}
+                <span className="absolute top-1.5 right-1.5 text-[10px] opacity-0 group-hover:opacity-100 transition-opacity select-none">
+                  {i % 3 === 0 ? "✦" : i % 3 === 1 ? "★" : "◆"}
+                </span>
                 <div className="text-2xl mb-2">{c.icon}</div>
                 <div className="font-semibold text-sm text-gray-900">{c.label}</div>
                 <div className="text-xs text-gray-400 mt-0.5">{c.desc}</div>
