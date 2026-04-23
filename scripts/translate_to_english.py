@@ -15,12 +15,41 @@ OUTPUT_FILE = "data/processed/istanbul.json"
 def price_label(p):
     return {1: "budget-friendly", 2: "mid-range", 3: "upscale", 4: "fine dining"}.get(p, "mid-range")
 
+# ── Cuisine name translation ───────────────────────────────────────────────────
+CUISINE_TR = {
+    "Türk Mutfağı": "Turkish cuisine",
+    "Turk Mutfagi": "Turkish cuisine",
+    "Balık": "Fish & seafood",
+    "Balik": "Fish & seafood",
+    "Kafe": "Café",
+    "Kahvaltı": "Breakfast",
+    "Kahvalti": "Breakfast",
+    "Kebap": "Kebap",
+    "Lokanta": "Turkish eatery",
+    "Meyhane": "Meyhane (Turkish tavern)",
+    "Pide": "Pide (Turkish flatbread)",
+    "Pizza & İtalyan": "Pizza & Italian",
+    "Pizza & Italyan": "Pizza & Italian",
+    "Sushi & Japon": "Sushi & Japanese",
+    "Dünya Mutfağı": "World cuisine",
+    "Dunya Mutfagi": "World cuisine",
+    "Uluslararası": "International",
+    "Uluslararasi": "International",
+    "Vegan": "Vegan",
+    "İtalyan": "Italian",
+    "Italyan": "Italian",
+    "Burger & Steak": "Burger & Steak",
+}
+
+def translate_cuisine(c: str) -> str:
+    return CUISINE_TR.get(c, c) if c else c
+
 # ── English llm_summary generator ─────────────────────────────────────────────
 def generate_english_summary(r: dict) -> str:
     name         = r.get("name", "")
     hood         = r.get("neighborhood", "")
     city         = r.get("city", "Istanbul")
-    cuisine      = r.get("cuisine", "Turkish cuisine")
+    cuisine      = translate_cuisine(r.get("cuisine", "Turkish cuisine"))
     price        = r.get("price_range", 2)
     rating       = r.get("avg_rating", 0)
     review_count = r.get("review_count", 0)
@@ -86,25 +115,151 @@ SENTIMENT_MAP = {
     "Ziyaretçilerin çoğu memnun kalmamış görünmektedir.": "Most visitors appear to be unsatisfied.",
 }
 
+def _extract_pct(text: str):
+    """Return integer percentage if found, else None."""
+    m = re.search(r'%\s*(\d+)', text)
+    return int(m.group(1)) if m else None
+
+def _sentiment_label(pct):
+    if pct is None or pct >= 90: return "The vast majority of visitors"
+    if pct >= 75: return f"The majority of visitors ({pct}%)"
+    if pct >= 60: return f"Most visitors ({pct}%)"
+    return f"Visitors ({pct}%)"
+
 def translate_sentiment(text: str) -> str:
     if not text:
         return text
     s = text.strip()
     if s in SENTIMENT_MAP:
         return SENTIMENT_MAP[s]
-    result = text
-    result = re.sub(r'Ziyaretçilerin büyük çoğunluğu.*?%(\d+).*?restoranın\s+', r"The vast majority of visitors (\1%) praise the restaurant's ", result)
-    result = re.sub(r'Ziyaretçilerin büyük çoğunluğu.*?restoranın\s+', "The vast majority of visitors praise the restaurant's ", result)
-    result = re.sub(r'\bZiyaretçiler\b', "Visitors", result)
+
+    # ── Exact / near-exact known patterns ─────────────────────────────────────
+    # Already mostly English — just clean up leftover words
+    if re.match(r'^(The vast majority|Most visitors|Visitors|Guests|Its |A highly)', s):
+        pass  # will be cleaned below
+    else:
+        # ── Generate clean English from Turkish patterns ─────────────────────
+        pct = _extract_pct(s)
+        label = _sentiment_label(pct)
+
+        # Pattern: "X% memnuniyet" / "X%'i satisfied" / "X%'i ... praise"
+        if re.search(r'genel\s+(?:olarak\s+)?memnun|genel\s+memnuniyet|memnuniyet\s+hissi', s, re.IGNORECASE):
+            return f"{label} are satisfied with their experience."
+        if re.search(r'(?:atmospherinden?|atmosferinden?)\s+(?:satisfied|memnun)', s, re.IGNORECASE):
+            return f"{label} are satisfied with the atmosphere."
+        if re.search(r'lezzetl\w+\s+(?:kahvalt|breakfast)', s, re.IGNORECASE):
+            return f"{label} praise the delicious breakfast options."
+        if re.search(r'(?:kahvalt|breakfast).{0,40}(?:memnun|satisfied|praise|leziz|delicious)', s, re.IGNORECASE):
+            return f"{label} praise the breakfast options and overall experience."
+        if re.search(r'(?:deniz\s*[üu]r[üu]nleri|seafood|bal[ıi]k).{0,40}(?:taze|fresh|praise|övdü|lezzet)', s, re.IGNORECASE):
+            return f"{label} praise the fresh seafood and dining experience."
+        if re.search(r'(?:romantik|romantic).{0,40}(?:atmosfer|view|manzara)', s, re.IGNORECASE):
+            return f"{label} praise the romantic atmosphere and the view."
+        if re.search(r'(?:manzara|view|bosphorus|boğaz).{0,50}(?:praise|övdü|övüyor|beğen)', s, re.IGNORECASE):
+            return f"{label} praise the view and overall dining experience."
+        if re.search(r'(?:hizmet|servis|service)\s+(?:hız|kalite|quality|speed)', s, re.IGNORECASE):
+            return f"{label} praise the quality and speed of service."
+        if re.search(r'(?:fiyat[\s/]*perfor|uygun\s*fiyat|value\s*for|price)', s, re.IGNORECASE):
+            return f"{label} appreciate the value for money."
+        if re.search(r'temizli[ğg]|hygiene|hijyen', s, re.IGNORECASE):
+            return f"{label} highlight the cleanliness and friendly staff."
+        if re.search(r'kebap|kebab|adana|lahmacun|döner|doner', s, re.IGNORECASE):
+            return f"{label} praise the kebap dishes and overall experience."
+        if re.search(r'pizza|italyan|pasta', s, re.IGNORECASE):
+            return f"{label} praise the pizza and Italian dishes."
+        if re.search(r'sushi|japon|ramen', s, re.IGNORECASE):
+            return f"{label} praise the sushi and Japanese cuisine."
+        if re.search(r'mantı|manti|börek|borek', s, re.IGNORECASE):
+            return f"{label} enjoy the traditional Turkish dishes."
+        if re.search(r'meze|meyhane|rak[ıi]', s, re.IGNORECASE):
+            return f"{label} praise the meze selection and meyhane atmosphere."
+        if re.search(r'pastane|pasta\s+shop|cake|tatlı', s, re.IGNORECASE):
+            return f"{label} praise the pastry and cake selection."
+        if re.search(r'kahve|coffee|çay|tea', s, re.IGNORECASE):
+            return f"{label} appreciate the coffee and beverage selection."
+        if re.search(r'(?:yemek|dish|food).{0,60}(?:lezzet|delicious|kalite|quality)', s, re.IGNORECASE):
+            return f"{label} praise the food quality and overall experience."
+        if re.search(r'(?:atmosfer|atmosphere|ortam).{0,60}(?:praise|beğen|övdü|sıcak|warm)', s, re.IGNORECASE):
+            return f"{label} praise the atmosphere and service."
+        if re.search(r'satisfied|memnun|beğen|praise|övdü|takdir', s, re.IGNORECASE):
+            pct_str = f" ({pct}%)" if pct else ""
+            return f"{label}{pct_str} are satisfied with the dining experience."
+        # Generic positive
+        if re.search(r'pozitif|positive|olumlu', s, re.IGNORECASE):
+            pct_str = f" ({pct}%)" if pct else ""
+            return f"Overall reviews are positive{pct_str}."
+        # Generic fallback with percentage
+        if pct:
+            return f"{label} ({pct}%) are satisfied with this restaurant."
+        return f"Visitors are generally satisfied with this restaurant."
+
+    result = s
+    # ── Clean up partially-translated text ────────────────────────────────────
+    # Remove full Turkish sentences after English prefix
+    result = re.sub(r"(The vast majority of visitors[^.]*praise the restaurant's)\s+[^A-Z\d].{0,300}$",
+                    lambda m: m.group(1) + " the food and overall experience.",
+                    result, flags=re.DOTALL)
+    # Word-level cleanups
+    result = re.sub(r'\bZiyaret[çc]iler\b', "Visitors", result)
     result = re.sub(r'\bMisafirler\b', "Guests", result)
-    result = re.sub(r'\bziyaretçilerin\b', "visitors'", result, flags=re.IGNORECASE)
+    result = re.sub(r'\bziyaret[çc]ilerin\b', "visitors'", result, flags=re.IGNORECASE)
+    result = re.sub(r'\bvisitors\'\s+', "visitors ", result, flags=re.IGNORECASE)
     result = re.sub(r'\blezzetli\b', "delicious", result, flags=re.IGNORECASE)
-    result = re.sub(r'\batmosferi\b', "atmosphere", result, flags=re.IGNORECASE)
-    result = re.sub(r'\bhizmet(i|ini)?\b', "service", result, flags=re.IGNORECASE)
-    result = re.sub(r'\byemekleri\b', "dishes", result, flags=re.IGNORECASE)
-    result = re.sub(r'\bmemnun\b', "satisfied", result, flags=re.IGNORECASE)
-    result = re.sub(r'\bövüyor\b', "praise", result, flags=re.IGNORECASE)
-    result = re.sub(r'\bövdü\b', "praised", result, flags=re.IGNORECASE)
+    result = re.sub(r'\batmosfer(?:ini?|den?|e)?\b', "atmosphere", result, flags=re.IGNORECASE)
+    result = re.sub(r'\bhizmet(?:i|ini|den|e)?\b', "service", result, flags=re.IGNORECASE)
+    result = re.sub(r'\byemekler(?:ini?|den?|e)?\b', "dishes", result, flags=re.IGNORECASE)
+    result = re.sub(r'\bmemnun(?:iyet)?\b', "satisfied", result, flags=re.IGNORECASE)
+    result = re.sub(r'\b[öo]v[üu]yor\b', "praise", result, flags=re.IGNORECASE)
+    result = re.sub(r'\b[öo]vd[üu]\b', "praised", result, flags=re.IGNORECASE)
+    result = re.sub(r'\b[öo]vg[üu]\b', "praise", result, flags=re.IGNORECASE)
+    result = re.sub(r'\bservis\b', "service", result, flags=re.IGNORECASE)
+    result = re.sub(r'\bkalite(?:si)?\b', "quality", result, flags=re.IGNORECASE)
+    result = re.sub(r'\bgenel\s+olarak\b', "overall", result, flags=re.IGNORECASE)
+    result = re.sub(r'\bolumlu\b', "positive", result, flags=re.IGNORECASE)
+    result = re.sub(r'\belev[şs]tir\w*\b', "criticism", result, flags=re.IGNORECASE)
+    result = re.sub(r'\beleştirilen\b', "criticized", result, flags=re.IGNORECASE)
+    result = re.sub(r'\btavsiye\b', "recommended", result, flags=re.IGNORECASE)
+    result = re.sub(r'\bbeğen\w*\b', "appreciated", result, flags=re.IGNORECASE)
+    result = re.sub(r'\btakdir\b', "appreciate", result, flags=re.IGNORECASE)
+    result = re.sub(r'\byüksek\s+puan\b', "high ratings", result, flags=re.IGNORECASE)
+    result = re.sub(r'\bpuan\b', "rating", result, flags=re.IGNORECASE)
+    result = re.sub(r'\bpozitif\b', "positive", result, flags=re.IGNORECASE)
+    # Strip leftover Turkish sentence fragments
+    result = re.sub(r'\s+[A-Za-z\u00c7\u011e\u0130\u00d6\u015e\u00dc][a-z\u00e7\u011f\u0131\u015f\u00f6\u015f\u00fc]+(?:\w*[ıiuüçğşö]\w*)\s*[^.!?]*[.!?]?$', '.', result, flags=re.IGNORECASE)
+    # Fix double percentage: "Visitors (10%) (10%)" → "Visitors (10%)"
+    result = re.sub(r'(\(\d+%\))\s+\1', r'\1', result)
+    result = re.sub(r'(\(\d+%\))\s+\(\d+%\)', r'\1', result)
+
+    result = result.strip().rstrip(',;')
+    if result and not result[-1] in '.!?':
+        result += '.'
+
+    # Truncated sentences — fix dangling English stubs
+    result = re.sub(r'^(Visitors are generally)\.$', 'Visitors are generally satisfied.', result)
+    result = re.sub(r'^(Its)\.$', 'Its atmosphere and food are highly praised.', result)
+    result = re.sub(r'^(A highly loved and recommended)\.$', 'A highly loved and recommended restaurant.', result)
+    result = re.sub(r'^Visitors Ed\.$', 'Visitors expressed satisfaction.', result)
+    result = re.sub(r'^Visitors\.$', 'Visitors are generally satisfied.', result)
+    result = re.sub(r'^Visitors,\.$', 'Visitors are generally satisfied.', result)
+    result = re.sub(r'^Visitors\s+[A-Z]\w+\.$', 'Visitors are generally satisfied.', result)
+    result = re.sub(r'^Visitors,?\s+restorandan\s+overall\.$', 'Visitors are overall satisfied with the restaurant.', result)
+    result = re.sub(r'^Guests\s+atmosphere\s+\w+\.$', 'Guests praised the atmosphere.', result)
+
+    # Final check: if still contains Turkish diacritics, regenerate from context
+    if re.search(r'[çğışöşüÇĞİÖŞÜ]', result):
+        pct = _extract_pct(s)
+        label = _sentiment_label(pct)
+        pct_str = f" ({pct}%)" if pct else ""
+        if re.search(r'atmosfer|atmosphere|ortam', s, re.IGNORECASE):
+            return f"{label}{pct_str} praise the atmosphere and overall dining experience."
+        if re.search(r'yemek|dish|food|lezzet|delicious', s, re.IGNORECASE):
+            return f"{label}{pct_str} praise the food and overall dining experience."
+        if re.search(r'servis|hizmet|service', s, re.IGNORECASE):
+            return f"{label}{pct_str} praise the service and dining experience."
+        if re.search(r'manzara|view|deniz', s, re.IGNORECASE):
+            return f"{label}{pct_str} praise the view and dining experience."
+        return f"{label}{pct_str} are satisfied with this restaurant."
+
     return result
 
 
@@ -268,6 +423,42 @@ QUESTION_REGEX = [
     (r"[Hh]angisi?\s+(?:daha\s+)?uygun\s+olur", "Which would you recommend?"),
     (r"ne\s+t[üu]r\s+hizmet.*sunuyor", "What services are offered?"),
     (r"[Vv]egan\s+se[çc]enek.*var\s*m[ıi]", "Are vegan options available?"),
+    # Seating
+    (r"[Oo]turma\s+alan[ıi]\s+var\s*m[ıi]", "Is there seating available?"),
+    (r"[Aa][çc][ıi]k\s+(?:alan|hava|oturma)", "Is there outdoor seating?"),
+    # Transit
+    (r"yak[ıi]n\s+(?:metro|tramvay|tram|otob[üu]s)\s+(?:istasyon|dura[ğg])", "Is there a nearby metro/tram station?"),
+    (r"metro\s+(?:istasyon|dura[ğg]).*var\s*m[ıi]", "Is there a nearby metro station?"),
+    (r"tramvay\s+dura[ğg].*var\s*m[ıi]", "Is there a nearby tram stop?"),
+    # Waiting time
+    (r"beklemek\s+zorunda", "Do I have to wait long?"),
+    (r"bekleme\s+s[üu]resi", "What is the waiting time?"),
+    # Romantic / evening
+    (r"romantik\s+(?:bir\s+)?ak[şs]am\s+i[çc]in\s+uygun", "Is it suitable for a romantic evening?"),
+    (r"romantik\s+(?:bir\s+)?(?:akşam|yemek|ortam)", "Is it suitable for a romantic dinner?"),
+    # Dietary options
+    (r"[Dd]iyet\s+se[çc]ene[ğg]i\s+var\s*m[ıi]", "Are there dietary options?"),
+    (r"[Vv]egan\s*/\s*vejetaryen.*diyet.*var\s*m[ıi]", "Are there vegan/vegetarian/dietary options?"),
+    (r"[Vv]ejetaryen.*se[çc]enek.*var\s*m[ıi]", "Are there vegetarian options?"),
+    # Landmarks
+    (r"ne\s+gibi\s+landmark", "What landmarks are nearby?"),
+    (r"yak[ıi]n.*landmark.*var\s*m[ıi]", "Are there nearby landmarks?"),
+    # Groups
+    (r"(?:gruplar|b[üu]y[üu]k\s+grup)\s+i[çc]in\s+[öo]zel\s+(?:alan|b[öo]lme)", "Is there a private area for groups?"),
+    (r"(?:gruplar|grup)\s+i[çc]in\s+uygun\s*m[ıi]", "Is it suitable for groups?"),
+    # Open on weekends / specific days
+    (r"[Pp]azar\s+g[üu]nleri?\s+a[çc][ıi]k\s*m[ıi]", "Is it open on Sundays?"),
+    (r"hafta\s+sonu\s+a[çc][ıi]k\s*m[ıi]", "Is it open on weekends?"),
+    # Specific question types
+    (r"ne\s+kadar\s+uzakl[ıi]k\s+var", "How far is it?"),
+    (r"neden\s+.+\s+tercih\s+edece[ğg]im", "Why should I choose this restaurant?"),
+    (r"yak[ıi]n[ıi]nda.*kilise|yak[ıi]n[ıi]nda.*cami|yak[ıi]n[ıi]nda.*m[üu]ze", "Are there nearby landmarks?"),
+    (r"gitmeden\s+[öo]nce\s+restoranda", "What would you recommend to eat before visiting?"),
+    (r"[Oo]zel\s+g[üu]nler?/organizasyon\s+i[çc]in\s+uygun", "Is it suitable for special occasions?"),
+    (r"restoran[ıi]\s+b[üu]y[üu]k\s+gruplar\s+i[çc]in", "Is this restaurant suitable for large groups?"),
+    (r"[Rr]estoran.*mutfak\s+t[üu]r[üu]n[üu]\s+nas[ıi]l\s+tan[ıi]mlars[ıi]n", "How would you describe the restaurant's cuisine?"),
+    (r"ne\s+t[üu]r\s+bir\s+deneyim", "What kind of experience is offered?"),
+    (r"en\s+[öo]zel\s+(?:yeme[ğg]i|[üu]r[üu]n[üu])\s+ne", "What is the most special dish?"),
     (r"'da\s+ne\s+t[üu]r\s+yemekler\s+var", "What kind of food is served?"),
     (r"'[ıi]\s+nerede\s+bulabilirim", "Where can I find it?"),
     (r"[Nn]erede\s+bulunuyor", "Where is it located?"),
@@ -610,11 +801,100 @@ def translate_answer(a: str) -> str:
         result, flags=re.IGNORECASE
     )
 
+    # More Turkish structural words in partially-translated text
+    result = re.sub(r'\bbelirtmektedir\b', 'is noted', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bbelirtiyor\b', 'notes', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bolduğunu\b', 'that it is', result, flags=re.IGNORECASE)
+    result = re.sub(r'\boldukça\b', 'quite', result, flags=re.IGNORECASE)
+    result = re.sub(r'\barasında\b', 'among', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bhakkında\b', 'about', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bnedeniyle\b', 'due to', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bkonusunda\b', 'regarding', result, flags=re.IGNORECASE)
+    result = re.sub(r'\börneğin\b', 'for example', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bözellikle\b', 'especially', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bgenellikle\b', 'generally', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bhem\b(?=\s+\w)', 'both', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bde\b(?=\s+)', 'also', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bda\b(?=\s+)', 'also', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bönerilir\b', 'is recommended', result, flags=re.IGNORECASE)
+    result = re.sub(r'\btercih\s+edilebilir\b', 'can be preferred', result, flags=re.IGNORECASE)
+    result = re.sub(r'\btercih\s+edilir\b', 'is preferred', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bsunulmaktad[ıi]r\b', 'is served', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bmevcut\s+de[ğg]ildir\b', 'is not available', result, flags=re.IGNORECASE)
+    result = re.sub(r'\byap[ıi]labilir\b', 'can be done', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bay[ıi]rtabilirsiniz\b', 'can be reserved', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bsahiptir\b', 'has', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bgöre\b', 'based on', result, flags=re.IGNORECASE)
+    result = re.sub(r'\b[üu]cretli\b', 'paid', result, flags=re.IGNORECASE)
+    result = re.sub(r'\b[üu]cretsiz\b', 'free', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bher\s+hafta\b', 'every week', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bhafta\s+i[çc]i\b', 'on weekdays', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bhafta\s+sonu\b', 'on weekends', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bkalabal[ıi]k\b', 'busy', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bkonuma\b', 'location', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bs[ıi]n[ıi]rl[ıi]\b', 'limited', result, flags=re.IGNORECASE)
+    result = re.sub(r'\blezzetleri\b', 'flavors', result, flags=re.IGNORECASE)
+    result = re.sub(r'\byerler\b', 'places', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bsaatlerinde\b', 'hours', result, flags=re.IGNORECASE)
+    result = re.sub(r'\btaze\b', 'fresh', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bs[ıi]cak\s+ve\s+samimi\b', 'warm and welcoming', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bsamimi\b', 'welcoming', result, flags=re.IGNORECASE)
+    result = re.sub(r'\brezervasyon\b', 'reservation', result, flags=re.IGNORECASE)
+    result = re.sub(r'\b[öo]nceden\b', 'in advance', result, flags=re.IGNORECASE)
+
     # "ve" → "and" inside already-English answers (landmark lists, etc.)
     result = re.sub(r'\b ve \b', ' and ', result)
     # "genellikle en pahalı yemeklerden biridir" - price description
     result = re.sub(r'(.+?),\s*genellikle\s+en\s+pahal[ıi]\s+yemeklerden\s+biridir\.?',
                     lambda m: f'{m.group(1).strip()} is typically one of the pricier dishes.', result, flags=re.IGNORECASE)
+
+    # Fix partial answer messes from iterative processing
+    result = re.sub(r'Reservations recommended\.\s+(?:and|ve)\s+[öo]zel\s+hizmet\s+(?:sunuyoruz|we offer)\.?',
+                    'Reservations are recommended, and special services are available.', result, flags=re.IGNORECASE)
+    result = re.sub(r'Yes,\s+(?:child-friendly|family-friendly)\.\s+bir\s+ortam\s+(?:sunar|sunuyor|we offer)\.?',
+                    'Yes, child-friendly.', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bEvét[,.]?\s+(?:but|ancak)\s+[çc]ocuk\s+dostu\s+bir\s+ortam\s+de[ğg]il\.?',
+                    'Yes, but not specifically child-friendly.', result, flags=re.IGNORECASE)
+    result = re.sub(r'[Ee]vet[,.]?\s+but\s+[çc]ocuk\s+dostu\s+bir\s+ortam\s+de[ğg]il\.?',
+                    'Yes, but not specifically child-friendly.', result, flags=re.IGNORECASE)
+    result = re.sub(r'\b(?:bir\s+)?ortam\s+de[ğg]il\.?$', 'not suitable.', result, flags=re.IGNORECASE)
+    result = re.sub(r'\b(?:bir\s+)?ortam\s+sunar?\.?$', 'is available.', result, flags=re.IGNORECASE)
+    result = re.sub(r'\b(?:bir\s+)?ortam\s+(?:we offer|sunuyoruz|sunmaktadır)\.?', 'atmosphere.', result, flags=re.IGNORECASE)
+    # "Türk mutfağı we offer and manzaralı bir restauranız." type mess
+    result = re.sub(r'T[üu]rk\s+mutfa[ğg][ıi]\s+we offer\b', 'We offer Turkish cuisine', result, flags=re.IGNORECASE)
+    result = re.sub(r'manzaral[ıi]\s+bir\s+(?:restoran[ıi]z|mekan[ıi]z)\.?', 'a restaurant with a view.', result, flags=re.IGNORECASE)
+    # "Evet, özel günler and organizasyon için uygun" → "Yes, suitable for special occasions and events."
+    result = re.sub(r'[Ee]vet[,.]?\s+[öo]zel\s+g[üu]nler(?:/organizasyon)?\s+i[çc]in\s+uygun\.?',
+                    'Yes, suitable for special occasions.', result, flags=re.IGNORECASE)
+    # "Italiano Pizza, lezzetli bir pizza seçeneğimizdir." → "Italiano Pizza is a delicious pizza option."
+    result = re.sub(r'(.+?),\s+lezzetli\s+bir\s+([a-zA-Z]+)\s+se[çc]ene[ğg]imizdir\.?',
+                    lambda m: f'{m.group(1)} is a delicious {m.group(2)} option.',
+                    result, flags=re.IGNORECASE)
+    # "X, özel günler için özel menü and hizmetler sunuyor."
+    result = re.sub(r'[öo]zel\s+g[üu]nler\s+i[çc]in\s+[öo]zel\s+men[üu]\s+(?:and|ve)\s+hizmetler\s+(?:sunuyor|we offer)\.?',
+                    'special menus and services are available for special occasions.', result, flags=re.IGNORECASE)
+    # Parking limited answer
+    result = re.sub(r'[Oo]topark\s+kapasitesi\s+restoran[ıi]n\s+konumu\s+(?:and|ve)\s+[çc]evresine\s+g[öo]re\s+s[ıi]n[ıi]rl[ıi]d[ıi]r[^.]*\.',
+                    'Parking capacity is limited; we recommend reserving a spot in advance.', result, flags=re.IGNORECASE)
+    # "... deniz manzaralı bir konumda" location suffix
+    result = re.sub(r',\s+deniz\s+manzaral[ıi]\s+bir\s+konumda\.?$', ', with a sea view.', result, flags=re.IGNORECASE)
+    result = re.sub(r',\s+manzaral[ıi]\s+bir\s+konumda\.?$', ', with a scenic view.', result, flags=re.IGNORECASE)
+    # "Üzgünüz, X'e özel teras and manzarası yok."
+    result = re.sub(r'[Üü]zg[üu]n[üu]z[,.]?\s*.+?\s+(?:teras|manzara)[ıi]\s+yok\.?',
+                    'Unfortunately, there is no terrace or scenic view at this restaurant.', result, flags=re.IGNORECASE)
+    # "[Name], özel doğum günü organizasyonları için özel menü and hizmetler sunuyor."
+    result = re.sub(r'[öo]zel\s+do[ğg]um\s+g[üu]n[üu]\s+organizasyonlar[ıi]\s+i[çc]in\s+[öo]zel\s+men[üu]\s+(?:and|ve)\s+hizmetler\s+(?:sunuyor|we offer|sunar)\.?',
+                    'special menus and services are available for birthday events.', result, flags=re.IGNORECASE)
+    # "X style dishes sunan bir mutfak tarzına sahiptir."
+    result = re.sub(r'style\s+dishes\s+sunan\s+bir\s+mutfak\s+tarz[ıi]na\s+sahiptir\.?',
+                    'style dishes are served.', result, flags=re.IGNORECASE)
+    # Vapur/transit answer with partial Turkish
+    result = re.sub(r"([A-Z\u00c7\u011e\u0130\u00d6\u015e\u00dc][a-zA-Z\u00e7\u011f\u0131\u015f\u00f6\u015f\u00fc']+)'ne\s+vapur\s+ile\s+(\d+)\s+dakika",
+                    lambda m: f'{m.group(2)} min by ferry to {m.group(1)}',
+                    result, flags=re.IGNORECASE)
+    result = re.sub(r"'ya\s+tramvay[a-zA-Z]*\s+(\d+)\s+dakika",
+                    lambda m: f'{m.group(1)} min by tram',
+                    result, flags=re.IGNORECASE)
 
     # Common Turkish conjunctions/words left in partial translations
     result = re.sub(r'\bancak\b', 'but', result, flags=re.IGNORECASE)
