@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const FEATURED_COLLECTIONS = [
   { slug: "romantik-aksam-yemegi-istanbul", label: "Romantic", kawaii: "romantic" as const, desc: "For special evenings" },
-  { slug: "balik-deniz-urunleri-istanbul", label: "Balık", kawaii: "fish" as const, desc: "Fresh Bosphorus fish" },
+  { slug: "balik-deniz-urunleri-istanbul", label: "Fish", kawaii: "fish" as const, desc: "Fresh Bosphorus fish" },
   { slug: "kebap-istanbul", label: "Kebap", kawaii: "kebap" as const, desc: "Adana to İskender" },
   { slug: "manzarali-istanbul", label: "Scenic", kawaii: "scenic" as const, desc: "Bosphorus & skyline views" },
   { slug: "is-yemegi-istanbul", label: "Business", kawaii: "business" as const, desc: "Quiet & efficient" },
