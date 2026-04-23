@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllCuisines, getAllNeighborhoods, restaurants } from "@/data/restaurants";
-import { AniMascot, SpeechBubble } from "@/components/AniMascot";
+import { AniMascot, SpeechBubble, KawaiiIcon } from "@/components/AniMascot";
 
 export const metadata: Metadata = {
   title: "Restorans — Istanbul Restaurant Guide | Istanbul Restaurants",
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
 };
 
 const FEATURED_COLLECTIONS = [
-  { slug: "romantik-aksam-yemegi-istanbul", label: "Romantic", icon: "♥", desc: "For special evenings" },
-  { slug: "balik-deniz-urunleri-istanbul", label: "Balık", icon: "🐟", desc: "Fresh Bosphorus fish" },
-  { slug: "kebap-istanbul", label: "Kebap", icon: "🔥", desc: "Adana to İskender" },
-  { slug: "manzarali-istanbul", label: "Scenic", icon: "🌉", desc: "Bosphorus & skyline views" },
-  { slug: "is-yemegi-istanbul", label: "Business", icon: "💼", desc: "Quiet & efficient" },
-  { slug: "gec-acik-istanbul", label: "Late Night", icon: "🌙", desc: "Open until late" },
-  { slug: "kahvalti-istanbul", label: "Breakfast", icon: "☕", desc: "Serpme & brunch" },
-  { slug: "fine-dining-istanbul", label: "Fine Dining", icon: "✨", desc: "Prestigious venues" },
+  { slug: "romantik-aksam-yemegi-istanbul", label: "Romantic", kawaii: "romantic" as const, desc: "For special evenings" },
+  { slug: "balik-deniz-urunleri-istanbul", label: "Balık", kawaii: "fish" as const, desc: "Fresh Bosphorus fish" },
+  { slug: "kebap-istanbul", label: "Kebap", kawaii: "kebap" as const, desc: "Adana to İskender" },
+  { slug: "manzarali-istanbul", label: "Scenic", kawaii: "scenic" as const, desc: "Bosphorus & skyline views" },
+  { slug: "is-yemegi-istanbul", label: "Business", kawaii: "business" as const, desc: "Quiet & efficient" },
+  { slug: "gec-acik-istanbul", label: "Late Night", kawaii: "night" as const, desc: "Open until late" },
+  { slug: "kahvalti-istanbul", label: "Breakfast", kawaii: "breakfast" as const, desc: "Serpme & brunch" },
+  { slug: "fine-dining-istanbul", label: "Fine Dining", kawaii: "finedining" as const, desc: "Prestigious venues" },
 ];
 
 export default function HomePage() {
@@ -116,8 +116,17 @@ export default function HomePage() {
             </div>
             {/* Mascot side */}
             <div className="hidden sm:flex flex-col items-center shrink-0 pt-2">
-              <SpeechBubble text="453 restaurants! ★" className="mb-2 mr-4" />
+              <div className="flex items-end gap-2 mb-1">
+                <KawaiiIcon variant="fish" className="w-10 h-10 animate-bounce" style={{ animationDelay: "0.15s", animationDuration: "2s" }} />
+                <SpeechBubble text="453 restaurants! ★" className="mb-3 mr-2" />
+                <KawaiiIcon variant="romantic" className="w-9 h-9 animate-bounce" style={{ animationDelay: "0.4s", animationDuration: "2.3s" }} />
+              </div>
               <AniMascot className="w-36 h-auto drop-shadow-sm" />
+              <div className="flex gap-4 mt-2">
+                <KawaiiIcon variant="kebap" className="w-8 h-8 animate-bounce" style={{ animationDelay: "0.6s", animationDuration: "1.9s" }} />
+                <KawaiiIcon variant="night" className="w-8 h-8 animate-bounce" style={{ animationDelay: "0.1s", animationDuration: "2.1s" }} />
+                <KawaiiIcon variant="breakfast" className="w-8 h-8 animate-bounce" style={{ animationDelay: "0.5s", animationDuration: "2.4s" }} />
+              </div>
             </div>
           </div>
 
@@ -143,17 +152,13 @@ export default function HomePage() {
             What Are You Looking For?
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {FEATURED_COLLECTIONS.map((c, i) => (
+            {FEATURED_COLLECTIONS.map((c) => (
               <Link
                 key={c.slug}
                 href={`/istanbul/liste/${c.slug}`}
-                className="group relative border border-gray-200 rounded-lg p-4 hover:border-gray-400 hover:shadow-sm transition-all overflow-hidden"
+                className="group relative border border-gray-200 rounded-xl p-3 hover:border-gray-300 hover:shadow-md transition-all flex flex-col items-center text-center"
               >
-                {/* anime sparkle accent on hover */}
-                <span className="absolute top-1.5 right-1.5 text-[10px] opacity-0 group-hover:opacity-100 transition-opacity select-none">
-                  {i % 3 === 0 ? "✦" : i % 3 === 1 ? "★" : "◆"}
-                </span>
-                <div className="text-2xl mb-2">{c.icon}</div>
+                <KawaiiIcon variant={c.kawaii} className="w-14 h-14 mb-2 group-hover:scale-110 transition-transform duration-200" />
                 <div className="font-semibold text-sm text-gray-900">{c.label}</div>
                 <div className="text-xs text-gray-400 mt-0.5">{c.desc}</div>
               </Link>

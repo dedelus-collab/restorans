@@ -1,3 +1,5 @@
+import React from "react";
+
 // ─── Small inline chibi head — use next to section <h2> titles ───────────────
 // variant: "chef" | "reviewer" | "foodie" | "explorer" | "star"
 export function AniHead({
@@ -301,6 +303,278 @@ export function AniMascot({ className }: { className?: string }) {
       <circle cx="162" cy="68" r="2.5" fill="#FBBF24" opacity="0.7" />
       <circle cx="152" cy="80" r="1.5" fill="#FBBF24" opacity="0.5" />
       <circle cx="18"  cy="55" r="1.5" fill="#FBBF24" opacity="0.5" />
+    </svg>
+  );
+}
+
+
+// ─── Kawaii food icon characters for homepage cards ───────────────────────────
+// variant: "romantic" | "fish" | "kebap" | "scenic" | "business" | "night" | "breakfast" | "finedining"
+export function KawaiiIcon({
+  variant = "romantic",
+  className,
+  style,
+}: {
+  variant?: "romantic" | "fish" | "kebap" | "scenic" | "business" | "night" | "breakfast" | "finedining";
+  className?: string;
+  style?: React.CSSProperties;
+}) {
+  if (variant === "romantic") {
+    return (
+      <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" className={className} style={style} aria-hidden="true">
+        <path d="M28 50 Q10 38 6 24 Q4 14 14 10 Q20 8 24 12 Q26 14 28 17 Q30 14 32 12 Q36 8 42 10 Q52 14 50 24 Q46 38 28 50Z" fill="#fb7185" />
+        <circle cx="20" cy="26" r="6" fill="white" />
+        <circle cx="20" cy="26" r="4.5" fill="#f43f5e" />
+        <circle cx="20" cy="26.5" r="2.5" fill="#0d1b35" />
+        <circle cx="22" cy="24" r="1.3" fill="white" />
+        <circle cx="36" cy="26" r="6" fill="white" />
+        <circle cx="36" cy="26" r="4.5" fill="#f43f5e" />
+        <circle cx="36" cy="26.5" r="2.5" fill="#0d1b35" />
+        <circle cx="38" cy="24" r="1.3" fill="white" />
+        <ellipse cx="13" cy="32" rx="4" ry="2.5" fill="#FFB0BE" opacity="0.7" />
+        <ellipse cx="43" cy="32" rx="4" ry="2.5" fill="#FFB0BE" opacity="0.7" />
+        <path d="M22 36 Q28 42 34 36" stroke="#e05555" strokeWidth="2" fill="none" strokeLinecap="round" />
+        <path d="M5 14 Q6.5 12 8 14 Q9.5 16 6.5 18 Q3.5 16 5 14Z" fill="#fda4af" />
+        <path d="M47 10 Q48 8.5 49 10 Q50 11.5 48 13 Q46 11.5 47 10Z" fill="#fda4af" />
+        <path d="M48 42 Q49 40.5 50 42 Q51 43.5 49 45 Q47 43.5 48 42Z" fill="#fda4af" opacity="0.7" />
+      </svg>
+    );
+  }
+
+  if (variant === "fish") {
+    return (
+      <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" className={className} style={style} aria-hidden="true">
+        {/* rice base */}
+        <ellipse cx="28" cy="46" rx="22" ry="9" fill="white" stroke="#E5E7EB" strokeWidth="1" />
+        <ellipse cx="28" cy="44" rx="20" ry="7" fill="white" />
+        {/* salmon top */}
+        <path d="M6 38 Q6 22 28 20 Q50 22 50 38 Q40 42 28 42 Q16 42 6 38Z" fill="#fda4af" />
+        <path d="M12 24 Q28 18 44 24" stroke="#fb7185" strokeWidth="2" fill="none" opacity="0.5" />
+        <path d="M10 30 Q28 24 46 30" stroke="#fb7185" strokeWidth="1.5" fill="none" opacity="0.4" />
+        {/* cat ears */}
+        <path d="M12 24 Q9 15 14 17 Q17 18 16 24" fill="#fda4af" />
+        <path d="M44 24 Q47 15 42 17 Q39 18 40 24" fill="#fda4af" />
+        <path d="M13 23 Q10.5 16 14 17.5 Q16 18 15.5 23" fill="#fb7185" opacity="0.5" />
+        <path d="M43 23 Q45.5 16 42 17.5 Q40 18 40.5 23" fill="#fb7185" opacity="0.5" />
+        {/* eyes */}
+        <circle cx="22" cy="31" r="5.5" fill="white" />
+        <circle cx="22" cy="31" r="4" fill="#4a8de8" />
+        <circle cx="22" cy="31.5" r="2.3" fill="#0d1b35" />
+        <circle cx="23.5" cy="29.5" r="1.2" fill="white" />
+        <circle cx="34" cy="31" r="5.5" fill="white" />
+        <circle cx="34" cy="31" r="4" fill="#4a8de8" />
+        <circle cx="34" cy="31.5" r="2.3" fill="#0d1b35" />
+        <circle cx="35.5" cy="29.5" r="1.2" fill="white" />
+        <ellipse cx="15" cy="35" rx="3.5" ry="2" fill="#FFB0BE" opacity="0.7" />
+        <ellipse cx="41" cy="35" rx="3.5" ry="2" fill="#FFB0BE" opacity="0.7" />
+        <path d="M24 37 Q28 41 32 37" stroke="#e06070" strokeWidth="1.8" fill="none" strokeLinecap="round" />
+        {/* wasabi accent */}
+        <circle cx="49" cy="11" r="6" fill="#4ade80" />
+        <circle cx="47" cy="9" r="2" fill="#86efac" opacity="0.6" />
+        <circle cx="50" cy="13" r="1" fill="#86efac" opacity="0.5" />
+      </svg>
+    );
+  }
+
+  if (variant === "kebap") {
+    return (
+      <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" className={className} style={style} aria-hidden="true">
+        {/* flame glow */}
+        <ellipse cx="28" cy="14" rx="14" ry="8" fill="#fbbf24" opacity="0.25" />
+        {/* flame */}
+        <path d="M28 4 Q32 10 36 8 Q34 16 38 18 Q36 26 28 28 Q20 26 18 18 Q22 16 20 8 Q24 10 28 4Z" fill="#f97316" />
+        <path d="M28 8 Q30 12 33 11 Q31 17 33 19 Q31 24 28 25 Q25 24 23 19 Q25 17 23 11 Q26 12 28 8Z" fill="#fbbf24" />
+        <path d="M28 14 Q29 17 31 16 Q30 20 28 21 Q26 20 25 16 Q27 17 28 14Z" fill="white" opacity="0.55" />
+        {/* meat body */}
+        <ellipse cx="28" cy="42" rx="20" ry="13" fill="#92400e" />
+        <ellipse cx="28" cy="40" rx="19" ry="12" fill="#a16207" />
+        <path d="M16 38 Q22 34 30 38" stroke="#78350f" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+        <path d="M20 44 Q26 40 34 44" stroke="#78350f" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+        {/* eyes */}
+        <circle cx="22" cy="39" r="5.5" fill="white" />
+        <circle cx="22" cy="39" r="4" fill="#451a03" />
+        <circle cx="22" cy="39.5" r="2.3" fill="#0d1b35" />
+        <circle cx="23.5" cy="37.5" r="1.2" fill="white" />
+        <circle cx="34" cy="39" r="5.5" fill="white" />
+        <circle cx="34" cy="39" r="4" fill="#451a03" />
+        <circle cx="34" cy="39.5" r="2.3" fill="#0d1b35" />
+        <circle cx="35.5" cy="37.5" r="1.2" fill="white" />
+        <path d="M17 33 Q22 30 27 32" stroke="#78350f" strokeWidth="2" fill="none" strokeLinecap="round" />
+        <path d="M29 32 Q34 30 39 33" stroke="#78350f" strokeWidth="2" fill="none" strokeLinecap="round" />
+        <path d="M22 48 Q28 53 34 48" stroke="#c2410c" strokeWidth="2" fill="none" strokeLinecap="round" />
+        <ellipse cx="14" cy="43" rx="3.5" ry="2" fill="#FFB0BE" opacity="0.5" />
+        <ellipse cx="42" cy="43" rx="3.5" ry="2" fill="#FFB0BE" opacity="0.5" />
+      </svg>
+    );
+  }
+
+  if (variant === "scenic") {
+    return (
+      <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" className={className} style={style} aria-hidden="true">
+        {/* water body */}
+        <ellipse cx="28" cy="36" rx="22" ry="20" fill="#38bdf8" />
+        {/* sky */}
+        <path d="M6 36 Q6 14 28 10 Q50 14 50 36" fill="#7dd3fc" />
+        {/* wave */}
+        <path d="M8 36 Q14 31 20 36 Q26 41 32 36 Q38 31 48 36" stroke="white" strokeWidth="1.5" fill="none" opacity="0.6" />
+        {/* bridge */}
+        <path d="M10 26 Q28 18 46 26" stroke="white" strokeWidth="2" fill="none" opacity="0.7" />
+        <line x1="18" y1="26" x2="18" y2="20" stroke="white" strokeWidth="1.5" opacity="0.7" />
+        <line x1="38" y1="26" x2="38" y2="20" stroke="white" strokeWidth="1.5" opacity="0.7" />
+        {/* sparkle eyes */}
+        <circle cx="22" cy="32" r="6" fill="white" />
+        <circle cx="22" cy="32" r="4.5" fill="#0284c7" />
+        <circle cx="22" cy="32.5" r="2.5" fill="#0d1b35" />
+        <circle cx="24" cy="30" r="1.5" fill="white" />
+        <circle cx="20.5" cy="33" r="0.8" fill="white" />
+        <circle cx="34" cy="32" r="6" fill="white" />
+        <circle cx="34" cy="32" r="4.5" fill="#0284c7" />
+        <circle cx="34" cy="32.5" r="2.5" fill="#0d1b35" />
+        <circle cx="36" cy="30" r="1.5" fill="white" />
+        <circle cx="32.5" cy="33" r="0.8" fill="white" />
+        <ellipse cx="14" cy="37" rx="4" ry="2.5" fill="#bae6fd" opacity="0.8" />
+        <ellipse cx="42" cy="37" rx="4" ry="2.5" fill="#bae6fd" opacity="0.8" />
+        <path d="M22 41 Q28 46 34 41" stroke="#0369a1" strokeWidth="2" fill="none" strokeLinecap="round" />
+        <path d="M4 18 L4.8 15.5 L5.6 18 L8 18.8 L5.6 19.6 L4.8 22 L4 19.6 L1.5 18.8Z" fill="#FBBF24" opacity="0.8" />
+        <path d="M50 12 L50.6 10.2 L51.2 12 L53 12.6 L51.2 13.2 L50.6 15 L50 13.2 L48.2 12.6Z" fill="#FBBF24" opacity="0.7" />
+        <circle cx="46" cy="20" r="1.5" fill="#FBBF24" opacity="0.7" />
+      </svg>
+    );
+  }
+
+  if (variant === "business") {
+    return (
+      <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" className={className} style={style} aria-hidden="true">
+        {/* cup body */}
+        <path d="M10 22 L14 52 Q14 54 28 54 Q42 54 42 52 L46 22Z" fill="#b45309" />
+        <ellipse cx="28" cy="22" rx="18" ry="6" fill="#92400e" />
+        {/* cream top */}
+        <ellipse cx="28" cy="20" rx="18" ry="6" fill="#fef3c7" />
+        <path d="M12 20 Q28 14 44 20" fill="#fef9ee" />
+        {/* steam */}
+        <path d="M20 12 Q21 8 20 4" stroke="#9ca3af" strokeWidth="2" fill="none" strokeLinecap="round" />
+        <path d="M28 10 Q29 6 28 2" stroke="#9ca3af" strokeWidth="2" fill="none" strokeLinecap="round" />
+        <path d="M36 12 Q37 8 36 4" stroke="#9ca3af" strokeWidth="2" fill="none" strokeLinecap="round" />
+        {/* handle */}
+        <path d="M42 28 Q52 28 52 38 Q52 48 42 48" stroke="#78350f" strokeWidth="4" fill="none" strokeLinecap="round" />
+        {/* face */}
+        <circle cx="22" cy="36" r="5.5" fill="white" />
+        <circle cx="22" cy="36" r="4" fill="#92400e" />
+        <circle cx="22" cy="36.5" r="2.3" fill="#0d1b35" />
+        <circle cx="23.5" cy="34.5" r="1.2" fill="white" />
+        <circle cx="34" cy="36" r="5.5" fill="white" />
+        <circle cx="34" cy="36" r="4" fill="#92400e" />
+        <circle cx="34" cy="36.5" r="2.3" fill="#0d1b35" />
+        <circle cx="35.5" cy="34.5" r="1.2" fill="white" />
+        {/* glasses */}
+        <circle cx="22" cy="36" r="6.5" fill="none" stroke="#555" strokeWidth="1.2" />
+        <circle cx="34" cy="36" r="6.5" fill="none" stroke="#555" strokeWidth="1.2" />
+        <line x1="28.5" y1="36" x2="27.5" y2="36" stroke="#555" strokeWidth="1.2" />
+        <circle cx="22" cy="36" r="6" fill="#b8d4ff" opacity="0.1" />
+        <circle cx="34" cy="36" r="6" fill="#b8d4ff" opacity="0.1" />
+        <path d="M23 45 Q28 49 33 45" stroke="#78350f" strokeWidth="1.8" fill="none" strokeLinecap="round" />
+        {/* tie */}
+        <path d="M28 20 L26 28 L28 34 L30 28Z" fill="#e05555" />
+      </svg>
+    );
+  }
+
+  if (variant === "night") {
+    return (
+      <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" className={className} style={style} aria-hidden="true">
+        {/* dark circle bg */}
+        <circle cx="28" cy="28" r="26" fill="#1e1b4b" />
+        {/* crescent moon */}
+        <path d="M14 14 Q28 6 40 14 Q50 22 48 36 Q44 50 28 52 Q12 50 8 36 Q6 22 14 14Z" fill="#fbbf24" />
+        <path d="M28 10 Q42 14 44 28 Q44 44 28 50 Q14 46 11 32 Q10 18 24 11 Q26 10.5 28 10Z" fill="#1e1b4b" />
+        {/* cat ears */}
+        <path d="M16 22 Q13 14 18 16 Q21 17 20 22" fill="#fbbf24" />
+        <path d="M16 22 Q14 16 18 17 Q20 18 19.5 22" fill="#f59e0b" opacity="0.6" />
+        {/* sleepy eyes */}
+        <path d="M19 30 Q22 27 25 30" stroke="#1e1b4b" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+        <circle cx="22" cy="31" r="1.2" fill="#1e1b4b" />
+        <path d="M30 28 Q33 25 36 28" stroke="#1e1b4b" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+        <circle cx="33" cy="29" r="1.2" fill="#1e1b4b" />
+        <ellipse cx="17" cy="35" rx="3.5" ry="2" fill="#fda4af" opacity="0.6" />
+        <ellipse cx="37" cy="33" rx="3.5" ry="2" fill="#fda4af" opacity="0.6" />
+        <path d="M24 38 Q28 42 32 38" stroke="#92400e" strokeWidth="1.8" fill="none" strokeLinecap="round" />
+        {/* stars */}
+        <circle cx="8" cy="12" r="1.5" fill="white" />
+        <circle cx="48" cy="8" r="1" fill="white" />
+        <circle cx="50" cy="20" r="1.5" fill="white" />
+        <circle cx="6" cy="28" r="1" fill="white" />
+        <path d="M44 43 L44.6 41.4 L45.2 43 L46.8 43.6 L45.2 44.2 L44.6 45.8 L44 44.2 L42.4 43.6Z" fill="white" opacity="0.8" />
+        <path d="M4 42 L4.4 40.8 L4.8 42 L6 42.4 L4.8 42.8 L4.4 44 L4 42.8 L2.8 42.4Z" fill="white" opacity="0.6" />
+      </svg>
+    );
+  }
+
+  if (variant === "breakfast") {
+    return (
+      <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" className={className} style={style} aria-hidden="true">
+        {/* egg white */}
+        <ellipse cx="28" cy="38" rx="24" ry="17" fill="white" stroke="#F3F4F6" strokeWidth="1" />
+        {/* yolk */}
+        <circle cx="28" cy="30" r="15" fill="#fbbf24" />
+        <circle cx="22" cy="26" r="5" fill="#fde68a" opacity="0.5" />
+        {/* steam */}
+        <path d="M20 12 Q21 8 20 4" stroke="#d1d5db" strokeWidth="2" fill="none" strokeLinecap="round" />
+        <path d="M28 10 Q29 6 28 2" stroke="#d1d5db" strokeWidth="2" fill="none" strokeLinecap="round" />
+        <path d="M36 12 Q37 8 36 4" stroke="#d1d5db" strokeWidth="2" fill="none" strokeLinecap="round" />
+        {/* eyes */}
+        <circle cx="23" cy="29" r="5.5" fill="white" />
+        <circle cx="23" cy="29" r="4" fill="#d97706" />
+        <circle cx="23" cy="29.5" r="2.3" fill="#0d1b35" />
+        <circle cx="24.5" cy="27.5" r="1.2" fill="white" />
+        <circle cx="33" cy="29" r="5.5" fill="white" />
+        <circle cx="33" cy="29" r="4" fill="#d97706" />
+        <circle cx="33" cy="29.5" r="2.3" fill="#0d1b35" />
+        <circle cx="34.5" cy="27.5" r="1.2" fill="white" />
+        {/* happy brows */}
+        <path d="M18 23 Q23 20 28 22" stroke="#d97706" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+        <path d="M28 22 Q33 20 38 23" stroke="#d97706" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+        <path d="M21 37 Q28 44 35 37" stroke="#c2410c" strokeWidth="2" fill="#fde68a" opacity="0.35" strokeLinecap="round" />
+        <ellipse cx="16" cy="33" rx="4" ry="2.5" fill="#FFB0BE" opacity="0.6" />
+        <ellipse cx="40" cy="33" rx="4" ry="2.5" fill="#FFB0BE" opacity="0.6" />
+        {/* sun sparkle */}
+        <path d="M4 10 L5 8 L6 10 L8 11 L6 12 L5 14 L4 12 L2 11Z" fill="#fbbf24" opacity="0.7" />
+        <circle cx="50" cy="14" r="3" fill="#fbbf24" opacity="0.5" />
+      </svg>
+    );
+  }
+
+  // finedining
+  return (
+    <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" className={className} style={style} aria-hidden="true">
+      {/* plate */}
+      <ellipse cx="28" cy="52" rx="24" ry="4.5" fill="#E5E7EB" />
+      <ellipse cx="28" cy="51" rx="22" ry="3.5" fill="#F9FAFB" />
+      {/* dome */}
+      <path d="M6 46 Q6 20 28 16 Q50 20 50 46Z" fill="#d1d5db" />
+      <path d="M8 46 Q8 22 28 18 Q48 22 48 46Z" fill="#e5e7eb" />
+      {/* shine */}
+      <path d="M14 30 Q20 22 30 20" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity="0.7" />
+      {/* knob */}
+      <ellipse cx="28" cy="16" rx="5" ry="3" fill="#9ca3af" />
+      <ellipse cx="28" cy="14" rx="4" ry="2.5" fill="#d1d5db" />
+      {/* face */}
+      <circle cx="22" cy="35" r="5.5" fill="white" />
+      <circle cx="22" cy="35" r="4" fill="#6b7280" />
+      <circle cx="22" cy="35.5" r="2.3" fill="#0d1b35" />
+      <circle cx="23.5" cy="33.5" r="1.2" fill="white" />
+      <circle cx="34" cy="35" r="5.5" fill="white" />
+      <circle cx="34" cy="35" r="4" fill="#6b7280" />
+      <circle cx="34" cy="35.5" r="2.3" fill="#0d1b35" />
+      <circle cx="35.5" cy="33.5" r="1.2" fill="white" />
+      {/* elegant brows */}
+      <path d="M17 29 Q22 25 27 27" stroke="#374151" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+      <path d="M29 27 Q34 25 39 29" stroke="#374151" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+      <path d="M24 43 Q28 46 32 43" stroke="#374151" strokeWidth="1.8" fill="none" strokeLinecap="round" />
+      {/* sparkles */}
+      <path d="M2 32 L2.8 29.5 L3.6 32 L6 32.8 L3.6 33.6 L2.8 36 L2 33.6 L-0.5 32.8Z" fill="#FBBF24" opacity="0.8" />
+      <path d="M50 26 L50.8 23.5 L51.6 26 L54 26.8 L51.6 27.6 L50.8 30 L50 27.6 L47.5 26.8Z" fill="#FBBF24" opacity="0.8" />
+      <circle cx="46" cy="18" r="2" fill="#FBBF24" opacity="0.6" />
+      <circle cx="10" cy="22" r="1.5" fill="#FBBF24" opacity="0.5" />
     </svg>
   );
 }
