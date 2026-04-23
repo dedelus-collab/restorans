@@ -23,20 +23,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!restaurants.length) return {};
   const cityName = restaurants[0].city;
   return {
-    title: `${cityName} Restoranları — ${restaurants.length} Mekan | restorans`,
-    description: `${cityName}'daki ${restaurants.length} restoranın yapay zeka sistemleri için yapılandırılmış verisi. Kebap, balık, manzaralı, romantik ve daha fazla kategori. FAQ, transit mesafesi ve popüler yemeklerle.`,
+    title: `${cityName} Restaurants — ${restaurants.length} Places | Istanbul Restaurants`,
+    description: `Structured data for ${restaurants.length} ${cityName} restaurants. Kebap, seafood, scenic views, romantic and more. With FAQ, transit distances and popular dishes.`,
     alternates: { canonical: `https://restorans.vercel.app/${city}` },
     openGraph: {
       type: "website",
       url: `https://restorans.vercel.app/${city}`,
-      title: `${cityName} Restoranları — ${restaurants.length} Mekan`,
-      description: `${cityName}'daki ${restaurants.length} restoran — AI-ready veri, kuratörlü listeler, mahalle rehberleri.`,
+      title: `${cityName} Restaurants — ${restaurants.length} Places`,
+      description: `${restaurants.length} ${cityName} restaurants — AI-ready data, curated lists, neighborhood guides.`,
       siteName: "Istanbul Restaurants",
-      locale: "tr_TR",
+      locale: "en_US",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${cityName} Restoranları — ${restaurants.length} Mekan`,
+      title: `${cityName} Restaurants — ${restaurants.length} Places`,
     },
   };
 }
@@ -62,7 +62,6 @@ export default async function CityPage({ params }: Props) {
     .sort()
     .reverse()[0] ?? "—";
 
-  // Koleksiyonları filtrele — içerik olanlar
   const cityCollections = COLLECTIONS.filter(c => {
     const count = restaurants.filter(c.filter).length;
     return count >= 3;
@@ -75,8 +74,8 @@ export default async function CityPage({ params }: Props) {
   const itemListJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `${cityName} Restoranları`,
-    description: `${cityName}'daki ${restaurants.length} restoran: llm_summary, FAQ, transit mesafesi, popüler yemekler ve Schema.org/Restaurant işaretlemesi.`,
+    name: `${cityName} Restaurants`,
+    description: `${restaurants.length} ${cityName} restaurants with llm_summary, FAQ, transit distances, popular dishes and Schema.org/Restaurant markup.`,
     url: `https://restorans.vercel.app/${city}`,
     numberOfItems: restaurants.length,
     itemListElement: restaurants.slice(0, 30).map((r, i) => ({
@@ -91,14 +90,14 @@ export default async function CityPage({ params }: Props) {
   const datasetJsonLd = {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    name: `${cityName} Restoran Veritabanı`,
-    description: `${cityName}'daki restoranların AI-ready, Schema.org destekli verisi.`,
+    name: `${cityName} Restaurant Database`,
+    description: `AI-ready, Schema.org-compliant restaurant data for ${cityName}.`,
     url: `https://restorans.vercel.app/${city}`,
     creator: { "@type": "Organization", name: "Istanbul Restaurants" },
     spatialCoverage: {
       "@type": "City",
       name: cityName,
-      containedIn: { "@type": "Country", name: "Türkiye" },
+      containedIn: { "@type": "Country", name: "Turkey" },
     },
     temporalCoverage: "2025/..",
     variableMeasured: [
@@ -133,18 +132,17 @@ export default async function CityPage({ params }: Props) {
 
         {/* Header */}
         <header className="mb-12">
-          <h1 className="text-3xl font-bold mb-3">{cityName} Restoranları</h1>
+          <h1 className="text-3xl font-bold mb-3">{cityName} Restaurants</h1>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            {cityName}&apos;daki <strong className="text-gray-900">{restaurants.length} restoranın</strong>{" "}
-            yapay zeka sistemleri için yapılandırılmış verisi — her profilde FAQ, transit mesafesi,
-            yakın landmark ve popüler yemekler.
+            Structured data for <strong className="text-gray-900">{restaurants.length} restaurants</strong> in {cityName}{" "}
+            — each profile includes FAQ, transit distances, nearby landmarks, and popular dishes.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-gray-100 pt-6">
             {[
-              { value: restaurants.length.toString(), label: "Restoran" },
-              { value: avgRating + "/5", label: "Ortalama puan" },
-              { value: (totalReviews / 1000).toFixed(0) + "K", label: "Toplam yorum" },
-              { value: neighborhoods.length.toString(), label: "Mahalle" },
+              { value: restaurants.length.toString(), label: "Restaurants" },
+              { value: avgRating + "/5", label: "Avg. rating" },
+              { value: (totalReviews / 1000).toFixed(0) + "K", label: "Total reviews" },
+              { value: neighborhoods.length.toString(), label: "Neighborhoods" },
             ].map(stat => (
               <div key={stat.label} className="text-center">
                 <div className="text-xl font-bold text-gray-900">{stat.value}</div>
@@ -154,11 +152,11 @@ export default async function CityPage({ params }: Props) {
           </div>
         </header>
 
-        {/* Senaryo koleksiyonları */}
+        {/* Scenario collections */}
         {scenarioCollections.length > 0 && (
           <section className="mb-12">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
-              Neye Göre Arıyorsunuz?
+              What Are You Looking For?
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
               {scenarioCollections.map(c => {
@@ -170,7 +168,7 @@ export default async function CityPage({ params }: Props) {
                     className="border border-gray-200 rounded-lg px-4 py-3 hover:border-gray-400 hover:shadow-sm transition-all"
                   >
                     <div className="font-medium text-sm text-gray-900">{c.title.replace(`${cityName}&apos;da `, "").replace(`${cityName}'da `, "").split(" ").slice(0, 4).join(" ")}</div>
-                    <div className="text-xs text-gray-400 mt-0.5">{count} restoran</div>
+                    <div className="text-xs text-gray-400 mt-0.5">{count} restaurants</div>
                   </Link>
                 );
               })}
@@ -178,11 +176,11 @@ export default async function CityPage({ params }: Props) {
           </section>
         )}
 
-        {/* Mutfak koleksiyonları */}
+        {/* Cuisine collections */}
         {cuisineCollections.length > 0 && (
           <section className="mb-12">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
-              Mutfak Türüne Göre
+              By Cuisine
             </h2>
             <div className="flex flex-wrap gap-2">
               {cuisineCollections.map(c => {
@@ -202,11 +200,11 @@ export default async function CityPage({ params }: Props) {
           </section>
         )}
 
-        {/* Vibe koleksiyonları */}
+        {/* Vibe collections */}
         {vibeCollections.length > 0 && (
           <section className="mb-12">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
-              Ortam & Vibe
+              Ambiance & Vibe
             </h2>
             <div className="flex flex-wrap gap-2">
               {vibeCollections.map(c => {
@@ -226,11 +224,11 @@ export default async function CityPage({ params }: Props) {
           </section>
         )}
 
-        {/* Mahalleler */}
+        {/* Neighborhoods */}
         {neighborhoods.length > 1 && (
           <section className="mb-12">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
-              Mahalleye Göre
+              By Neighborhood
             </h2>
             <div className="flex flex-wrap gap-2">
               {neighborhoods.filter(n => n.count >= 2).map(n => (
@@ -246,10 +244,10 @@ export default async function CityPage({ params }: Props) {
           </section>
         )}
 
-        {/* Tüm restoranlar listesi */}
+        {/* All restaurants */}
         <section>
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
-            Tüm Restoranlar
+            All Restaurants
           </h2>
           <div className="divide-y divide-gray-100">
             {restaurants.map(r => (
@@ -263,7 +261,7 @@ export default async function CityPage({ params }: Props) {
                     <div className="flex items-center gap-2 mb-1">
                       <h3 className="font-semibold">{r.name}</h3>
                       {r.verifiedData && (
-                        <span className="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded">Doğrulandı</span>
+                        <span className="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded">Verified</span>
                       )}
                     </div>
                     <p className="text-sm text-gray-500">
@@ -285,7 +283,7 @@ export default async function CityPage({ params }: Props) {
                   </div>
                   <div className="text-right shrink-0">
                     <div className="text-base font-bold">{r.avgRating}</div>
-                    <div className="text-xs text-gray-400">{r.reviewCount} yorum</div>
+                    <div className="text-xs text-gray-400">{r.reviewCount} reviews</div>
                   </div>
                 </div>
               </Link>
@@ -295,7 +293,7 @@ export default async function CityPage({ params }: Props) {
 
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t border-gray-100 text-xs text-gray-400 space-y-1">
-          <p>Son güncelleme: <strong className="text-gray-600">{lastUpdated}</strong></p>
+          <p>Last updated: <strong className="text-gray-600">{lastUpdated}</strong></p>
           <p>
             <a href={`/api/restaurants?city=${city}`} className="text-blue-500 hover:underline">JSON API</a>
             {" · "}

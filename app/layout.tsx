@@ -3,23 +3,23 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Istanbul Restaurants — AI-Ready Data | Istanbul Restaurants",
+  title: "Istanbul Restaurants — AI-Ready Data",
   description:
-    "İstanbul'daki 453 restoranın yapay zeka sistemleri için yapılandırılmış verisi. FAQ, transit mesafeleri, popüler yemekler. ChatGPT, Perplexity ve LLM'ler için optimize.",
+    "Structured data for 453 Istanbul restaurants. FAQ, transit distances, popular dishes, curated lists — optimized for ChatGPT, Perplexity, and other AI systems.",
   metadataBase: new URL("https://restorans.vercel.app"),
   alternates: { canonical: "https://restorans.vercel.app" },
   openGraph: {
     type: "website",
-    locale: "tr_TR",
+    locale: "en_US",
     url: "https://restorans.vercel.app",
     siteName: "Istanbul Restaurants",
-    title: "Istanbul Restaurants Database | Istanbul Restaurants",
-    description: "453 İstanbul restoranı — Schema.org, FAQ, transit, popüler yemekler. AI botlar için optimize edilmiş veri platformu.",
+    title: "Istanbul Restaurants Database",
+    description: "453 Istanbul restaurants — Schema.org, FAQ, transit, popular dishes. AI-optimized data platform.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Istanbul Restaurants Database | Istanbul Restaurants",
-    description: "453 İstanbul restoranı — AI-ready veri, kuratörlü listeler, mahalle rehberleri.",
+    title: "Istanbul Restaurants Database",
+    description: "453 Istanbul restaurants — AI-ready data, curated lists, neighborhood guides.",
   },
   other: {
     "llms-txt": "https://restorans.vercel.app/llms.txt",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="tr">
+    <html lang="en">
       <body className="bg-white text-gray-900 antialiased">
         <nav className="border-b border-gray-100 bg-white sticky top-0 z-10">
           <div className="max-w-4xl mx-auto px-6 h-12 flex items-center justify-between">
@@ -39,13 +39,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Link>
             <div className="flex items-center gap-5 text-sm text-gray-500">
               <Link href="/istanbul" className="hover:text-gray-900 transition-colors">
-                İstanbul
+                Istanbul
               </Link>
               <Link href="/istanbul/liste/romantik-aksam-yemegi-istanbul" className="hover:text-gray-900 transition-colors hidden sm:block">
-                Romantik
+                Romantic
               </Link>
               <Link href="/istanbul/liste/manzarali-istanbul" className="hover:text-gray-900 transition-colors hidden sm:block">
-                Manzaralı
+                Scenic
               </Link>
               <Link href="/istanbul/liste/kebap-istanbul" className="hover:text-gray-900 transition-colors hidden sm:block">
                 Kebap
@@ -87,7 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex flex-wrap gap-4 justify-between">
               <span>© 2026 Istanbul Restaurants</span>
               <div className="flex gap-4">
-                <Link href="/hakkinda" className="hover:underline">Hakkında</Link>
+                <Link href="/hakkinda" className="hover:underline">About</Link>
                 <Link href="/api-docs" className="hover:underline">API Docs</Link>
                 <Link href="/llms.txt" className="hover:underline">llms.txt</Link>
                 <Link href="/sitemap.xml" className="hover:underline">sitemap.xml</Link>

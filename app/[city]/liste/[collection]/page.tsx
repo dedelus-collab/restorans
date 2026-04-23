@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const col = getCollection(colSlug);
   if (!col) return {};
   return {
-    title: `${col.title} | restorans`,
+    title: `${col.title} | Istanbul Restaurants`,
     description: col.description,
     alternates: { canonical: `https://restorans.vercel.app/${city}/liste/${colSlug}` },
     openGraph: {
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: col.title,
       description: col.description,
       siteName: "Istanbul Restaurants",
-      locale: "tr_TR",
+      locale: "en_US",
     },
     twitter: {
       card: "summary_large_image",
@@ -45,7 +45,6 @@ export default async function CollectionPage({ params }: Props) {
 
   const cityName = allRestaurants[0]?.city ?? city;
 
-  // Yan panel: mahalleler içinde kaçı var
   const hoodMap = new Map<string, number>();
   for (const r of list) {
     if (!r.neighborhood) continue;
@@ -56,17 +55,12 @@ export default async function CollectionPage({ params }: Props) {
   const avgRating = (list.reduce((s, r) => s + (r.avgRating || 0), 0) / list.length).toFixed(1);
   const totalReviews = list.reduce((s, r) => s + (r.reviewCount || 0), 0);
 
-  // Cross-link: related koleksiyonlar
   const relatedCollections = (col.related ?? [])
     .map(slug => COLLECTIONS.find(c => c.slug === slug))
     .filter((c): c is NonNullable<typeof c> => !!c)
-    .map(c => ({
-      ...c,
-      count: allRestaurants.filter(c.filter).length,
-    }))
+    .map(c => ({ ...c, count: allRestaurants.filter(c.filter).length }))
     .filter(c => c.count > 0);
 
-  // Diğer aynı kategori koleksiyonları (related'da olmayanlar)
   const sameCategoryOthers = COLLECTIONS.filter(
     c => c.category === col.category &&
          c.slug !== colSlug &&
@@ -111,9 +105,9 @@ export default async function CollectionPage({ params }: Props) {
   };
 
   const categoryLabels: Record<string, string> = {
-    cuisine: "Mutfak",
-    scenario: "Senaryo",
-    vibe: "Ortam & Vibe",
+    cuisine: "Cuisine",
+    scenario: "Scenario",
+    vibe: "Ambiance & Vibe",
   };
 
   return (
@@ -126,7 +120,7 @@ export default async function CollectionPage({ params }: Props) {
         <nav className="text-xs text-gray-400 mb-4 flex gap-2">
           <Link href={`/${city}`} className="hover:underline">{cityName}</Link>
           <span>/</span>
-          <Link href={`/${city}#listeler`} className="hover:underline">Listeler</Link>
+          <Link href={`/${city}#listeler`} className="hover:underline">Lists</Link>
           <span>/</span>
           <span className="text-gray-700">{col.title}</span>
         </nav>
@@ -138,16 +132,16 @@ export default async function CollectionPage({ params }: Props) {
           <h1 className="text-3xl font-bold mt-1 mb-3">{col.title}</h1>
           <p className="text-gray-600 leading-relaxed mb-5">{col.description}</p>
           <div className="flex flex-wrap gap-5 text-sm text-gray-500 border-t border-gray-100 pt-5">
-            <span><strong className="text-gray-900">{list.length}</strong> restoran</span>
-            <span><strong className="text-gray-900">{avgRating}</strong> ortalama puan</span>
-            <span><strong className="text-gray-900">{totalReviews.toLocaleString("tr-TR")}</strong> yorum</span>
+            <span><strong className="text-gray-900">{list.length}</strong> restaurants</span>
+            <span><strong className="text-gray-900">{avgRating}</strong> avg. rating</span>
+            <span><strong className="text-gray-900">{totalReviews.toLocaleString("en-US")}</strong> reviews</span>
           </div>
         </header>
 
-        {/* Mahalle dağılımı */}
+        {/* Neighborhood breakdown */}
         {topHoods.length > 1 && (
           <section className="mb-8">
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Mahalleler</h2>
+            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Neighborhoods</h2>
             <div className="flex flex-wrap gap-2">
               {topHoods.map(([name, count]) => (
                 <span key={name} className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">
@@ -158,7 +152,7 @@ export default async function CollectionPage({ params }: Props) {
           </section>
         )}
 
-        {/* Restoran listesi */}
+        {/* Restaurant list */}
         <div className="divide-y divide-gray-100">
           {list.map((r, idx) => (
             <Link
@@ -176,7 +170,7 @@ export default async function CollectionPage({ params }: Props) {
                     )}
                     <h2 className="font-semibold">{r.name}</h2>
                     {r.verifiedData && (
-                      <span className="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded">Doğrulandı</span>
+                      <span className="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded">Verified</span>
                     )}
                   </div>
                   <p className="text-sm text-gray-500">
@@ -185,7 +179,7 @@ export default async function CollectionPage({ params }: Props) {
                   <p className="text-sm text-gray-600 mt-2">{r.llmSummary}</p>
                   {r.specialFeatures?.popularDishes && r.specialFeatures.popularDishes.length > 0 && (
                     <p className="text-xs text-gray-500 mt-2">
-                      <span className="text-gray-400">Popüler: </span>
+                      <span className="text-gray-400">Popular: </span>
                       {r.specialFeatures.popularDishes.slice(0, 3).join(" · ")}
                     </p>
                   )}
@@ -197,7 +191,7 @@ export default async function CollectionPage({ params }: Props) {
                 </div>
                 <div className="text-right shrink-0">
                   <div className="text-lg font-bold">{r.avgRating}</div>
-                  <div className="text-xs text-gray-400">{r.reviewCount} yorum</div>
+                  <div className="text-xs text-gray-400">{r.reviewCount} reviews</div>
                   <div className="text-xs text-gray-400 mt-0.5">{getPriceSymbol(r.priceRange)}</div>
                 </div>
               </div>
@@ -205,11 +199,11 @@ export default async function CollectionPage({ params }: Props) {
           ))}
         </div>
 
-        {/* Cross-link: İlgili koleksiyonlar */}
+        {/* Related collections */}
         {relatedCollections.length > 0 && (
           <section className="mt-16 pt-8 border-t border-gray-100">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-5">
-              Bunlar da İlginizi Çekebilir
+              You Might Also Like
             </h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {relatedCollections.map(c => (
@@ -223,7 +217,7 @@ export default async function CollectionPage({ params }: Props) {
                       <div className="font-medium text-sm text-gray-900 group-hover:text-gray-700">
                         {c.title}
                       </div>
-                      <div className="text-xs text-gray-400 mt-0.5">{c.count} restoran</div>
+                      <div className="text-xs text-gray-400 mt-0.5">{c.count} restaurants</div>
                     </div>
                     <span className="text-gray-300 group-hover:text-gray-500 text-lg">→</span>
                   </div>
@@ -233,12 +227,12 @@ export default async function CollectionPage({ params }: Props) {
           </section>
         )}
 
-        {/* Aynı kategori — diğerleri */}
+        {/* Same category others */}
         {sameCategoryOthers.length > 0 && (
           <section className="mt-8">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-              {col.category === "cuisine" ? "Diğer Mutfaklar" :
-               col.category === "scenario" ? "Diğer Senaryolar" : "Diğer Listeler"}
+              {col.category === "cuisine" ? "Other Cuisines" :
+               col.category === "scenario" ? "Other Scenarios" : "Other Lists"}
             </h2>
             <div className="flex flex-wrap gap-2">
               {sameCategoryOthers.map(c => (
@@ -258,11 +252,11 @@ export default async function CollectionPage({ params }: Props) {
         <footer className="mt-8 text-xs text-gray-400 space-y-1">
           <p>
             <Link href={`/${city}`} className="text-blue-500 hover:underline">
-              ← {cityName} tüm restoranları
+              ← All {cityName} restaurants
             </Link>
           </p>
           <p>
-            Makine-okunabilir:{" "}
+            Machine-readable:{" "}
             <a href={`/api/restaurants?city=${city}`} className="text-blue-500 hover:underline">
               JSON API
             </a>

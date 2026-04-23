@@ -29,20 +29,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const hoodName = first.neighborhood;
   const cityName = first.city;
   return {
-    title: `${hoodName} Restoranları — ${cityName} | restorans`,
-    description: `${hoodName}'daki ${list.length} restoran: mutfak tipleri, fiyat aralığı, imza yemekler, yürüme mesafesindeki metro ve landmark bilgisi. Yapay zeka sistemleri için yapılandırılmış veri.`,
+    title: `${hoodName} Restaurants — ${cityName} | Istanbul Restaurants`,
+    description: `${list.length} restaurants in ${hoodName}: cuisine types, price ranges, signature dishes, walking distances to metro and landmarks. Structured data for AI systems.`,
     alternates: { canonical: `https://restorans.vercel.app/${city}/mahalle/${hood}` },
     openGraph: {
       type: "website",
       url: `https://restorans.vercel.app/${city}/mahalle/${hood}`,
-      title: `${hoodName} Restoranları — ${cityName}`,
-      description: `${hoodName}'daki ${list.length} restoran — FAQ, transit, popüler yemekler.`,
+      title: `${hoodName} Restaurants — ${cityName}`,
+      description: `${list.length} restaurants in ${hoodName} — FAQ, transit, popular dishes.`,
       siteName: "Istanbul Restaurants",
-      locale: "tr_TR",
+      locale: "en_US",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${hoodName} Restoranları — ${cityName}`,
+      title: `${hoodName} Restaurants — ${cityName}`,
     },
   };
 }
@@ -56,7 +56,6 @@ export default async function NeighborhoodPage({ params }: Props) {
   const hoodName = first.neighborhood;
   const cityName = first.city;
 
-  // Mutfak dagilimi
   const cuisines = new Map<string, number>();
   for (const r of list) {
     const c = (r.cuisine || "").split(/[,/]/)[0].trim();
@@ -64,11 +63,9 @@ export default async function NeighborhoodPage({ params }: Props) {
   }
   const topCuisines = Array.from(cuisines.entries()).sort((a, b) => b[1] - a[1]).slice(0, 5);
 
-  // Fiyat dagilimi
   const priceDist = [0, 0, 0, 0];
   for (const r of list) priceDist[(r.priceRange || 1) - 1]++;
 
-  // En yakin landmark'lar (tumu birlestirip sirala)
   const landmarkMap = new Map<string, number>();
   for (const r of list) {
     for (const lm of r.nearby?.landmarks || []) {
@@ -78,7 +75,6 @@ export default async function NeighborhoodPage({ params }: Props) {
   }
   const topLandmarks = Array.from(landmarkMap.entries()).sort((a, b) => a[1] - b[1]).slice(0, 6);
 
-  // En sik transit
   const transitMap = new Map<string, { type: string; min: number }>();
   for (const r of list) {
     for (const t of r.nearby?.transit || []) {
@@ -92,14 +88,10 @@ export default async function NeighborhoodPage({ params }: Props) {
     .sort((a, b) => a[1].min - b[1].min)
     .slice(0, 5);
 
-  // Ortalama rating ve toplam yorum
   const avgRating = (list.reduce((s, r) => s + (r.avgRating || 0), 0) / list.length).toFixed(1);
   const totalReviews = list.reduce((s, r) => s + (r.reviewCount || 0), 0);
-
-  // Sirala: rating desc
   const sorted = [...list].sort((a, b) => (b.avgRating || 0) - (a.avgRating || 0));
 
-  // Ortalama koordinat (merkez nokta)
   const avgLat = list.reduce((s, r) => s + r.lat, 0) / list.length;
   const avgLng = list.reduce((s, r) => s + r.lng, 0) / list.length;
 
@@ -108,7 +100,7 @@ export default async function NeighborhoodPage({ params }: Props) {
     "@type": "Place",
     "@id": `https://restorans.vercel.app/${city}/mahalle/${hood}`,
     name: hoodName,
-    description: `${cityName}'un ${hoodName} mahallesi. ${list.length} restoran, ortalama puan ${avgRating}/5.`,
+    description: `${hoodName} neighborhood in ${cityName}. ${list.length} restaurants, avg. rating ${avgRating}/5.`,
     url: `https://restorans.vercel.app/${city}/mahalle/${hood}`,
     geo: {
       "@type": "GeoCoordinates",
@@ -131,8 +123,8 @@ export default async function NeighborhoodPage({ params }: Props) {
   const itemListJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `${hoodName} Restoranları`,
-    description: `${hoodName}'daki ${list.length} restoran.`,
+    name: `${hoodName} Restaurants`,
+    description: `${list.length} restaurants in ${hoodName}.`,
     url: `https://restorans.vercel.app/${city}/mahalle/${hood}`,
     numberOfItems: list.length,
     itemListElement: sorted.map((r, i) => ({
@@ -163,21 +155,20 @@ export default async function NeighborhoodPage({ params }: Props) {
         <nav className="text-xs text-gray-400 mb-4">
           <Link href={`/${city}`} className="hover:underline">{cityName}</Link>
           <span className="mx-2">/</span>
-          <span>Mahalle</span>
+          <span>Neighborhoods</span>
           <span className="mx-2">/</span>
           <span className="text-gray-700">{hoodName}</span>
         </nav>
 
         <header className="mb-10">
-          <h1 className="text-3xl font-bold mb-3">{hoodName} Restoranları</h1>
+          <h1 className="text-3xl font-bold mb-3">{hoodName} Restaurants</h1>
           <p className="text-gray-600 mb-4 leading-relaxed">
-            {cityName}&apos;un {hoodName} bölgesinde bulunan{" "}
-            <strong className="text-gray-900">{list.length} restoran</strong>.
-            Ortalama puan <strong className="text-gray-900">{avgRating}/5</strong>,
-            toplam <strong className="text-gray-900">{totalReviews.toLocaleString("tr-TR")}</strong> yorum.
+            <strong className="text-gray-900">{list.length} restaurants</strong> in the {hoodName} area of {cityName}.
+            Avg. rating <strong className="text-gray-900">{avgRating}/5</strong>,
+            <strong className="text-gray-900"> {totalReviews.toLocaleString("en-US")}</strong> total reviews.
             {topCuisines.length > 0 && (
               <>
-                {" "}Bölgede öne çıkan mutfaklar:{" "}
+                {" "}Top cuisines:{" "}
                 {topCuisines.map(([c], i) => (
                   <span key={c}>
                     <strong className="text-gray-900">{c}</strong>
@@ -190,10 +181,10 @@ export default async function NeighborhoodPage({ params }: Props) {
           </p>
 
           <div className="flex flex-wrap gap-4 text-sm text-gray-500 border-t border-gray-100 pt-5">
-            <span><strong className="text-gray-900">{list.length}</strong> restoran</span>
-            <span><strong className="text-gray-900">{avgRating}</strong> ortalama</span>
+            <span><strong className="text-gray-900">{list.length}</strong> restaurants</span>
+            <span><strong className="text-gray-900">{avgRating}</strong> avg.</span>
             <span>
-              Fiyat: {priceDist.map((c, i) => c > 0 ? (
+              Price: {priceDist.map((c, i) => c > 0 ? (
                 <span key={i} className="ml-1">{getPriceSymbol(i + 1)}:{c}</span>
               ) : null)}
             </span>
@@ -203,12 +194,12 @@ export default async function NeighborhoodPage({ params }: Props) {
         {topLandmarks.length > 0 && (
           <section className="mb-10 bg-amber-50 border border-amber-100 rounded-lg p-5">
             <h2 className="text-sm font-semibold text-amber-900 uppercase tracking-wide mb-3">
-              Yakındaki landmark&apos;lar
+              Nearby Landmarks
             </h2>
             <ul className="text-sm text-amber-900 space-y-1">
               {topLandmarks.map(([name, dist]) => (
                 <li key={name}>
-                  <strong>{name}</strong> — {dist < 1000 ? `${dist}m` : `${(dist / 1000).toFixed(1)}km`} mesafede
+                  <strong>{name}</strong> — {dist < 1000 ? `${dist}m` : `${(dist / 1000).toFixed(1)}km`} away
                 </li>
               ))}
             </ul>
@@ -218,7 +209,7 @@ export default async function NeighborhoodPage({ params }: Props) {
         {topTransit.length > 0 && (
           <section className="mb-10 bg-blue-50 border border-blue-100 rounded-lg p-5">
             <h2 className="text-sm font-semibold text-blue-900 uppercase tracking-wide mb-3">
-              Ulaşım
+              Transit
             </h2>
             <ul className="text-sm text-blue-900 space-y-1">
               {topTransit.map(([name, info]) => (
@@ -243,7 +234,7 @@ export default async function NeighborhoodPage({ params }: Props) {
                   <div className="flex items-center gap-2 mb-1">
                     <h2 className="font-semibold">{r.name}</h2>
                     {r.verifiedData && (
-                      <span className="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded">Doğrulandı</span>
+                      <span className="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded">Verified</span>
                     )}
                   </div>
                   <p className="text-sm text-gray-500">
@@ -252,7 +243,7 @@ export default async function NeighborhoodPage({ params }: Props) {
                   <p className="text-sm text-gray-600 mt-2">{r.llmSummary}</p>
                   {r.specialFeatures?.popularDishes && r.specialFeatures.popularDishes.length > 0 && (
                     <p className="text-xs text-gray-500 mt-2">
-                      <span className="text-gray-400">Popüler: </span>
+                      <span className="text-gray-400">Popular: </span>
                       {r.specialFeatures.popularDishes.slice(0, 3).join(" · ")}
                     </p>
                   )}
@@ -264,7 +255,7 @@ export default async function NeighborhoodPage({ params }: Props) {
                 </div>
                 <div className="text-right shrink-0">
                   <div className="text-lg font-bold">{r.avgRating}</div>
-                  <div className="text-xs text-gray-400">{r.reviewCount} yorum</div>
+                  <div className="text-xs text-gray-400">{r.reviewCount} reviews</div>
                 </div>
               </div>
             </Link>
@@ -274,11 +265,11 @@ export default async function NeighborhoodPage({ params }: Props) {
         <footer className="mt-16 pt-8 border-t border-gray-100 text-xs text-gray-400 space-y-1">
           <p>
             <Link href={`/${city}`} className="text-blue-500 hover:underline">
-              ← {cityName} tüm restoranları
+              ← All {cityName} restaurants
             </Link>
           </p>
           <p>
-            Makine-okunabilir veri:{" "}
+            Machine-readable data:{" "}
             <a href={`/api/restaurants?city=${city}`} className="text-blue-500 hover:underline">
               /api/restaurants?city={city}
             </a>

@@ -3,29 +3,29 @@ import type { Metadata } from "next";
 import { getAllCuisines, getAllNeighborhoods, restaurants } from "@/data/restaurants";
 
 export const metadata: Metadata = {
-  title: "Restorans — İstanbul Restoran Rehberi | Istanbul Restaurants",
+  title: "Restorans — Istanbul Restaurant Guide | Istanbul Restaurants",
   description:
-    "Restorans: İstanbul'daki 453 restoranın rehberi. Kebap, balık, manzaralı, romantik, iş yemeği — her senaryo için kuratörlü listeler. ChatGPT, Perplexity ve AI sistemleri için optimize edilmiş veri.",
+    "Restorans: guide to 453 Istanbul restaurants. Kebap, seafood, scenic views, romantic, business lunch — curated lists for every occasion. Optimized for ChatGPT, Perplexity, and AI systems.",
   alternates: { canonical: "https://restorans.vercel.app" },
   openGraph: {
     title: "Istanbul Restaurants | Istanbul Restaurants",
-    description: "453 İstanbul restoranı — AI-ready veri, kuratörlü listeler, mahalle rehberleri.",
+    description: "453 Istanbul restaurants — AI-ready data, curated lists, neighborhood guides.",
     url: "https://restorans.vercel.app",
     siteName: "Istanbul Restaurants",
-    locale: "tr_TR",
+    locale: "en_US",
     type: "website",
   },
 };
 
 const FEATURED_COLLECTIONS = [
-  { slug: "romantik-aksam-yemegi-istanbul", label: "Romantik", icon: "♥", desc: "Özel geceler için" },
-  { slug: "balik-deniz-urunleri-istanbul", label: "Balık", icon: "🐟", desc: "Taze Boğaz balığı" },
-  { slug: "kebap-istanbul", label: "Kebap", icon: "🔥", desc: "Adana'dan İskender'e" },
-  { slug: "manzarali-istanbul", label: "Manzaralı", icon: "🌉", desc: "Boğaz & silüet" },
-  { slug: "is-yemegi-istanbul", label: "İş Yemeği", icon: "💼", desc: "Sessiz & hızlı" },
-  { slug: "gec-acik-istanbul", label: "Gece", icon: "🌙", desc: "Gece geç saate kadar" },
-  { slug: "kahvalti-istanbul", label: "Kahvaltı", icon: "☕", desc: "Serpme & brunch" },
-  { slug: "fine-dining-istanbul", label: "Fine Dining", icon: "✨", desc: "Prestijli mekanlar" },
+  { slug: "romantik-aksam-yemegi-istanbul", label: "Romantic", icon: "♥", desc: "For special evenings" },
+  { slug: "balik-deniz-urunleri-istanbul", label: "Balık", icon: "🐟", desc: "Fresh Bosphorus fish" },
+  { slug: "kebap-istanbul", label: "Kebap", icon: "🔥", desc: "Adana to İskender" },
+  { slug: "manzarali-istanbul", label: "Scenic", icon: "🌉", desc: "Bosphorus & skyline views" },
+  { slug: "is-yemegi-istanbul", label: "Business", icon: "💼", desc: "Quiet & efficient" },
+  { slug: "gec-acik-istanbul", label: "Late Night", icon: "🌙", desc: "Open until late" },
+  { slug: "kahvalti-istanbul", label: "Breakfast", icon: "☕", desc: "Serpme & brunch" },
+  { slug: "fine-dining-istanbul", label: "Fine Dining", icon: "✨", desc: "Prestigious venues" },
 ];
 
 export default function HomePage() {
@@ -43,8 +43,8 @@ export default function HomePage() {
     "@type": "WebSite",
     name: "Istanbul Restaurants",
     url: "https://restorans.vercel.app",
-    description: "İstanbul restoranlarının yapay zeka sistemleri için yapılandırılmış verisi.",
-    inLanguage: "tr",
+    description: "Structured data for Istanbul restaurants, optimized for AI systems.",
+    inLanguage: "en",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://restorans.vercel.app/api/restaurants?city=istanbul&q={search_term_string}",
@@ -57,18 +57,18 @@ export default function HomePage() {
     "@type": "Organization",
     name: "Istanbul Restaurants",
     url: "https://restorans.vercel.app",
-    description: "İstanbul restoranları için AI-native veri platformu.",
+    description: "AI-native data platform for Istanbul restaurants.",
     areaServed: { "@type": "City", name: "İstanbul" },
   };
 
   const datasetJsonLd = {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    name: "İstanbul Restoran Veritabanı",
-    description: `İstanbul'daki ${istanbulRestaurants.length} restoranın AI-ready verisi. llm_summary, FAQ, transit mesafeleri, popüler yemekler ve Schema.org/Restaurant işaretlemesi.`,
+    name: "Istanbul Restaurant Database",
+    description: `AI-ready data for ${istanbulRestaurants.length} Istanbul restaurants. llm_summary, FAQ, transit distances, popular dishes, and Schema.org/Restaurant markup.`,
     url: "https://restorans.vercel.app",
     creator: { "@type": "Organization", name: "Istanbul Restaurants" },
-    spatialCoverage: { "@type": "City", name: "İstanbul", containedIn: { "@type": "Country", name: "Türkiye" } },
+    spatialCoverage: { "@type": "City", name: "İstanbul", containedIn: { "@type": "Country", name: "Turkey" } },
     temporalCoverage: "2025/..",
     numberOfItems: istanbulRestaurants.length,
     variableMeasured: [
@@ -81,7 +81,7 @@ export default function HomePage() {
         "@type": "DataDownload",
         encodingFormat: "application/json",
         contentUrl: "https://restorans.vercel.app/api/restaurants?city=istanbul&limit=100",
-        description: "JSON API — filtreli sayfalı erişim",
+        description: "JSON API — filtered paginated access",
       },
     ],
   };
@@ -97,26 +97,26 @@ export default function HomePage() {
         {/* Hero */}
         <header className="mb-14">
           <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-3">
-            AI-Native Restoran Rehberi
+            AI-Native Restaurant Guide
           </p>
           <h1 className="text-4xl font-bold mb-4 leading-tight">
-            İstanbul&apos;da Ne Yenir?
+            Where to Eat in Istanbul?
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
-            453 İstanbul restoranı — her biri için <strong className="text-gray-900">popüler yemekler</strong>,{" "}
-            <strong className="text-gray-900">transit mesafesi</strong>,{" "}
-            <strong className="text-gray-900">yakın landmark</strong> ve{" "}
-            <strong className="text-gray-900">sıkça sorulan sorular</strong>.
-            ChatGPT, Perplexity ve diğer AI sistemleri için yapılandırılmış.
+            453 Istanbul restaurants — each with <strong className="text-gray-900">popular dishes</strong>,{" "}
+            <strong className="text-gray-900">transit distances</strong>,{" "}
+            <strong className="text-gray-900">nearby landmarks</strong>, and{" "}
+            <strong className="text-gray-900">frequently asked questions</strong>.
+            Structured for ChatGPT, Perplexity, and other AI systems.
           </p>
 
-          {/* İstatistikler */}
+          {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-gray-100 pt-8">
             {[
-              { value: istanbulRestaurants.length.toString(), label: "Restoran" },
-              { value: avgRating + "/5", label: "Ortalama puan" },
-              { value: (totalReviews / 1000).toFixed(0) + "K", label: "Toplam yorum" },
-              { value: neighborhoods.length.toString() + "+", label: "Mahalle" },
+              { value: istanbulRestaurants.length.toString(), label: "Restaurants" },
+              { value: avgRating + "/5", label: "Avg. rating" },
+              { value: (totalReviews / 1000).toFixed(0) + "K", label: "Total reviews" },
+              { value: neighborhoods.length.toString() + "+", label: "Neighborhoods" },
             ].map(stat => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
@@ -126,10 +126,10 @@ export default function HomePage() {
           </div>
         </header>
 
-        {/* Hızlı koleksiyonlar */}
+        {/* Quick collections */}
         <section className="mb-14">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
-            Neye Göre Arıyorsunuz?
+            What Are You Looking For?
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {FEATURED_COLLECTIONS.map(c => (
@@ -146,10 +146,10 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Mutfak türleri */}
+        {/* Cuisine types */}
         <section className="mb-14">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
-            Mutfak Türüne Göre
+            By Cuisine
           </h2>
           <div className="flex flex-wrap gap-2">
             {cuisines.slice(0, 12).map(c => (
@@ -165,14 +165,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Mahalleler */}
+        {/* Neighborhoods */}
         <section className="mb-14">
           <div className="flex items-baseline justify-between mb-4">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide">
-              Mahalleye Göre
+              By Neighborhood
             </h2>
             <Link href="/istanbul" className="text-xs text-blue-500 hover:underline">
-              Tümünü gör →
+              View all →
             </Link>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -192,9 +192,9 @@ export default function HomePage() {
         {/* RapidAPI CTA */}
         <section className="bg-gray-900 rounded-xl p-6 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
-            <p className="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-1">API Erişimi</p>
-            <h2 className="text-white font-bold text-lg leading-tight">İstanbul Restoran Verisine Anında Erişin</h2>
-            <p className="text-gray-400 text-sm mt-1">453 restoran · JSON API · llm_summary · FAQ · Transit</p>
+            <p className="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-1">API Access</p>
+            <h2 className="text-white font-bold text-lg leading-tight">Instant Access to Istanbul Restaurant Data</h2>
+            <p className="text-gray-400 text-sm mt-1">453 restaurants · JSON API · llm_summary · FAQ · Transit</p>
           </div>
           <a
             href="https://rapidapi.com/cccanguler/api/istanbul-restaurants"
@@ -202,14 +202,14 @@ export default function HomePage() {
             rel="noopener noreferrer"
             className="shrink-0 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-lg text-sm transition-colors"
           >
-            RapidAPI&apos;de Abone Ol →
+            Subscribe on RapidAPI →
           </a>
         </section>
 
         {/* API Docs + JSON Preview */}
         <section className="border border-gray-200 rounded-xl p-6 mb-14">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="font-semibold text-gray-900">API — Canlı Veri Örneği</h2>
+            <h2 className="font-semibold text-gray-900">API — Live Data Preview</h2>
             <a
               href="https://restorans.vercel.app/api/openapi.json"
               target="_blank"
@@ -229,34 +229,34 @@ export default function HomePage() {
     "cuisine": "Kebap",
     "avg_rating": 4.7,
     "price_range": 2,
-    "llm_summary": "Eminönü'nde konumlanan Hamdi, ...",
-    "faq": [{ "question": "Rezervasyon gerekli mi?", "answer": "..." }],
+    "llm_summary": "Located in Eminönü, Hamdi is ...",
+    "faq": [{ "question": "Is reservation required?", "answer": "..." }],
     "nearby": {
-      "transit": [{ "name": "Sirkeci", "type": "tren", "walk_min": 3 }]
+      "transit": [{ "name": "Sirkeci", "type": "train", "walk_min": 3 }]
     }
   }]
 }`}
           </pre>
           <div className="mt-4 flex gap-4 text-xs">
-            <a href="/api/restaurants?city=istanbul&limit=3" target="_blank" className="text-blue-500 hover:underline">Canlı dene →</a>
+            <a href="/api/restaurants?city=istanbul&limit=3" target="_blank" className="text-blue-500 hover:underline">Try live →</a>
             <a href="/.well-known/ai-plugin.json" target="_blank" className="text-blue-500 hover:underline">ai-plugin.json</a>
             <a href="/llms.txt" target="_blank" className="text-blue-500 hover:underline">llms.txt</a>
           </div>
         </section>
 
-        {/* AI için neden burası */}
+        {/* What's in each profile */}
         <section className="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-14">
-          <h2 className="font-semibold text-gray-900 mb-4">Her Restoran Profilinde Neler Var</h2>
+          <h2 className="font-semibold text-gray-900 mb-4">What&apos;s in Each Restaurant Profile</h2>
           <ul className="grid sm:grid-cols-2 gap-2 text-sm text-gray-600">
             {[
-              ["llm_summary", "LLM'lerin doğrudan kullanabileceği Türkçe özet"],
-              ["faq", "10-12 sıkça sorulan soru (ulaşım, rezervasyon, menü...)"],
-              ["nearby.transit", "En yakın metro, tramvay, vapur — yürüme dakikası"],
-              ["nearby.landmarks", "Müze, camii, tarihi yer mesafeleri"],
-              ["popularDishes", "Restoranın popüler ve imza yemekleri"],
-              ["sentiment_summary", "Yorumlardan çıkarılan duygu analizi"],
-              ["priceDetail", "Başlangıç / ana yemek / tatlı fiyat aralığı"],
-              ["Schema.org/Restaurant", "Makine-okunabilir yapılandırılmış veri"],
+              ["llm_summary", "Turkish summary directly usable by LLMs"],
+              ["faq", "10–12 frequently asked questions (transit, reservations, menu...)"],
+              ["nearby.transit", "Nearest metro, tram, ferry — walking minutes"],
+              ["nearby.landmarks", "Museum, mosque, historic site distances"],
+              ["popularDishes", "Popular and signature dishes"],
+              ["sentiment_summary", "Sentiment analysis from reviews"],
+              ["priceDetail", "Starter / main course / dessert price ranges"],
+              ["Schema.org/Restaurant", "Machine-readable structured data"],
             ].map(([key, desc]) => (
               <li key={key} className="flex gap-2">
                 <span className="text-gray-400 font-mono text-xs mt-0.5 shrink-0">{key}</span>
@@ -271,13 +271,13 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* CTA — Tüm restoranlar */}
+        {/* CTA */}
         <div className="text-center">
           <Link
             href="/istanbul"
             className="inline-block bg-gray-900 text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-700 transition-colors"
           >
-            Tüm 453 Restoranı Gör
+            View All 453 Restaurants
           </Link>
         </div>
 
