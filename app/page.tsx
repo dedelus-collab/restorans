@@ -249,7 +249,7 @@ export default function HomePage() {
           <h2 className="font-semibold text-gray-900 mb-4">What&apos;s in Each Restaurant Profile</h2>
           <ul className="grid sm:grid-cols-2 gap-2 text-sm text-gray-600">
             {[
-              ["llm_summary", "Turkish summary directly usable by LLMs"],
+              ["llm_summary", "2-3 sentence summary directly usable by LLMs"],
               ["faq", "10–12 frequently asked questions (transit, reservations, menu...)"],
               ["nearby.transit", "Nearest metro, tram, ferry — walking minutes"],
               ["nearby.landmarks", "Museum, mosque, historic site distances"],
