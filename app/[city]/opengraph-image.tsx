@@ -42,13 +42,13 @@ export default async function OgImage({
             display: "flex",
           }}
         >
-          <span>{cityName} Restoranları</span>
+          <span>{cityName} Restaurants</span>
         </div>
         <div style={{ color: "#94a3b8", fontSize: "30px", marginBottom: "48px", display: "flex" }}>
-          <span>{count} restoran · AI-ready veri · Schema.org</span>
+          <span>{count} restaurants · AI-ready data · Schema.org</span>
         </div>
         <div style={{ display: "flex", gap: "16px" }}>
-          {["FAQ", "Transit", "Popüler Yemekler", "Senaryo Analizi"].map((s) => (
+          {["FAQ", "Transit", "Popular Dishes", "Scenario Ratings"].map((s) => (
             <div
               key={s}
               style={{

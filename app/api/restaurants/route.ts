@@ -24,16 +24,16 @@ export async function GET(request: NextRequest) {
   const rawMinRating = searchParams.get("minRating");
 
   if (rawPage !== null && (isNaN(Number(rawPage)) || Number(rawPage) < 1)) {
-    return apiError(400, "INVALID_PARAM", "'page' parametresi 1 veya daha büyük bir tamsayı olmalıdır.", { param: "page" });
+    return apiError(400, "INVALID_PARAM", "'page' must be an integer ≥ 1.", { param: "page" });
   }
   if (rawLimit !== null && (isNaN(Number(rawLimit)) || Number(rawLimit) < 1 || Number(rawLimit) > 100)) {
-    return apiError(400, "INVALID_PARAM", "'limit' parametresi 1-100 arasında olmalıdır.", { param: "limit" });
+    return apiError(400, "INVALID_PARAM", "'limit' must be between 1 and 100.", { param: "limit" });
   }
   if (rawMaxPrice !== null && (isNaN(Number(rawMaxPrice)) || ![1,2,3,4].includes(Number(rawMaxPrice)))) {
-    return apiError(400, "INVALID_PARAM", "'maxPrice' parametresi 1, 2, 3 veya 4 olmalıdır.", { param: "maxPrice" });
+    return apiError(400, "INVALID_PARAM", "'maxPrice' must be 1, 2, 3 or 4.", { param: "maxPrice" });
   }
   if (rawMinRating !== null && (isNaN(Number(rawMinRating)) || Number(rawMinRating) < 0 || Number(rawMinRating) > 5)) {
-    return apiError(400, "INVALID_PARAM", "'minRating' parametresi 0-5 arasında olmalıdır.", { param: "minRating" });
+    return apiError(400, "INVALID_PARAM", "'minRating' must be between 0 and 5.", { param: "minRating" });
   }
 
   // --- Parse params ---
@@ -79,7 +79,7 @@ export async function GET(request: NextRequest) {
       has_next: page < totalPages,
       has_prev: page > 1,
       source: "restorans",
-      description: "Türkiye'nin AI-ready restoran veritabanı",
+      description: "AI-ready Istanbul restaurant database",
       llms_txt: "https://restaurantsistanbul.vercel.app/llms.txt",
       schema: "https://schema.org/Restaurant",
       last_updated: new Date().toISOString().split("T")[0],

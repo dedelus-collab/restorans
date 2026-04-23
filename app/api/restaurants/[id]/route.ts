@@ -21,13 +21,13 @@ export async function GET(
   const { id } = await params;
 
   if (!id || id.trim() === "") {
-    return apiError(400, "INVALID_PARAM", "Geçerli bir 'id' veya 'slug' sağlanmalıdır.", { param: "id" });
+    return apiError(400, "INVALID_PARAM", "A valid 'id' or 'slug' must be provided.", { param: "id" });
   }
 
   const r = restaurants.find(r => r.id === id || r.slug === id);
 
   if (!r) {
-    return apiError(404, "NOT_FOUND", `'${id}' ile eşleşen restoran bulunamadı.`);
+    return apiError(404, "NOT_FOUND", `No restaurant found matching '${id}'.`);
   }
 
   return NextResponse.json({

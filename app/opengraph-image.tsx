@@ -40,7 +40,7 @@ export default function OgImage() {
           </span>
         </div>
 
-        {/* Başlık */}
+        {/* Headline */}
         <div
           style={{
             color: "#f8fafc",
@@ -53,18 +53,18 @@ export default function OgImage() {
             flexDirection: "column",
           }}
         >
-          <span>İstanbul Restoran</span>
-          <span>Veritabanı</span>
+          <span>Istanbul Restaurant</span>
+          <span>Database</span>
         </div>
 
-        {/* Alt yazı */}
+        {/* Subtitle */}
         <div style={{ color: "#94a3b8", fontSize: "26px", marginBottom: "48px", display: "flex" }}>
-          <span>453 restoran · AI-ready veri · Schema.org</span>
+          <span>453 restaurants · AI-ready data · Schema.org</span>
         </div>
 
         {/* Stat pills */}
         <div style={{ display: "flex", gap: "16px" }}>
-          {["453 Restoran", "19 Koleksiyon", "78 Mahalle", "1M+ Yorum"].map((s) => (
+          {["453 Restaurants", "19 Collections", "78 Neighborhoods", "1M+ Reviews"].map((s) => (
             <div
               key={s}
               style={{
