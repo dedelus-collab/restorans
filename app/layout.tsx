@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import { ChatWidget } from "@/components/ChatWidget";
 
 export const metadata: Metadata = {
   title: "Istanbul Restaurants — AI-Ready Data",
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </nav>
         {children}
+        <ChatWidget />
         <footer className="border-t border-gray-100 mt-16 py-8 text-xs text-gray-400">
           <div className="max-w-4xl mx-auto px-6 space-y-4">
             {/* Status bar */}
