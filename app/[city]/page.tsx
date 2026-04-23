@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { AniHead } from "@/components/AniMascot";
 import {
   getRestaurantsByCity,
   getPriceSymbol,
@@ -155,7 +156,8 @@ export default async function CityPage({ params }: Props) {
         {/* Scenario collections */}
         {scenarioCollections.length > 0 && (
           <section className="mb-12">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
+              <AniHead variant="star" className="w-7 h-7 shrink-0" />
               What Are You Looking For?
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
@@ -179,7 +181,8 @@ export default async function CityPage({ params }: Props) {
         {/* Cuisine collections */}
         {cuisineCollections.length > 0 && (
           <section className="mb-12">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
+              <AniHead variant="foodie" className="w-7 h-7 shrink-0" />
               By Cuisine
             </h2>
             <div className="flex flex-wrap gap-2">
@@ -203,7 +206,8 @@ export default async function CityPage({ params }: Props) {
         {/* Vibe collections */}
         {vibeCollections.length > 0 && (
           <section className="mb-12">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
+              <AniHead variant="explorer" className="w-7 h-7 shrink-0" />
               Ambiance & Vibe
             </h2>
             <div className="flex flex-wrap gap-2">
@@ -227,7 +231,8 @@ export default async function CityPage({ params }: Props) {
         {/* Neighborhoods */}
         {neighborhoods.length > 1 && (
           <section className="mb-12">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
+              <AniHead variant="reviewer" className="w-7 h-7 shrink-0" />
               By Neighborhood
             </h2>
             <div className="flex flex-wrap gap-2">
@@ -246,7 +251,8 @@ export default async function CityPage({ params }: Props) {
 
         {/* All restaurants */}
         <section>
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
+            <AniHead variant="chef" className="w-7 h-7 shrink-0" />
             All Restaurants
           </h2>
           <div className="divide-y divide-gray-100">

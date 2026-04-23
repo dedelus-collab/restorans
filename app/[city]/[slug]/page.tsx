@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getRestaurantBySlug, getPriceSymbol, getAllSlugs } from "@/data/restaurants";
 import type { Metadata } from "next";
+import { AniHead } from "@/components/AniMascot";
 
 type Props = { params: Promise<{ city: string; slug: string }> };
 
@@ -220,7 +221,10 @@ export default async function RestaurantPage({ params }: Props) {
         {/* Contextual Ratings */}
         {r.specialFeatures?.contextualRatings && (
           <section className="mb-10">
-            <h2 className="text-lg font-semibold mb-4">Contextual Ratings</h2>
+            <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
+              <AniHead variant="star" className="w-8 h-8 shrink-0" />
+              Contextual Ratings
+            </h2>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
               {Object.entries(r.specialFeatures.contextualRatings).map(([key, val]) => {
                 const labels: Record<string, string> = {
@@ -244,7 +248,10 @@ export default async function RestaurantPage({ params }: Props) {
         {/* Signature Dishes */}
         {r.specialFeatures?.signatureDishes?.length ? (
           <section className="mb-10">
-            <h2 className="text-lg font-semibold mb-3">Signature Dishes</h2>
+            <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+              <AniHead variant="foodie" className="w-8 h-8 shrink-0" />
+              Signature Dishes
+            </h2>
             <div className="flex flex-wrap gap-2">
               {r.specialFeatures.signatureDishes.map(dish => (
                 <span key={dish} className="text-sm bg-orange-50 border border-orange-200 text-orange-800 px-3 py-1.5 rounded">
@@ -257,10 +264,16 @@ export default async function RestaurantPage({ params }: Props) {
 
         {/* Review Analysis */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold mb-3">Review Analysis</h2>
-          <p className="text-gray-700 leading-relaxed text-sm bg-blue-50 p-4 rounded-lg border border-blue-100 mb-3">
-            {r.sentimentSummary}
-          </p>
+          <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+            <AniHead variant="reviewer" className="w-8 h-8 shrink-0" />
+            Review Analysis
+          </h2>
+          <div className="relative">
+            <p className="text-gray-700 leading-relaxed text-sm bg-blue-50 p-4 rounded-lg border border-blue-100 mb-3 pr-12">
+              {r.sentimentSummary}
+            </p>
+            <AniHead variant="reviewer" className="absolute -top-3 -right-3 w-10 h-10 drop-shadow-sm hidden sm:block" />
+          </div>
           {r.specialFeatures?.standoutPlus && (
             <p className="text-sm text-green-700 bg-green-50 px-4 py-2 rounded border border-green-100">
               ✓ {r.specialFeatures.standoutPlus}
@@ -376,7 +389,10 @@ export default async function RestaurantPage({ params }: Props) {
         {/* Reservation */}
         {r.reservationLinks && (
           <section className="mb-10">
-            <h2 className="text-lg font-semibold mb-3">Reservation & Directions</h2>
+            <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+              <AniHead variant="explorer" className="w-8 h-8 shrink-0" />
+              Reservation & Directions
+            </h2>
             <div className="flex flex-wrap gap-3">
               {r.reservationLinks.googleMaps && (
                 <a href={r.reservationLinks.googleMaps} target="_blank" rel="noopener noreferrer"
@@ -397,7 +413,10 @@ export default async function RestaurantPage({ params }: Props) {
         {/* Best For */}
         {r.scenarioSummary && Object.keys(r.scenarioSummary).length > 0 && (
           <section className="mb-10">
-            <h2 className="text-lg font-semibold mb-4">Best For</h2>
+            <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
+              <AniHead variant="star" className="w-8 h-8 shrink-0" />
+              Best For
+            </h2>
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
               {[
                 { key: "birthday", label: "🎂 Birthday" },
@@ -424,12 +443,21 @@ export default async function RestaurantPage({ params }: Props) {
         {/* FAQ */}
         {r.faq?.length ? (
           <section className="mb-10">
-            <h2 className="text-lg font-semibold mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
+              <AniHead variant="chef" className="w-8 h-8 shrink-0" />
+              Frequently Asked Questions
+            </h2>
             <div className="space-y-3">
               {r.faq.map((item, i) => (
-                <div key={i} className="border border-gray-100 rounded-lg p-4">
-                  <p className="font-medium text-gray-800 text-sm mb-1">{item.question}</p>
-                  <p className="text-gray-600 text-sm">{item.answer}</p>
+                <div key={i} className="border border-gray-100 rounded-lg p-4 flex gap-3">
+                  <AniHead
+                    variant={["chef","reviewer","explorer","foodie","star"][i % 5] as "chef"|"reviewer"|"explorer"|"foodie"|"star"}
+                    className="w-7 h-7 shrink-0 mt-0.5"
+                  />
+                  <div>
+                    <p className="font-medium text-gray-800 text-sm mb-1">{item.question}</p>
+                    <p className="text-gray-600 text-sm">{item.answer}</p>
+                  </div>
                 </div>
               ))}
             </div>
