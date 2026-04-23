@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import Anthropic from "@anthropic-ai/sdk";
+import Groq from "groq-sdk";
 import { restaurants } from "@/data/restaurants";
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const client = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 // Smart keyword-based restaurant selector
 function selectRelevantRestaurants(query: string) {
@@ -91,7 +91,7 @@ export async function POST(req: NextRequest) {
   const { message, history = [] } = await req.json();
 
   if (!message?.trim()) return NextResponse.json({ error: "No message" }, { status: 400 });
-  if (!process.env.ANTHROPIC_API_KEY) return NextResponse.json({ error: "API key not configured" }, { status: 500 });
+  if (!process.env.GROQ_API_KEY) return NextResponse.json({ error: "API key not configured" }, { status: 500 });
 
   const relevant = selectRelevantRestaurants(message);
   const context = buildContext(relevant);
@@ -118,20 +118,22 @@ Rules:
     { role: "user" as const, content: message },
   ];
 
-  const stream = await client.messages.stream({
-    model: "claude-haiku-4-5-20251001",
+  const stream = await client.chat.completions.create({
+    model: "llama-3.3-70b-versatile",
     max_tokens: 600,
-    system: systemPrompt,
-    messages,
+    stream: true,
+    messages: [
+      { role: "system", content: systemPrompt },
+      ...messages,
+    ],
   });
 
   const encoder = new TextEncoder();
   const readable = new ReadableStream({
     async start(controller) {
       for await (const chunk of stream) {
-        if (chunk.type === "content_block_delta" && chunk.delta.type === "text_delta") {
-          controller.enqueue(encoder.encode(chunk.delta.text));
-        }
+        const text = chunk.choices[0]?.delta?.content ?? "";
+        if (text) controller.enqueue(encoder.encode(text));
       }
       controller.close();
     },
