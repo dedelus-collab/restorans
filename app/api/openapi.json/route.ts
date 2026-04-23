@@ -18,8 +18,8 @@ export async function GET() {
     info: {
       title: "Istanbul Restaurants API",
       description:
-        "Türkiye restoranlarına ait AI-ready, yapılandırılmış veri API'si. " +
-        "Her restoran kaydı; LLM özeti, senaryo analizleri, SSS, yakın çevre transit ve landmark bilgileri içerir.",
+        "AI-ready, structured data API for Istanbul restaurants. " +
+        "Each restaurant record contains an LLM summary, scenario analyses, FAQ, nearby transit and landmark data.",
       version: "1.0.0",
       contact: {
         email: "data@restorans.io",
@@ -42,71 +42,71 @@ export async function GET() {
     paths: {
       "/api/restaurants": {
         get: {
-          summary: "Restoran listesi",
+          summary: "Restaurant list",
           description:
-            "Filtreleme ve sayfalama destekli restoran listesi döner. " +
-            "Şehir, mahalle, mutfak türü, fiyat aralığı, puan ve etiketlere göre filtrelenebilir.",
+            "Returns a paginated, filterable list of restaurants. " +
+            "Filter by city, neighborhood, cuisine type, price range, rating and tags.",
           operationId: "listRestaurants",
           tags: ["Restaurants"],
           parameters: [
             {
               name: "city",
               in: "query",
-              description: "Şehir slug'ı (örn. 'istanbul')",
+              description: "City slug (e.g. 'istanbul')",
               schema: { type: "string", example: "istanbul" },
             },
             {
               name: "q",
               in: "query",
-              description: "Restoran adına göre metin arama",
+              description: "Text search by restaurant name",
               schema: { type: "string", example: "Hamdi" },
             },
             {
               name: "neighborhood",
               in: "query",
-              description: "Mahalle adı (kısmi eşleşme desteklenir)",
-              schema: { type: "string", example: "Beyoğlu" },
+              description: "Neighborhood name (partial match supported)",
+              schema: { type: "string", example: "Beyoglu" },
             },
             {
               name: "cuisine",
               in: "query",
-              description: "Mutfak türü (kısmi eşleşme desteklenir)",
-              schema: { type: "string", example: "Türk" },
+              description: "Cuisine type (partial match supported)",
+              schema: { type: "string", example: "kebap" },
             },
             {
               name: "tags",
               in: "query",
-              description: "Virgülle ayrılmış etiket listesi",
+              description: "Comma-separated tag list",
               schema: { type: "string", example: "manzarali,romantik" },
             },
             {
               name: "maxPrice",
               in: "query",
-              description: "Maksimum fiyat aralığı (1=ekonomik, 2=orta, 3=üst, 4=lüks)",
+              description: "Maximum price range (1=budget, 2=mid, 3=upper, 4=luxury)",
               schema: { type: "integer", enum: [1, 2, 3, 4], example: 3 },
             },
             {
               name: "minRating",
               in: "query",
-              description: "Minimum ortalama puan (0-5)",
+              description: "Minimum average rating (0-5)",
               schema: { type: "number", minimum: 0, maximum: 5, example: 4.0 },
             },
             {
               name: "page",
               in: "query",
-              description: "Sayfa numarası (1'den başlar)",
+              description: "Page number (starts at 1)",
               schema: { type: "integer", minimum: 1, default: 1 },
             },
             {
               name: "limit",
               in: "query",
-              description: "Sayfa başına sonuç sayısı (max 100)",
+              description: "Results per page (max 100)",
               schema: { type: "integer", minimum: 1, maximum: 100, default: 20 },
             },
           ],
           responses: {
             "200": {
-              description: "Başarılı",
+              description: "Success",
               content: {
                 "application/json": {
                   schema: { $ref: "#/components/schemas/RestaurantListResponse" },
@@ -123,11 +123,11 @@ export async function GET() {
       },
       "/api/restaurants/{id}": {
         get: {
-          summary: "Restoran detayı",
+          summary: "Restaurant detail",
           description:
-            "Tek bir restoranın tam detayını döner. " +
-            "ID veya slug ile sorgulama yapılabilir. " +
-            "SSS, senaryo özetleri, yakın transit/landmark ve rezervasyon linkleri dahildir.",
+            "Returns full detail for a single restaurant. " +
+            "Query by ID or slug. " +
+            "Includes FAQ, scenario summaries, nearby transit/landmarks and reservation links.",
           operationId: "getRestaurant",
           tags: ["Restaurants"],
           parameters: [
@@ -135,13 +135,13 @@ export async function GET() {
               name: "id",
               in: "path",
               required: true,
-              description: "Restoran ID'si veya slug'ı",
+              description: "Restaurant ID or slug",
               schema: { type: "string", example: "pera-antakya" },
             },
           ],
           responses: {
             "200": {
-              description: "Başarılı",
+              description: "Success",
               content: {
                 "application/json": {
                   schema: { $ref: "#/components/schemas/RestaurantDetailResponse" },
@@ -164,7 +164,7 @@ export async function GET() {
           type: "apiKey",
           in: "header",
           name: "X-RapidAPI-Key",
-          description: "RapidAPI abonelik anahtarınız",
+          description: "Your RapidAPI subscription key",
         },
       },
       schemas: {
@@ -190,7 +190,7 @@ export async function GET() {
         },
         ContextualRatings: {
           type: "object",
-          description: "1-5 arasında senaryo bazlı puanlar",
+          description: "Scenario-based ratings on a 1-5 scale",
           properties: {
             businessLunch: { type: "integer", minimum: 1, maximum: 5 },
             romanticDate:  { type: "integer", minimum: 1, maximum: 5 },
@@ -201,7 +201,7 @@ export async function GET() {
         },
         ScenarioSummary: {
           type: "object",
-          description: "Farklı senaryolar için kısa metin özetleri",
+          description: "Short text summaries for different dining scenarios",
           properties: {
             birthday:   { type: "string", nullable: true },
             budget:     { type: "string", nullable: true },
@@ -217,7 +217,7 @@ export async function GET() {
           type: "object",
           properties: {
             name:       { type: "string" },
-            type:       { type: "string", enum: ["metro", "tramvay", "vapur", "otobüs"] },
+            type:       { type: "string", enum: ["metro", "tram", "ferry", "bus"] },
             distance_m: { type: "integer" },
             walk_min:   { type: "integer" },
           },
@@ -367,14 +367,14 @@ export async function GET() {
       },
       responses: {
         BadRequest: {
-          description: "Geçersiz parametre",
+          description: "Invalid parameter",
           content: {
             "application/json": {
               schema: { $ref: "#/components/schemas/ApiError" },
               example: {
                 error: {
                   code: "INVALID_PARAM",
-                  message: "'maxPrice' parametresi 1, 2, 3 veya 4 olmalıdır.",
+                  message: "'maxPrice' must be 1, 2, 3 or 4.",
                   details: { param: "maxPrice" },
                 },
               },
@@ -382,49 +382,49 @@ export async function GET() {
           },
         },
         Unauthorized: {
-          description: "Yetkisiz erişim — geçerli RapidAPI anahtarı gerekli",
+          description: "Unauthorized — valid RapidAPI key required",
           content: {
             "application/json": {
               schema: { $ref: "#/components/schemas/ApiError" },
               example: {
                 error: {
                   code: "UNAUTHORIZED",
-                  message: "Bu API yalnızca RapidAPI üzerinden erişilebilir.",
+                  message: "This API is only accessible via RapidAPI.",
                 },
               },
             },
           },
         },
         NotFound: {
-          description: "Kaynak bulunamadı",
+          description: "Resource not found",
           content: {
             "application/json": {
               schema: { $ref: "#/components/schemas/ApiError" },
               example: {
                 error: {
                   code: "NOT_FOUND",
-                  message: "'bilinmeyen-slug' ile eşleşen restoran bulunamadı.",
+                  message: "No restaurant found matching 'unknown-slug'.",
                 },
               },
             },
           },
         },
         InternalError: {
-          description: "Sunucu hatası",
+          description: "Server error",
           content: {
             "application/json": {
               schema: { $ref: "#/components/schemas/ApiError" },
               example: {
                 error: {
                   code: "INTERNAL_ERROR",
-                  message: "Beklenmeyen bir hata oluştu.",
+                  message: "An unexpected error occurred.",
                 },
               },
             },
           },
         },
         RateLimitExceeded: {
-          description: "İstek limiti aşıldı",
+          description: "Rate limit exceeded",
           headers: {
             "Retry-After":          { schema: { type: "integer" } },
             "X-RateLimit-Limit":    { schema: { type: "integer" } },
@@ -437,7 +437,7 @@ export async function GET() {
               example: {
                 error: {
                   code: "RATE_LIMIT_EXCEEDED",
-                  message: "Dakika başına istek limitine ulaştınız. Lütfen bekleyin.",
+                  message: "You have reached the per-minute request limit. Please wait.",
                   retry_after_seconds: 42,
                 },
               },
@@ -449,7 +449,7 @@ export async function GET() {
     tags: [
       {
         name: "Restaurants",
-        description: "Restoran listeleme ve detay endpointleri",
+        description: "Restaurant listing and detail endpoints",
         externalDocs: {
           description: "llms.txt",
           url: "https://restaurantsistanbul.vercel.app/llms.txt",
@@ -457,7 +457,7 @@ export async function GET() {
       },
     ],
     externalDocs: {
-      description: "AI dokümantasyonu (llms.txt)",
+      description: "AI documentation (llms.txt)",
       url: "https://restaurantsistanbul.vercel.app/llms.txt",
     },
   };

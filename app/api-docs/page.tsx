@@ -39,7 +39,7 @@ const RESPONSE_LIST = `{
       "price_range": 2,
       "avg_rating": 4.7,
       "review_count": 8432,
-      "llm_summary": "Eminönü'nde Haliç manzarasıyla hizmet veren Hamdi, 1969'dan bu yana İstanbul'un en iyi kebap restoranlarından biri...",
+      "llm_summary": "Hamdi Restaurant in Eminönü has served classic kebap with Golden Horn views since 1969, one of Istanbul's most celebrated dining institutions.",
       "popular_dishes": ["Fıstıklı kebap", "İskender", "Lahmacun"],
       "features": {
         "terrace": true,
@@ -48,8 +48,8 @@ const RESPONSE_LIST = `{
       },
       "nearby": {
         "transit": [
-          { "name": "Sirkeci", "type": "tren", "walk_min": 3 },
-          { "name": "Eminönü", "type": "vapur", "walk_min": 5 }
+          { "name": "Sirkeci", "type": "train", "walk_min": 3 },
+          { "name": "Eminönü", "type": "ferry", "walk_min": 5 }
         ]
       },
       "confidence_score": 0.95,
@@ -66,11 +66,11 @@ const RESPONSE_DETAIL = `{
     "cuisine": "Kebap",
     "price_range": 2,
     "avg_rating": 4.7,
-    "llm_summary": "Eminönü'nde Haliç manzarasıyla...",
-    "sentiment_summary": "Misafirler özellikle fıstıklı kebabı ve manzarayı övüyor.",
+    "llm_summary": "Hamdi Restaurant in Eminönü has served classic kebap with Golden Horn views since 1969.",
+    "sentiment_summary": "Guests consistently praise the fıstıklı kebap and the panoramic terrace views.",
     "faq": [
-      { "question": "Rezervasyon gerekli mi?", "answer": "Hafta sonları rezervasyon önerilir." },
-      { "question": "En yakın metro nerede?", "answer": "Sirkeci tren istasyonu 3 dakika yürüme mesafesinde." }
+      { "question": "Is a reservation required?", "answer": "Reservations are recommended on weekends." },
+      { "question": "Where is the nearest metro?", "answer": "Sirkeci train station is a 3-minute walk away." }
     ],
     "contextual_ratings": {
       "businessLunch": 4,
@@ -80,17 +80,17 @@ const RESPONSE_DETAIL = `{
       "groupDining": 5
     },
     "scenario_summary": {
-      "tourist": "İstanbul'a gelen her turistin listesinde olması gereken klasik bir mekan.",
-      "family": "Geniş kapasitesi ve çeşitli menüsüyle aile yemekleri için ideal.",
-      "romantic": "Haliç manzaralı terasıyla romantik akşam yemekleri için uygun."
+      "tourist": "A classic Istanbul institution that every visitor should experience at least once.",
+      "family": "Ideal for family meals with its spacious layout and varied menu.",
+      "romantic": "Well-suited for romantic dinners on the terrace overlooking the Golden Horn."
     },
     "nearby": {
       "transit": [
-        { "name": "Sirkeci", "type": "tren", "walk_min": 3 },
-        { "name": "Eminönü", "type": "vapur", "walk_min": 5 }
+        { "name": "Sirkeci", "type": "train", "walk_min": 3 },
+        { "name": "Eminönü", "type": "ferry", "walk_min": 5 }
       ],
       "landmarks": [
-        { "name": "Mısır Çarşısı", "walk_min": 4 },
+        { "name": "Spice Bazaar", "walk_min": 4 },
         { "name": "Yeni Cami", "walk_min": 2 }
       ]
     }
@@ -114,8 +114,8 @@ export default function ApiDocsPage() {
         <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-3">Developer Docs</p>
         <h1 className="text-4xl font-bold mb-4">restorans API</h1>
         <p className="text-lg text-gray-600 max-w-2xl">
-          İstanbul&apos;daki 453 restoranın yapılandırılmış verisi. JSON formatında —
-          llm_summary, FAQ, transit, senaryo puanları.
+          Structured data for 453 Istanbul restaurants. JSON format —
+          llm_summary, FAQ, transit distances, scenario ratings.
         </p>
         <div className="flex gap-3 mt-6">
           <a
@@ -124,7 +124,7 @@ export default function ApiDocsPage() {
             rel="noopener noreferrer"
             className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors"
           >
-            RapidAPI&apos;de Abone Ol →
+            Subscribe on RapidAPI →
           </a>
           <a
             href="/api/openapi.json"
@@ -140,7 +140,7 @@ export default function ApiDocsPage() {
             rel="noopener noreferrer"
             className="border border-gray-300 hover:border-gray-500 text-gray-700 font-medium px-5 py-2.5 rounded-lg text-sm transition-colors"
           >
-            Canlı Dene
+            Try Live
           </a>
         </div>
       </header>
@@ -156,9 +156,9 @@ export default function ApiDocsPage() {
         <h2 className="text-lg font-bold mb-4">Endpoints</h2>
         <div className="border border-gray-200 rounded-xl overflow-hidden divide-y divide-gray-100">
           {[
-            { method: "GET", path: "/api/restaurants", desc: "Filtrelenmiş restoran listesi" },
-            { method: "GET", path: "/api/restaurants/{id}", desc: "Tek restoran detayı (id veya slug)" },
-            { method: "GET", path: "/api/openapi.json", desc: "OpenAPI 3.1 spec (auth gerektirmez)" },
+            { method: "GET", path: "/api/restaurants", desc: "Filtered restaurant list" },
+            { method: "GET", path: "/api/restaurants/{id}", desc: "Single restaurant detail (id or slug)" },
+            { method: "GET", path: "/api/openapi.json", desc: "OpenAPI 3.1 spec (no auth required)" },
           ].map(e => (
             <div key={e.path} className="flex items-center gap-4 px-5 py-4">
               <span className="text-xs font-bold text-green-700 bg-green-50 border border-green-200 px-2 py-0.5 rounded font-mono w-12 text-center shrink-0">
@@ -178,22 +178,22 @@ export default function ApiDocsPage() {
           <table className="w-full text-sm">
             <thead className="bg-gray-50 border-b border-gray-200">
               <tr>
-                <th className="text-left px-4 py-3 font-semibold text-gray-700">Parametre</th>
-                <th className="text-left px-4 py-3 font-semibold text-gray-700">Tip</th>
-                <th className="text-left px-4 py-3 font-semibold text-gray-700">Açıklama</th>
+                <th className="text-left px-4 py-3 font-semibold text-gray-700">Parameter</th>
+                <th className="text-left px-4 py-3 font-semibold text-gray-700">Type</th>
+                <th className="text-left px-4 py-3 font-semibold text-gray-700">Description</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100">
               {[
-                ["city", "string", "Şehir slug'ı — örn. istanbul"],
-                ["q", "string", "Restoran adına göre metin arama"],
-                ["neighborhood", "string", "Mahalle adı — örn. kadikoy, beyoglu"],
-                ["cuisine", "string", "Mutfak türü — örn. kebap, balik, sushi-japon"],
-                ["tags", "string", "Virgülle ayrılmış etiketler — örn. manzarali,romantik"],
-                ["maxPrice", "1-4", "Maks. fiyat aralığı (1=ekonomik, 4=fine dining)"],
-                ["minRating", "0-5", "Min. ortalama puan"],
-                ["page", "integer", "Sayfa numarası (varsayılan: 1)"],
-                ["limit", "integer", "Sayfa başına sonuç (max 100, varsayılan: 20)"],
+                ["city", "string", "City slug — e.g. istanbul"],
+                ["q", "string", "Text search by restaurant name"],
+                ["neighborhood", "string", "Neighborhood name — e.g. kadikoy, beyoglu"],
+                ["cuisine", "string", "Cuisine type — e.g. kebap, balik, sushi-japon"],
+                ["tags", "string", "Comma-separated tags — e.g. manzarali,romantik"],
+                ["maxPrice", "1-4", "Max price range (1=budget, 4=fine dining)"],
+                ["minRating", "0-5", "Min. average rating"],
+                ["page", "integer", "Page number (default: 1)"],
+                ["limit", "integer", "Results per page (max 100, default: 20)"],
               ].map(([p, t, d]) => (
                 <tr key={p} className="hover:bg-gray-50">
                   <td className="px-4 py-3 font-mono text-blue-700 text-xs">{p}</td>
@@ -208,7 +208,7 @@ export default function ApiDocsPage() {
 
       {/* Example 1 */}
       <section className="mb-10">
-        <h2 className="text-lg font-bold mb-2">Örnek 1 — Uygun Fiyatlı, Yüksek Puanlı</h2>
+        <h2 className="text-lg font-bold mb-2">Example 1 — Budget-Friendly, Highly Rated</h2>
         <p className="text-sm text-gray-500 mb-3">Request:</p>
         <CodeBlock code={CODE_LIST} />
         <p className="text-sm text-gray-500 mt-4 mb-3">Response:</p>
@@ -217,7 +217,7 @@ export default function ApiDocsPage() {
 
       {/* Example 2 */}
       <section className="mb-10">
-        <h2 className="text-lg font-bold mb-2">Örnek 2 — Tek Restoran Detayı</h2>
+        <h2 className="text-lg font-bold mb-2">Example 2 — Single Restaurant Detail</h2>
         <p className="text-sm text-gray-500 mb-3">Request:</p>
         <CodeBlock code={CODE_DETAIL} />
         <p className="text-sm text-gray-500 mt-4 mb-3">Response:</p>
@@ -226,26 +226,26 @@ export default function ApiDocsPage() {
 
       {/* Example 3 */}
       <section className="mb-10">
-        <h2 className="text-lg font-bold mb-2">Örnek 3 — Kadıköy&apos;de Balık</h2>
+        <h2 className="text-lg font-bold mb-2">Example 3 — Fish in Kadıköy</h2>
         <p className="text-sm text-gray-500 mb-3">Request:</p>
         <CodeBlock code={CODE_NEIGHBORHOOD} />
       </section>
 
       {/* Response fields */}
       <section className="mb-10">
-        <h2 className="text-lg font-bold mb-4">Her Kayıtta Ne Var</h2>
+        <h2 className="text-lg font-bold mb-4">What Each Record Contains</h2>
         <div className="grid sm:grid-cols-2 gap-3">
           {[
-            ["llm_summary", "LLM için hazır 2-3 cümlelik Türkçe özet"],
-            ["faq", "10-12 soru-cevap (ulaşım, menü, rezervasyon...)"],
-            ["nearby.transit", "En yakın metro/tramvay/vapur + yürüme süresi"],
-            ["nearby.landmarks", "Yakın müze, tarihi yer, turistik nokta"],
-            ["popular_dishes", "Popüler ve imza yemekler listesi"],
+            ["llm_summary", "2-3 sentence English summary ready for LLM citation"],
+            ["faq", "10-12 Q&A pairs (transit, menu, reservation...)"],
+            ["nearby.transit", "Nearest metro/tram/ferry + walking time"],
+            ["nearby.landmarks", "Nearby museums, historical sites, attractions"],
+            ["popular_dishes", "Popular and signature dishes list"],
             ["contextual_ratings", "businessLunch, romanticDate, familyDining (1-5)"],
-            ["scenario_summary", "tourist, romantic, family, budget senaryoları"],
-            ["sentiment_summary", "Yorumlardan çıkarılan duygu analizi"],
-            ["confidence_score", "Veri güvenilirlik skoru (0.0-1.0)"],
-            ["Schema.org/Restaurant", "Makine-okunabilir yapılandırılmış veri"],
+            ["scenario_summary", "tourist, romantic, family, budget scenarios"],
+            ["sentiment_summary", "Sentiment analysis from user reviews"],
+            ["confidence_score", "Data reliability score (0.0-1.0)"],
+            ["Schema.org/Restaurant", "Machine-readable structured data"],
           ].map(([k, v]) => (
             <div key={k} className="flex gap-3 bg-gray-50 rounded-lg px-4 py-3">
               <code className="text-xs text-blue-700 font-mono shrink-0 mt-0.5">{k}</code>
@@ -257,16 +257,16 @@ export default function ApiDocsPage() {
 
       {/* RapidAPI CTA */}
       <section className="bg-gray-900 rounded-xl p-8 text-center">
-        <p className="text-blue-400 text-xs font-semibold uppercase tracking-widest mb-3">API Erişimi</p>
-        <h2 className="text-white text-2xl font-bold mb-2">Hemen Başlayın</h2>
-        <p className="text-gray-400 mb-6 text-sm">RapidAPI üzerinden abone olun — ücretsiz plan mevcut.</p>
+        <p className="text-blue-400 text-xs font-semibold uppercase tracking-widest mb-3">API Access</p>
+        <h2 className="text-white text-2xl font-bold mb-2">Get Started</h2>
+        <p className="text-gray-400 mb-6 text-sm">Subscribe on RapidAPI — free plan available.</p>
         <a
           href="https://rapidapi.com/cccanguler/api/istanbul-restaurants"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-blue-500 hover:bg-blue-400 text-white font-bold px-8 py-3 rounded-lg transition-colors"
         >
-          RapidAPI&apos;de Abone Ol →
+          Subscribe on RapidAPI →
         </a>
         <div className="mt-6 flex justify-center gap-6 text-xs text-gray-500">
           <a href="/api/openapi.json" target="_blank" className="hover:text-gray-300 transition-colors">OpenAPI Spec</a>

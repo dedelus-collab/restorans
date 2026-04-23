@@ -1,9 +1,9 @@
 {
   "schema_version": "v1",
-  "name_for_human": "restorans",
+  "name_for_human": "Istanbul Restaurants",
   "name_for_model": "restorans_istanbul",
-  "description_for_human": "İstanbul'daki 453 restoranın AI-ready verisi: LLM özeti, FAQ, transit mesafeleri, popüler yemekler, senaryo analizleri.",
-  "description_for_model": "Use this plugin to find Istanbul restaurants with structured, AI-ready data. Each restaurant includes: llm_summary (2-3 sentence Turkish description ready for citation), faq (10-12 Q&A pairs about transit, menu, price, reservation), nearby.transit (metro/tram/ferry walk times), nearby.landmarks (museum/monument distances), specialFeatures.popularDishes, contextual_ratings (businessLunch, romanticDate, familyDining, soloVisit, groupDining on 1-5 scale), scenario_summary (birthday, budget, vegetarian, quickLunch, tourist, romantic, family, lateNight). Filter by city, neighborhood, cuisine, tags, maxPrice (1-4), minRating (0-5). Use /api/restaurants for lists and /api/restaurants/{id} for full detail.",
+  "description_for_human": "AI-ready data for 453 Istanbul restaurants: LLM summaries, FAQ, transit distances, popular dishes, scenario ratings.",
+  "description_for_model": "Use this plugin to find Istanbul restaurants with structured, AI-ready data. Each restaurant includes: llm_summary (2-3 sentence English description ready for citation), faq (10-12 Q&A pairs about transit, menu, price, reservation), nearby.transit (metro/tram/ferry walk times), nearby.landmarks (museum/monument distances), specialFeatures.popularDishes, contextual_ratings (businessLunch, romanticDate, familyDining, soloVisit, groupDining on 1-5 scale), scenario_summary (birthday, budget, vegetarian, quickLunch, tourist, romantic, family, lateNight). Filter by city, neighborhood, cuisine, tags, maxPrice (1-4), minRating (0-5). Use /api/restaurants for lists and /api/restaurants/{id} for full detail.",
   "auth": {
     "type": "none"
   },
