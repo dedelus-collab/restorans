@@ -442,6 +442,9 @@ QUESTION_REGEX = [
     (r"[Vv]ejetaryen.*se[çc]enek.*var\s*m[ıi]", "Are there vegetarian options?"),
     # Landmarks
     (r"ne\s+gibi\s+landmark", "What landmarks are nearby?"),
+    (r"[Tt]eras[ıi]nda\s+ne\s+gibi\s+imkan", "What facilities are available on the terrace?"),
+    (r"[Tt]eras.*ne\s+gibi\s+(?:imkan|hizmet|[öo]zellik)", "What facilities are available on the terrace?"),
+    (r"[Tt]eras.*(?:nas[ıi]l|ne\s+sunuyor)", "What does the terrace offer?"),
     (r"yak[ıi]n.*landmark.*var\s*m[ıi]", "Are there nearby landmarks?"),
     # Groups
     (r"(?:gruplar|b[üu]y[üu]k\s+grup)\s+i[çc]in\s+[öo]zel\s+(?:alan|b[öo]lme)", "Is there a private area for groups?"),
@@ -470,6 +473,62 @@ QUESTION_REGEX = [
     (r"[Vv]egan\s*[/,]\s*s[ou][iy]a", "Are there vegan/soy options?"),
     (r"[Mm]en[üu].*ne\s+var", "What is on the menu?"),
     (r"ne\s+t[üu]r\s+yemek", "What kind of food is served?"),
+    # Cuisine style
+    (r"mutfak\s+tarz[ıi]n[ıi].*nas[ıi]l\s+tan[ıi]yabilirim", "How would you describe the restaurant's cuisine?"),
+    (r"mutfak\s+tarz[ıi]n[ıi].*nas[ıi]l\s+tan[ıi]mlars[ıi]n[ıi]z", "How would you describe the restaurant's cuisine?"),
+    (r"mutfak\s+tarz[ıi]n[ıi].*nas[ıi]l\s+tan[ıi]mlar", "How would you describe the restaurant's cuisine?"),
+    (r"mutfak\s+tarz[ıi]", "What is the restaurant's cuisine style?"),
+    (r"geleneksel\s+[Mm]utfak.*m[ıi]d[ıi]r", "Does the restaurant serve traditional cuisine?"),
+    # View / terrace beauty
+    (r"teras[ıi]\s+ve\s+manzaras[ıi]\s+ne\s+kadar\s+g[üu]zel", "How beautiful is the terrace and the view?"),
+    (r"manzaras[ıi]\s+ne\s+kadar\s+g[üu]zel", "How scenic is the view?"),
+    # Nearby landmarks by type
+    (r"yak[ıi]n.*[Ss]aray.*m[ıi]", "Is the palace nearby?"),
+    (r"yak[ıi]n.*[Yy]al[ıi].*m[ıi]", "Is the waterfront mansion nearby?"),
+    (r"yak[ıi]n.*[Pp]azar.*m[ıi]", "Is the market nearby?"),
+    (r"yak[ıi]n.*[Çç]ar[şs][ıi].*m[ıi]", "Is the market/bazaar nearby?"),
+    (r"yak[ıi]n.*[Cc]ami.*m[ıi]", "Is the mosque nearby?"),
+    (r"yak[ıi]n.*[Kk]ilise.*m[ıi]", "Is the church nearby?"),
+    (r"yak[ıi]n.*[Hh]amam.*m[ıi]", "Is the hammam nearby?"),
+    (r"yak[ıi]n.*m[ıi]s[ıi]n[ıi]z", "Is it nearby?"),
+    (r"yak[ıi]n.*m[ıi]y[ıi]z", "Are we near it?"),
+    (r"yak[ıi]nda.*m[ıi]s[ıi]n[ıi]z", "Are you located nearby?"),
+    (r"yak[ıi]nda.*m[ıi]y[ıi]z", "Are we nearby?"),
+    # Why visit
+    (r"[Nn]eden.*gideyim", "Why should I visit?"),
+    (r"[Nn]eden.*tercih\s+edeyim", "Why should I choose this restaurant?"),
+    (r"[Nn]eden.*se[çc]meliyim", "Why should I choose this restaurant?"),
+    # When to go
+    (r"[Rr]estorana\s+ne\s+zaman\s+gitmeli", "When is the best time to visit?"),
+    (r"ne\s+zaman\s+gitmeli", "When is the best time to visit?"),
+    # Business events
+    (r"i[şs]\s+yeme[ğg]i\s+organizasyon.*nas[ıi]l", "How does the restaurant handle business lunch events?"),
+    # Where to stay nearby
+    (r"konumuna\s+g[öo]re\s+nerede\s+kalabiliriz", "Where can we stay near the restaurant?"),
+    # Parking capacity
+    (r"[Oo]topark\s+kapasitesi\s+ne\s+kadard[ıi]r", "What is the parking capacity?"),
+    # What to eat / consume
+    (r"[Nn]eler\s+t[üu]ketmek\s+istiyorsunuz", "What would you like to eat?"),
+    (r"[Nn]e\s+t[üu]ketmek\s+istiyorsunuz", "What would you like to eat?"),
+    # How to get - restaurant name specific
+    (r"nas[ıi]l\s+gidilir", "How can I get to the restaurant?"),
+    (r"nas[ıi]l\s+giderim", "How can I get there?"),
+    (r"nas[ıi]l\s+ula[şs][ıi]r[ıi]m", "How can I get there?"),
+    (r"nas[ıi]l\s+ula[şs]abilirim", "How can I get there?"),
+    (r"[Nn]ereden\s+ula[şs]abilirim", "How can I get there?"),
+    (r"[Nn]ereden\s+ula[şs][ıi]r[ıi]m", "How can I get there?"),
+    # Large group services
+    (r"b[üu]y[üu]k\s+gruplar\s+i[çc]in.*ne\s+gibi\s+hizmet", "What services are available for large groups?"),
+    # Konum avantajları
+    (r"[Kk]onum\s+avantajlar[ıi]\s+neler", "What are the location advantages?"),
+    # Children at restaurant
+    (r"[çc]ocuklar\s+i[çc]in\s+uygun\s+(?:bir\s+)?ortam\s+var\s*m[ıi]", "Is there a child-friendly environment?"),
+    # Outdoor terrace area for groups
+    (r"[Gg]ruplar\s+i[çc]in\s+[öo]zel\s+alan\s+var\s*m[ıi]", "Is there a private area for groups?"),
+    (r"gruplar?\s+i[çc]in\s+[öo]zel\s+(?:alan|b[öo]lme)", "Is there a private section for groups?"),
+    # Mention of restaurant name in question about how special
+    (r"[öo]zel\s+y[öo]n[üu]\s+ne", "What makes it special?"),
+    (r"fark[ıi]\s+ne(?:\s+dir)?", "What makes it different?"),
 ]
 
 def translate_question(q: str) -> str:
@@ -775,6 +834,379 @@ def translate_answer(a: str) -> str:
     # "[Name], geleneksel X mutfağını sunan bir restoran." descriptions
     result = re.sub(r'[\w\s]+[,]\s*geleneksel\s+[\w\s]+\s+mutfa[ğg][ıi]n[ıi]\s+sunan\s+bir\s+restorand[ıi]r\.?',
                     'A traditional restaurant serving authentic local cuisine.', result, flags=re.IGNORECASE)
+    # "popular yemeklerimizdir" / "popüler yemeklerimizdir" → "are popular dishes"
+    result = re.sub(r'\bpop(?:[üu]ler|ular)\s+yemeklerimizdir\.?', 'are popular dishes.', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bpop(?:[üu]ler|ular)\s+yemeklerimizden\b', 'is one of our popular dishes,', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bpop(?:[üu]ler|ular)dir\.?', 'are popular.', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bpop(?:[üu]ler|ular)\s+yemeklerinden\s+biridir\.?', 'is one of the popular dishes.', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bpop(?:[üu]ler|ular)\s+yemeklerimizden\s+biridir\.?', 'is one of the popular dishes.', result, flags=re.IGNORECASE)
+    # "restoranın is one of" → "is one of"
+    result = re.sub(r'\brestoran[ıi]n\s+is\s+one\s+of', 'is one of', result, flags=re.IGNORECASE)
+    # "gibi lezzetler we offer" → strip Turkish prefix
+    result = re.sub(r'(.+?)\s+gibi\s+lezzetler\s+we\s+offer\.?', r'\1 and more are available.', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bgibi\s+lezzetler\s+we\s+offer\.?', 'and more are available.', result, flags=re.IGNORECASE)
+    # "gibi lezzetli Türk mutfağı yemekleri deneyebilirsiniz" → strip
+    result = re.sub(r'(.+?)\s+gibi\s+lezzetli\s+T[üu]rk\s+mutfa[ğg][ıi]\s+yemekleri\s+deneyebilirsiniz\.?',
+                    r'You can try Turkish dishes like \1.', result, flags=re.IGNORECASE)
+    result = re.sub(r'(.+?)\s+gibi\s+yerel\s+lezzetler\s+deneyebilirsiniz\.?',
+                    r'You can try local dishes like \1.', result, flags=re.IGNORECASE)
+    result = re.sub(r'[Bb]urada\s+(.+?)\s+gibi\s+(?:yerel\s+)?lezzetler\s+deneyebilirsiniz\.?',
+                    r'Here you can try dishes like \1.', result, flags=re.IGNORECASE)
+    # "Doğum günü, özel günler and organizasyonlar için Reservations are recommended..."
+    result = re.sub(r'[Dd]o[ğg]um\s+g[üu]n[üu][,.]?\s*[öo]zel\s+g[üu]nler\s+(?:and|ve)\s+organizasyonlar\s+i[çc]in\s+',
+                    'For birthdays, special occasions and events, ', result, flags=re.IGNORECASE)
+    # "Doğum günü veya özel günler için, restoranda bulunan şef restoranı and özel menüler can be preferred."
+    result = re.sub(r'[Dd]o[ğg]um\s+g[üu]n[üu]\s+veya\s+[öo]zel\s+g[üu]nler\s+i[çc]in[,.]?\s*restoranda\s+bulunan\s+[şs]ef\s+restoranı\s+and\s+[öo]zel\s+g[üu]nler\s+i[çc]in\s+hazırlanan\s+menüler\s+can\s+be\s+preferred\.?',
+                    'For birthdays and special occasions, special menus and chef services are available.', result, flags=re.IGNORECASE)
+    result = re.sub(r'[Dd]o[ğg]um\s+g[üu]n[üu]\s+veya\s+[öo]zel\s+g[üu]nler\s+i[çc]in[,.]?\s*',
+                    'For birthdays or special occasions, ', result, flags=re.IGNORECASE)
+    # "X gibi kültürel merkezler, restoranın yakınında is nearby."
+    result = re.sub(r'(.+?)\s+gibi\s+k[üu]lt[üu]rel\s+merkezler[,.]?\s*restoranın\s+yakınında\s+is\s+nearby\.?',
+                    r'\1 and other cultural venues are nearby.', result, flags=re.IGNORECASE)
+    result = re.sub(r'(.+?)\s+gibi\s+k[üu]lt[üu]rel\s+merkezler\b',
+                    r'\1 and other cultural venues', result, flags=re.IGNORECASE)
+    # "X restoranın yakınlarında is nearby." / "restoranın yakınında is nearby."
+    result = re.sub(r'restoranın\s+yakınlarında\s+is\s+nearby\.?', 'is near the restaurant.', result, flags=re.IGNORECASE)
+    result = re.sub(r'restoranın\s+yakınında\s+is\s+nearby\.?', 'is near the restaurant.', result, flags=re.IGNORECASE)
+    result = re.sub(r'\s+is\s+nearby\b(?!\.)', ' is nearby.', result, flags=re.IGNORECASE)
+    # "[Name]'na sadece/only N dakika away" → "[Name] is only N minutes away"
+    result = re.sub(
+        r"([\w\u00e7\u011f\u0131\u00f6\u015f\u00fc\u00c7\u011e\u0130\u00d6\u015e\u00dc\s''\u2019]+)'?(?:na|ya|a)\s+(?:sadece\s+)?only\s+(\d+(?:[-–]\d+)?)\s*(?:dakika|minutes?)\s+away\.?",
+        lambda m: f"{m.group(1).strip()} is only {m.group(2)} minutes away.",
+        result, flags=re.IGNORECASE
+    )
+    result = re.sub(
+        r"([\w\u00e7\u011f\u0131\u00f6\u015f\u00fc\u00c7\u011e\u0130\u00d6\u015e\u00dc\s''\u2019]+)'?(?:na|ya|a)\s+sadece\s+(\d+(?:[-–]\d+)?)\s*(?:dakika|dk)\s+away\.?",
+        lambda m: f"{m.group(1).strip()} is only {m.group(2)} minutes away.",
+        result, flags=re.IGNORECASE
+    )
+    # "sadece N dakika away" → "only N minutes away"
+    result = re.sub(r'\bsadece\s+(\d+)\s*dakika\s+away\.?', r'only \1 minutes away.', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bsadece\s+(\d+[-–]\d+)\s*dakika\s+away\.?', r'only \1 minutes away.', result, flags=re.IGNORECASE)
+    # "N dakika away" (without sadece) → "N minutes away"
+    result = re.sub(r'\b(\d+)\s*dakika\s+away\.?', r'\1 minutes away.', result, flags=re.IGNORECASE)
+    # "N dk away" → "N min away"
+    result = re.sub(r'\b(\d+)\s*dk\s+away\.?', r'\1 min away.', result, flags=re.IGNORECASE)
+    # "(metro, Ndk)" → "(metro, N min)"
+    result = re.sub(r'\((\w+),\s*(\d+)\s*dk\)', lambda m: f'({m.group(1)}, {m.group(2)} min)', result, flags=re.IGNORECASE)
+    # "Evrensel Değerler Çocuk Müzesi (10dk)" → "Evrensel Değerler Çocuk Müzesi (10 min)"
+    result = re.sub(r'\((\d+)dk\)', r'(\1 min)', result, flags=re.IGNORECASE)
+    # "X (metro, N min) veya Y (metro, N min) metro istasyonlarından yürüyerek ulaşabilirsiniz"
+    result = re.sub(r'(.+?)\s+metro\s+istasyonlar[ıi]ndan\s+y[üu]r[üu]yerek\s+ula[şs]abilirsiniz\.?',
+                    r'Accessible on foot from \1 metro stations.', result, flags=re.IGNORECASE)
+    result = re.sub(r'(.+?)\s+istasyonlar[ıi]ndan\s+y[üu]r[üu]yerek\s+ula[şs]abilirsiniz\.?',
+                    r'Accessible on foot from \1.', result, flags=re.IGNORECASE)
+    result = re.sub(r'(.+?)\s+istasyonu?ndan\s+y[üu]r[üu]yerek\s+ula[şs]abilirsiniz\.?',
+                    r'Accessible on foot from \1.', result, flags=re.IGNORECASE)
+    # "veya X stop ulaşabilirsiniz"
+    result = re.sub(r'\bveya\s+(.+?)\s+stop\s+ula[şs]abilirsiniz\.?',
+                    r'or \1 stop.', result, flags=re.IGNORECASE)
+    # "veya" → "or" in transit contexts (between transport options)
+    result = re.sub(r'\s+veya\s+(?=[\w(])', ' or ', result, flags=re.IGNORECASE)
+    # "Hayır, teras veya otopark gibi alanlar yoktur."
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*teras\s+(?:veya|or)\s+otopark\s+gibi\s+alanlar\s+yoktur\.?',
+                    'No, there is no terrace or parking available.', result, flags=re.IGNORECASE)
+    # "Evet, sadece N dakika" (no "away") — short answer
+    result = re.sub(r'^[Ee]vet[,.]?\s+sadece\s+(\d+(?:[-–]\d+)?)\s*(?:dakika|dk)\.?$',
+                    r'Yes, only \1 minutes away.', result.strip(), flags=re.IGNORECASE)
+    # "Hayır, vegan/vejetaryen seçenekleri sunmuyoruz"
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*(?:vegan[/,]?vejetaryen|vegan|vejetaryen)[/,\s]*(?:[şs]erit\s+)?diyet\s+se[çc]enekleri\s+sunmuyoruz\.?',
+                    'No, vegan/vegetarian options are not available.', result, flags=re.IGNORECASE)
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*vegan\s+se[çc]enekler\s+sunulmamaktad[ıi]r\.?',
+                    'No, vegan options are not available.', result, flags=re.IGNORECASE)
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*vegan\s+dishes\s+sunulmamaktad[ıi]r\.?',
+                    'No, vegan options are not available.', result, flags=re.IGNORECASE)
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*vegan\s+se[çc]enekler\s+yok\.?',
+                    'No, vegan options are not available.', result, flags=re.IGNORECASE)
+    # "Hayır, otoparkımız yok." → "No parking available."
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*otopark[ıi]m[ıi]z\s+yok\.?', 'No parking available.', result, flags=re.IGNORECASE)
+    # "WiFi erişimi yok." → "No Wi-Fi access."
+    result = re.sub(r'Wi-?Fi\s+eri[şs]imi\s+yok\.?', 'No Wi-Fi access.', result, flags=re.IGNORECASE)
+    # "Evet, özel günler için organizasyon yapılabilmektedir." → "Yes, special events can be organized."
+    result = re.sub(r'[Ee]vet[,.]?\s*(?:restoranda\s+)?[öo]zel\s+g[üu]nler\s+i[çc]in\s+organizasyon\s+yap[ıi]labilmektedir\.?',
+                    'Yes, special events can be organized.', result, flags=re.IGNORECASE)
+    # "Hayır, özel günler için organizasyon hizmeti sunmuyoruz." → "No, we do not offer event planning."
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*[öo]zel\s+g[üu]nler\s+i[çc]in\s+organizasyon\s+hizmeti\s+sunmuyoruz\.?',
+                    'No, we do not offer event planning services.', result, flags=re.IGNORECASE)
+    # "Hayır, romantik bir akşam için uygun değildir." → "No, not suitable for a romantic evening."
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*romantik\s+bir\s+ak[şs]am\s+i[çc]in\s+uygun\s+de[ğg]ildir\.?',
+                    'No, not suitable for a romantic evening.', result, flags=re.IGNORECASE)
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*romantik\s+bir\s+ak[şs]am\s+i[çc]in\s+uygun\s+de[ğg]il[,.].*$',
+                    'No, not suitable for a romantic evening.', result, flags=re.IGNORECASE)
+    # "Büyük gruplar için özel menüler and hizmetler we offer." → "Special menus and services are available for large groups."
+    result = re.sub(r'[Bb][üu]y[üu]k\s+gruplar\s+i[çc]in\s+[öo]zel\s+men[üu]ler\s+(?:and|ve)\s+hizmetler\s+(?:we\s+offer|sunulur|sunuluyor)\.?',
+                    'Special menus and services are available for large groups.', result, flags=re.IGNORECASE)
+    # "Evet, restoranda teras is nearby." → "Yes, there is a terrace."
+    result = re.sub(r'[Ee]vet[,.]?\s*restoranda\s+teras\s+is\s+nearby\.?', 'Yes, there is a terrace.', result, flags=re.IGNORECASE)
+    # "Evet, restoranda deniz manzarası is nearby." → "Yes, there is a sea view."
+    result = re.sub(r'[Ee]vet[,.]?\s*restoranda\s+deniz\s+manzaras[ıi]\s+is\s+nearby\.?', 'Yes, there is a sea view.', result, flags=re.IGNORECASE)
+    # "Evet, restoranda çocuklar için uygun bir ortam is nearby." → "Yes, child-friendly environment."
+    result = re.sub(r'[Ee]vet[,.]?\s*restoranda\s+[çc]ocuklar\s+i[çc]in\s+uygun\s+bir\s+ortam\s+is\s+nearby\.?',
+                    'Yes, child-friendly environment available.', result, flags=re.IGNORECASE)
+    # "Evet, büyük gruplar için ideal bir yerdir." → "Yes, ideal for large groups."
+    result = re.sub(r'[Ee]vet[,.]?\s*b[üu]y[üu]k\s+gruplar\s+i[çc]in\s+ideal\s+bir\s+(?:yer|mekan|restoran)\.?',
+                    'Yes, ideal for large groups.', result, flags=re.IGNORECASE)
+    # "Evet, büyük gruplar için uygun bir yerdir/restoranız." → "Yes, suitable for large groups."
+    result = re.sub(r'[Ee]vet[,.]?\s*b[üu]y[üu]k\s+gruplar\s+i[çc]in\s+uygun\s+(?:olan\s+)?bir\s+(?:yer|mekan|restoran[ıi]z)\.?',
+                    'Yes, suitable for large groups.', result, flags=re.IGNORECASE)
+    # "Evet, pazar günleri also açıkız." → "Yes, we are also open on Sundays."
+    result = re.sub(r'[Ee]vet[,.]?\s*pazar\s+g[üu]nleri\s+also\s+a[çc][ıi]k[ıi]z\.?',
+                    'Yes, we are also open on Sundays.', result, flags=re.IGNORECASE)
+    result = re.sub(r'[Ee]vet[,.]?\s*pazar\s+g[üu]nleri\s+a[çc][ıi]k[ıi]z\.?',
+                    'Yes, we are open on Sundays.', result, flags=re.IGNORECASE)
+    # "Aileler için offers a suitable setting." → "Suitable setting for families."
+    result = re.sub(r'[Aa]ileler\s+i[çc]in\s+offers\s+a\s+suitable\s+setting\.?',
+                    'Suitable setting for families.', result, flags=re.IGNORECASE)
+    # "and çocuklar için offers a suitable setting" → strip
+    result = re.sub(r'\s+and\s+[çc]ocuklar\s+i[çc]in\s+offers\s+a\s+suitable\s+setting\.?',
+                    '.', result, flags=re.IGNORECASE)
+    # "Evet, yakınında is nearby." → "Yes, it is nearby."
+    result = re.sub(r'[Ee]vet[,.]?\s*yak[ıi]n[ıi]nda\s+is\s+nearby\.?', 'Yes, it is nearby.', result, flags=re.IGNORECASE)
+    # "Evet, doğum günleri and büyük gruplar için organizasyon yapabilirsiniz." → "Yes, birthdays and group events can be organized."
+    result = re.sub(r'[Ee]vet[,.]?\s*do[ğg]um\s+g[üu]nleri\s+(?:and|ve)\s+b[üu]y[üu]k\s+gruplar\s+i[çc]in\s+organizasyon\s+yapabilirsiniz\.?',
+                    'Yes, you can organize birthdays and large group events.', result, flags=re.IGNORECASE)
+    # "Yaklaşık olarak N dakika yürüme mesafesindedir." → "About N minutes on foot."
+    result = re.sub(r'[Yy]akla[şs][ıi]k\s+olarak\s+(\d+)\s*dakika\s+y[üu]r[üu]me\s+mesafesindedir\.?',
+                    r'About \1 minutes on foot.', result, flags=re.IGNORECASE)
+    result = re.sub(r'[Yy]akla[şs][ıi]k\s+(\d+)\s*dakika\s+y[üu]r[üu]me\s+mesafesindedir\.?',
+                    r'About \1 minutes on foot.', result, flags=re.IGNORECASE)
+    # "Etiketi 'büyük grup' olarak listelenmiştir." → remove
+    result = re.sub(r"[Ee]tiketi\s+['\"]?b[üu]y[üu]k\s+grup['\"]?\s+olarak\s+listelenmi[şs]tir\.?", '', result, flags=re.IGNORECASE)
+    # "gibi yakın transit seçenekleri is nearby." → "and other nearby transit options."
+    result = re.sub(r'\s+gibi\s+yak[ıi]n\s+transit\s+se[çc]enekleri\s+is\s+nearby\.?',
+                    ' and other nearby transit options.', result, flags=re.IGNORECASE)
+    # "gibi lezzetli dishes we offer." → "and more are available."
+    result = re.sub(r'\s+gibi\s+lezzetli\s+dishes\s+we\s+offer\.?', ' and more are available.', result, flags=re.IGNORECASE)
+    # "X restoranının is one of the popular dishes" → strip restaurant reference
+    result = re.sub(r'\w+\s+restoran[ıi]n[ıi]n\s+is\s+one\s+of\s+the\s+popular\s+dishes\.?',
+                    'is one of the popular dishes.', result, flags=re.IGNORECASE)
+    # "vegan seçenekler yer almamaktadır" → "vegan options are not available"
+    result = re.sub(r'vegan\s+se[çc]enekler\s+yer\s+almamaktad[ıi]r\.?', 'vegan options are not available.', result, flags=re.IGNORECASE)
+    # "popüler yemek listesinde vegan seçenekler yer almamaktadır" → "No vegan options on the menu."
+    result = re.sub(r'.+pop[üu]ler\s+yemek\s+listesinde\s+vegan\s+se[çc]enekler\s+yer\s+almamaktad[ıi]r\.?',
+                    'No vegan options on the menu.', result, flags=re.IGNORECASE)
+    # "Türk mutfağından olan yemekleri severiz." → "We serve dishes from Turkish cuisine."
+    result = re.sub(r'T[üu]rk\s+mutfa[ğg][ıi]ndan\s+olan\s+yemekleri\s+severiz\.?',
+                    'We serve dishes from Turkish cuisine.', result, flags=re.IGNORECASE)
+    # "traditional Türk mutfağının önemli örnekleri olan X sunuyor" → "serves traditional Turkish dishes including X"
+    result = re.sub(r'traditional\s+T[üu]rk\s+mutfa[ğg][ıi]n[ıi]n\s+[öo]nemli\s+[öo]rnekleri\s+olan\s+(.+?)\s+(?:sunuyor|we offer)\.?',
+                    r'serves traditional Turkish dishes such as \1.', result, flags=re.IGNORECASE)
+    # "geleneksel Türk mutfağından gelmektedir" → "comes from traditional Turkish cuisine"
+    result = re.sub(r'geleneksel\s+T[üu]rk\s+mutfa[ğg][ıi]ndan\s+gelmektedir\.?',
+                    'comes from traditional Turkish cuisine.', result, flags=re.IGNORECASE)
+    # "Geç saatlere kadar açık olan X restoranı, iş yemeği and romantik bir akşam için ideal bir seçimdir."
+    result = re.sub(r'[Gg]e[çc]\s+saatlere\s+kadar\s+a[çc][ıi]k\s+olan\s+\w[\w\s]+\s+restoranı[,.]?\s+i[şs]\s+yeme[ğg]i\s+(?:and|ve)\s+romantik\s+bir\s+ak[şs]am\s+i[çc]in\s+ideal\s+bir\s+se[çc]imdir\.?',
+                    'Open until late hours, ideal for business lunches and romantic evenings.', result, flags=re.IGNORECASE)
+    # "Evet, restoranın manzaralı terası yok, but X gibi tarihi landmarklar yakındadır."
+    result = re.sub(r'[Ee]vet[,.]?\s*restoranın\s+manzaral[ıi]\s+teras[ıi]\s+yok[,.]?\s*but\s+(.+?)\s+gibi\s+tarihi\s+landmarklar\s+yak[ıi]ndad[ıi]r\.?',
+                    r'Unfortunately, the restaurant has no terrace, but historic landmarks like \1 are nearby.', result, flags=re.IGNORECASE)
+    # "Restoranda iş yemeği organizasyonu can be done and büyük gruplar için uygun bir yerdir."
+    result = re.sub(r'[Rr]estoranda\s+i[şs]\s+yeme[ğg]i\s+organizasyonu\s+can\s+be\s+done\s+(?:and|ve)\s+b[üu]y[üu]k\s+gruplar\s+i[çc]in\s+uygun\s+bir\s+(?:yer|mekan)\.?',
+                    'Business lunch events can be organized. Suitable for large groups.', result, flags=re.IGNORECASE)
+    # "Evet, restoranın popüler yemekleri among çocukların also sevdiği X bulunur."
+    result = re.sub(r'[Ee]vet[,.]?\s*restoranın\s+pop[üu]ler\s+yemekleri\s+among\s+[çc]ocukların\s+also\s+sevdi[ğg]i\s+(.+?)\s+bulunur\.?',
+                    r'Yes, the menu includes child-friendly favorites like \1.', result, flags=re.IGNORECASE)
+    # "[Name] restoranı büyük gruplar için uygun bir seçimdir." → "This restaurant is a good choice for large groups."
+    result = re.sub(r'[\w\s]+restoranı\s+b[üu]y[üu]k\s+gruplar\s+i[çc]in\s+uygun\s+bir\s+se[çc]imdir\.?',
+                    'This restaurant is a good choice for large groups.', result, flags=re.IGNORECASE)
+    # "X'nden yakındır." / "X'den yakındır."
+    result = re.sub(r"'?[nd]en\s+yak[ıi]nd[ıi]r\.?", ' is nearby.', result, flags=re.IGNORECASE)
+    result = re.sub(r"'?[nd]an\s+yak[ıi]nd[ıi]r\.?", ' is nearby.', result, flags=re.IGNORECASE)
+    # "Evet," as leading prefix before English → strip
+    result = re.sub(r'^[Ee]vet[,\.]\s+(?=[A-Z])', '', result)
+    # "Hayır, romantik ortam yok." → "No romantic atmosphere."
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*romantik\s+ortam\s+yok\.?', 'No romantic atmosphere.', result, flags=re.IGNORECASE)
+    # "Hayır, restoranda teras yoktur." → "No, there is no terrace."
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*restoranda\s+teras\s+yoktur\.?', 'No, there is no terrace.', result, flags=re.IGNORECASE)
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*restoranda\s+teras\s+yok\.?', 'No, there is no terrace.', result, flags=re.IGNORECASE)
+    # "Hayır, vegan seçenekleri yoktur." → "No, vegan options are not available."
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*vegan\s+se[çc]enekleri\s+yoktur\.?', 'No, vegan options are not available.', result, flags=re.IGNORECASE)
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*vegan\s+se[çc]enekleri\s+yok\.?', 'No, vegan options are not available.', result, flags=re.IGNORECASE)
+    # "Hayır, vegan seçeneğimiz is not available." → strip Turkish prefix
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*vegan\s+se[çc]ene[ğg]imiz\s+is\s+not\s+available\.?',
+                    'No, vegan options are not available.', result, flags=re.IGNORECASE)
+    # "Hayır, otoparkımız is not available." → "No parking available."
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*otopark[ıi]m[ıi]z\s+is\s+not\s+available\.?',
+                    'No parking available.', result, flags=re.IGNORECASE)
+    # "Evet, özel günler or organizasyonlar için ideal bir seçimdir." → "Yes, ideal for special occasions and events."
+    result = re.sub(r'[Ee]vet[,.]?\s*[öo]zel\s+g[üu]nler\s+(?:or|veya|ve)\s+organizasyonlar\s+i[çc]in\s+ideal\s+bir\s+se[çc]imdir\.?',
+                    'Yes, ideal for special occasions and events.', result, flags=re.IGNORECASE)
+    # "Evet, doğum günü, büyük grup and özel gün organizasyonları için uygun."
+    result = re.sub(r'[Ee]vet[,.]?\s*do[ğg]um\s+g[üu]n[üu][,.]?\s*b[üu]y[üu]k\s+grup\s+(?:and|ve)\s+[öo]zel\s+g[üu]n\s+organizasyonlar[ıi]\s+i[çc]in\s+uygun\.?',
+                    'Yes, suitable for birthdays, large groups, and special occasions.', result, flags=re.IGNORECASE)
+    # "Evet, romantik bir atmosferi." → "Yes, romantic atmosphere."
+    result = re.sub(r'[Ee]vet[,.]?\s*romantik\s+bir\s+atmosferi\.?', 'Yes, romantic atmosphere.', result, flags=re.IGNORECASE)
+    # "Evet, 23:30'a kadar açık olan bir restoranız." / "Evet, X'a kadar açık..."
+    result = re.sub(u'[Ee]vet[,.]?\\s*[\\d:]+[\u2019\']?a\\s+kadar\\s+a[\u00e7c][\u0131i]k\\s+olan\\s+bir\\s+restoran[\u0131i]z\\.?',
+                    'Yes, we are open until late.', result, flags=re.IGNORECASE)
+    # "geç saate kadar açık bir restoran olarak hizmet vermektedir." → "Open until late."
+    result = re.sub(r'ge[çc]\s+saate?\s+kadar\s+a[çc][ıi]k\s+(?:bir\s+)?restoran\s+olarak\s+hizmet\s+vermektedir\.?',
+                    'Open until late.', result, flags=re.IGNORECASE)
+    result = re.sub(r'[Gg]ece\s+saatlerine\s+kadar\s+a[çc][ıi]k\s+olan\s+restoranımız[,.]?\s*keyifli\s+bir\s+ak[şs]am\s+i[çc]in\s+ideal\s+bir\s+se[çc]imdir\.?',
+                    'Open until late, ideal for a pleasant evening.', result, flags=re.IGNORECASE)
+    # "gibi yemeklerimiz are popular." → strip Turkish prefix
+    result = re.sub(r'(.+?)\s+gibi\s+yemeklerimiz\s+are\s+popular\.?', r'\1 are popular dishes.', result, flags=re.IGNORECASE)
+    # "X gibi önemli landmarklar yakınında bulunan restoranımız, keyifli bir gezi için ideal..."
+    result = re.sub(r'(.+?)\s+gibi\s+[öo]nemli\s+landmarklar\s+yak[ıi]n[ıi]nda\s+bulunan\s+restoranımız[,.]?\s+keyifli\s+bir\s+(?:gezi|ak[şs]am)\s+i[çc]in\s+ideal[^.]*\.',
+                    r'Located near notable landmarks such as \1. An ideal spot for a memorable visit.',
+                    result, flags=re.IGNORECASE)
+    # "Restoran, büyük gruplara and iş yemeğine offers a suitable setting." → simplified
+    result = re.sub(r'[Rr]estoran[,.]?\s*b[üu]y[üu]k\s+gruplara\s+(?:and|ve)\s+i[şs]\s+yeme[ğg]ine\s+offers\s+a\s+suitable\s+setting\.?',
+                    'Suitable setting for large groups and business lunches.', result, flags=re.IGNORECASE)
+    # "Çoklu bir aile ortamı yok, but çocuk dostu olabilir." → "No dedicated family area, but may be child-friendly."
+    result = re.sub(r'[Çç]oklu\s+bir\s+aile\s+ortamı\s+yok[,.]?\s*but\s+[çc]ocuk\s+dostu\s+olabilir\.?',
+                    'No dedicated family area, but may be child-friendly.', result, flags=re.IGNORECASE)
+    # "X gibi lezzetler sunuyor." → "offers dishes like X."
+    result = re.sub(r'(.+?)\s+gibi\s+lezzetler\s+sunuyor\.?', r'Offers dishes like \1.', result, flags=re.IGNORECASE)
+    # "Bilgi bulunamadı, but restoranın popüler yemekleri X'tır."
+    result = re.sub(r'[Bb]ilgi\s+bulunamad[ıi][,.]?\s*but\s+restoranın\s+pop[üu]ler\s+yemekleri\s+(.+?)\s*(?:tır|dır)\.',
+                    r'\1 are popular dishes.', result, flags=re.IGNORECASE)
+    # "Located in X neighborhood. bulunan restoranımıza..." → fix double location
+    result = re.sub(r'(Located in \w[\w\s]+ neighborhood\.\s*)bulunan\s+restoranımıza\s+', r'\1Accessible via ', result, flags=re.IGNORECASE)
+    # "X restoranının popüler yemek listesinde" → strip
+    result = re.sub(r'[\w\s]+restoranının\s+pop[üu]ler\s+yemek\s+listesinde\s+', '', result, flags=re.IGNORECASE)
+    # "Evet, büyük gruplar için uygun olan restoranımız, aileler için also keyifli bir deneyim sunar."
+    result = re.sub(r'[Ee]vet[,.]?\s*b[üu]y[üu]k\s+gruplar\s+i[çc]in\s+uygun\s+olan\s+restoranımız[,.]?\s*aileler\s+i[çc]in\s+also\s+keyifli\s+bir\s+deneyim\s+sunar\.?',
+                    'Yes, suitable for large groups and also a pleasant experience for families.', result, flags=re.IGNORECASE)
+    # "Evet, 10 min away." when question is about nearby landmark
+    result = re.sub(r'^[Ee]vet[,.]?\s+(\d+)\s+min\s+away\.?$', r'Yes, \1 minutes away.', result.strip())
+    # "Restoran, ..." prefix when there's already English text
+    result = re.sub(r'^[Rr]estoran[,.]?\s+(?=serves|offers|is|has|features|provides|A\b)', '', result)
+    # "Terasi yok." → "No terrace."
+    result = re.sub(r'^[Tt]eras[ıi]\s+yok\.?$', 'No terrace.', result.strip())
+    # "[Name]'ın terası yok." → "No terrace."
+    result = re.sub(r"[\w\s''\u2019]+[ıiuü]n\s+teras[ıi]\s+yok\.?", 'No terrace.', result, flags=re.IGNORECASE)
+    # "reservation yapma seçeneğimiz yok." → "Reservations are not available."
+    result = re.sub(r'reservation\s+yapma\s+se[çc]ene[ğg]imiz\s+yok\.?', 'Reservations are not available.', result, flags=re.IGNORECASE)
+    # "X gibi lezzetlerimiz." → dishes list answer
+    result = re.sub(r'(.+?)\s+gibi\s+lezzetlerimiz\.?$', r'\1 are popular dishes.', result.strip(), flags=re.IGNORECASE)
+    # "X gibi yakın landmarklarımız." → "Nearby landmarks include X."
+    result = re.sub(r'(.+?)\s+gibi\s+yak[ıi]n\s+landmarklar[ıi]m[ıi]z\.?', r'Nearby landmarks include \1.', result, flags=re.IGNORECASE)
+    # "Romantik, ... gibi etkinlikler için uygun atmosphere." → "Suitable for various occasions."
+    result = re.sub(r'[Rr]omantik[,.]?.*gibi\s+etkinlikler\s+i[çc]in\s+uygun\s+atmosphere\.?',
+                    'Suitable for romantic dinners, business lunches, birthdays, and special occasions.', result, flags=re.IGNORECASE)
+    # "Büyük gruplar için uygun." → "Suitable for large groups."
+    result = re.sub(r'^[Bb][üu]y[üu]k\s+gruplar\s+i[çc]in\s+uygun\.?$', 'Suitable for large groups.', result.strip())
+    # "Doğum günü, özel gün gibi organizasyonlar için ideal." → "Ideal for birthdays and special occasions."
+    result = re.sub(r'[Dd]o[ğg]um\s+g[üu]n[üu][,.]?\s*[öo]zel\s+g[üu]n\s+gibi\s+organizasyonlar\s+i[çc]in\s+ideal\.?',
+                    'Ideal for birthdays and special occasions.', result, flags=re.IGNORECASE)
+    # "Evet, çocuklar için uygun." → "Yes, suitable for children."
+    result = re.sub(r'[Ee]vet[,.]?\s*[çc]ocuklar\s+i[çc]in\s+uygun\.?', 'Yes, suitable for children.', result, flags=re.IGNORECASE)
+    # "Manzaralı bir restoran olan X, lezzetli ... and uygun fiyatlarıyla dikkat çekiyor."
+    result = re.sub(r'[Mm]anzaral[ıi]\s+bir\s+restoran\s+olan\s+\w[\w\s]+[,.]?\s*lezzetli\s+(.+?)\s+(?:and|ve)\s+uygun\s+fiyatlar[ıi]yla\s+dikkat\s+[çc]ekiyor\.?',
+                    r'A scenic restaurant known for its delicious \1 and affordable prices.', result, flags=re.IGNORECASE)
+    # "[Name] restoranı doğum günü organizasyonları için uygun bir yer olabilir."
+    result = re.sub(r'\w[\w\s]+restoran[ıi]\s+do[ğg]um\s+g[üu]n[üu]\s+organizasyonlar[ıi]\s+i[çc]in\s+uygun\s+bir\s+yer\s+olabilir\.?',
+                    'The restaurant may be suitable for birthday events.', result, flags=re.IGNORECASE)
+    # "[Name] restoranı büyük gruplar için özel alan sunar. İş yemeği organizasyonları için ideal bir yerdir."
+    result = re.sub(r'\w[\w\s]+restoran[ıi]\s+b[üu]y[üu]k\s+gruplar\s+i[çc]in\s+[öo]zel\s+alan\s+sunar\.?\s+[İi][şs]\s+yeme[ğg]i\s+organizasyonlar[ıi]\s+i[çc]in\s+ideal\s+bir\s+(?:yer|mekan)\.?',
+                    'The restaurant offers a private area for large groups. Ideal for business lunches.', result, flags=re.IGNORECASE)
+    # "X grilled and kebap mutfak türüne based on ..." → "X, Y and other grilled/kebab dishes are recommended."
+    result = re.sub(r'\w[\w\s\'&]+\s+grilled\s+(?:and|ve)\s+kebap\s+mutfak\s+t[üu]r[üu]ne\s+based\s+on\s+(.+?)\s+daha\s+uygun\.?',
+                    r'\1 and other grilled and kebab dishes are recommended.', result, flags=re.IGNORECASE)
+    # "Marmaray hattı ile X or Y istasyonlarından" - transit remnants
+    result = re.sub(r'[Mm]armaray\s+hatt[ıi]\s+ile\s+(.+?)\s+istasyonlar[ıi]ndan\s+ula[şs]abilirsiniz\.?',
+                    r'Accessible via Marmaray from \1 stations.', result, flags=re.IGNORECASE)
+    # "Evet, restoran büyük grupları kabul edebilir, especially X'den N dakika olması kolay ulaşım sağlar."
+    result = re.sub(r'[Ee]vet[,.]?\s*restoran\s+b[üu]y[üu]k\s+gruplar[ıi]\s+kabul\s+edebilir[,.]?\s*especially\s+[^.]+\s+kolay\s+ula[şs][ıi]m\s+sa[ğg]lar\.?',
+                    'Yes, the restaurant can accommodate large groups with convenient transport access.', result, flags=re.IGNORECASE)
+    # "[Name]'ın popüler yemekleri traditional Türk mutfağından gelmektedir, especially X"
+    result = re.sub(r"[\w\s''\u2019]+[ıiuü]n\s+pop[üu]ler\s+yemekleri\s+traditional\s+T[üu]rk\s+mutfa[ğg][ıi]ndan\s+gelmektedir[,.]?\s*especially\s+(.+?)\.?$",
+                    r'The popular dishes come from traditional Turkish cuisine, especially \1.',
+                    result.strip(), flags=re.IGNORECASE)
+    # "Sultan Mehmet ..., manzaralı bir restoran olmadığı için teras is not available, but tarihi X and Y..."
+    result = re.sub(r"[\w\s&'']+[,.]?\s*manzaral[ıi]\s+bir\s+restoran\s+olmad[ıi][ğg][ıi]\s+i[çc]in\s+teras\s+is\s+not\s+available[,.]?\s*but\s+(.+?)$",
+                    r'No terrace or scenic view, but \1',
+                    result, flags=re.IGNORECASE)
+    # "Hayır, restoranın yakınında X gibi are notable nearby places." → "Nearby places include X."
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*restoranın\s+yakınında\s+(.+?)\s+gibi\s+are\s+notable\s+nearby\s+places\.?',
+                    r'Nearby notable places include \1.', result, flags=re.IGNORECASE)
+    # "Evet," / "Hayır," before already-English sentence → strip Turkish prefix
+    result = re.sub(r'^[Ee]vet[,\.]\s+(?=[a-z])', '', result)
+    # "Evet, teras is nearby." → "Yes, there is a terrace."
+    result = re.sub(r'[Ee]vet[,.]?\s*teras\s+is\s+nearby\.?', 'Yes, there is a terrace.', result, flags=re.IGNORECASE)
+    # "Evet, deniz manzaralı bir teras is available." → "Yes, there is a terrace with sea view."
+    result = re.sub(r'[Ee]vet[,.]?\s*deniz\s+manzaral[ıi]\s+bir\s+teras\s+is\s+available\.?', 'Yes, there is a sea-view terrace.', result, flags=re.IGNORECASE)
+    # "Evet, büyük gruplar and özel günler için uygun bir yerdir." → "Yes, suitable for large groups and special occasions."
+    result = re.sub(r'[Ee]vet[,.]?\s*b[üu]y[üu]k\s+gruplar\s+(?:and|ve)\s+[öo]zel\s+g[üu]nler\s+i[çc]in\s+uygun\s+bir\s+(?:yer|mekan)\.?',
+                    'Yes, suitable for large groups and special occasions.', result, flags=re.IGNORECASE)
+    # "Evet, doğum günü and özel günler için ideal bir yerdir." → "Yes, ideal for birthdays and special occasions."
+    result = re.sub(r'[Ee]vet[,.]?\s*do[ğg]um\s+g[üu]n[üu]\s+(?:and|ve)\s+[öo]zel\s+g[üu]nler\s+i[çc]in\s+ideal\s+bir\s+(?:yer|mekan)\.?',
+                    'Yes, ideal for birthdays and special occasions.', result, flags=re.IGNORECASE)
+    # "Evet, büyük gruplar için ideal olan X, doğum günü partilerine also uygun bir yer."
+    result = re.sub(r'[Ee]vet[,.]?\s*b[üu]y[üu]k\s+gruplar\s+i[çc]in\s+ideal\s+olan\s+\w[\w\s]+[,.]?\s*do[ğg]um\s+g[üu]n[üu]\s+partilerine\s+also\s+uygun\s+bir\s+yer\.?',
+                    'Yes, ideal for large groups and also suitable for birthday events.', result, flags=re.IGNORECASE)
+    # "Hayır, vegan seçeneği is not available." → "No, vegan options are not available."
+    result = re.sub(r'[Hh]ay[ıi]r[,.]?\s*vegan\s+se[çc]ene[ğg]i\s+is\s+not\s+available\.?', 'No, vegan options are not available.', result, flags=re.IGNORECASE)
+    # "Yes, family-friendly. bir restoran olarak bilinmektedir." → "Yes, family-friendly."
+    result = re.sub(r'(Yes,\s+family-friendly)\.\s+bir\s+restoran\s+olarak\s+bilinmektedir\.?', r'\1.', result, flags=re.IGNORECASE)
+    # "X gibi önemli landmarks..." → "Notable landmarks include X." (before nearby keywords are processed)
+    result = re.sub(r'(.+?)\s+gibi\s+[öo]nemli\s+landmarklar\s+yak[ıi]n[ıi]nda\s+bulunan\s+restoranımız[^.]*\.',
+                    r'Located near notable landmarks such as \1.', result, flags=re.IGNORECASE)
+    # "tarihi X and Y gibi yakın yerlerin manzarasını görebilirsiniz." → "you can see nearby historic places like X and Y."
+    result = re.sub(r'tarihi\s+(.+?)\s+gibi\s+yak[ıi]n\s+yerlerin\s+manzaras[ıi]n[ıi]\s+g[öo]rebilirsiniz\.?',
+                    r'you can see nearby historic places like \1.', result, flags=re.IGNORECASE)
+    # "Romantik ortamı and güzel manzarası, özel günler için ideal bir seçenektir." → "Its romantic atmosphere and beautiful view make it ideal for special occasions."
+    result = re.sub(r'[Rr]omantik\s+ortam[ıi]\s+(?:and|ve)\s+g[üu]zel\s+manzaras[ıi][,.]?\s*[öo]zel\s+g[üu]nler\s+i[çc]in\s+ideal\s+bir\s+se[çc]enektir\.?',
+                    'Its romantic atmosphere and beautiful view make it ideal for special occasions.', result, flags=re.IGNORECASE)
+    # "Located in X neighborhood. yer alan [Name], keyifli bir deniz manzarası sunuyor."
+    result = re.sub(r'(Located in \w[\w\s]+ neighborhood\.)\s+yer\s+alan\s+\w[\w\s&]+[,.]?\s*keyifli\s+bir\s+deniz\s+manzaras[ıi]\s+sunuyor\.?',
+                    r'\1 A pleasant sea view is available.', result, flags=re.IGNORECASE)
+    # "[Name], klasik Türk mutfağı ile donatılmış bir restoran." → "A restaurant featuring classic Turkish cuisine."
+    result = re.sub(r'\w[\w\s&]+[,.]?\s*klasik\s+T[üu]rk\s+mutfa[ğg][ıi]\s+ile\s+donat[ıi]lm[ıi][şs]\s+bir\s+restoran\.?',
+                    'A restaurant featuring classic Turkish cuisine.', result, flags=re.IGNORECASE)
+    # "Anadolu mutfağından esinlenilmiş dishes sunuyor." → "Offers dishes inspired by Anatolian cuisine."
+    result = re.sub(r'[Aa]nadolu\s+mutfa[ğg][ıi]ndan\s+esinlenilmi[şs]\s+dishes\s+sunuyor\.?',
+                    'Offers dishes inspired by Anatolian cuisine.', result, flags=re.IGNORECASE)
+    # "X bölgesinde Y var, but restoranın hemen yanında bir Y yok." → partial cleanup
+    result = re.sub(r'but\s+restoranın\s+hemen\s+yan[ıi]nda\s+bir\s+\w+\s+yok\.?', 'but none immediately next to the restaurant.', result, flags=re.IGNORECASE)
+    # "Yakındaki X bölgesinde Y var" → "There is Y in the nearby X area"
+    result = re.sub(r'[Yy]ak[ıi]ndaki\s+(\w[\w\s]+)\s+b[öo]lgesinde\s+(\w[\w\s]+)\s+var[,.]?',
+                    r'There is \2 in the nearby \1 area,', result, flags=re.IGNORECASE)
+    # "Restoran, X bölgesinde bulunan tarihi and kültürel bir yer olan Y'nin yakınında yer almaktadır."
+    result = re.sub(u'[Rr]estoran[,.]?\\s*\\w[\\w\\s]+b[\u00f6o]lgesinde\\s+bulunan\\s+tarihi\\s+(?:and|ve)\\s+k[\u00fcu]lt[\u00fcu]rel\\s+bir\\s+yer\\s+olan\\s+(.+?)[\u2019\']?nin\\s+yak[\\u0131i]n[\\u0131i]nda\\s+yer\\s+almaktad[\\u0131i]r\\.?',
+                    r'Located near \1, a historic and cultural landmark.', result, flags=re.IGNORECASE)
+    # "Gelik restoranı, çocuk dostu bir ortam sunuyor. Büyük gruplar için uygun olan restoranda..."
+    result = re.sub(r'\w[\w\s]+restoran[ıi][,.]?\s*[çc]ocuk\s+dostu\s+bir\s+ortam\s+sunuyor\.\s*[Bb][üu]y[üu]k\s+gruplar\s+i[çc]in\s+uygun\s+olan\s+restoranda[^.]*\.',
+                    'Child-friendly environment. Suitable for large groups.', result, flags=re.IGNORECASE)
+    # "Gelik restoranı, Kazlıçeşme Mahallesi'nde bulunan bir restoran. Manzaralı bir restoran olan Gelik, X and Y..."
+    result = re.sub(r'\w[\w\s]+restoran[ıi][,.]?\s*\w[\w\s]+[Mm]ahallesi\'nde\s+bulunan\s+bir\s+restoran\.\s*[Mm]anzaral[ıi]\s+bir\s+restoran\s+olan\s+\w[\w\s]+[,.]?\s*(.+?)\.?$',
+                    r'A scenic restaurant. \1.', result.strip(), flags=re.IGNORECASE)
+    # "Konyalı Restaurant'ın popüler yemekleri traditional ..."
+    result = re.sub(r"[\w\s&'']+['']?[ıiuü]n\s+pop[üu]ler\s+yemekleri\s+traditional\s+(.+)$",
+                    r'Traditional \1', result, flags=re.IGNORECASE)
+    # "gibi landmarklar yakın" → "are nearby landmarks"
+    result = re.sub(r'(.+?)\s+gibi\s+landmarklar\s+yak[ıi]n\.?',
+                    r'\1 are nearby landmarks.', result, flags=re.IGNORECASE)
+    # "istasyonları yakın" → "stations are nearby"
+    result = re.sub(r'(.+?)\s+istasyonlar[ıi]\s+yak[ıi]n\.?',
+                    r'\1 stations are nearby.', result, flags=re.IGNORECASE)
+    result = re.sub(r'(.+?)\s+istasyonu\s+yak[ıi]n\.?',
+                    r'\1 station is nearby.', result, flags=re.IGNORECASE)
+    # "yakınlardadır" → "is nearby"
+    result = re.sub(r'\byak[ıi]nlardad[ıi]r\.?', 'is nearby.', result, flags=re.IGNORECASE)
+    # "X mutfak tarzında hizmet vermektedir." → "serves X cuisine."
+    result = re.sub(r'(.+?)\s+mutfak\s+tarz[ıi]nda\s+hizmet\s+vermektedir\.?',
+                    r'Serves \1 cuisine.', result, flags=re.IGNORECASE)
+    result = re.sub(r'(.+?)\s+mutfak\s+tarz[ıi]nda\s+hizmet\s+veriyor\.?',
+                    r'Serves \1 cuisine.', result, flags=re.IGNORECASE)
+    # "önemli places is nearby" → "are notable nearby places"
+    result = re.sub(r'[öo]nemli\s+places\s+is\s+nearby\.?', 'are notable nearby places.', result, flags=re.IGNORECASE)
+    result = re.sub(r'(.+?)\s+[öo]nemli\s+places\s+is\s+nearby\.?',
+                    r'\1 are notable nearby places.', result, flags=re.IGNORECASE)
+    # "Evet, özel günler and organizasyon için uygun"
+    result = re.sub(r'[Ee]vet[,.]?\s*[öo]zel\s+g[üu]nler\s+(?:and|ve)\s+organizasyon\s+i[çc]in\s+uygun\.?',
+                    'Yes, suitable for special occasions and events.', result, flags=re.IGNORECASE)
+    # "X ise N dakika away." / "X ise yakında"
+    result = re.sub(r'\bise\s+(\d+)\s*dakika\s+away\.?', r'is \1 minutes away.', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bise\s+yak[ıi]nda\.?', 'is nearby.', result, flags=re.IGNORECASE)
+    # "Evet, restoranın yakınında X is nearby."
+    result = re.sub(r'[Ee]vet[,.]?\s*restoranın\s+yakınında\s+(.+?)\s+is\s+nearby\.?',
+                    r'Yes, \1 is nearby.', result, flags=re.IGNORECASE)
+    # "restoran ızgara and kebap style dishes are served" — mixed
+    result = re.sub(r'^[Rr]estoran\s+', '', result)
+    # "X yakınındayız. Y ise N dakika away."
+    result = re.sub(r'yakınındayız\.', 'is nearby.', result, flags=re.IGNORECASE)
     # "sunuluyor" as suffix - "is available/served"
     result = re.sub(r'\bsunuluyor\b', 'is available', result, flags=re.IGNORECASE)
     # "sunmaktadır" / "sunmaktayız"
@@ -794,6 +1226,18 @@ def translate_answer(a: str) -> str:
     # "Evet, özel günler and organizasyonlar için Reservations recommended. ve özel hizmet sunuyoruz."
     result = re.sub(r'[Ee]vet[,.]?\s*[öo]zel\s+g[üu]nler\s+(?:ve|and)\s+organizasyonlar\s+i[çc]in\s+Reservations recommended\.\s+(?:ve|and)\s+[öo]zel\s+hizmet\s+(?:sunuyoruz|we offer)\.?',
                     'Yes, reservations are recommended for special events. Custom services available.', result, flags=re.IGNORECASE)
+    # "N min from X Mahallesi'nde bulunan restorana Y stop" → clean up partial transit
+    result = re.sub(
+        r'(\d+\s*min\s+from\s+)[\w\u00e7\u011f\u0131\u015f\u00f6\u015f\u00fc\u00c7\u011e\u0130\u00d6\u015e\u00dc\s\']+[Mm]ahallesi\'nde\s+bulunan\s+restorana\s+',
+        r'\1',
+        result, flags=re.IGNORECASE
+    )
+    # "X Mahallesi'nde, with a sea view." — neighborhood prefix for location answers
+    result = re.sub(
+        r"^([\w\u00e7\u011f\u0131\u015f\u00f6\u015f\u00fc\u00c7\u011e\u0130\u00d6\u015e\u00dc\s]+)[Mm]ahallesi'nde[,]?\s+",
+        lambda m: f"Located in {m.group(1).strip()} neighborhood. ",
+        result, flags=re.IGNORECASE
+    )
     # "Kandilli Mahallesi'nde, vapur ile ..." - neighborhood transit combo
     result = re.sub(
         r"([A-Z\u00c7\u011e\u0130\u00d6\u015e\u00dc][a-zA-Z\u00e7\u011f\u0131\u015f\u00f6\u015f\u00fc\s]+?) [Mm]ahallesi'nde[,]?\s*vapur\s+ile\s+(.+?)\s+gibi\s+yerlere\s+yak[ıi]n\s+konumdad[ıi]r\.?",
@@ -981,6 +1425,27 @@ def translate_answer(a: str) -> str:
     )
 
     # Terrace-specific answers
+    # "[Name]'ta terasınızda keyifli bir yemek deneyimi yaşayabilir, X and Y gibi yerlere yakın..."
+    result = re.sub(
+        r"[\w\u00c7\u011e\u0130\u00d6\u015e\u00dc\u00e7\u011f\u0131\u00f6\u015f\u00fc'\u2019']+\s*(?:'[tndaki]+\s+)?teras[ıi]nızda\s+keyifli\s+bir\s+yemek\s+deneyimi\s+yaşayabilir[^.]*\.",
+        'You can enjoy a pleasant dining experience on the terrace.',
+        result, flags=re.IGNORECASE
+    )
+    result = re.sub(
+        r"teras[ıi]nızda\s+keyifli\s+bir\s+yemek\s+deneyimi\s+yaşayabilirsiniz[^.]*\.",
+        'You can enjoy a pleasant dining experience on the terrace.',
+        result, flags=re.IGNORECASE
+    )
+    result = re.sub(
+        r"teras[ıi]m[ıi]zda\s+keyifli\s+bir\s+(?:yemek\s+)?deneyim[^.]*\.",
+        'You can enjoy a pleasant experience on our terrace.',
+        result, flags=re.IGNORECASE
+    )
+    result = re.sub(
+        r"teras[ıi]nda\s+keyifli\s+bir\s+(?:yemek\s+)?deneyim[^.]*\.",
+        'You can enjoy a pleasant dining experience on the terrace.',
+        result, flags=re.IGNORECASE
+    )
     result = re.sub(
         r"[A-Za-zÇĞİÖŞÜçğışöşü']+\s+'?da\s+teras\s+bulunmamaktad[ıi]r[^.]*\.",
         'No, there is no terrace at this restaurant.',
@@ -996,6 +1461,28 @@ def translate_answer(a: str) -> str:
     # "uzaklıkta" without -dır (appears after partial transit translation)
     result = re.sub(r'\s*uzakl[ıi]kta\b', '', result, flags=re.IGNORECASE)
     result = re.sub(r'\s*uzakl[ıi]ktas[ıi]n[ıi]z\b', '', result, flags=re.IGNORECASE)
+    # "is nearby.lardadır." leftover suffix
+    result = re.sub(r'(is nearby)\.?lardad[ıi]r\.?', r'\1.', result, flags=re.IGNORECASE)
+    # "ızgara" → "Grilled" (common Turkish cooking method)
+    result = re.sub(r'\b[ıi]zgara\b', 'grilled', result, flags=re.IGNORECASE)
+    result = re.sub(r'^[Gg]rilled\b', 'Grilled', result)
+    # "Üzgünüz, X'a özel terası and manzarası yok."
+    result = re.sub(
+        u'[\u00dc\u00fc]zg[\u00fc u]n[\u00fc u]z[,.]?\\s*.+?[\u2019\']?a\\s+[\u00f6o]zel\\s+teras[\u0131i]\\s+(?:and|ve)\\s+manzaras[\u0131i]\\s+yok\\.?',
+        'Unfortunately, there is no terrace or scenic view at this restaurant.',
+        result, flags=re.IGNORECASE
+    )
+
+    # "[Name and Y] gibi yerlere yakın bir konumda bulunacaksınız." Turkish remnant
+    result = re.sub(
+        r',?\s+[\w\u00e7\u011f\u0131\u00f6\u015f\u00fc\s]+gibi\s+yerlere\s+yak[ıi]n\s+bir\s+konumda\s+bulunacaks[ıi]n[ıi]z\.?',
+        '.', result, flags=re.IGNORECASE
+    )
+    # "... gibi yerlere yakın konumdadır." remnant
+    result = re.sub(
+        r',?\s+[\w\u00e7\u011f\u0131\u00f6\u015f\u00fc\s]+gibi\s+yerlere\s+yak[ıi]n\s+konumdad[ıi]r\.?',
+        '.', result, flags=re.IGNORECASE
+    )
 
     # Trailing mixed Turkish remnants after partial translation
     result = re.sub(r'\s*\.\s*$', '.', result.strip())
