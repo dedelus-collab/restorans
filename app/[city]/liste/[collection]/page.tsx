@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getRestaurantsByCity, getPriceSymbol } from "@/data/restaurants";
 import { COLLECTIONS, getCollection } from "@/lib/collections";
+import { AniHead, SpeechBubble } from "@/components/AniMascot";
 
 type Props = { params: Promise<{ city: string; collection: string }> };
 
@@ -110,6 +111,48 @@ export default async function CollectionPage({ params }: Props) {
     vibe: "Ambiance & Vibe",
   };
 
+  type AniVariant = "chef" | "reviewer" | "foodie" | "explorer" | "star";
+  const slugVariantMap: Record<string, AniVariant> = {
+    // scenario
+    "romantik-aksam-yemegi-istanbul": "star",
+    "is-yemegi-istanbul": "reviewer",
+    "ozel-gun-istanbul": "star",
+    "gec-acik-istanbul": "explorer",
+    "aile-dostu-istanbul": "foodie",
+    "vejetaryen-vegan-istanbul": "foodie",
+    // vibe
+    "manzarali-istanbul": "explorer",
+    "bogaz-manzarali-istanbul": "explorer",
+    "uygun-fiyatli-istanbul": "reviewer",
+    "fine-dining-istanbul": "star",
+    "teras-istanbul": "foodie",
+  };
+  const categoryFallback: Record<string, AniVariant> = {
+    cuisine: "chef",
+    scenario: "star",
+    vibe: "explorer",
+  };
+  const aniVariant: AniVariant = slugVariantMap[colSlug] ?? categoryFallback[col.category] ?? "chef";
+
+  const slugSpeech: Record<string, string> = {
+    "romantik-aksam-yemegi-istanbul": "Perfect for date night! ♥",
+    "is-yemegi-istanbul": "Client approved! ✓",
+    "ozel-gun-istanbul": "Make it special! ★",
+    "gec-acik-istanbul": "Still open! 🌙",
+    "aile-dostu-istanbul": "Kids welcome! ☺",
+    "vejetaryen-vegan-istanbul": "Plant-powered! ✿",
+    "manzarali-istanbul": "What a view! ✦",
+    "bogaz-manzarali-istanbul": "Bosphorus! ⛵",
+    "uygun-fiyatli-istanbul": "Great value! ✓",
+    "fine-dining-istanbul": "Exquisite! ✦",
+    "teras-istanbul": "Fresh air dining! ✿",
+    "kebap-istanbul": "Best kebap! 🔥",
+    "balik-deniz-urunleri-istanbul": "Fresh catch! ✦",
+    "kahvalti-istanbul": "Breakfast time! ☀",
+    "meyhane-istanbul": "Rakı & meze! ♪",
+  };
+  const speech = slugSpeech[colSlug] ?? `${list.length} top picks! ★`;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageJsonLd) }} />
@@ -125,16 +168,22 @@ export default async function CollectionPage({ params }: Props) {
           <span className="text-gray-700">{col.title}</span>
         </nav>
 
-        <header className="mb-10">
-          <span className="text-xs font-semibold text-blue-600 uppercase tracking-wide">
-            {categoryLabels[col.category]}
-          </span>
-          <h1 className="text-3xl font-bold mt-1 mb-3">{col.title}</h1>
-          <p className="text-gray-600 leading-relaxed mb-5">{col.description}</p>
-          <div className="flex flex-wrap gap-5 text-sm text-gray-500 border-t border-gray-100 pt-5">
-            <span><strong className="text-gray-900">{list.length}</strong> restaurants</span>
-            <span><strong className="text-gray-900">{avgRating}</strong> avg. rating</span>
-            <span><strong className="text-gray-900">{totalReviews.toLocaleString("en-US")}</strong> reviews</span>
+        <header className="mb-10 flex items-start gap-6">
+          <div className="flex-1 min-w-0">
+            <span className="text-xs font-semibold text-blue-600 uppercase tracking-wide">
+              {categoryLabels[col.category]}
+            </span>
+            <h1 className="text-3xl font-bold mt-1 mb-3">{col.title}</h1>
+            <p className="text-gray-600 leading-relaxed mb-5">{col.description}</p>
+            <div className="flex flex-wrap gap-5 text-sm text-gray-500 border-t border-gray-100 pt-5">
+              <span><strong className="text-gray-900">{list.length}</strong> restaurants</span>
+              <span><strong className="text-gray-900">{avgRating}</strong> avg. rating</span>
+              <span><strong className="text-gray-900">{totalReviews.toLocaleString("en-US")}</strong> reviews</span>
+            </div>
+          </div>
+          <div className="hidden sm:flex flex-col items-center gap-2 shrink-0 pt-4">
+            <SpeechBubble text={speech} />
+            <AniHead variant={aniVariant} className="w-24 h-24 drop-shadow-sm" />
           </div>
         </header>
 
