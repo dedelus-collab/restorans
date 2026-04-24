@@ -110,7 +110,7 @@ ${context}
 Rules:
 - Recommend 2–3 specific restaurants with concrete reasons why they fit the request.
 - Mention neighborhood, price range (₺=budget, ₺₺=mid, ₺₺₺=upscale, ₺₺₺₺=luxury), rating, and popular dishes.
-- Always include the restaurant page link (e.g. /istanbul/restaurant-name) so the user can see full details.
+- Always include the restaurant page link as a markdown link, e.g. [Restaurant Name](/istanbul/restaurant-slug), so the user can click to see full details.
 - Be concise and conversational. No long bullet lists.
 - Answer in the same language the user writes in (Turkish or English).
 - If asked about a specific restaurant, share everything you know from the data.

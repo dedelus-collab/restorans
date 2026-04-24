@@ -1,7 +1,43 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 import { KawaiiIcon } from "./AniMascot";
+
+// Render message text with clickable links for [text](url) and bare /city/slug paths
+function renderContent(text: string) {
+  const parts: React.ReactNode[] = [];
+  // Combined pattern: markdown links OR bare site paths
+  const pattern = /\[([^\]]+)\]\((\/[^\s)]+)\)|(\/[a-z][a-z0-9-]+\/[a-z][a-z0-9-]+)/g;
+  let last = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > last) parts.push(text.slice(last, match.index));
+    if (match[1] && match[2]) {
+      // Markdown link [label](path)
+      parts.push(
+        <Link key={key++} href={match[2]}
+          className="underline text-blue-600 hover:text-blue-800 font-medium"
+          onClick={e => e.stopPropagation()}>
+          {match[1]}
+        </Link>
+      );
+    } else if (match[3]) {
+      // Bare path /istanbul/slug
+      parts.push(
+        <Link key={key++} href={match[3]}
+          className="underline text-blue-600 hover:text-blue-800 font-medium"
+          onClick={e => e.stopPropagation()}>
+          {match[3]}
+        </Link>
+      );
+    }
+    last = match.index + match[0].length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts;
+}
 
 type Msg = { role: "user" | "assistant"; content: string };
 
@@ -120,7 +156,7 @@ export function ChatWidget() {
                     ? "bg-gray-900 text-white rounded-tr-sm max-w-[230px]"
                     : "bg-gray-100 text-gray-800 rounded-tl-sm max-w-[250px]"
                 }`}>
-                  {m.content}
+                  {m.role === "assistant" ? renderContent(m.content) : m.content}
                 </div>
               </div>
             ))}
@@ -130,7 +166,7 @@ export function ChatWidget() {
               <div className="flex gap-2 items-start">
                 <KawaiiIcon variant="breakfast" className="w-7 h-7 shrink-0 mt-0.5" />
                 <div className="bg-gray-100 text-gray-800 rounded-2xl rounded-tl-sm px-3 py-2 text-sm leading-relaxed max-w-[250px] whitespace-pre-wrap">
-                  {streaming}
+                  {renderContent(streaming)}
                   <span className="inline-block w-0.5 h-3.5 bg-gray-500 ml-0.5 align-middle animate-pulse" />
                 </div>
               </div>
