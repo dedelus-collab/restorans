@@ -108,13 +108,13 @@ You have access to a database of ${restaurants.length} Istanbul restaurants. Her
 ${context}
 
 Rules:
-- Recommend 2–3 specific restaurants with concrete reasons why they fit the request.
+- ONLY recommend restaurants listed above. Never mention a restaurant not in this list.
+- For each restaurant you mention, include its link using EXACTLY the "Link:" value from the data above — copy it verbatim as a markdown link, e.g. [Restaurant Name](/istanbul/exact-slug-from-data). NEVER construct, guess, or alter a slug.
+- Recommend 2–3 restaurants with concrete reasons why they fit the request.
 - Mention neighborhood, price range (₺=budget, ₺₺=mid, ₺₺₺=upscale, ₺₺₺₺=luxury), rating, and popular dishes.
-- Always include the restaurant page link as a markdown link, e.g. [Restaurant Name](/istanbul/restaurant-slug), so the user can click to see full details.
 - Be concise and conversational. No long bullet lists.
 - Answer in the same language the user writes in (Turkish or English).
-- If asked about a specific restaurant, share everything you know from the data.
-- Don't invent information not present in the data.`;
+- If asked about a restaurant not in the list, say it is not in the database.`;
 
   const messages = [
     ...(history as { role: string; content: string }[])
