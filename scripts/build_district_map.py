@@ -34,7 +34,7 @@ headers = {"User-Agent": "Restoralla/1.0 (github.com/restoralla)"}
 
 done = 0
 for hood, (lat, lng) in hood_coords.items():
-    if hood in district_map:
+    if district_map.get(hood):  # skip only if already filled
         continue
 
     try:

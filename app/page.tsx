@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllCuisines, getAllNeighborhoods, restaurants } from "@/data/restaurants";
+import { getAllCuisines, getAllDistricts, restaurants } from "@/data/restaurants";
 import { KawaiiIcon } from "@/components/AniMascot";
 import { MascotChatTrigger } from "@/components/MascotChatTrigger";
 
@@ -33,7 +33,7 @@ const FEATURED_COLLECTIONS = [
 export default function HomePage() {
   const istanbulRestaurants = restaurants.filter(r => r.citySlug === "istanbul");
   const cuisines = getAllCuisines("istanbul");
-  const neighborhoods = getAllNeighborhoods("istanbul").filter(n => n.count >= 3);
+  const districts = getAllDistricts("istanbul");
   const totalReviews = istanbulRestaurants.reduce((s, r) => s + (r.reviewCount || 0), 0);
   const avgRating = (
     istanbulRestaurants.reduce((s, r) => s + (r.avgRating || 0), 0) /
@@ -125,7 +125,7 @@ export default function HomePage() {
               { value: istanbulRestaurants.length.toString(), label: "Restaurants" },
               { value: avgRating + "/5", label: "Avg. rating" },
               { value: (totalReviews / 1000).toFixed(0) + "K", label: "Total reviews" },
-              { value: neighborhoods.length.toString() + "+", label: "Neighborhoods" },
+              { value: districts.length.toString() + "+", label: "Districts" },
             ].map(stat => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
@@ -174,25 +174,25 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Neighborhoods */}
+        {/* Districts */}
         <section className="mb-14">
           <div className="flex items-baseline justify-between mb-4">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide">
-              By Neighborhood
+              By District
             </h2>
             <Link href="/istanbul" className="text-xs text-blue-500 hover:underline">
               View all →
             </Link>
           </div>
-          <div className="flex flex-wrap gap-2">
-            {neighborhoods.slice(0, 20).map(n => (
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            {districts.map(d => (
               <Link
-                key={n.slug}
-                href={`/istanbul/mahalle/${n.slug}`}
-                className="text-sm bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-700 px-3 py-1.5 rounded-lg transition-colors"
+                key={d.slug}
+                href={`/istanbul/ilce/${d.slug}`}
+                className="flex items-center justify-between text-sm bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-700 px-3 py-2.5 rounded-lg transition-colors"
               >
-                {n.name}
-                <span className="text-gray-400 ml-1">({n.count})</span>
+                <span className="font-medium">{d.name}</span>
+                <span className="text-gray-400 text-xs">{d.count} restaurants</span>
               </Link>
             ))}
           </div>

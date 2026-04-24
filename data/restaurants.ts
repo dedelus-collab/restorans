@@ -299,6 +299,47 @@ export function getRestaurantsByTag(citySlug: string, tag: string) {
   );
 }
 
+import neighborhoodToDistrict from "./neighborhood_to_district.json";
+
+const hoodDistrictMap = neighborhoodToDistrict as Record<string, string>;
+
+export function slugifyDistrict(name: string): string {
+  const map: Record<string, string> = {
+    "ş": "s", "ç": "c", "ğ": "g", "ü": "u", "ö": "o", "ı": "i",
+    "â": "a", "î": "i", "û": "u",
+    "Ş": "s", "Ç": "c", "Ğ": "g", "Ü": "u", "Ö": "o", "İ": "i", "I": "i",
+  };
+  let s = name;
+  for (const [k, v] of Object.entries(map)) s = s.split(k).join(v);
+  return s.toLowerCase().replace(/[^a-z0-9-]/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
+}
+
+export function getDistrictForRestaurant(r: Restaurant): string {
+  return hoodDistrictMap[r.neighborhood] || "";
+}
+
+export function getAllDistricts(citySlug: string) {
+  const map = new Map<string, { slug: string; name: string; count: number }>();
+  for (const r of restaurants) {
+    if (r.citySlug !== citySlug) continue;
+    const district = hoodDistrictMap[r.neighborhood];
+    if (!district) continue;
+    const slug = slugifyDistrict(district);
+    const existing = map.get(slug);
+    if (existing) existing.count += 1;
+    else map.set(slug, { slug, name: district, count: 1 });
+  }
+  return Array.from(map.values()).sort((a, b) => b.count - a.count);
+}
+
+export function getRestaurantsByDistrict(citySlug: string, districtSlug: string) {
+  return restaurants.filter(r => {
+    if (r.citySlug !== citySlug) return false;
+    const district = hoodDistrictMap[r.neighborhood];
+    return district && slugifyDistrict(district) === districtSlug;
+  });
+}
+
 export function getAllNeighborhoods(citySlug: string) {
   const map = new Map<string, { slug: string; name: string; count: number }>();
   for (const r of restaurants) {
