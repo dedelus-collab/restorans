@@ -5,7 +5,6 @@ import {
   getRestaurantsByDistrict,
   getAllDistricts,
   getPriceSymbol,
-  slugifyDistrict,
   weightedScore,
   restaurants as allRestaurants,
 } from "@/data/restaurants";

@@ -1,5 +1,21 @@
 import React from "react";
 
+// ─── Shared Eye sub-component (must live outside render) ─────────────────────
+function Eye({ cx, cy, iris, pupil }: { cx: number; cy: number; iris: string; pupil?: string }) {
+  return (
+    <>
+      <ellipse cx={cx} cy={cy} rx={7} ry={8.5} fill="white" />
+      <ellipse cx={cx} cy={cy + 1} rx={5.5} ry={7} fill={iris} />
+      <ellipse cx={cx} cy={cy + 2} rx={3} ry={4.5} fill={pupil ?? "#0d1b35"} />
+      <circle  cx={cx + 2.5} cy={cy - 2} r={2.2} fill="white" />
+      <circle  cx={cx - 1.5} cy={cy + 1} r={1}   fill="white" />
+      {/* lash line */}
+      <path d={`M${cx - 7} ${cy - 9} Q${cx} ${cy - 14} ${cx + 7} ${cy - 9}`}
+            stroke="#0d1b35" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+    </>
+  );
+}
+
 // ─── Small inline chibi head — use next to section <h2> titles ───────────────
 // variant: "chef" | "reviewer" | "foodie" | "explorer" | "star"
 export function AniHead({
@@ -13,21 +29,6 @@ export function AniHead({
 
   const leftEye  = { cx: 16, cy: 27 };
   const rightEye = { cx: 32, cy: 27 };
-
-  function Eye({ cx, cy, iris, pupil }: { cx: number; cy: number; iris: string; pupil?: string }) {
-    return (
-      <>
-        <ellipse cx={cx} cy={cy} rx={7} ry={8.5} fill="white" />
-        <ellipse cx={cx} cy={cy + 1} rx={5.5} ry={7} fill={iris} />
-        <ellipse cx={cx} cy={cy + 2} rx={3} ry={4.5} fill={pupil ?? "#0d1b35"} />
-        <circle  cx={cx + 2.5} cy={cy - 2} r={2.2} fill="white" />
-        <circle  cx={cx - 1.5} cy={cy + 1} r={1}   fill="white" />
-        {/* lash line */}
-        <path d={`M${cx - 7} ${cy - 9} Q${cx} ${cy - 14} ${cx + 7} ${cy - 9}`}
-              stroke="#0d1b35" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-      </>
-    );
-  }
 
   if (variant === "chef") {
     return (

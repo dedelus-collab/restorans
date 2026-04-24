@@ -208,6 +208,7 @@ export default function HakkindaPage() {
             <a href="/llms.txt" className="text-blue-600 hover:underline">llms.txt →</a>
             <a href="/.well-known/ai-plugin.json" className="text-blue-600 hover:underline">ai-plugin.json →</a>
             <a href="/api/openapi.json" className="text-blue-600 hover:underline">OpenAPI Spec →</a>
+            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
             <a href="/api/restaurants?city=istanbul" className="text-blue-600 hover:underline">JSON API →</a>
             <a href="/sitemap.xml" className="text-blue-600 hover:underline">sitemap.xml →</a>
           </div>
