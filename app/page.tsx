@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getAllCuisines, getAllDistricts, restaurants } from "@/data/restaurants";
 import { KawaiiIcon } from "@/components/AniMascot";
 import { MascotChatTrigger } from "@/components/MascotChatTrigger";
+import { IstanbulMapIllustrated } from "@/components/IstanbulMapIllustrated";
 
 export const metadata: Metadata = {
   title: "Restorans — Istanbul Restaurant Guide | Istanbul Restaurants",
@@ -155,6 +156,11 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Istanbul Map */}
+        <section className="mb-14">
+          <IstanbulMapIllustrated />
+        </section>
+
         {/* Cuisine types */}
         <section className="mb-14">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
@@ -174,29 +180,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Districts */}
-        <section className="mb-14">
-          <div className="flex items-baseline justify-between mb-4">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide">
-              By District
-            </h2>
-            <Link href="/istanbul" className="text-xs text-blue-500 hover:underline">
-              View all →
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {districts.map(d => (
-              <Link
-                key={d.slug}
-                href={`/istanbul/ilce/${d.slug}`}
-                className="flex items-center justify-between text-sm bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-700 px-3 py-2.5 rounded-lg transition-colors"
-              >
-                <span className="font-medium">{d.name}</span>
-                <span className="text-gray-400 text-xs">{d.count} restaurants</span>
-              </Link>
-            ))}
-          </div>
-        </section>
 
         {/* RapidAPI CTA */}
         <section className="bg-gray-900 rounded-xl p-6 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
