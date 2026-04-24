@@ -15,6 +15,15 @@ function selectRelevantRestaurants(query: string) {
   const scored = restaurants.map(r => {
     let score = 0;
 
+    // Name match — highest priority
+    const nameLower = r.name.toLowerCase();
+    if (q.includes(nameLower) || nameLower.includes(q.split(" ")[0])) score += 50;
+    // Partial word match (e.g. "sushico" matches "SushiCo Suadiye")
+    const nameWords = nameLower.split(/\s+/);
+    for (const word of nameWords) {
+      if (word.length > 3 && q.includes(word)) { score += 30; break; }
+    }
+
     // Cuisine
     if (/kebap|kebab|adana|iskender|lahmacun/.test(q) && r.cuisineSlug === "kebap") score += 10;
     if (/fish|seafood|balik|balık|sushi|deniz/.test(q) && r.cuisineSlug === "balik") score += 10;
