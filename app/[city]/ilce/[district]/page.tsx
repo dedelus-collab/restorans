@@ -6,6 +6,7 @@ import {
   getAllDistricts,
   getPriceSymbol,
   slugifyDistrict,
+  weightedScore,
   restaurants as allRestaurants,
 } from "@/data/restaurants";
 
@@ -49,7 +50,7 @@ export default async function DistrictPage({ params }: Props) {
 
   const districtName = getAllDistricts(city).find(d => d.slug === district)?.name ?? district;
   const cityName = list[0].city;
-  const sorted = [...list].sort((a, b) => (b.avgRating || 0) - (a.avgRating || 0));
+  const sorted = [...list].sort((a, b) => weightedScore(b) - weightedScore(a));
   const avgRating = (list.reduce((s, r) => s + (r.avgRating || 0), 0) / list.length).toFixed(1);
   const totalReviews = list.reduce((s, r) => s + (r.reviewCount || 0), 0);
 

@@ -270,6 +270,17 @@ export function slugifyNeighborhood(name: string): string {
   return s;
 }
 
+// Bayesian weighted score: puan + yorum sayısını birleştirir.
+// Düşük yorumlu restoranlar küresel ortalamayla dengelenir.
+const GLOBAL_AVG = 4.3;
+const MIN_VOTES  = 80;  // bu kadar yorum olmadan tam güven verilmez
+
+export function weightedScore(r: { avgRating?: number; reviewCount?: number }): number {
+  const rating = r.avgRating  ?? 0;
+  const votes  = r.reviewCount ?? 0;
+  return (votes * rating + MIN_VOTES * GLOBAL_AVG) / (votes + MIN_VOTES);
+}
+
 export function getRestaurantsByNeighborhood(citySlug: string, hoodSlug: string) {
   return restaurants.filter(
     r => r.citySlug === citySlug && slugifyNeighborhood(r.neighborhood) === hoodSlug

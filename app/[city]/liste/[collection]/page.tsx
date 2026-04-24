@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getRestaurantsByCity, getPriceSymbol } from "@/data/restaurants";
+import { getRestaurantsByCity, getPriceSymbol, weightedScore } from "@/data/restaurants";
 import { COLLECTIONS, getCollection } from "@/lib/collections";
 import { AniHead, SpeechBubble } from "@/components/AniMascot";
 
@@ -41,7 +41,7 @@ export default async function CollectionPage({ params }: Props) {
   if (!col) notFound();
 
   const allRestaurants = getRestaurantsByCity(city);
-  const list = allRestaurants.filter(col.filter).sort((a, b) => (b.avgRating || 0) - (a.avgRating || 0));
+  const list = allRestaurants.filter(col.filter).sort((a, b) => weightedScore(b) - weightedScore(a));
   if (!list.length) notFound();
 
   const cityName = allRestaurants[0]?.city ?? city;

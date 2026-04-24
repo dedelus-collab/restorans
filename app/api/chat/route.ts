@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import Groq from "groq-sdk";
-import { restaurants } from "@/data/restaurants";
+import { restaurants, weightedScore } from "@/data/restaurants";
 
 let client: Groq | null = null;
 function getClient() {
@@ -66,7 +66,7 @@ function selectRelevantRestaurants(query: string) {
 
   // Fallback: top-rated
   if (matched.length === 0) {
-    return [...restaurants].sort((a, b) => (b.avgRating ?? 0) - (a.avgRating ?? 0)).slice(0, 10);
+    return [...restaurants].sort((a, b) => weightedScore(b) - weightedScore(a)).slice(0, 10);
   }
   return matched;
 }

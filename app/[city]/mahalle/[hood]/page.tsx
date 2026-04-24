@@ -5,6 +5,7 @@ import {
   getRestaurantsByNeighborhood,
   getAllNeighborhoods,
   getPriceSymbol,
+  weightedScore,
   restaurants as allRestaurants,
 } from "@/data/restaurants";
 
@@ -90,7 +91,7 @@ export default async function NeighborhoodPage({ params }: Props) {
 
   const avgRating = (list.reduce((s, r) => s + (r.avgRating || 0), 0) / list.length).toFixed(1);
   const totalReviews = list.reduce((s, r) => s + (r.reviewCount || 0), 0);
-  const sorted = [...list].sort((a, b) => (b.avgRating || 0) - (a.avgRating || 0));
+  const sorted = [...list].sort((a, b) => weightedScore(b) - weightedScore(a));
 
   const avgLat = list.reduce((s, r) => s + r.lat, 0) / list.length;
   const avgLng = list.reduce((s, r) => s + r.lng, 0) / list.length;
