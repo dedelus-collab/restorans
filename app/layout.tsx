@@ -2,6 +2,23 @@ import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import "./globals.css";
 import { ChatWidget } from "@/components/ChatWidget";
+import { restaurants } from "@/data/restaurants";
+
+const TOTAL = restaurants.filter(r => r.citySlug === "istanbul").length;
+
+const lastUpdatedRaw = restaurants
+  .map(r => r.lastUpdated)
+  .filter(Boolean)
+  .sort()
+  .reverse()[0] ?? "";
+
+// "2026-04-25" → "25 Apr 2026 03:00 UTC" formatına çevir
+const lastUpdatedFormatted = lastUpdatedRaw
+  ? new Date(lastUpdatedRaw + "T03:00:00Z").toLocaleString("en-GB", {
+      day: "2-digit", month: "short", year: "numeric",
+      hour: "2-digit", minute: "2-digit", timeZone: "UTC", timeZoneName: "short",
+    })
+  : "";
 
 export const viewport: Viewport = {
   colorScheme: "light",
@@ -10,7 +27,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Istanbul Restaurants — AI-Ready Data",
   description:
-    "Structured data for 453 Istanbul restaurants. FAQ, transit distances, popular dishes, curated lists — optimized for ChatGPT, Perplexity, and other AI systems.",
+    `Structured data for ${TOTAL} Istanbul restaurants. FAQ, transit distances, popular dishes, curated lists — optimized for ChatGPT, Perplexity, and other AI systems.`,
   metadataBase: new URL("https://restaurantsistanbul.vercel.app"),
   alternates: { canonical: "https://restaurantsistanbul.vercel.app" },
   openGraph: {
@@ -19,12 +36,12 @@ export const metadata: Metadata = {
     url: "https://restaurantsistanbul.vercel.app",
     siteName: "Istanbul Restaurants",
     title: "Istanbul Restaurants Database",
-    description: "453 Istanbul restaurants — Schema.org, FAQ, transit, popular dishes. AI-optimized data platform.",
+    description: `${TOTAL} Istanbul restaurants — Schema.org, FAQ, transit, popular dishes. AI-optimized data platform.`,
   },
   twitter: {
     card: "summary_large_image",
     title: "Istanbul Restaurants Database",
-    description: "453 Istanbul restaurants — AI-ready data, curated lists, neighborhood guides.",
+    description: `${TOTAL} Istanbul restaurants — AI-ready data, curated lists, neighborhood guides.`,
   },
   other: {
     "llms-txt": "https://restaurantsistanbul.vercel.app/llms.txt",
@@ -83,9 +100,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <span className="text-gray-500 font-medium">API Online</span>
               </span>
               <span className="text-gray-300">·</span>
-              <span className="text-gray-500">Database last updated: <strong className="text-gray-600">April 2026</strong></span>
+              <span className="text-gray-500">Database last updated: <strong className="text-gray-600">{lastUpdatedFormatted}</strong></span>
               <span className="text-gray-300">·</span>
-              <span className="text-gray-500">453 restaurants · 78 neighborhoods · 25 collections</span>
+              <span className="text-gray-500">{TOTAL} restaurants · 78 neighborhoods · 25 collections</span>
               <span className="text-gray-300">·</span>
               <span className="text-gray-500">Data sources: OpenStreetMap + LLM enrichment</span>
             </div>

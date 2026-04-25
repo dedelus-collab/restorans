@@ -5,14 +5,16 @@ import { KawaiiIcon } from "@/components/AniMascot";
 import { MascotChatTrigger } from "@/components/MascotChatTrigger";
 import { IstanbulMapIllustrated } from "@/components/IstanbulMapIllustrated";
 
+const ISTANBUL_COUNT = restaurants.filter(r => r.citySlug === "istanbul").length;
+
 export const metadata: Metadata = {
   title: "Restorans — Istanbul Restaurant Guide | Istanbul Restaurants",
   description:
-    "Restorans: guide to 453 Istanbul restaurants. Kebap, seafood, scenic views, romantic, business lunch — curated lists for every occasion. Optimized for ChatGPT, Perplexity, and AI systems.",
+    `Restorans: guide to ${ISTANBUL_COUNT} Istanbul restaurants. Kebap, seafood, scenic views, romantic, business lunch — curated lists for every occasion. Optimized for ChatGPT, Perplexity, and AI systems.`,
   alternates: { canonical: "https://restaurantsistanbul.vercel.app" },
   openGraph: {
     title: "Istanbul Restaurants | Istanbul Restaurants",
-    description: "453 Istanbul restaurants — AI-ready data, curated lists, neighborhood guides.",
+    description: `${ISTANBUL_COUNT} Istanbul restaurants — AI-ready data, curated lists, neighborhood guides.`,
     url: "https://restaurantsistanbul.vercel.app",
     siteName: "Istanbul Restaurants",
     locale: "en_US",
@@ -109,7 +111,7 @@ export default function HomePage() {
                 Where to Eat in Istanbul?
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
-                453 Istanbul restaurants — each with <strong className="text-gray-900">popular dishes</strong>,{" "}
+                {istanbulRestaurants.length} Istanbul restaurants — each with <strong className="text-gray-900">popular dishes</strong>,{" "}
                 <strong className="text-gray-900">transit distances</strong>,{" "}
                 <strong className="text-gray-900">nearby landmarks</strong>, and{" "}
                 <strong className="text-gray-900">frequently asked questions</strong>.
@@ -210,7 +212,7 @@ export default function HomePage() {
           <div>
             <p className="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-1">API Access</p>
             <h2 className="text-white font-bold text-lg leading-tight">Instant Access to Istanbul Restaurant Data</h2>
-            <p className="text-gray-400 text-sm mt-1">453 restaurants · JSON API · llm_summary · FAQ · Transit</p>
+            <p className="text-gray-400 text-sm mt-1">{istanbulRestaurants.length} restaurants · JSON API · llm_summary · FAQ · Transit</p>
           </div>
           <a
             href="https://rapidapi.com/cccanguler/api/istanbul-restaurants"
@@ -293,7 +295,7 @@ export default function HomePage() {
             href="/istanbul"
             className="inline-block bg-gray-900 text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-700 transition-colors"
           >
-            View All 453 Restaurants
+            View All {istanbulRestaurants.length} Restaurants
           </Link>
         </div>
 
