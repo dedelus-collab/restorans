@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getRestaurantsByCity, getPriceSymbol, weightedScore, getDistrictForRestaurant } from "@/data/restaurants";
+import { getRestaurantsByCity, weightedScore, getDistrictForRestaurant } from "@/data/restaurants";
 import { COLLECTIONS, getCollection } from "@/lib/collections";
 import { AniHead, SpeechBubble } from "@/components/AniMascot";
+import { CollectionList } from "@/components/CollectionList";
 
 type Props = { params: Promise<{ city: string; collection: string }> };
 
@@ -53,6 +54,12 @@ export default async function CollectionPage({ params }: Props) {
     districtMap.set(d, (districtMap.get(d) || 0) + 1);
   }
   const topHoods = Array.from(districtMap.entries()).sort((a, b) => b[1] - a[1]).slice(0, 8);
+
+  // Listeye district alanı ekle (CollectionList client component için)
+  const listWithDistrict = list.map(r => ({
+    ...r,
+    district: getDistrictForRestaurant(r) || r.neighborhood || "",
+  }));
 
   const avgRating = (list.reduce((s, r) => s + (r.avgRating || 0), 0) / list.length).toFixed(1);
   const totalReviews = list.reduce((s, r) => s + (r.reviewCount || 0), 0);
@@ -188,66 +195,11 @@ export default async function CollectionPage({ params }: Props) {
           </div>
         </header>
 
-        {/* Neighborhood breakdown */}
-        {topHoods.length > 1 && (
-          <section className="mb-8">
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Districts</h2>
-            <div className="flex flex-wrap gap-2">
-              {topHoods.map(([name, count]) => (
-                <span key={name} className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">
-                  {name} <span className="text-gray-400">({count})</span>
-                </span>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Restaurant list */}
-        <div className="divide-y divide-gray-100">
-          {list.map((r, idx) => (
-            <Link
-              key={r.id}
-              href={`/${city}/${r.slug}`}
-              className="block py-6 hover:bg-gray-50 transition-colors px-2 -mx-2 rounded"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-1">
-                    {idx < 3 && (
-                      <span className="text-xs font-bold text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded">
-                        #{idx + 1}
-                      </span>
-                    )}
-                    <h2 className="font-semibold">{r.name}</h2>
-                    {r.verifiedData && (
-                      <span className="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded">Verified</span>
-                    )}
-                  </div>
-                  <p className="text-sm text-gray-500">
-                    {getDistrictForRestaurant(r) || r.neighborhood} · {r.cuisine} · {getPriceSymbol(r.priceRange)}
-                  </p>
-                  <p className="text-sm text-gray-600 mt-2">{r.llmSummary}</p>
-                  {r.specialFeatures?.popularDishes && r.specialFeatures.popularDishes.length > 0 && (
-                    <p className="text-xs text-gray-500 mt-2">
-                      <span className="text-gray-400">Popular: </span>
-                      {r.specialFeatures.popularDishes.slice(0, 3).join(" · ")}
-                    </p>
-                  )}
-                  <div className="flex gap-2 mt-3 flex-wrap">
-                    {r.tags.slice(0, 4).map(tag => (
-                      <span key={tag} className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-                <div className="text-right shrink-0">
-                  <div className="text-lg font-bold">{r.avgRating}</div>
-                  <div className="text-xs text-gray-400">{r.reviewCount} reviews</div>
-                  <div className="text-xs text-gray-400 mt-0.5">{getPriceSymbol(r.priceRange)}</div>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <CollectionList
+          city={city}
+          list={listWithDistrict}
+          topDistricts={topHoods}
+        />
 
         {/* Related collections */}
         {relatedCollections.length > 0 && (
