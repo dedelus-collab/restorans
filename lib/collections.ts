@@ -230,11 +230,16 @@ export const COLLECTIONS: Collection[] = [
     related: ["romantik-aksam-yemegi-istanbul", "bogaz-manzarali-istanbul", "is-yemegi-istanbul", "sushi-japon-istanbul"],
     filter: r => {
       const rating = r.avgRating ?? 0;
-      const price = r.priceRange ?? 0;
       const cuisine = (r.cuisine ?? "").toLowerCase();
-      const EXCLUDE = ["kahvaltı", "breakfast", "kahvalti", "pide", "büfe", "fastfood", "fast food", "döner", "doner"];
-      if (EXCLUDE.some(kw => cuisine.includes(kw))) return false;
-      return rating >= 4.7 && Number(price) >= 3;
+      const slug = (r.slug ?? "").toLowerCase();
+      const name = (r.name ?? "").toLowerCase();
+      const EXCLUDE = [
+        "kahvaltı", "breakfast", "kahvalti", "kahvalt",
+        "pide", "büfe", "fastfood", "fast food", "döner", "doner",
+        "lahmacun", "tantuni", "burger", "kafe", "cafe", "çiğ köfte",
+      ];
+      if (EXCLUDE.some(kw => cuisine.includes(kw) || slug.includes(kw) || name.includes(kw))) return false;
+      return rating >= 4.7 && (r.reviewCount ?? 0) >= 100;
     },
   },
   {
