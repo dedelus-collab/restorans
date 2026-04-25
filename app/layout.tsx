@@ -32,6 +32,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" style={{ colorScheme: "light" }}>
+      <head>
+        <meta name="color-scheme" content="light" />
+      </head>
       <body className="bg-white text-gray-900 antialiased">
         <nav className="border-b border-gray-100 bg-white sticky top-0 z-10">
           <div className="max-w-4xl mx-auto px-6 h-12 flex items-center justify-between">
