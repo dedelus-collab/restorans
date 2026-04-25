@@ -190,6 +190,21 @@ export default function HomePage() {
           </p>
 
           <SearchBar entries={searchEntries} />
+
+          {/* Quick collections — directly below search */}
+          <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {FEATURED_COLLECTIONS.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/istanbul/liste/${c.slug}`}
+                className="group relative border border-gray-200 rounded-xl p-3 hover:border-gray-300 hover:shadow-md transition-all flex flex-col items-center text-center"
+              >
+                <KawaiiIcon variant={c.kawaii} className="w-14 h-14 mb-2 group-hover:scale-110 transition-transform duration-200" />
+                <div className="font-semibold text-sm text-gray-900">{c.label}</div>
+                <div className="text-xs text-gray-400 mt-0.5">{c.desc}</div>
+              </Link>
+            ))}
+          </div>
         </section>
 
         {/* Top Rated */}
@@ -229,26 +244,6 @@ export default function HomePage() {
                 </Link>
               );
             })}
-          </div>
-        </section>
-
-        {/* Quick collections */}
-        <section className="mb-14">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
-            What Are You Looking For?
-          </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {FEATURED_COLLECTIONS.map((c) => (
-              <Link
-                key={c.slug}
-                href={`/istanbul/liste/${c.slug}`}
-                className="group relative border border-gray-200 rounded-xl p-3 hover:border-gray-300 hover:shadow-md transition-all flex flex-col items-center text-center"
-              >
-                <KawaiiIcon variant={c.kawaii} className="w-14 h-14 mb-2 group-hover:scale-110 transition-transform duration-200" />
-                <div className="font-semibold text-sm text-gray-900">{c.label}</div>
-                <div className="text-xs text-gray-400 mt-0.5">{c.desc}</div>
-              </Link>
-            ))}
           </div>
         </section>
 
