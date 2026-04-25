@@ -106,9 +106,11 @@ export type Restaurant = {
 };
 
 import { istanbulRestaurants } from "./istanbul";
+import newRestaurantsRaw from "./new_restaurants.json";
 
 export const restaurants: Restaurant[] = [
   ...istanbulRestaurants,
+  ...(newRestaurantsRaw as Restaurant[]),
 ];
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
