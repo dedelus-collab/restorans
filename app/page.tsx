@@ -1,9 +1,10 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllCuisines, getAllDistricts, restaurants } from "@/data/restaurants";
+import { getAllCuisines, getAllDistricts, restaurants, weightedScore, getPriceSymbol } from "@/data/restaurants";
 import { KawaiiIcon } from "@/components/AniMascot";
 import { MascotChatTrigger } from "@/components/MascotChatTrigger";
 import { IstanbulMapIllustrated } from "@/components/IstanbulMapIllustrated";
+import { SearchBar } from "@/components/SearchBar";
 
 const ISTANBUL_COUNT = restaurants.filter(r => r.citySlug === "istanbul").length;
 
@@ -42,6 +43,28 @@ export default function HomePage() {
     istanbulRestaurants.reduce((s, r) => s + (r.avgRating || 0), 0) /
     istanbulRestaurants.filter(r => r.avgRating).length
   ).toFixed(1);
+
+  // Top rated (min 50 reviews, sorted by weighted score)
+  const topRated = [...istanbulRestaurants]
+    .filter(r => (r.reviewCount ?? 0) >= 50 && r.avgRating != null)
+    .sort((a, b) => weightedScore(b) - weightedScore(a))
+    .slice(0, 6);
+
+  // Recently added (last 5 by lastUpdated)
+  const recentlyAdded = [...istanbulRestaurants]
+    .filter(r => r.lastUpdated)
+    .sort((a, b) => (b.lastUpdated ?? "").localeCompare(a.lastUpdated ?? ""))
+    .slice(0, 5);
+
+  // Search entries
+  const searchEntries = istanbulRestaurants.map(r => ({
+    slug: r.slug,
+    name: r.name,
+    cuisine: r.cuisine ?? "",
+    neighborhood: r.neighborhood ?? "",
+    avgRating: r.avgRating ?? null,
+    priceRange: r.priceRange ?? "",
+  }));
 
   const websiteJsonLd = {
     "@context": "https://schema.org",
@@ -138,6 +161,43 @@ export default function HomePage() {
           </div>
         </header>
 
+        {/* Search */}
+        <section className="mb-14">
+          <SearchBar entries={searchEntries} />
+        </section>
+
+        {/* Top Rated */}
+        <section className="mb-14">
+          <div className="flex items-baseline justify-between mb-5">
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide">
+              Top Rated Restaurants
+            </h2>
+            <Link href="/istanbul" className="text-xs text-blue-500 hover:underline">View all →</Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {topRated.map(r => (
+              <Link
+                key={r.slug}
+                href={`/istanbul/${r.slug}`}
+                className="flex items-start gap-4 p-4 border border-gray-200 rounded-xl hover:border-gray-300 hover:shadow-md transition-all group"
+              >
+                <div className="flex-1 min-w-0">
+                  <div className="font-semibold text-sm text-gray-900 truncate group-hover:text-blue-600 transition-colors">
+                    {r.name}
+                  </div>
+                  <div className="text-xs text-gray-400 mt-0.5 truncate">
+                    {r.cuisine} · {r.neighborhood}
+                  </div>
+                </div>
+                <div className="text-right shrink-0">
+                  <div className="text-sm font-bold text-gray-900">★ {r.avgRating}</div>
+                  <div className="text-xs text-gray-400 mt-0.5">{getPriceSymbol(r.priceRange)}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* Quick collections */}
         <section className="mb-14">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
@@ -206,6 +266,75 @@ export default function HomePage() {
           </div>
         </section>
 
+
+        {/* Recently Added */}
+        <section className="mb-14">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-5">
+            Recently Added
+          </h2>
+          <div className="flex flex-col gap-2">
+            {recentlyAdded.map(r => (
+              <Link
+                key={r.slug}
+                href={`/istanbul/${r.slug}`}
+                className="flex items-center justify-between px-4 py-3 border border-gray-200 rounded-xl hover:border-gray-300 hover:bg-gray-50 transition-all group"
+              >
+                <div className="flex items-center gap-3 min-w-0">
+                  <span className="w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" />
+                  <div className="min-w-0">
+                    <span className="text-sm font-medium text-gray-900 group-hover:text-blue-600 transition-colors">{r.name}</span>
+                    <span className="text-xs text-gray-400 ml-2">{r.cuisine} · {r.neighborhood}</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 shrink-0 ml-4">
+                  {r.avgRating != null && (
+                    <span className="text-xs font-semibold text-gray-600">★ {r.avgRating}</span>
+                  )}
+                  <span className="text-xs text-gray-400">
+                    {r.lastUpdated ? new Date(r.lastUpdated).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : ""}
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* Travel Tips */}
+        <section className="mb-14">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-5">
+            Dining in Istanbul — Tips
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                icon: "🗺️",
+                title: "Where to Eat by Area",
+                body: "Beyoğlu & Karaköy for trendy bistros. Eminönü & Fatih for traditional Turkish. Beşiktaş & Kadıköy for local neighbourhood spots. Bosphorus villages (Bebek, Arnavutköy) for scenic seafood.",
+              },
+              {
+                icon: "💰",
+                title: "Tipping Culture",
+                body: "Tipping is expected. 10–15% is standard for sit-down restaurants. Many places add a service charge — check the bill. Card payments widely accepted in most mid-range and above venues.",
+              },
+              {
+                icon: "📅",
+                title: "Reservations",
+                body: "Popular spots fill fast on Friday–Saturday evenings. Book at least 2–3 days ahead for fine dining. Casual lokantas and pide salons rarely need reservations.",
+              },
+              {
+                icon: "🕐",
+                title: "Meal Times",
+                body: "Lunch runs 12:00–15:00, dinner from 19:00 onwards. Many restaurants close between meals. Breakfast (kahvaltı) culture is strong — weekend brunch tables often need booking.",
+              },
+            ].map(tip => (
+              <div key={tip.title} className="p-5 bg-gray-50 border border-gray-200 rounded-xl">
+                <div className="text-xl mb-2">{tip.icon}</div>
+                <h3 className="font-semibold text-sm text-gray-900 mb-1">{tip.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{tip.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* RapidAPI CTA */}
         <section className="bg-gray-900 rounded-xl p-6 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
