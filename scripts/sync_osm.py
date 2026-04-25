@@ -126,12 +126,39 @@ except Exception as e:
 elements = osm_data.get("elements", [])
 print(f"OSM'den {len(elements)} restoran geldi.")
 
+# Belediye/tesis/okul gibi gerçek restoran olmayan kelimeleri filtrele
+SKIP_KEYWORDS = [
+    "sosyal tesis", "sosyal tesisi", "ibb ", "bbb ", "okul", "hastane",
+    "kafeterya", "kantin", "yurt", "kreş", "spor ", "kültür merkezi",
+    "belediye", "halk eğitim", "çay bahçesi", "büfe",
+]
+
+def clean_name(name: str) -> str:
+    """İsmi düzelt: baştaki/sondaki boşluk, her kelimenin ilk harfi büyük,
+    ASCII olmayan bozuk karakterleri temizle."""
+    # Kiril veya diğer alfabelerden gelen karakterleri filtrele
+    cleaned = "".join(c for c in name if unicodedata.category(c)[0] in ("L", "N", "Z", "P"))
+    cleaned = cleaned.strip()
+    # Tüm kelimeler küçük harfse başlık yap
+    if cleaned == cleaned.lower():
+        cleaned = cleaned.title()
+    return cleaned
+
+def clean_cuisine(raw: str) -> str:
+    """'Soba;turkish' gibi birden fazla değeri temizle."""
+    return raw.split(";")[0].split(",")[0].strip()
+
 # ── 3. Yeni olanları filtrele ─────────────────────────────────────────────────
 candidates = []
 for el in elements:
     tags = el.get("tags", {})
     name = tags.get("name") or tags.get("name:tr") or tags.get("name:en")
     if not name:
+        continue
+
+    # Belediye tesisi / restoran olmayan yerleri atla
+    name_lower = name.lower()
+    if any(kw in name_lower for kw in SKIP_KEYWORDS):
         continue
 
     # Koordinat
@@ -143,6 +170,7 @@ for el in elements:
     if not lat or not lng:
         continue
 
+    name = clean_name(name)
     slug = slugify(name)
     coord_key = (round(lat, 4), round(lng, 4))
 
@@ -155,7 +183,7 @@ for el in elements:
         "slug": slug,
         "lat": lat,
         "lng": lng,
-        "osm_cuisine": tags.get("cuisine", ""),
+        "osm_cuisine": clean_cuisine(tags.get("cuisine", "")),
         "phone": tags.get("phone") or tags.get("contact:phone"),
         "website": tags.get("website") or tags.get("contact:website"),
         "opening_hours": tags.get("opening_hours", ""),

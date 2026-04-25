@@ -29,6 +29,27 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python scripts/sync_osm.py
 
+      - name: Özet rapor
+        run: |
+          python - <<'EOF'
+          import json
+          with open("data/new_restaurants.json", encoding="utf-8") as f:
+              d = json.load(f)
+          print(f"\n{'='*50}")
+          print(f"📊 OSM SYNC RAPORU")
+          print(f"{'='*50}")
+          print(f"Toplam yeni havuz: {len(d)} restoran")
+          if d:
+              print(f"\nSon eklenenler (lastUpdated göre):")
+              today = sorted(set(r['lastUpdated'] for r in d))[-1]
+              new_today = [r for r in d if r['lastUpdated'] == today]
+              for r in new_today:
+                  print(f"  + {r['name']} | {r['neighborhood']} | {r['cuisine']}")
+              if not new_today:
+                  print("  (bugün yeni ekleme yok)")
+          print(f"{'='*50}\n")
+          EOF
+
       - name: Değişiklik var mı kontrol et
         id: diff
         run: |
@@ -41,7 +62,13 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          COUNT=$(python -c "import json; d=json.load(open('data/new_restaurants.json')); print(len(d))")
+          BEFORE=$(git show HEAD:data/new_restaurants.json | python -c "import sys,json; print(len(json.load(sys.stdin)))" 2>/dev/null || echo "0")
+          AFTER=$(python -c "import json; print(len(json.load(open('data/new_restaurants.json'))))")
+          NEW=$((AFTER - BEFORE))
           git add data/new_restaurants.json
-          git commit -m "chore: OSM sync — yeni havuz ${COUNT} restoran [skip ci]"
+          git commit -m "chore: OSM sync — +${NEW} yeni restoran, toplam ${AFTER} [skip ci]"
           git push
+
+      - name: Değişiklik yok
+        if: steps.diff.outputs.changed == 'false'
+        run: echo "✅ Yeni restoran bulunamadı, commit atlanıyor."
