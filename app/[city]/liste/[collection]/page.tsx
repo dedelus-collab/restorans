@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getRestaurantsByCity, getPriceSymbol, weightedScore } from "@/data/restaurants";
+import { getRestaurantsByCity, getPriceSymbol, weightedScore, getDistrictForRestaurant } from "@/data/restaurants";
 import { COLLECTIONS, getCollection } from "@/lib/collections";
 import { AniHead, SpeechBubble } from "@/components/AniMascot";
 
@@ -46,12 +46,13 @@ export default async function CollectionPage({ params }: Props) {
 
   const cityName = allRestaurants[0]?.city ?? city;
 
-  const hoodMap = new Map<string, number>();
+  const districtMap = new Map<string, number>();
   for (const r of list) {
-    if (!r.neighborhood) continue;
-    hoodMap.set(r.neighborhood, (hoodMap.get(r.neighborhood) || 0) + 1);
+    const d = getDistrictForRestaurant(r);
+    if (!d) continue;
+    districtMap.set(d, (districtMap.get(d) || 0) + 1);
   }
-  const topHoods = Array.from(hoodMap.entries()).sort((a, b) => b[1] - a[1]).slice(0, 8);
+  const topHoods = Array.from(districtMap.entries()).sort((a, b) => b[1] - a[1]).slice(0, 8);
 
   const avgRating = (list.reduce((s, r) => s + (r.avgRating || 0), 0) / list.length).toFixed(1);
   const totalReviews = list.reduce((s, r) => s + (r.reviewCount || 0), 0);
@@ -190,7 +191,7 @@ export default async function CollectionPage({ params }: Props) {
         {/* Neighborhood breakdown */}
         {topHoods.length > 1 && (
           <section className="mb-8">
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Neighborhoods</h2>
+            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Districts</h2>
             <div className="flex flex-wrap gap-2">
               {topHoods.map(([name, count]) => (
                 <span key={name} className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">
@@ -223,7 +224,7 @@ export default async function CollectionPage({ params }: Props) {
                     )}
                   </div>
                   <p className="text-sm text-gray-500">
-                    {r.neighborhood} · {r.cuisine} · {getPriceSymbol(r.priceRange)}
+                    {getDistrictForRestaurant(r) || r.neighborhood} · {r.cuisine} · {getPriceSymbol(r.priceRange)}
                   </p>
                   <p className="text-sm text-gray-600 mt-2">{r.llmSummary}</p>
                   {r.specialFeatures?.popularDishes && r.specialFeatures.popularDishes.length > 0 && (
