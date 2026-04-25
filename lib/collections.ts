@@ -228,7 +228,14 @@ export const COLLECTIONS: Collection[] = [
     description: "Istanbul's most prestigious fine dining restaurants. Tasting menus, chef's table and Michelin-star caliber experiences.",
     category: "vibe",
     related: ["romantik-aksam-yemegi-istanbul", "bogaz-manzarali-istanbul", "is-yemegi-istanbul", "sushi-japon-istanbul"],
-    filter: r => (r.avgRating ?? 0) >= 4.7,
+    filter: r => {
+      const rating = r.avgRating ?? 0;
+      const price = r.priceRange ?? 0;
+      const cuisine = (r.cuisine ?? "").toLowerCase();
+      const EXCLUDE = ["kahvaltı", "breakfast", "kahvalti", "pide", "büfe", "fastfood", "fast food", "döner", "doner"];
+      if (EXCLUDE.some(kw => cuisine.includes(kw))) return false;
+      return rating >= 4.7 && Number(price) >= 3;
+    },
   },
   {
     slug: "teras-istanbul",
