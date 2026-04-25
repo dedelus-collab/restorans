@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllCuisines, getAllDistricts, restaurants, weightedScore, getPriceSymbol } from "@/data/restaurants";
-import { KawaiiIcon } from "@/components/AniMascot";
+import { KawaiiIcon, AniHead } from "@/components/AniMascot";
 import { MascotChatTrigger } from "@/components/MascotChatTrigger";
 import { IstanbulMapIllustrated } from "@/components/IstanbulMapIllustrated";
 import { SearchBar } from "@/components/SearchBar";
@@ -163,38 +163,72 @@ export default function HomePage() {
 
         {/* Search */}
         <section className="mb-14">
+          {/* Animated food characters */}
+          <div className="flex items-end justify-center gap-3 mb-4">
+            {[
+              { variant: "kebap" as const, delay: "0ms",   label: "Kebap"     },
+              { variant: "fish" as const,  delay: "120ms",  label: "Seafood"   },
+              { variant: "scenic" as const,delay: "240ms",  label: "Bosphorus" },
+              { variant: "breakfast" as const, delay: "360ms", label: "Kahvaltı"},
+              { variant: "romantic" as const,  delay: "480ms", label: "Romantic" },
+              { variant: "night" as const, delay: "600ms",  label: "Late Night"},
+            ].map(({ variant, delay, label }) => (
+              <div
+                key={variant}
+                className="flex flex-col items-center gap-1 animate-bounce"
+                style={{ animationDelay: delay, animationDuration: "1.8s" }}
+              >
+                <KawaiiIcon variant={variant} className="w-10 h-10 sm:w-12 sm:h-12" />
+                <span className="text-[10px] text-gray-400 hidden sm:block">{label}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Heading */}
+          <p className="text-center text-lg font-semibold text-gray-800 mb-4">
+            Find the perfect place to eat in Istanbul
+          </p>
+
           <SearchBar entries={searchEntries} />
         </section>
 
         {/* Top Rated */}
         <section className="mb-14">
-          <div className="flex items-baseline justify-between mb-5">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide">
-              Top Rated Restaurants
-            </h2>
+          <div className="flex items-center justify-between mb-5">
+            <div className="flex items-center gap-2">
+              <AniHead variant="star" className="w-9 h-9" />
+              <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide">
+                Top Rated Restaurants
+              </h2>
+            </div>
             <Link href="/istanbul" className="text-xs text-blue-500 hover:underline">View all →</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {topRated.map(r => (
-              <Link
-                key={r.slug}
-                href={`/istanbul/${r.slug}`}
-                className="flex items-start gap-4 p-4 border border-gray-200 rounded-xl hover:border-gray-300 hover:shadow-md transition-all group"
-              >
-                <div className="flex-1 min-w-0">
-                  <div className="font-semibold text-sm text-gray-900 truncate group-hover:text-blue-600 transition-colors">
-                    {r.name}
+            {topRated.map((r, i) => {
+              const avatars = ["chef","foodie","reviewer","explorer","star","foodie"] as const;
+              const avatar = avatars[i % avatars.length];
+              return (
+                <Link
+                  key={r.slug}
+                  href={`/istanbul/${r.slug}`}
+                  className="flex items-center gap-3 p-4 border border-gray-200 rounded-xl hover:border-gray-300 hover:shadow-md transition-all group"
+                >
+                  <AniHead variant={avatar} className="w-10 h-10 shrink-0 group-hover:scale-110 transition-transform duration-200" />
+                  <div className="flex-1 min-w-0">
+                    <div className="font-semibold text-sm text-gray-900 truncate group-hover:text-blue-600 transition-colors">
+                      {r.name}
+                    </div>
+                    <div className="text-xs text-gray-400 mt-0.5 truncate">
+                      {r.cuisine} · {r.neighborhood}
+                    </div>
                   </div>
-                  <div className="text-xs text-gray-400 mt-0.5 truncate">
-                    {r.cuisine} · {r.neighborhood}
+                  <div className="text-right shrink-0">
+                    <div className="text-sm font-bold text-amber-500">★ {r.avgRating}</div>
+                    <div className="text-xs text-gray-400 mt-0.5">{getPriceSymbol(r.priceRange)}</div>
                   </div>
-                </div>
-                <div className="text-right shrink-0">
-                  <div className="text-sm font-bold text-gray-900">★ {r.avgRating}</div>
-                  <div className="text-xs text-gray-400 mt-0.5">{getPriceSymbol(r.priceRange)}</div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
         </section>
 
