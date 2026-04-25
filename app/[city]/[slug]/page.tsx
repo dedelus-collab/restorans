@@ -174,7 +174,11 @@ export default async function RestaurantPage({ params }: Props) {
           <dl className="grid grid-cols-2 gap-y-4 gap-x-8 text-sm">
             <div>
               <dt className="text-gray-500">Rating</dt>
-              <dd className="font-semibold mt-0.5">{r.avgRating} / 5 ({r.reviewCount} reviews)</dd>
+              <dd className="font-semibold mt-0.5">
+                {r.avgRating != null
+                  ? `${r.avgRating} / 5 (${r.reviewCount ?? 0} reviews)`
+                  : "Not yet rated"}
+              </dd>
             </div>
             <div>
               <dt className="text-gray-500">Price Range</dt>

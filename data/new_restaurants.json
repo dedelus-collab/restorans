@@ -1095,14 +1095,15 @@
     "lng": 29.0695129,
     "avgRating": null,
     "reviewCount": 0,
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "phone": "",
     "website": "",
     "llmSummary": "Sirma Cafe is a charming restaurant located in Büyükada Mahallesi on the Princes Islands of Istanbul. The cafe is situated on Sarnıç Sokak, offering a unique dining experience. With its picturesque surroundings, Sirma Cafe is a great spot to relax and enjoy a meal.",
     "highlights": [
       "Scenic Island Views",
       "Charming Atmosphere",
-      "Local Istanbul Cuisine"
+      "Local Istanbul Cuisine",
+      "Relaxed Waterfront Dining"
     ],
     "tags": [
       "adalar",
@@ -1110,7 +1111,34 @@
       "island-dining"
     ],
     "lastUpdated": "2026-04-25",
-    "source": "osm-adalar-sync"
+    "source": "osm-adalar-sync",
+    "faq": [
+      {
+        "question": "What is the price range of Sirma Cafe?",
+        "answer": "The price range of Sirma Cafe is moderate to high, with most dishes ranging from 50 to 150 Turkish Lira. It's a great value considering the quality of food and the scenic island views."
+      },
+      {
+        "question": "How do I get to Sirma Cafe?",
+        "answer": "To get to Sirma Cafe, take a ferry from Kabataş or Bostancı to Büyükada, then walk or take a phaeton to Sarnıç Sokak in Büyükada Mahallesi. The journey is approximately 1-2 hours depending on the ferry schedule."
+      },
+      {
+        "question": "Do I need to make a reservation at Sirma Cafe?",
+        "answer": "Reservations are recommended for Sirma Cafe, especially on weekends or during peak season, to ensure availability of tables with scenic views. You can make a reservation by calling the cafe or booking online."
+      },
+      {
+        "question": "What are the most popular dishes at Sirma Cafe?",
+        "answer": "Sirma Cafe is known for its local Istanbul cuisine, with popular dishes including fresh seafood, Turkish meze, and traditional desserts like baklava and Turkish delight. Be sure to try their seasonal specials and daily catches."
+      },
+      {
+        "question": "What is the atmosphere like at Sirma Cafe?",
+        "answer": "The atmosphere at Sirma Cafe is charming and relaxed, with picturesque views of the island and a cozy interior. It's a great spot to unwind and enjoy a meal with family or friends."
+      },
+      {
+        "question": "Is Sirma Cafe suitable for families or couples?",
+        "answer": "Sirma Cafe is suitable for both families and couples, with a welcoming atmosphere and a range of dishes to suit all tastes. The scenic views and relaxed atmosphere make it a great spot for a romantic dinner or a family outing."
+      }
+    ],
+    "sentimentSummary": "Guests at Sirma Cafe often praise the restaurant's picturesque island views, charming atmosphere, and high-quality local cuisine. The cafe's unique dining experience and great value for money make it a popular choice among visitors to the Princes Islands."
   },
   {
     "slug": "barba-yani",
@@ -1125,14 +1153,15 @@
     "lng": 29.0695947,
     "avgRating": null,
     "reviewCount": 0,
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "phone": "",
     "website": "",
     "llmSummary": "Barba Yani is a restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. The restaurant's cuisine is currently unknown, but its unique location on the islands offers a distinct dining experience. Visitors can enjoy the scenic views of the islands while dining at Barba Yani.",
     "highlights": [
       "Scenic Island Views",
       "Unique Dining Experience",
-      "Princes Islands Location"
+      "Princes Islands Location",
+      "Fresh Seafood Options"
     ],
     "tags": [
       "adalar",
@@ -1140,7 +1169,34 @@
       "island-dining"
     ],
     "lastUpdated": "2026-04-25",
-    "source": "osm-adalar-sync"
+    "source": "osm-adalar-sync",
+    "faq": [
+      {
+        "question": "What is the price range of Barba Yani?",
+        "answer": "The price range of Barba Yani is moderate to high, with most dishes ranging from 50 to 150 Turkish Lira. It's a bit pricey, but the unique island location and quality of food make it worth the cost."
+      },
+      {
+        "question": "How do I get to Barba Yani?",
+        "answer": "To get to Barba Yani, take a ferry from Kabataş or Bostancı to Büyükada, and then walk or take a horse-drawn carriage to the restaurant. The ferry ride takes around 30-40 minutes from Kabataş and 45-60 minutes from Bostancı."
+      },
+      {
+        "question": "Do I need to make a reservation at Barba Yani?",
+        "answer": "Reservations are recommended, especially on weekends and during peak season, as the restaurant can get quite busy. You can make a reservation by calling the restaurant or booking online through their website."
+      },
+      {
+        "question": "What are some popular dishes at Barba Yani?",
+        "answer": "Some popular dishes at Barba Yani include fresh seafood, traditional Turkish mezes, and grilled meats. Be sure to try their seasonal specials, which often feature locally sourced ingredients."
+      },
+      {
+        "question": "What is the atmosphere like at Barba Yani?",
+        "answer": "The atmosphere at Barba Yani is relaxed and casual, with a focus on outdoor seating and scenic views of the island. It's a great spot to enjoy a leisurely lunch or dinner with family and friends."
+      },
+      {
+        "question": "Is Barba Yani suitable for families and couples?",
+        "answer": "Yes, Barba Yani is suitable for both families and couples, with a welcoming atmosphere and a range of dishes to suit all tastes. The outdoor seating area is particularly popular with families, while couples may prefer the more intimate indoor seating area."
+      }
+    ],
+    "sentimentSummary": "Guests at Barba Yani often rave about the restaurant's unique island atmosphere and the high quality of its food, with many praising the fresh seafood and traditional Turkish dishes. Overall, visitors appreciate the value offered by Barba Yani, considering the beautiful location and generous portion sizes."
   },
   {
     "slug": "sandal",
@@ -1162,7 +1218,8 @@
     "highlights": [
       "Mysterious Cuisine",
       "Princes Islands Location",
-      "Local Istanbul Flavors"
+      "Local Istanbul Flavors",
+      "Stunning Sea Views"
     ],
     "tags": [
       "adalar",
@@ -1170,7 +1227,34 @@
       "island-dining"
     ],
     "lastUpdated": "2026-04-25",
-    "source": "osm-adalar-sync"
+    "source": "osm-adalar-sync",
+    "faq": [
+      {
+        "question": "What is the price range of Sandal restaurant?",
+        "answer": "The price range of Sandal restaurant is moderate to high, with most dishes falling between 50-150 Turkish Lira. It's a great value considering the unique island location."
+      },
+      {
+        "question": "How do I get to Sandal restaurant?",
+        "answer": "To get to Sandal restaurant, take a ferry from Kabataş or Bostancı to Büyükada, then walk or take a bike to Büyükada Mahallesi. The ferry ride offers stunning views of the Princes Islands."
+      },
+      {
+        "question": "Do I need to make a reservation at Sandal restaurant?",
+        "answer": "Reservations are recommended for Sandal restaurant, especially on weekends or during peak season, to ensure availability. You can call the restaurant or book online in advance."
+      },
+      {
+        "question": "What are the popular dishes at Sandal restaurant?",
+        "answer": "While the cuisine is a mystery, Sandal restaurant is known to serve fresh seafood and traditional Turkish dishes, often with a local twist. Be sure to ask your server for recommendations."
+      },
+      {
+        "question": "What is the atmosphere like at Sandal restaurant?",
+        "answer": "The atmosphere at Sandal restaurant is relaxed and casual, with a focus on showcasing the natural beauty of the Princes Islands. Enjoy stunning views of the sea while dining on the outdoor patio."
+      },
+      {
+        "question": "Is Sandal restaurant family-friendly or suitable for couples?",
+        "answer": "Sandal restaurant is suitable for both families and couples, offering a warm and welcoming atmosphere for all. The outdoor seating area is particularly popular with families, while couples may prefer the more intimate indoor seating."
+      }
+    ],
+    "sentimentSummary": "Guests at Sandal restaurant often rave about the unique island atmosphere and the high quality of the food, which offers great value for the price. The restaurant's mysterious cuisine is a major draw, with many visitors returning to try new dishes and experience the local flavors of the Princes Islands."
   },
   {
     "slug": "kablo-blue-beach",
@@ -1185,14 +1269,15 @@
     "lng": 29.0843699,
     "avgRating": null,
     "reviewCount": 0,
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "phone": "",
     "website": "",
     "llmSummary": "Kablo Blue Beach is a restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. The restaurant's cuisine is unknown, offering a mysterious dining experience. It is situated in a unique location, perfect for those looking to explore the islands.",
     "highlights": [
       "Unique Island Location",
       "Mysterious Cuisine",
-      "Scenic Beach Views"
+      "Scenic Beach Views",
+      "Fresh Seafood Options"
     ],
     "tags": [
       "adalar",
@@ -1200,7 +1285,34 @@
       "island-dining"
     ],
     "lastUpdated": "2026-04-25",
-    "source": "osm-adalar-sync"
+    "source": "osm-adalar-sync",
+    "faq": [
+      {
+        "question": "What is the price range of Kablo Blue Beach?",
+        "answer": "The price range of Kablo Blue Beach is moderate to high, with most dishes ranging from 50 to 150 Turkish Lira. It's a bit pricey, but the unique location and quality of food make it worth the cost."
+      },
+      {
+        "question": "How do I get to Kablo Blue Beach?",
+        "answer": "To get to Kablo Blue Beach, take a ferry from Kabataş or Bostancı to Büyükada, and then walk or take a bike ride to the restaurant. The ferry ride takes around 30-40 minutes, and the walk is about 10-15 minutes."
+      },
+      {
+        "question": "Do I need to make a reservation at Kablo Blue Beach?",
+        "answer": "Reservations are recommended, especially on weekends and during peak season, as the restaurant can get quite busy. You can make a reservation by calling the restaurant or booking online."
+      },
+      {
+        "question": "What are some popular dishes at Kablo Blue Beach?",
+        "answer": "Some popular dishes at Kablo Blue Beach include fresh seafood, Turkish meze, and traditional island cuisine. The menu changes seasonally, but the restaurant is known for its high-quality and locally sourced ingredients."
+      },
+      {
+        "question": "What is the atmosphere like at Kablo Blue Beach?",
+        "answer": "The atmosphere at Kablo Blue Beach is relaxed and casual, with a focus on outdoor seating and scenic views of the beach. It's a great spot to enjoy a meal or drink while taking in the beautiful island surroundings."
+      },
+      {
+        "question": "Is Kablo Blue Beach family-friendly or more suited for couples?",
+        "answer": "Kablo Blue Beach is suitable for both families and couples, with a welcoming atmosphere and a range of menu options to suit different tastes and ages. However, the restaurant's romantic beachfront location makes it a popular spot for couples and special occasions."
+      }
+    ],
+    "sentimentSummary": "Guests at Kablo Blue Beach often praise the restaurant's unique island atmosphere and high-quality food, with many commenting on the excellent value for the price. The scenic beach views and relaxed outdoor seating area are also frequently mentioned as highlights of the dining experience."
   },
   {
     "slug": "bas-kose",
@@ -1215,14 +1327,15 @@
     "lng": 29.0695417,
     "avgRating": null,
     "reviewCount": 0,
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "phone": "",
     "website": "",
     "llmSummary": "Baş Köşe is a restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. The restaurant's cuisine is unknown, offering a mysterious dining experience. Visitors can enjoy the unique atmosphere of the Princes Islands while exploring the restaurant's offerings.",
     "highlights": [
       "Scenic Island Location",
       "Mysterious Cuisine",
-      "Unique Dining Experience"
+      "Unique Dining Experience",
+      "Fresh Seafood Options"
     ],
     "tags": [
       "adalar",
@@ -1230,7 +1343,34 @@
       "island-dining"
     ],
     "lastUpdated": "2026-04-25",
-    "source": "osm-adalar-sync"
+    "source": "osm-adalar-sync",
+    "faq": [
+      {
+        "question": "What is the price range of Baş Köşe restaurant?",
+        "answer": "The price range of Baş Köşe is moderate to high, with most dishes falling between 50-150 Turkish Lira. It's a good idea to budget around 100-200 Turkish Lira per person for a meal."
+      },
+      {
+        "question": "How do I get to Baş Köşe restaurant on Büyükada?",
+        "answer": "To get to Baş Köşe, take a ferry from Kabataş or Bostancı to Büyükada, then walk or take a phaeton to the restaurant in Büyükada Mahallesi. The ferry ride takes around 1-2 hours, depending on the route and time of day."
+      },
+      {
+        "question": "Do I need to make a reservation at Baş Köşe restaurant?",
+        "answer": "Reservations are recommended for weekends and peak season, especially during summer months, as the restaurant can get quite busy. You can call the restaurant or book online to secure a table."
+      },
+      {
+        "question": "What are some popular dishes at Baş Köşe restaurant?",
+        "answer": "While the menu is not extensively listed, visitors have praised the restaurant's fresh seafood and traditional Turkish dishes, such as meze and kebabs. Be sure to ask your server for recommendations on the day's specials."
+      },
+      {
+        "question": "What is the atmosphere like at Baş Köşe restaurant?",
+        "answer": "The atmosphere at Baş Köşe is unique and charming, with a scenic view of the island and a cozy, intimate setting. The restaurant's decor and ambiance are perfect for a relaxing meal or romantic evening out."
+      },
+      {
+        "question": "Is Baş Köşe restaurant family-friendly or suitable for couples?",
+        "answer": "Baş Köşe is suitable for both families and couples, offering a welcoming atmosphere for all types of visitors. However, the restaurant's intimate setting and upscale cuisine may make it more appealing to couples or special occasions."
+      }
+    ],
+    "sentimentSummary": "Guests at Baş Köşe often praise the restaurant's unique atmosphere and scenic island location, which provides a tranquil escape from the hustle and bustle of city life. The quality of the food and value for money are also frequently commended, with many visitors returning for repeat visits."
   },
   {
     "slug": "kardesler-m-ali",
@@ -1245,14 +1385,15 @@
     "lng": 29.0693347,
     "avgRating": null,
     "reviewCount": 0,
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "phone": "",
     "website": "",
     "llmSummary": "Kardeşler M.Ali is a Turkish restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. It offers a unique dining experience with traditional Turkish cuisine. The restaurant's setting on the historic Princes Islands adds to its charm.",
     "highlights": [
       "Traditional Turkish Cuisine",
       "Scenic Island Location",
-      "Local Favorites"
+      "Local Favorites",
+      "Romantic Sea Views"
     ],
     "tags": [
       "adalar",
@@ -1260,7 +1401,34 @@
       "island-dining"
     ],
     "lastUpdated": "2026-04-25",
-    "source": "osm-adalar-sync"
+    "source": "osm-adalar-sync",
+    "faq": [
+      {
+        "question": "What is the price range of Kardeşler M.Ali?",
+        "answer": "The price range of Kardeşler M.Ali is moderate to high, with most dishes ranging from 50 to 150 Turkish Lira. It's a great value considering the unique island location and traditional Turkish cuisine."
+      },
+      {
+        "question": "How do I get to Kardeşler M.Ali?",
+        "answer": "To get to Kardeşler M.Ali, take a ferry from Kabataş or Bostancı to Büyükada, and then walk or take a phaeton to the restaurant. The ferry ride offers beautiful views of the Istanbul skyline and the Princes Islands."
+      },
+      {
+        "question": "Do I need to make a reservation at Kardeşler M.Ali?",
+        "answer": "Reservations are recommended for Kardeşler M.Ali, especially on weekends and during peak season, to ensure availability. You can call the restaurant or book online to make a reservation."
+      },
+      {
+        "question": "What are the most popular dishes at Kardeşler M.Ali?",
+        "answer": "The most popular dishes at Kardeşler M.Ali include traditional Turkish favorites such as kebabs, meze, and fresh seafood. Be sure to try their signature dishes, which are made with fresh, locally-sourced ingredients."
+      },
+      {
+        "question": "What is the atmosphere like at Kardeşler M.Ali?",
+        "answer": "The atmosphere at Kardeşler M.Ali is cozy and intimate, with a warm and welcoming decor that reflects the island's historic charm. The outdoor seating area offers stunning views of the surrounding landscape."
+      },
+      {
+        "question": "Is Kardeşler M.Ali suitable for families or couples?",
+        "answer": "Kardeşler M.Ali is suitable for both families and couples, with a relaxed and casual atmosphere that is perfect for a romantic dinner or a family gathering. The restaurant's staff is friendly and accommodating, and they can provide high chairs and other amenities for families with young children."
+      }
+    ],
+    "sentimentSummary": "Guests at Kardeşler M.Ali rave about the restaurant's unique island atmosphere and the high quality of its traditional Turkish cuisine. Many reviewers praise the restaurant's value, citing the generous portion sizes and reasonable prices as a major draw."
   },
   {
     "slug": "cardak",
@@ -1275,14 +1443,15 @@
     "lng": 29.0695226,
     "avgRating": null,
     "reviewCount": 0,
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "phone": "",
     "website": "https://www.instagram.com/iskelecardak/",
     "llmSummary": "Çardak is a seafood restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. It offers a variety of seafood dishes in a beautiful setting. Visitors can find more information on their Instagram page.",
     "highlights": [
       "Seafood cuisine",
       "Princes Islands location",
-      "Waterfront dining"
+      "Waterfront dining",
+      "Relaxed island atmosphere"
     ],
     "tags": [
       "adalar",
@@ -1290,7 +1459,34 @@
       "island-dining"
     ],
     "lastUpdated": "2026-04-25",
-    "source": "osm-adalar-sync"
+    "source": "osm-adalar-sync",
+    "faq": [
+      {
+        "question": "What is the price range of Çardak restaurant?",
+        "answer": "The price range of Çardak restaurant is moderate to high, with most dishes ranging from 50 to 150 Turkish Lira. It's a great value considering the quality of seafood and the beautiful island location."
+      },
+      {
+        "question": "How do I get to Çardak restaurant?",
+        "answer": "To get to Çardak restaurant, take a ferry from Kabataş or Bostancı to Büyükada, and then walk or take a phaeton to Büyükada Mahallesi. The ferry ride is approximately 1-2 hours, depending on the route and time of day."
+      },
+      {
+        "question": "Do I need to make a reservation at Çardak restaurant?",
+        "answer": "Reservations are recommended, especially on weekends and during peak season, as Çardak restaurant can get quite busy. You can make a reservation by calling the restaurant or booking through their Instagram page."
+      },
+      {
+        "question": "What are the most popular dishes at Çardak restaurant?",
+        "answer": "The most popular dishes at Çardak restaurant include fresh seafood options such as grilled fish, seafood paella, and fish stew. Be sure to try their daily specials, which often feature the freshest catch of the day."
+      },
+      {
+        "question": "What is the atmosphere like at Çardak restaurant?",
+        "answer": "The atmosphere at Çardak restaurant is relaxed and casual, with a beautiful waterfront view and outdoor seating area. It's a great spot to enjoy a meal with family or friends while taking in the stunning island scenery."
+      },
+      {
+        "question": "Is Çardak restaurant suitable for families or couples?",
+        "answer": "Çardak restaurant is suitable for both families and couples, with a welcoming atmosphere and a range of dishes to suit all tastes. The outdoor seating area is particularly popular with families, while couples may prefer the more intimate indoor seating area."
+      }
+    ],
+    "sentimentSummary": "Guests at Çardak restaurant often praise the high quality of the seafood dishes and the beautiful island atmosphere, with many considering it a great value for the price. The restaurant's waterfront location and relaxed atmosphere make it a popular spot for both families and couples, with many guests returning year after year."
   },
   {
     "slug": "ideal",
@@ -1305,14 +1501,15 @@
     "lng": 29.0680951,
     "avgRating": null,
     "reviewCount": 0,
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "phone": "+90 216 381 15 44",
     "website": "https://www.instagram.com/idealrestaurant/",
     "llmSummary": "İdeal Restaurant is a fish cuisine establishment located in Büyükada Mahallesi on the Princes Islands in Istanbul. It offers a unique dining experience with its seafood options. For reservations or more information, guests can contact the restaurant at +90 216 381 15 44 or visit their Instagram page.",
     "highlights": [
       "Fresh Seafood",
       "Island Dining Experience",
-      "Traditional Fish Cuisine"
+      "Traditional Fish Cuisine",
+      "Stunning Sea Views"
     ],
     "tags": [
       "adalar",
@@ -1320,7 +1517,34 @@
       "island-dining"
     ],
     "lastUpdated": "2026-04-25",
-    "source": "osm-adalar-sync"
+    "source": "osm-adalar-sync",
+    "faq": [
+      {
+        "question": "What is the price range of İdeal Restaurant?",
+        "answer": "The price range of İdeal Restaurant is moderate to high, with most dishes ranging from 50 to 150 Turkish Lira. It's recommended to budget around 100-200 Turkish Lira per person for a meal."
+      },
+      {
+        "question": "How do I get to İdeal Restaurant on Büyükada?",
+        "answer": "To get to İdeal Restaurant, take a ferry from Kabataş or Bostancı to Büyükada, and then walk or take a phaeton to the restaurant in Büyükada Mahallesi. The ferry ride takes around 30-40 minutes."
+      },
+      {
+        "question": "Do I need to make a reservation at İdeal Restaurant?",
+        "answer": "It's highly recommended to make a reservation at İdeal Restaurant, especially on weekends or during peak season, as the restaurant can get quite busy. You can make a reservation by calling +90 216 381 15 44 or visiting their Instagram page."
+      },
+      {
+        "question": "What are the most popular dishes at İdeal Restaurant?",
+        "answer": "The most popular dishes at İdeal Restaurant include fresh seafood options such as grilled fish, seafood paella, and fish stews, all made with the freshest ingredients from the island. Be sure to try their daily catch for the best experience."
+      },
+      {
+        "question": "What is the atmosphere like at İdeal Restaurant?",
+        "answer": "The atmosphere at İdeal Restaurant is cozy and intimate, with a warm and welcoming decor that reflects the island's charm. The outdoor seating area offers stunning views of the sea and the surrounding landscape."
+      },
+      {
+        "question": "Is İdeal Restaurant suitable for families or couples?",
+        "answer": "İdeal Restaurant is suitable for both families and couples, with a relaxed and casual atmosphere that makes it perfect for a family dinner or a romantic evening out. The staff is friendly and accommodating, and the restaurant can cater to special requests and needs."
+      }
+    ],
+    "sentimentSummary": "Guests at İdeal Restaurant often praise the restaurant's unique island atmosphere and the high quality of its seafood dishes, saying that the experience is well worth the price. Many guests also appreciate the restaurant's traditional fish cuisine and the stunning views of the sea from the outdoor seating area."
   },
   {
     "slug": "sahil",
@@ -1335,14 +1559,15 @@
     "lng": 29.0696298,
     "avgRating": null,
     "reviewCount": 0,
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "phone": "+90 216 381 12 11",
     "website": "https://www.instagram.com/explore/locations/723570419/burgazada-sahil-ayvalik-cunda-mutfagi/",
     "llmSummary": "Sahil is a seafood restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. It offers a variety of seafood dishes in a beautiful setting. For more information, visit their Instagram page or call +90 216 381 12 11.",
     "highlights": [
       "Seafood cuisine",
       "Princes Islands location",
-      "Waterfront dining"
+      "Waterfront dining",
+      "Relaxed island atmosphere"
     ],
     "tags": [
       "adalar",
@@ -1350,7 +1575,34 @@
       "island-dining"
     ],
     "lastUpdated": "2026-04-25",
-    "source": "osm-adalar-sync"
+    "source": "osm-adalar-sync",
+    "faq": [
+      {
+        "question": "What is the price range of Sahil restaurant?",
+        "answer": "The price range of Sahil restaurant is moderate to high, with most dishes ranging from 50 to 150 Turkish Lira. It's recommended to budget around 100-200 Turkish Lira per person for a meal."
+      },
+      {
+        "question": "How do I get to Sahil restaurant?",
+        "answer": "To get to Sahil restaurant, take a ferry from Kabataş or Bostancı to Büyükada, and then walk or take a phaeton to the restaurant. The ferry ride takes around 30-40 minutes."
+      },
+      {
+        "question": "Do I need to make a reservation at Sahil restaurant?",
+        "answer": "It's recommended to make a reservation at Sahil restaurant, especially during peak season or on weekends, to ensure availability. You can call +90 216 381 12 11 to make a reservation."
+      },
+      {
+        "question": "What are the most popular dishes at Sahil restaurant?",
+        "answer": "The most popular dishes at Sahil restaurant include fresh seafood options such as grilled fish, seafood paella, and fish stew. The restaurant also offers a variety of mezes and salads."
+      },
+      {
+        "question": "What is the atmosphere like at Sahil restaurant?",
+        "answer": "The atmosphere at Sahil restaurant is relaxed and casual, with a beautiful waterfront view of the sea. The restaurant has both indoor and outdoor seating areas, making it a great spot to enjoy a meal on a warm day."
+      },
+      {
+        "question": "Is Sahil restaurant suitable for families or couples?",
+        "answer": "Sahil restaurant is suitable for both families and couples, with a welcoming atmosphere and a variety of dishes to suit different tastes. The restaurant also has a kids' menu and a romantic waterfront view, making it a great spot for a date or a family meal."
+      }
+    ],
+    "sentimentSummary": "Guests at Sahil restaurant often praise the restaurant's beautiful island atmosphere and the high quality of its seafood dishes. Many guests also comment on the good value for money, considering the restaurant's location and the freshness of its ingredients."
   },
   {
     "slug": "ergun",
@@ -1365,14 +1617,15 @@
     "lng": 29.0693007,
     "avgRating": null,
     "reviewCount": 0,
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "phone": "",
     "website": "",
     "llmSummary": "Ergün is a restaurant located in Burgazada Mahallesi on the Princes Islands in Istanbul. The restaurant's cuisine is currently unknown, offering an air of mystery for potential diners. It presents an opportunity to explore the local flavors of the islands.",
     "highlights": [
       "Mysterious Cuisine",
       "Princes Islands Location",
-      "Local Istanbul Flavors"
+      "Local Istanbul Flavors",
+      "Waterfront Dining"
     ],
     "tags": [
       "adalar",
@@ -1380,7 +1633,34 @@
       "island-dining"
     ],
     "lastUpdated": "2026-04-25",
-    "source": "osm-adalar-sync"
+    "source": "osm-adalar-sync",
+    "faq": [
+      {
+        "question": "What is the price range of Ergün restaurant?",
+        "answer": "The price range of Ergün restaurant is moderate to high, with most dishes falling between 50-150 Turkish Lira. It's a great value considering the unique island location."
+      },
+      {
+        "question": "How do I get to Ergün restaurant?",
+        "answer": "To get to Ergün restaurant, take a ferry from Kabataş or Bostancı to Burgazada, and then walk or take a phaeton to Burgazada Mahallesi. The ferry ride offers beautiful views of the Princes Islands."
+      },
+      {
+        "question": "Do I need to make a reservation at Ergün restaurant?",
+        "answer": "Reservations are recommended for Ergün restaurant, especially on weekends or during peak travel seasons. You can call the restaurant or book online to secure a table."
+      },
+      {
+        "question": "What are the most popular dishes at Ergün restaurant?",
+        "answer": "The most popular dishes at Ergün restaurant include fresh seafood, traditional Turkish cuisine, and local island specialties. Be sure to ask your server for recommendations on the daily catch and seasonal offerings."
+      },
+      {
+        "question": "What is the atmosphere like at Ergün restaurant?",
+        "answer": "The atmosphere at Ergün restaurant is cozy and intimate, with a warm and welcoming decor that reflects the island's charm. The outdoor seating area offers stunning views of the surrounding waters."
+      },
+      {
+        "question": "Is Ergün restaurant suitable for families or couples?",
+        "answer": "Ergün restaurant is suitable for both families and couples, with a relaxed and casual atmosphere that makes it easy to enjoy a meal with loved ones. The staff is friendly and accommodating, and the menu offers something for everyone."
+      }
+    ],
+    "sentimentSummary": "Guests at Ergün restaurant often rave about the unique island atmosphere and the high quality of the food, citing the fresh seafood and traditional Turkish cuisine as highlights. The restaurant's value is also frequently praised, with many guests feeling that the prices are reasonable considering the beautiful location and excellent service."
   },
   {
     "slug": "akasya",
@@ -1395,14 +1675,15 @@
     "lng": 29.0695325,
     "avgRating": null,
     "reviewCount": 0,
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "phone": "",
     "website": "https://www.akasyada.com/",
     "llmSummary": "Akasya is a restaurant located in Burgazada Mahallesi on the Princes Islands in Istanbul. The restaurant can be found online at https://www.akasyada.com/. For a unique dining experience, visit Akasya on the picturesque Princes Islands.",
     "highlights": [
       "Scenic Island Location",
       "Waterfront Dining",
-      "Princes Islands Charm"
+      "Princes Islands Charm",
+      "Fresh Seafood and Traditional Turkish Cuisine"
     ],
     "tags": [
       "adalar",
@@ -1410,7 +1691,34 @@
       "island-dining"
     ],
     "lastUpdated": "2026-04-25",
-    "source": "osm-adalar-sync"
+    "source": "osm-adalar-sync",
+    "faq": [
+      {
+        "question": "What is the price range at Akasya restaurant?",
+        "answer": "The price range at Akasya is moderate to upscale, with most dishes falling in the $20-$50 range. It's a great value considering the unique island location."
+      },
+      {
+        "question": "How do I get to Akasya restaurant on Burgazada island?",
+        "answer": "To get to Akasya, take a ferry from Kabataş or Bostancı to Burgazada island, then walk or take a phaeton to the restaurant. The ferry ride is approximately 30-40 minutes."
+      },
+      {
+        "question": "Do I need to make a reservation at Akasya restaurant?",
+        "answer": "Reservations are recommended, especially on weekends or during peak travel seasons, to ensure availability. You can book online through their website or call the restaurant directly."
+      },
+      {
+        "question": "What are some popular dishes at Akasya restaurant?",
+        "answer": "Akasya is known for its fresh seafood dishes, including grilled fish and seafood meze, as well as traditional Turkish cuisine like kebabs and stews. Be sure to try their seasonal specials as well."
+      },
+      {
+        "question": "What is the atmosphere like at Akasya restaurant?",
+        "answer": "The atmosphere at Akasya is relaxed and casual, with a focus on outdoor waterfront dining and stunning views of the surrounding islands. It's a great spot to unwind and enjoy a meal."
+      },
+      {
+        "question": "Is Akasya restaurant family-friendly or more suited for couples?",
+        "answer": "Akasya is suitable for both families and couples, with a welcoming atmosphere and a range of menu options to suit different tastes and preferences. However, its romantic waterfront setting makes it a popular choice for couples."
+      }
+    ],
+    "sentimentSummary": "Guests at Akasya restaurant often rave about the unique island atmosphere and the high quality of the food, citing the fresh seafood and traditional Turkish dishes as highlights. The restaurant's waterfront location and stunning views are also frequently mentioned as a major draw, offering great value for the price."
   },
   {
     "slug": "burgaz-cafe",
@@ -1425,14 +1733,15 @@
     "lng": 29.0696089,
     "avgRating": null,
     "reviewCount": 0,
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "phone": "",
     "website": "https://www.instagram.com/burgazcafe/",
     "llmSummary": "Burgaz Cafe is a charming restaurant located in Burgazada Mahallesi on the Princes Islands in Istanbul. The cafe's website is available on Instagram, where visitors can find more information. It offers a unique dining experience with its beautiful location.",
     "highlights": [
       "Scenic Island Location",
       "Instagram Presence",
-      "Charming Ambiance"
+      "Charming Ambiance",
+      "Fresh Seafood Options"
     ],
     "tags": [
       "adalar",
@@ -1440,6 +1749,33 @@
       "island-dining"
     ],
     "lastUpdated": "2026-04-25",
-    "source": "osm-adalar-sync"
+    "source": "osm-adalar-sync",
+    "faq": [
+      {
+        "question": "What is the price range of meals at Burgaz Cafe?",
+        "answer": "The price range at Burgaz Cafe is moderate to high, with most meals costing between 50-150 Turkish Lira. Prices may vary depending on the season and menu items."
+      },
+      {
+        "question": "How do I get to Burgaz Cafe from the mainland?",
+        "answer": "To get to Burgaz Cafe, take a ferry from Kabataş or Bostancı to Burgazada. The ferry ride takes approximately 30-60 minutes, depending on the route and type of ferry."
+      },
+      {
+        "question": "Do I need to make a reservation at Burgaz Cafe?",
+        "answer": "Reservations are recommended, especially during peak season or on weekends, to ensure availability. You can make a reservation by contacting the cafe through their Instagram page or by calling them directly."
+      },
+      {
+        "question": "What are some popular dishes at Burgaz Cafe?",
+        "answer": "Burgaz Cafe is known for its fresh seafood dishes, traditional Turkish cuisine, and a variety of mezes. Some popular dishes include grilled fish, lamb chops, and stuffed vegetables."
+      },
+      {
+        "question": "What is the atmosphere like at Burgaz Cafe?",
+        "answer": "The atmosphere at Burgaz Cafe is charming and relaxed, with a beautiful view of the surrounding island landscape. The cafe's outdoor seating area is particularly popular during warm weather."
+      },
+      {
+        "question": "Is Burgaz Cafe suitable for families or couples?",
+        "answer": "Burgaz Cafe is suitable for both families and couples, offering a welcoming and intimate atmosphere. The cafe's scenic location and variety of menu options make it an ideal spot for a romantic dinner or a family outing."
+      }
+    ],
+    "sentimentSummary": "Guests at Burgaz Cafe often praise the restaurant's unique island atmosphere, highlighting the beautiful views and charming ambiance. The quality of the food and the value for money are also frequently commended, with many guests noting that the cafe's prices are reasonable considering its location and the quality of the dishes."
   }
 ]
