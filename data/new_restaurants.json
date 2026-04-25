@@ -1081,5 +1081,365 @@
     "verifiedData": false,
     "confidenceScore": 0.5,
     "specialFeatures": {}
+  },
+  {
+    "slug": "sirma-cafe",
+    "name": "Sirma Cafe",
+    "city": "Istanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Büyükada Mahallesi",
+    "district": "Adalar",
+    "cuisine": "Restaurant",
+    "cuisineSlug": null,
+    "lat": 40.8806089,
+    "lng": 29.0695129,
+    "avgRating": null,
+    "reviewCount": 0,
+    "priceRange": "$$",
+    "phone": "",
+    "website": "",
+    "llmSummary": "Sirma Cafe is a charming restaurant located in Büyükada Mahallesi on the Princes Islands of Istanbul. The cafe is situated on Sarnıç Sokak, offering a unique dining experience. With its picturesque surroundings, Sirma Cafe is a great spot to relax and enjoy a meal.",
+    "highlights": [
+      "Scenic Island Views",
+      "Charming Atmosphere",
+      "Local Istanbul Cuisine"
+    ],
+    "tags": [
+      "adalar",
+      "princes-islands",
+      "island-dining"
+    ],
+    "lastUpdated": "2026-04-25",
+    "source": "osm-adalar-sync"
+  },
+  {
+    "slug": "barba-yani",
+    "name": "Barba Yani",
+    "city": "Istanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Büyükada Mahallesi",
+    "district": "Adalar",
+    "cuisine": "Restaurant",
+    "cuisineSlug": null,
+    "lat": 40.8807575,
+    "lng": 29.0695947,
+    "avgRating": null,
+    "reviewCount": 0,
+    "priceRange": "$$",
+    "phone": "",
+    "website": "",
+    "llmSummary": "Barba Yani is a restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. The restaurant's cuisine is currently unknown, but its unique location on the islands offers a distinct dining experience. Visitors can enjoy the scenic views of the islands while dining at Barba Yani.",
+    "highlights": [
+      "Scenic Island Views",
+      "Unique Dining Experience",
+      "Princes Islands Location"
+    ],
+    "tags": [
+      "adalar",
+      "princes-islands",
+      "island-dining"
+    ],
+    "lastUpdated": "2026-04-25",
+    "source": "osm-adalar-sync"
+  },
+  {
+    "slug": "sandal",
+    "name": "Sandal",
+    "city": "Istanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Büyükada Mahallesi",
+    "district": "Adalar",
+    "cuisine": "Restaurant",
+    "cuisineSlug": null,
+    "lat": 40.8715927,
+    "lng": 29.0864961,
+    "avgRating": null,
+    "reviewCount": 0,
+    "priceRange": "$$",
+    "phone": "",
+    "website": "",
+    "llmSummary": "Sandal is a restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. The restaurant's cuisine is currently unknown, offering an air of mystery for potential diners. It presents an opportunity to explore the local flavors of the islands.",
+    "highlights": [
+      "Mysterious Cuisine",
+      "Princes Islands Location",
+      "Local Istanbul Flavors"
+    ],
+    "tags": [
+      "adalar",
+      "princes-islands",
+      "island-dining"
+    ],
+    "lastUpdated": "2026-04-25",
+    "source": "osm-adalar-sync"
+  },
+  {
+    "slug": "kablo-blue-beach",
+    "name": "Kablo Blue Beach",
+    "city": "Istanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Büyükada Mahallesi",
+    "district": "Adalar",
+    "cuisine": "Restaurant",
+    "cuisineSlug": null,
+    "lat": 40.8769485,
+    "lng": 29.0843699,
+    "avgRating": null,
+    "reviewCount": 0,
+    "priceRange": "$$",
+    "phone": "",
+    "website": "",
+    "llmSummary": "Kablo Blue Beach is a restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. The restaurant's cuisine is unknown, offering a mysterious dining experience. It is situated in a unique location, perfect for those looking to explore the islands.",
+    "highlights": [
+      "Unique Island Location",
+      "Mysterious Cuisine",
+      "Scenic Beach Views"
+    ],
+    "tags": [
+      "adalar",
+      "princes-islands",
+      "island-dining"
+    ],
+    "lastUpdated": "2026-04-25",
+    "source": "osm-adalar-sync"
+  },
+  {
+    "slug": "bas-kose",
+    "name": "Baş Köşe",
+    "city": "Istanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Büyükada Mahallesi",
+    "district": "Adalar",
+    "cuisine": "Restaurant",
+    "cuisineSlug": null,
+    "lat": 40.8803557,
+    "lng": 29.0695417,
+    "avgRating": null,
+    "reviewCount": 0,
+    "priceRange": "$$",
+    "phone": "",
+    "website": "",
+    "llmSummary": "Baş Köşe is a restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. The restaurant's cuisine is unknown, offering a mysterious dining experience. Visitors can enjoy the unique atmosphere of the Princes Islands while exploring the restaurant's offerings.",
+    "highlights": [
+      "Scenic Island Location",
+      "Mysterious Cuisine",
+      "Unique Dining Experience"
+    ],
+    "tags": [
+      "adalar",
+      "princes-islands",
+      "island-dining"
+    ],
+    "lastUpdated": "2026-04-25",
+    "source": "osm-adalar-sync"
+  },
+  {
+    "slug": "kardesler-m-ali",
+    "name": "Kardeşler M.Ali",
+    "city": "Istanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Büyükada Mahallesi",
+    "district": "Adalar",
+    "cuisine": "Turkish",
+    "cuisineSlug": null,
+    "lat": 40.8805072,
+    "lng": 29.0693347,
+    "avgRating": null,
+    "reviewCount": 0,
+    "priceRange": "$$",
+    "phone": "",
+    "website": "",
+    "llmSummary": "Kardeşler M.Ali is a Turkish restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. It offers a unique dining experience with traditional Turkish cuisine. The restaurant's setting on the historic Princes Islands adds to its charm.",
+    "highlights": [
+      "Traditional Turkish Cuisine",
+      "Scenic Island Location",
+      "Local Favorites"
+    ],
+    "tags": [
+      "adalar",
+      "princes-islands",
+      "island-dining"
+    ],
+    "lastUpdated": "2026-04-25",
+    "source": "osm-adalar-sync"
+  },
+  {
+    "slug": "cardak",
+    "name": "Çardak",
+    "city": "Istanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Büyükada Mahallesi",
+    "district": "Adalar",
+    "cuisine": "Seafood",
+    "cuisineSlug": null,
+    "lat": 40.880428,
+    "lng": 29.0695226,
+    "avgRating": null,
+    "reviewCount": 0,
+    "priceRange": "$$",
+    "phone": "",
+    "website": "https://www.instagram.com/iskelecardak/",
+    "llmSummary": "Çardak is a seafood restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. It offers a variety of seafood dishes in a beautiful setting. Visitors can find more information on their Instagram page.",
+    "highlights": [
+      "Seafood cuisine",
+      "Princes Islands location",
+      "Waterfront dining"
+    ],
+    "tags": [
+      "adalar",
+      "princes-islands",
+      "island-dining"
+    ],
+    "lastUpdated": "2026-04-25",
+    "source": "osm-adalar-sync"
+  },
+  {
+    "slug": "ideal",
+    "name": "İdeal",
+    "city": "Istanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Büyükada Mahallesi",
+    "district": "Adalar",
+    "cuisine": "Fish",
+    "cuisineSlug": null,
+    "lat": 40.8790611,
+    "lng": 29.0680951,
+    "avgRating": null,
+    "reviewCount": 0,
+    "priceRange": "$$",
+    "phone": "+90 216 381 15 44",
+    "website": "https://www.instagram.com/idealrestaurant/",
+    "llmSummary": "İdeal Restaurant is a fish cuisine establishment located in Büyükada Mahallesi on the Princes Islands in Istanbul. It offers a unique dining experience with its seafood options. For reservations or more information, guests can contact the restaurant at +90 216 381 15 44 or visit their Instagram page.",
+    "highlights": [
+      "Fresh Seafood",
+      "Island Dining Experience",
+      "Traditional Fish Cuisine"
+    ],
+    "tags": [
+      "adalar",
+      "princes-islands",
+      "island-dining"
+    ],
+    "lastUpdated": "2026-04-25",
+    "source": "osm-adalar-sync"
+  },
+  {
+    "slug": "sahil",
+    "name": "Sahil",
+    "city": "Istanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Büyükada Mahallesi",
+    "district": "Adalar",
+    "cuisine": "Seafood",
+    "cuisineSlug": null,
+    "lat": 40.8809836,
+    "lng": 29.0696298,
+    "avgRating": null,
+    "reviewCount": 0,
+    "priceRange": "$$",
+    "phone": "+90 216 381 12 11",
+    "website": "https://www.instagram.com/explore/locations/723570419/burgazada-sahil-ayvalik-cunda-mutfagi/",
+    "llmSummary": "Sahil is a seafood restaurant located in Büyükada Mahallesi on the Princes Islands in Istanbul. It offers a variety of seafood dishes in a beautiful setting. For more information, visit their Instagram page or call +90 216 381 12 11.",
+    "highlights": [
+      "Seafood cuisine",
+      "Princes Islands location",
+      "Waterfront dining"
+    ],
+    "tags": [
+      "adalar",
+      "princes-islands",
+      "island-dining"
+    ],
+    "lastUpdated": "2026-04-25",
+    "source": "osm-adalar-sync"
+  },
+  {
+    "slug": "ergun",
+    "name": "Ergün",
+    "city": "Istanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Burgazada Mahallesi",
+    "district": "Adalar",
+    "cuisine": "Restaurant",
+    "cuisineSlug": null,
+    "lat": 40.8811603,
+    "lng": 29.0693007,
+    "avgRating": null,
+    "reviewCount": 0,
+    "priceRange": "$$",
+    "phone": "",
+    "website": "",
+    "llmSummary": "Ergün is a restaurant located in Burgazada Mahallesi on the Princes Islands in Istanbul. The restaurant's cuisine is currently unknown, offering an air of mystery for potential diners. It presents an opportunity to explore the local flavors of the islands.",
+    "highlights": [
+      "Mysterious Cuisine",
+      "Princes Islands Location",
+      "Local Istanbul Flavors"
+    ],
+    "tags": [
+      "adalar",
+      "princes-islands",
+      "island-dining"
+    ],
+    "lastUpdated": "2026-04-25",
+    "source": "osm-adalar-sync"
+  },
+  {
+    "slug": "akasya",
+    "name": "Akasya",
+    "city": "Istanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Burgazada Mahallesi",
+    "district": "Adalar",
+    "cuisine": "Restaurant",
+    "cuisineSlug": null,
+    "lat": 40.8810143,
+    "lng": 29.0695325,
+    "avgRating": null,
+    "reviewCount": 0,
+    "priceRange": "$$",
+    "phone": "",
+    "website": "https://www.akasyada.com/",
+    "llmSummary": "Akasya is a restaurant located in Burgazada Mahallesi on the Princes Islands in Istanbul. The restaurant can be found online at https://www.akasyada.com/. For a unique dining experience, visit Akasya on the picturesque Princes Islands.",
+    "highlights": [
+      "Scenic Island Location",
+      "Waterfront Dining",
+      "Princes Islands Charm"
+    ],
+    "tags": [
+      "adalar",
+      "princes-islands",
+      "island-dining"
+    ],
+    "lastUpdated": "2026-04-25",
+    "source": "osm-adalar-sync"
+  },
+  {
+    "slug": "burgaz-cafe",
+    "name": "Burgaz Cafe",
+    "city": "Istanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Burgazada Mahallesi",
+    "district": "Adalar",
+    "cuisine": "Restaurant",
+    "cuisineSlug": null,
+    "lat": 40.8810412,
+    "lng": 29.0696089,
+    "avgRating": null,
+    "reviewCount": 0,
+    "priceRange": "$$",
+    "phone": "",
+    "website": "https://www.instagram.com/burgazcafe/",
+    "llmSummary": "Burgaz Cafe is a charming restaurant located in Burgazada Mahallesi on the Princes Islands in Istanbul. The cafe's website is available on Instagram, where visitors can find more information. It offers a unique dining experience with its beautiful location.",
+    "highlights": [
+      "Scenic Island Location",
+      "Instagram Presence",
+      "Charming Ambiance"
+    ],
+    "tags": [
+      "adalar",
+      "princes-islands",
+      "island-dining"
+    ],
+    "lastUpdated": "2026-04-25",
+    "source": "osm-adalar-sync"
   }
 ]

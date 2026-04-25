@@ -59,13 +59,15 @@ export default async function RestaurantPage({ params }: Props) {
       latitude: r.lat,
       longitude: r.lng,
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: r.avgRating.toString(),
-      reviewCount: r.reviewCount.toString(),
-      bestRating: "5",
-      worstRating: "1",
-    },
+    ...(r.avgRating != null ? {
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: r.avgRating.toString(),
+        reviewCount: (r.reviewCount ?? 0).toString(),
+        bestRating: "5",
+        worstRating: "1",
+      },
+    } : {}),
     openingHours: r.hoursEstimated ? undefined : r.openingHours,
     telephone: r.phone || undefined,
     url: r.website || `https://restaurantsistanbul.vercel.app/${city}/${slug}`,
@@ -77,9 +79,9 @@ export default async function RestaurantPage({ params }: Props) {
     additionalProperty: [
       { "@type": "PropertyValue", name: "llm_summary", value: r.llmSummary },
       { "@type": "PropertyValue", name: "sentiment_summary", value: r.sentimentSummary },
-      { "@type": "PropertyValue", name: "confidence_score", value: r.confidenceScore.toString() },
+      ...(r.confidenceScore != null ? [{ "@type": "PropertyValue", name: "confidence_score", value: r.confidenceScore.toString() }] : []),
       { "@type": "PropertyValue", name: "last_updated", value: r.lastUpdated },
-      { "@type": "PropertyValue", name: "verified_data", value: r.verifiedData.toString() },
+      ...(r.verifiedData != null ? [{ "@type": "PropertyValue", name: "verified_data", value: r.verifiedData.toString() }] : []),
       { "@type": "PropertyValue", name: "tags", value: r.tags.join(", ") },
       ...(r.highlights ? [{ "@type": "PropertyValue", name: "highlights", value: r.highlights.join(", ") }] : []),
       ...(r.specialFeatures?.signatureDish ? [{ "@type": "PropertyValue", name: "signature_dish", value: r.specialFeatures.signatureDish }] : []),
@@ -263,6 +265,7 @@ export default async function RestaurantPage({ params }: Props) {
         ) : null}
 
         {/* Review Analysis */}
+        {r.sentimentSummary && (
         <section className="mb-10">
           <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
             <AniHead variant="reviewer" className="w-8 h-8 shrink-0" />
@@ -285,6 +288,7 @@ export default async function RestaurantPage({ params }: Props) {
             </p>
           )}
         </section>
+        )}
 
         {/* Highlights */}
         {r.highlights?.length ? (
@@ -301,6 +305,7 @@ export default async function RestaurantPage({ params }: Props) {
         ) : null}
 
         {/* Features */}
+        {r.features && (
         <section className="mb-10">
           <h2 className="text-lg font-semibold mb-4">Features</h2>
           <div className="flex flex-wrap gap-2">
@@ -327,6 +332,7 @@ export default async function RestaurantPage({ params }: Props) {
             )}
           </div>
         </section>
+        )}
 
         {/* Dietary Options */}
         {r.specialFeatures?.dietaryOptions?.length ? (
