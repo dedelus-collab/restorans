@@ -70,7 +70,7 @@ const methodology = [
   {
     step: "2",
     title: "Cuisine Normalization",
-    body: "200+ raw cuisine tags were reduced to 9 canonical slugs: kebap, balık, pizza-italyan, sushi-japon, burger-steak, kahvaltı, meyhane, vegan, dünya-mutfağı.",
+    body: "200+ raw cuisine tags were reduced to 9 canonical slugs: kebap, seafood (balik), pizza-italyan, sushi-japon, burger-steak, breakfast (kahvalti), meyhane, vegan, world-cuisine (dunya-mutfagi).",
   },
   {
     step: "3",

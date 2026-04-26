@@ -57,7 +57,7 @@ export function IstanbulMapIllustrated() {
       {/* Arka plan harita resmi */}
       <Image
         src="/istanbul-map.jpg"
-        alt="İstanbul illüstrasyon haritası"
+        alt="Illustrated Istanbul district map"
         fill
         className="object-cover object-center"
         priority
@@ -86,7 +86,7 @@ export function IstanbulMapIllustrated() {
                   : "bg-white/80 border-gray-400 text-gray-800 px-1.5 py-[2px] text-[9px]",
             ].join(" ")}
             style={{ left: `${d.x}%`, top: `${d.y}%` }}
-            title={`${d.name} — ${count} restoran`}
+            title={`${d.name} — ${count} restaurants`}
           >
             {d.name}
             {count >= 5 && (
@@ -100,16 +100,16 @@ export function IstanbulMapIllustrated() {
       <div className="absolute top-2 left-2 bg-white/80 backdrop-blur-sm
           rounded-xl px-3 py-1.5 shadow border border-white/60 pointer-events-none z-20">
         <div className="text-xs font-bold text-gray-800 leading-tight">İstanbul</div>
-        <div className="text-[9px] text-gray-500 leading-tight">Restoran İlçe Haritası</div>
+        <div className="text-[9px] text-gray-500 leading-tight">Restaurant District Map</div>
       </div>
 
       {/* Sağ alt lejant */}
       <div className="absolute bottom-2 right-2 bg-white/80 backdrop-blur-sm
           rounded-xl px-2.5 py-2 shadow border border-white/60 flex flex-col gap-1 pointer-events-none z-20">
         {[
-          { cls: "bg-red-600",   lbl: "10+ restoran" },
-          { cls: "bg-amber-500", lbl: "5–9 restoran" },
-          { cls: "bg-white border border-gray-400", lbl: "1–4 restoran" },
+          { cls: "bg-red-600",   lbl: "10+ restaurants" },
+          { cls: "bg-amber-500", lbl: "5–9 restaurants" },
+          { cls: "bg-white border border-gray-400", lbl: "1–4 restaurants" },
         ].map(({ cls, lbl }) => (
           <div key={lbl} className="flex items-center gap-1.5">
             <span className={`w-3 h-3 rounded-full ${cls} inline-block shrink-0`} />

@@ -1,0 +1,959 @@
+Overpass API (Beşiktaş kebap)...
+OSM: 281 eleman
+Yeni aday: 213
+
+-> Dönerci
+  Mahalle: Mecidiyeköy Mahallesi
+  Skip: Mecidiyeköy Mahallesi -> Şişli
+
+-> Taksim Döner
+  Mahalle: Gümüşsuyu
+  Skip: Gümüşsuyu -> Beyoğlu
+
+-> Patatos
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Kasap Döner
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Kulinata
+  Mahalle: Hacımimi
+  Skip: Hacımimi -> Fatih
+
+-> Etiler Marmaris
+  Mahalle: Levent Mahallesi
+  Added ok
+
+-> Bilakis
+  Mahalle: Esentepe Mahallesi
+  Skip: Esentepe Mahallesi -> Şişli
+
+-> Vegan Istanbul
+  Mahalle: Firuzağa
+  Skip: Firuzağa -> Beyoğlu
+
+-> Öz Gaziantep Kebap Lahmacun
+  Mahalle: Çatma Mescit Mahallesi
+  Map: Çatma Mescit Mahallesi -> Beşiktaş
+  Added ok
+
+-> Dilruba
+  Mahalle: İcadiye Mahallesi
+  Map: İcadiye Mahallesi -> Beşiktaş
+  Added ok
+
+-> Kristal Ocakbaşı
+  Mahalle: Cumhuriyet Mahallesi
+  Skip: Cumhuriyet Mahallesi -> Esenyurt
+
+-> Varuna Gezgin
+  Mahalle: Şahkulu
+  Skip: Şahkulu -> Beyoğlu
+
+-> Sokak Kahvesi
+  Mahalle: Şahkulu
+  Skip: Şahkulu -> Beyoğlu
+
+-> Bilice Kebap
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Domino Cafe
+  Mahalle: Balat Mahallesi
+  Skip: Balat Mahallesi -> Fatih
+
+-> Osman Oglu Kebap
+  Mahalle: Cibali Mahallesi
+  Map: Cibali Mahallesi -> Beşiktaş
+  Added ok
+
+-> Urfam Kebap Döner
+  Mahalle: Balat Mahallesi
+  Skip: Balat Mahallesi -> Fatih
+
+-> Altınay Kebap Ve Lahmacun
+  Mahalle: Ayvansaray Mahallesi
+  Map: Ayvansaray Mahallesi -> Beşiktaş
+  Added ok
+
+-> Çarşamba kebap
+  Mahalle: Ali Kuşçu Mahallesi
+  Skip: Ali Kuşçu Mahallesi -> Fatih
+
+-> İsot lahmacun
+  Mahalle: Derviş Ali Mahallesi
+  Skip: Derviş Ali Mahallesi -> Fatih
+
+-> Özcanlar kebap salonu
+  Mahalle: Derviş Ali Mahallesi
+  Skip: Derviş Ali Mahallesi -> Fatih
+
+-> Akçiçek doner
+  Mahalle: Derviş Ali Mahallesi
+  Skip: Derviş Ali Mahallesi -> Fatih
+
+-> Privato Cafe
+  Mahalle: Şahkulu
+  Skip: Şahkulu -> Beyoğlu
+
+-> Ehlitat Lokantasi
+  Mahalle: Hüseyinağa
+  Skip: Hüseyinağa -> Beyoğlu
+
+-> Kanaat Lokantası
+  Mahalle: Sultantepe Mahallesi
+  Map: Sultantepe Mahallesi -> Beşiktaş
+  Added ok
+
+-> Hünkar
+  Mahalle: Harbiye Mahallesi
+  Skip: Harbiye Mahallesi -> Şişli
+
+-> Sans
+  Mahalle: Levent Mahallesi
+  Added ok
+
+-> Firuzende
+  Mahalle: Bereketzade Mahallesi
+  Skip: Bereketzade Mahallesi -> Beyoğlu
+
+-> YES Kardesler
+  Mahalle: Teşvikiye Mahallesi
+  Skip: Teşvikiye Mahallesi -> Şişli
+
+-> Lalezar Meyhanesi
+  Mahalle: Paşa
+  Map: Paşa -> Beşiktaş
+  Added ok
+
+-> Altıntaş Büfe
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Sütiş Kebap Dünyası
+  Mahalle: Katip Mustafa Çelebi Mahallesi
+  Skip: Katip Mustafa Çelebi Mahallesi -> Beyoğlu
+
+-> Kebab Restaurant
+  Mahalle: Katip Mustafa Çelebi Mahallesi
+  Skip: Katip Mustafa Çelebi Mahallesi -> Beyoğlu
+
+-> Plavci
+  Mahalle: Arap Cami
+  Skip: Arap Cami -> Fatih
+
+-> Sahrap
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Chicken Plus
+  Mahalle: Kocatepe Mahallesi
+  Skip: Kocatepe Mahallesi -> Beyoğlu
+
+-> Sultan Kebap
+  Mahalle: Kocatepe Mahallesi
+  Skip: Kocatepe Mahallesi -> Beyoğlu
+
+-> YMC Döner
+  Mahalle: Cumhuriyet
+  Skip: Cumhuriyet -> Şişli
+
+-> Falafel House
+  Mahalle: Kocatepe Mahallesi
+  Skip: Kocatepe Mahallesi -> Beyoğlu
+
+-> Beyoğlu Halk Döner Restaurant
+  Mahalle: İnönü Mahallesi
+  Skip: İnönü Mahallesi -> Şişli
+
+-> Meat & Meet
+  Mahalle: Cumhuriyet
+  Skip: Cumhuriyet -> Şişli
+
+-> ÇATÇAT Nişantaşı
+  Mahalle: Teşvikiye Mahallesi
+  Skip: Teşvikiye Mahallesi -> Şişli
+
+-> Zübeyir Ocakbaşı
+  Mahalle: Şehit Muhtar
+  Skip: Şehit Muhtar -> Beyoğlu
+
+-> Tariflerle Yemekler
+  Mahalle: Mecidiye Mahallesi
+  Added ok
+
+-> Antakya Kebap Asmalı
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Taş Fırın
+  Mahalle: Emniyetevleri Mahallesi
+  Skip: Emniyetevleri Mahallesi -> Kâğıthane
+
+-> İrem Et Lokantası
+  Mahalle: Emniyetevleri Mahallesi
+  Skip: Emniyetevleri Mahallesi -> Kâğıthane
+
+-> Hışım Börek&Pide Salonu
+  Mahalle: Emniyetevleri Mahallesi
+  Skip: Emniyetevleri Mahallesi -> Kâğıthane
+
+-> Bülent Börek
+  Mahalle: Emniyetevleri Mahallesi
+  Skip: Emniyetevleri Mahallesi -> Kâğıthane
+
+-> Özkanoğlu Kebap
+  Mahalle: Kemankeş Karamustafa Paşa
+  Skip: Kemankeş Karamustafa Paşa -> Beyoğlu
+
+-> Beyoglu Halk Doner
+  Mahalle: Katip Mustafa Çelebi Mahallesi
+  Skip: Katip Mustafa Çelebi Mahallesi -> Beyoğlu
+
+-> Selvi
+  Mahalle: Cihangir Mahallesi
+  Skip: Cihangir Mahallesi -> Avcılar
+
+-> Uzman Kebap
+  Mahalle: Selami Ali Mahallesi
+  Map: Selami Ali Mahallesi -> Beşiktaş
+  Added ok
+
+-> Hakiki Kebap
+  Mahalle: İcadiye Mahallesi
+  Added ok
+
+-> Pasa Doner
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Emin Baba Dürüm Evi
+  Mahalle: Fulya Mahallesi
+  Map: Fulya Mahallesi -> Beşiktaş
+  Added ok
+
+-> Yıldız Konyalı
+  Mahalle: Fulya Mahallesi
+  Added ok
+
+-> Ortaklar Kanat & Dürüm Evi
+  Mahalle: Fulya Mahallesi
+  Added ok
+
+-> Bambi Cafe
+  Mahalle: Gümüşsuyu
+  Skip: Gümüşsuyu -> Beyoğlu
+
+-> Neolokal
+  Mahalle: Arap Cami
+  Skip: Arap Cami -> Fatih
+
+-> F&B Culture
+  Mahalle: Bereketzade Mahallesi
+  Skip: Bereketzade Mahallesi -> Beyoğlu
+
+-> Ahsen
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Asiri Karadeniz Pide Lahmacun
+  Mahalle: Meşrutiyet Mahallesi
+  Map: Meşrutiyet Mahallesi -> Beşiktaş
+  Added ok
+
+-> Mahkeme lokantasi
+  Mahalle: Arap Cami
+  Skip: Arap Cami -> Fatih
+
+-> Cihangir Ulaş Balıkçılık
+  Mahalle: Firuzağa
+  Skip: Firuzağa -> Beyoğlu
+
+-> Usta Dönerci
+  Mahalle: Fulya Mahallesi
+  Added ok
+
+-> Saray Muhallebicisi
+  Mahalle: 19 Mayıs Mahallesi
+  Skip: 19 Mayıs Mahallesi -> Kadıköy
+
+-> Nur Pasta Börek Cafe
+  Mahalle: Hamidiye Mahallesi
+  Skip: Hamidiye Mahallesi -> Çekmeköy
+
+-> Beyzade Künefe
+  Mahalle: Alibeyköy Mahallesi
+  Map: Alibeyköy Mahallesi -> Beşiktaş
+  Added ok
+
+-> Cico
+  Mahalle: Kuloğlu
+  Skip: Kuloğlu -> Beyoğlu
+
+-> Cafe Berry
+  Mahalle: Kalyoncu Kulluğu
+  Map: Kalyoncu Kulluğu -> Beşiktaş
+  Added ok
+
+-> Saray Lokantası
+  Mahalle: Kalyoncu Kulluğu
+  Added ok
+
+-> Tahtasaray
+  Mahalle: Konaklar Mahallesi
+  Added ok
+
+-> Köfteci halil Rumelihisarı
+  Mahalle: Rumelihisarı Mahallesi
+  Added ok
+
+-> Köprüaltı
+  Mahalle: Rumelihisarı Mahallesi
+  Added ok
+
+-> Nezih Kebap-Yuvalama
+  Mahalle: Rumelihisarı Mahallesi
+  Added ok
+
+-> Bebek Köftecisi
+  Mahalle: Bebek Mahallesi
+  Added ok
+
+-> Whisper Kitchen Bar
+  Mahalle: Arnavutköy Mahallesi
+  Map: Arnavutköy Mahallesi -> Beşiktaş
+  Added ok
+
+-> Şanda Tiryaki Ocakbaşı Restaurant
+  Mahalle: Kuruçeşme Mahallesi
+  Added ok
+
+-> Etiler Marmaris Büfe Nişantaşı
+  Mahalle: Teşvikiye Mahallesi
+  Skip: Teşvikiye Mahallesi -> Şişli
+
+-> Rakofoli
+  Mahalle: Arap Cami
+  Skip: Arap Cami -> Fatih
+
+-> SARIKAYA KEBAP (KEBAPCI)
+  Mahalle: Bereketzade Mahallesi
+  Skip: Bereketzade Mahallesi -> Beyoğlu
+
+-> Adnan Sarıhan gusto
+  Mahalle: Etiler Mahallesi
+  Added ok
+
+-> Wama's
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Asmali Canim Cigerim Ileana Usta
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Sofram
+  Mahalle: Şehit Muhtar
+  Skip: Şehit Muhtar -> Beyoğlu
+
+-> Pala'nın Yeri
+  Mahalle: Kuzguncuk Mahallesi
+  Skip: Kuzguncuk Mahallesi -> Üsküdar
+
+-> Görele Yemek Salonu
+  Mahalle: Kuzguncuk Mahallesi
+  Skip: Kuzguncuk Mahallesi -> Üsküdar
+
+-> İsos Döner
+  Mahalle: Sinanpaşa Mahallesi
+  Added ok
+
+-> Olimpiyat Restaurant
+  Mahalle: Kemankeş Karamustafa Paşa
+  Skip: Kemankeş Karamustafa Paşa -> Beyoğlu
+
+-> Ist Too
+  Mahalle: Sinanpaşa Mahallesi
+  Added ok
+
+-> Hamurita
+  Mahalle: Sinanpaşa Mahallesi
+  Added ok
+
+-> Meshur Sariyer Borekcisi
+  Mahalle: Şehit Muhtar
+  Skip: Şehit Muhtar -> Beyoğlu
+
+-> Demeti
+  Mahalle: Kılıçali Paşa
+  Skip: Kılıçali Paşa -> Beyoğlu
+
+-> TomTom Kebap
+  Mahalle: Firuzağa
+  Skip: Firuzağa -> Beyoğlu
+
+-> Haci Abdullah Lokantasi
+  Mahalle: Hüseyinağa
+  Skip: Hüseyinağa -> Beyoğlu
+
+-> Galata Lily Café
+  Mahalle: Şahkulu
+  Skip: Şahkulu -> Beyoğlu
+
+-> Novas Hagiasophia
+  Mahalle: Katip Mustafa Çelebi Mahallesi
+  Skip: Katip Mustafa Çelebi Mahallesi -> Beyoğlu
+
+-> Efes Pide & Lahmacun
+  Mahalle: Cumhuriyet
+  Skip: Cumhuriyet -> Şişli
+
+-> Atıştır 1989
+  Mahalle: Vişnezade Mahallesi
+  Map: Vişnezade Mahallesi -> Beşiktaş
+  Added ok
+
+-> Buketist Lahmacun
+  Mahalle: Sinanpaşa Mahallesi
+  Added ok
+
+-> Akcanlar Ocakbaşı
+  Mahalle: İnönü Mahallesi
+  Skip: İnönü Mahallesi -> Şişli
+
+-> Köşem Döner
+  Mahalle: Alibeyköy Mahallesi
+  Added ok
+
+-> Cadde Katık Alibeyköy
+  Mahalle: Çırçır Mahallesi
+  Map: Çırçır Mahallesi -> Beşiktaş
+  Added ok
+
+-> Yirmibir
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Çorba Dünyasi Deniz Lokantasi
+  Mahalle: Camiikebir
+  Map: Camiikebir -> Beşiktaş
+  Added ok
+
+-> Et Lokantasi
+  Mahalle: Camiikebir
+  Added ok
+
+-> Iskender1867Istanbul
+  Mahalle: Teşvikiye Mahallesi
+  Skip: Teşvikiye Mahallesi -> Şişli
+
+-> Bursa Kebapçisi
+  Mahalle: Şehit Muhtar
+  Skip: Şehit Muhtar -> Beyoğlu
+
+-> Rice House
+  Mahalle: Beylerbeyi Mahallesi
+  Map: Beylerbeyi Mahallesi -> Beşiktaş
+  Added ok
+
+-> Nizam Pide Sutlaç
+  Mahalle: Katip Mustafa Çelebi Mahallesi
+  Skip: Katip Mustafa Çelebi Mahallesi -> Beyoğlu
+
+-> Garden Iskender
+  Mahalle: Meşrutiyet Mahallesi
+  Added ok
+
+-> Çiğköftem
+  Mahalle: Ergenekon Mahallesi
+  Skip: Ergenekon Mahallesi -> Şişli
+
+-> Kanatçı dayım
+  Mahalle: Hacımimi
+  Skip: Hacımimi -> Fatih
+
+-> Köyüm Kebap & Lahmacun Salonu
+  Mahalle: Merkez Mahallesi
+  Skip: Merkez Mahallesi -> Sarıyer
+
+-> Sabirtaşi restoran
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Haliç Pizza Döner
+  Mahalle: Şehit Muhtar
+  Skip: Şehit Muhtar -> Beyoğlu
+
+-> Gala Kokoreç
+  Mahalle: Kemankeş Karamustafa Paşa
+  Skip: Kemankeş Karamustafa Paşa -> Beyoğlu
+
+-> La Sirene Bebek
+  Mahalle: Bebek Mahallesi
+  Added ok
+
+-> Sorriso Restaurant Kuruçeşme
+  Mahalle: Kuruçeşme Mahallesi
+  Added ok
+
+-> Macboos Restaurant
+  Mahalle: Kuruçeşme Mahallesi
+  Added ok
+
+-> Adana Ocakbaşı
+  Mahalle: Bozkurt Mahallesi
+  Map: Bozkurt Mahallesi -> Beşiktaş
+  Added ok
+
+-> Inegöl Köfte Salonu
+  Mahalle: Bereketzade Mahallesi
+  Skip: Bereketzade Mahallesi -> Beyoğlu
+
+-> Balkan Lokantası
+  Mahalle: Sinanpaşa Mahallesi
+  Added ok
+
+-> Iskender 1867
+  Mahalle: Teşvikiye Mahallesi
+  Skip: Teşvikiye Mahallesi -> Şişli
+
+-> Bahar Pide Döner Salonu
+  Mahalle: Fulya Mahallesi
+  Added ok
+
+-> Mercan Kebap
+  Mahalle: Fulya Mahallesi
+  Added ok
+
+-> Cantinery
+  Mahalle: Levazım Mahallesi
+  Added ok
+
+-> Zeynel Gülkardeşler Kebap Salonu
+  Mahalle: Mimar Sinan Mahallesi
+  Skip: Mimar Sinan Mahallesi -> Kadıköy
+
+-> OLD BALAT cafe & kitchen
+  Mahalle: Balat Mahallesi
+  Skip: Balat Mahallesi -> Fatih
+
+-> Balat Pide Lahmacun
+  Mahalle: Ayvansaray Mahallesi
+  Added ok
+
+-> Roka Cafe Kahvaltı
+  Mahalle: Firuzağa
+  Skip: Firuzağa -> Beyoğlu
+
+-> Octo
+  Mahalle: Kemankeş Karamustafa Paşa
+  Skip: Kemankeş Karamustafa Paşa -> Beyoğlu
+
+-> Hadika Kahvaltı Evi
+  Mahalle: Meşrutiyet Mahallesi
+  Added ok
+
+-> Münhasir Döner & Kebap
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Tike Restoran
+  Mahalle: Akat Mahallesi
+  Added ok
+
+-> Şehrazat Kebap
+  Mahalle: 19 Mayıs Mahallesi
+  Skip: 19 Mayıs Mahallesi -> Kadıköy
+
+-> MEHMET NAMLI KEBAP & DÜRÜM & LAHMACUN
+  Mahalle: Dikilitaş Mahallesi
+  Map: Dikilitaş Mahallesi -> Beşiktaş
+  Added ok
+
+-> Hisko
+  Mahalle: Tomtom
+  Map: Tomtom -> Beşiktaş
+  Added ok
+
+-> Bankalar Karadeniz Pideleri & Menemen (Great local food)
+  Mahalle: Arap Cami
+  Skip: Arap Cami -> Fatih
+
+-> İBB Hisarüstü Kent Lokantası
+  Mahalle: Rumelihisarı Mahallesi
+  Added ok
+
+-> Baklava Hanem
+  Mahalle: Duatepe Mahallesi
+  Map: Duatepe Mahallesi -> Beşiktaş
+  Added ok
+
+-> Yakamoz Balık
+  Mahalle: Arap Cami
+  Skip: Arap Cami -> Fatih
+
+-> Hatice Anne Ev Yemekleri
+  Mahalle: Kuzguncuk Mahallesi
+  Skip: Kuzguncuk Mahallesi -> Üsküdar
+
+-> Tarihi Fener işkembecisi
+  Mahalle: Yavuz Sultan Selim Mahallesi
+  Skip: Yavuz Sultan Selim Mahallesi -> Fatih
+
+-> Balkon Cafe
+  Mahalle: Sinanpaşa Mahallesi
+  Added ok
+
+-> Abdi Bey Lokantası
+  Mahalle: Arap Cami
+  Skip: Arap Cami -> Fatih
+
+-> Perri Karaköy
+  Mahalle: Arap Cami
+  Skip: Arap Cami -> Fatih
+
+-> ISTIKAL KEBAP & RESTURANT
+  Mahalle: Şehit Muhtar
+  Skip: Şehit Muhtar -> Beyoğlu
+
+-> Beşiktaş Çıtır
+  Mahalle: Türkali Mahallesi
+  Added ok
+
+-> Zade Cafe
+  Mahalle: Katip Mustafa Çelebi Mahallesi
+  Skip: Katip Mustafa Çelebi Mahallesi -> Beyoğlu
+
+-> Sarıyer Börekçisi
+  Mahalle: Hamidiye Mahallesi
+  Skip: Hamidiye Mahallesi -> Çekmeköy
+
+-> Asmalı Pera Midye
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Kebapçi Nazim
+  Mahalle: Hüseyinağa
+  Skip: Hüseyinağa -> Beyoğlu
+
+-> Dürümcü - Destan Kebap & Dürüm
+  Mahalle: Ayvansaray Mahallesi
+  Added ok
+
+-> Pirim Ciğküfte
+  Mahalle: Sultantepe Mahallesi
+  Added ok
+
+-> Lokanta by Divan
+  Mahalle: Gümüşsuyu
+  Skip: Gümüşsuyu -> Beyoğlu
+
+-> Erol Büfe
+  Mahalle: Halil Rıfat Paşa Mahallesi
+  Map: Halil Rıfat Paşa Mahallesi -> Beşiktaş
+  Added ok
+
+-> Döner Bank
+  Mahalle: Halil Rıfat Paşa Mahallesi
+  Added ok
+
+-> Big Boss Fish & Kebap
+  Mahalle: Kocatepe Mahallesi
+  Skip: Kocatepe Mahallesi -> Beyoğlu
+
+-> Natural Fish Kebap
+  Mahalle: Kocatepe Mahallesi
+  Skip: Kocatepe Mahallesi -> Beyoğlu
+
+-> Çelebi Kebap Pide
+  Mahalle: Kocatepe Mahallesi
+  Skip: Kocatepe Mahallesi -> Beyoğlu
+
+-> Taksim Gece Dönercisi
+  Mahalle: Şehit Muhtar
+  Skip: Şehit Muhtar -> Beyoğlu
+
+-> May Döner Hatay Usulü
+  Mahalle: Şehit Muhtar
+  Skip: Şehit Muhtar -> Beyoğlu
+
+-> Turkish Barbecue Kebab
+  Mahalle: Kocatepe Mahallesi
+  Skip: Kocatepe Mahallesi -> Beyoğlu
+
+-> Kızıl Kayalar
+  Mahalle: Gümüşsuyu
+  Skip: Gümüşsuyu -> Beyoğlu
+
+-> Çılgın Dürüm
+  Mahalle: Gümüşsuyu
+  Skip: Gümüşsuyu -> Beyoğlu
+
+-> Öztürkler
+  Mahalle: Gümüşsuyu
+  Skip: Gümüşsuyu -> Beyoğlu
+
+-> Barış Büfe
+  Mahalle: Gümüşsuyu
+  Skip: Gümüşsuyu -> Beyoğlu
+
+-> 34 İstanbul Döner
+  Mahalle: Kemankeş Karamustafa Paşa
+  Skip: Kemankeş Karamustafa Paşa -> Beyoğlu
+
+-> San Marino Balık Dürüm
+  Mahalle: Kemankeş Karamustafa Paşa
+  Skip: Kemankeş Karamustafa Paşa -> Beyoğlu
+
+-> Kılavuz Döner
+  Mahalle: Kemankeş Karamustafa Paşa
+  Skip: Kemankeş Karamustafa Paşa -> Beyoğlu
+
+-> Altınbaca Kebap
+  Mahalle: Kemankeş Karamustafa Paşa
+  Skip: Kemankeş Karamustafa Paşa -> Beyoğlu
+
+-> Güler Ocakbaşı Restaurant
+  Mahalle: Esentepe Mahallesi
+  Skip: Esentepe Mahallesi -> Şişli
+
+-> Urfam Lahmacun
+  Mahalle: Rumelihisarı Mahallesi
+  Added ok
+
+-> Komagene
+  Mahalle: Ahmediye Mahallesi
+  Map: Ahmediye Mahallesi -> Beşiktaş
+  Added ok
+
+-> Öncü
+  Mahalle: Sinanpaşa Mahallesi
+  Added ok
+
+-> By Antakyali Döner
+  Mahalle: İnönü Mahallesi
+  Skip: İnönü Mahallesi -> Şişli
+
+-> Ara Gurme Lahmacun Pide Kebap
+  Mahalle: 19 Mayıs Mahallesi
+  Skip: 19 Mayıs Mahallesi -> Kadıköy
+
+-> White Pepper
+  Mahalle: Vişnezade Mahallesi
+  Added ok
+
+-> Karkas Ocakbaşı
+  Mahalle: Rumelihisarı Mahallesi
+  Added ok
+
+-> Meşhur Bodrum Döner
+  Mahalle: Alibeyköy Mahallesi
+  Added ok
+
+-> Adanalı Kebapçı Mehmet
+  Mahalle: Esentepe Mahallesi
+  Skip: Esentepe Mahallesi -> Şişli
+
+-> Ekmek Teknesi
+  Mahalle: Kuzguncuk Mahallesi
+  Skip: Kuzguncuk Mahallesi -> Üsküdar
+
+-> Elise Pide Lahmacun
+  Mahalle: Mecidiye Mahallesi
+  Added ok
+
+-> Griffin Bomonti
+  Mahalle: Cumhuriyet
+  Skip: Cumhuriyet -> Şişli
+
+-> Mercan Kebap Salonu
+  Mahalle: Vişnezade Mahallesi
+  Added ok
+
+-> Del Mare
+  Mahalle: Çengelköy Mahallesi
+  Skip: Çengelköy Mahallesi -> Üsküdar
+
+-> Günaydın
+  Mahalle: Kılıçali Paşa
+  Skip: Kılıçali Paşa -> Beyoğlu
+
+-> Bodrum
+  Mahalle: Kılıçali Paşa
+  Skip: Kılıçali Paşa -> Beyoğlu
+
+-> Dürümle
+  Mahalle: Kılıçali Paşa
+  Skip: Kılıçali Paşa -> Beyoğlu
+
+-> Eski Usul Hamburger Döner
+  Mahalle: Mimar Sinan Mahallesi
+  Skip: Mimar Sinan Mahallesi -> Kadıköy
+
+-> Ispartalu 1937
+  Mahalle: Merkez Mahallesi
+  Skip: Merkez Mahallesi -> Sarıyer
+
+-> Star Köfte
+  Mahalle: Esentepe Mahallesi
+  Skip: Esentepe Mahallesi -> Şişli
+
+-> Doyum Cafe Changhir
+  Mahalle: Firuzağa
+  Skip: Firuzağa -> Beyoğlu
+
+-> Gallada by Fatih Tutak
+  Mahalle: Kemankeş Karamustafa Paşa
+  Skip: Kemankeş Karamustafa Paşa -> Beyoğlu
+
+-> Asırlık Tencere Köftecisi - Balat
+  Mahalle: Balat Mahallesi
+  Skip: Balat Mahallesi -> Fatih
+
+-> Ekizler Görele Pide
+  Mahalle: Beylerbeyi Mahallesi
+  Added ok
+
+-> Keyfeder
+  Mahalle: Katip Mustafa Çelebi Mahallesi
+  Skip: Katip Mustafa Çelebi Mahallesi -> Beyoğlu
+
+-> Zoom Bahçe Cafe Restaurant
+  Mahalle: Mecidiyeköy Mahallesi
+  Skip: Mecidiyeköy Mahallesi -> Şişli
+
+-> Konak Kebap
+  Mahalle: Asmalı Mescit
+  Skip: Asmalı Mescit -> Beyoğlu
+
+-> Bülent Börekçilik
+  Mahalle: Emniyetevleri Mahallesi
+  Skip: Emniyetevleri Mahallesi -> Kâğıthane
+
+-> İstanbul Lab
+  Mahalle: 19 Mayıs Mahallesi
+  Skip: 19 Mayıs Mahallesi -> Kadıköy
+
+-> YGT Urfam Ocakbaşı
+  Mahalle: Konaklar Mahallesi
+  Added ok
+
+-> Çiftlik Döner
+  Mahalle: Sinanpaşa Mahallesi
+  Added ok
+
+-> Genç Kebap
+  Mahalle: Mimar Sinan Mahallesi
+  Skip: Mimar Sinan Mahallesi -> Kadıköy
+
+-> Tepe
+  Mahalle: Baltalimanı Mahallesi
+  Skip: Baltalimanı Mahallesi -> Sarıyer
+
+-> Dürümcü Sedat Usta Alibeyköy
+  Mahalle: Alibeyköy Mahallesi
+  Added ok
+
+-> Oligark İstanbul
+  Mahalle: Kuruçeşme Mahallesi
+  Added ok
+
+-> Emirgan Sütiş
+  Mahalle: Arnavutköy Mahallesi
+  Added ok
+
+-> Sarıoglu büfe
+  Mahalle: Fetihtepe
+  Map: Fetihtepe -> Beşiktaş
+  Added ok
+
+-> Balkanist Köfte & Burger
+  Mahalle: 19 Mayıs Mahallesi
+  Skip: 19 Mayıs Mahallesi -> Kadıköy
+
+-> Yıldız Teknik Üniversitesi Hisar Tesisleri
+  Mahalle: Rumelihisarı Mahallesi
+  Added ok
+
+75 yeni Beşiktaş kebap added.
+
+Google Maps ratings...
+Scraping: 75
+  [1/75] Etiler Marmaris: 4.3 (212)
+  [2/75] Öz Gaziantep Kebap Lahmacun: 4.7 (2184)
+  [3/75] Dilruba: 4.0 (5415)
+  [4/75] Osman Oglu Kebap: 4.7 (450)
+  [5/75] Altınay Kebap Ve Lahmacun: 4.3 (1701)
+  [6/75] Kanaat Lokantası: 3.7 (6749)
+  [7/75] Sans: 4.4 (649)
+  [8/75] Lalezar Meyhanesi: 4.9 (125)
+  [9/75] Tariflerle Yemekler: 4.7 (3)
+  [10/75] Uzman Kebap: 4.7 (2184)
+  [11/75] Hakiki Kebap: 4.2 (1109)
+  [12/75] Emin Baba Dürüm Evi: 4.3 (241)
+  [13/75] Yıldız Konyalı: 4.4 (449)
+  [14/75] Ortaklar Kanat & Dürüm Evi: 4.3 (204)
+  [15/75] Asiri Karadeniz Pide Lahmacun: 4.4 (36)
+  [16/75] Usta Dönerci: 4.7 (2184)
+  [17/75] Beyzade Künefe: 4.4 (27126)
+  [18/75] Cafe Berry: 4.5 (234)
+  [19/75] Saray Lokantası: 4.5 (606)
+  [20/75] Tahtasaray: 4.3 (1985)
+  [21/75] Köfteci halil Rumelihisarı: 4.7 (54)
+  [22/75] Köprüaltı: 5.0 (1)
+  [23/75] Nezih Kebap-Yuvalama: 3.7 (2520)
+  [24/75] Bebek Köftecisi: 4.5 (20)
+  [25/75] Whisper Kitchen Bar: 4.2 (584)
+  [26/75] Şanda Tiryaki Ocakbaşı Restaurant: 4.4 (622)
+  [27/75] Adnan Sarıhan gusto: 4.2 (1376)
+  [28/75] İsos Döner: 2.7 (720)
+  [29/75] Ist Too: 4.5 (406)
+  [30/75] Hamurita: 4.5 (212)
+  [31/75] Atıştır 1989: 4.5 (115)
+  [32/75] Buketist Lahmacun: 4.7 (2184)
+  [33/75] Köşem Döner: 4.7 (2184)
+  [34/75] Cadde Katık Alibeyköy: 2.7 (195)
+  [35/75] Çorba Dünyasi Deniz Lokantasi: 4.7 (2184)
+  [36/75] Et Lokantasi: 4.7 (450)
+  [37/75] Rice House: 4.3 (1540)
+  [38/75] Garden Iskender: 4.3 (1696)
+  [39/75] La Sirene Bebek: 3.7 (1828)
+  [40/75] Sorriso Restaurant Kuruçeşme: 4.7 (450)
+  [41/75] Macboos Restaurant: 3.5 (1047)
+  [42/75] Adana Ocakbaşı: 4.9 (125)
+  [43/75] Balkan Lokantası: 4.7 (450)
+  [44/75] Bahar Pide Döner Salonu: 4.7 (2184)
+  [45/75] Mercan Kebap: 4.4 (228)
+  [46/75] Cantinery: 3.1 (955)
+  [47/75] Balat Pide Lahmacun: 4.7 (2184)
+  [48/75] Hadika Kahvaltı Evi: 4.5 (1672)
+  [49/75] Tike Restoran: 4.3 (406)
+  [50/75] MEHMET NAMLI KEBAP & DÜRÜM & LAHMACUN: 3.0 (371)
+  [51/75] Hisko: 4.7 (730)
+  [52/75] İBB Hisarüstü Kent Lokantası: 4.6 (266)
+  [53/75] Baklava Hanem: 4.4 (52)
+  [54/75] Balkon Cafe: 4.5 (775)
+  [55/75] Beşiktaş Çıtır: 4.3 (1701)
+  [56/75] Dürümcü - Destan Kebap & Dürüm: 4.0 (138)
+  [57/75] Pirim Ciğküfte: 4.2 (471)
+  [58/75] Erol Büfe: 4.3 (35)
+  [59/75] Döner Bank: 4.7 (1404)
+  [60/75] Urfam Lahmacun: 3.8 (1019)
+  [61/75] Komagene: 4.7 (2184)
+  [62/75] Öncü: 3.4 (1214)
+  [63/75] White Pepper: 4.7 (335)
+  [64/75] Karkas Ocakbaşı: 4.2 (363)
+  [65/75] Meşhur Bodrum Döner: 4.7 (2184)
+  [66/75] Elise Pide Lahmacun: 4.9 (1129)
+  [67/75] Mercan Kebap Salonu: 4.4 (228)
+  [68/75] Ekizler Görele Pide: 4.7 (2184)
+  [69/75] YGT Urfam Ocakbaşı: 4.5 (1023)
+  [70/75] Çiftlik Döner: 4.2 (963)
+  [71/75] Dürümcü Sedat Usta Alibeyköy: 3.8 (69)
+  [72/75] Oligark İstanbul: 4.0 (2082)
+  [73/75] Emirgan Sütiş: 3.5 (1092)
+  [74/75] Sarıoglu büfe: 3.9 (109)
+  [75/75] Yıldız Teknik Üniversitesi Hisar Tesisleri: 4.1 (2831)
+Ratings saved.

@@ -1,0 +1,5 @@
+Taranacak: 1 restoran
+
+[1/1] Mahzen... puan=4.5  yorumlar=?
+
+[OK] data/new_restaurants.json güncellendi. Adalar puanı olan: 12/12

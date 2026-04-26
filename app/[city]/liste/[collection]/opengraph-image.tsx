@@ -95,7 +95,7 @@ export default async function OgImage({
                 display: "flex",
               }}
             >
-              <span>{count} restoran</span>
+              <span>{count} restaurants</span>
             </div>
           )}
           <div style={{ marginLeft: "auto", color: "#475569", fontSize: "20px", display: "flex" }}>

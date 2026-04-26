@@ -13,7 +13,7 @@ export default async function OgImage({
   const { city, slug } = await params;
   const r = getRestaurantBySlug(city, slug);
 
-  const name        = r?.name        ?? "Restoran";
+  const name        = r?.name        ?? "Restaurant";
   const cuisine     = r?.cuisine     ?? "";
   const neighborhood = r?.neighborhood ?? "";
   const rating      = r?.avgRating   ?? 0;

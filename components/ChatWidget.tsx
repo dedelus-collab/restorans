@@ -70,7 +70,7 @@ export function ChatWidget() {
     if (open && msgs.length === 0) {
       setMsgs([{
         role: "assistant",
-        content: "Merhaba! 🍽 I know 453 Istanbul restaurants inside out. Ask me anything — cuisine, neighborhood, mood, budget!",
+        content: "Hello! 🍽 I know Istanbul restaurants inside out. Ask me anything — cuisine, neighborhood, mood, budget!",
       }]);
     }
     if (open) setTimeout(() => inputRef.current?.focus(), 100);
