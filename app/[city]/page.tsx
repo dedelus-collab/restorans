@@ -3,12 +3,13 @@ import Link from "next/link";
 import { AniHead, AniChibi } from "@/components/AniMascot";
 import {
   getRestaurantsByCity,
-  getPriceSymbol,
-  getAllNeighborhoods,
+  getAllDistricts,
+  getDistrictForRestaurant,
   getAllCuisines,
   restaurants as allRestaurants,
 } from "@/data/restaurants";
 import { COLLECTIONS } from "@/lib/collections";
+import { CityRestaurantList } from "@/components/CityRestaurantList";
 import type { Metadata } from "next";
 
 type Props = { params: Promise<{ city: string }> };
@@ -48,8 +49,16 @@ export default async function CityPage({ params }: Props) {
   if (!restaurants.length) notFound();
 
   const cityName = restaurants[0].city;
-  const neighborhoods = getAllNeighborhoods(city);
+  const districts = getAllDistricts(city);
   const cuisines = getAllCuisines(city);
+
+  const listWithDistrict = restaurants.map(r => ({
+    ...r,
+    district: getDistrictForRestaurant(r),
+  }));
+  const topDistricts: [string, number][] = districts
+    .slice(0, 15)
+    .map(d => [d.name, d.count]);
 
   const totalReviews = restaurants.reduce((s, r) => s + (r.reviewCount || 0), 0);
   const avgRating = (
@@ -143,7 +152,7 @@ export default async function CityPage({ params }: Props) {
               { value: restaurants.length.toString(), label: "Restaurants" },
               { value: avgRating + "/5", label: "Avg. rating" },
               { value: (totalReviews / 1000).toFixed(0) + "K", label: "Total reviews" },
-              { value: neighborhoods.length.toString(), label: "Neighborhoods" },
+              { value: districts.length.toString(), label: "Districts" },
             ].map(stat => (
               <div key={stat.label} className="text-center">
                 <div className="text-xl font-bold text-gray-900">{stat.value}</div>
@@ -247,21 +256,21 @@ export default async function CityPage({ params }: Props) {
           </section>
         )}
 
-        {/* Neighborhoods */}
-        {neighborhoods.length > 1 && (
+        {/* By District */}
+        {districts.length > 1 && (
           <section className="mb-12">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
               <AniHead variant="reviewer" className="w-7 h-7 shrink-0" />
-              By Neighborhood
+              By District
             </h2>
             <div className="flex flex-wrap gap-2">
-              {neighborhoods.filter(n => n.count >= 2).map(n => (
+              {districts.filter(d => d.count >= 2).map(d => (
                 <Link
-                  key={n.slug}
-                  href={`/${city}/mahalle/${n.slug}`}
+                  key={d.slug}
+                  href={`/${city}/ilce/${d.slug}`}
                   className="text-sm bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-700 px-3 py-1 rounded transition-colors"
                 >
-                  {n.name} <span className="text-gray-400">({n.count})</span>
+                  {d.name} <span className="text-gray-400">({d.count})</span>
                 </Link>
               ))}
             </div>
@@ -274,46 +283,7 @@ export default async function CityPage({ params }: Props) {
             <AniHead variant="chef" className="w-7 h-7 shrink-0" />
             All Restaurants
           </h2>
-          <div className="divide-y divide-gray-100">
-            {restaurants.map(r => (
-              <Link
-                key={r.id}
-                href={`/${city}/${r.slug}`}
-                className="block py-5 hover:bg-gray-50 transition-colors px-2 -mx-2 rounded"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 mb-1">
-                      <h3 className="font-semibold">{r.name}</h3>
-                      {r.verifiedData && (
-                        <span className="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded">Verified</span>
-                      )}
-                    </div>
-                    <p className="text-sm text-gray-500">
-                      {r.neighborhood} · {r.cuisine} · {getPriceSymbol(r.priceRange)}
-                    </p>
-                    <p className="text-sm text-gray-600 mt-1.5 line-clamp-2">{r.llmSummary}</p>
-                    {r.specialFeatures?.popularDishes && r.specialFeatures.popularDishes.length > 0 && (
-                      <p className="text-xs text-gray-400 mt-1.5">
-                        {r.specialFeatures.popularDishes.slice(0, 3).join(" · ")}
-                      </p>
-                    )}
-                    <div className="flex gap-2 mt-2 flex-wrap">
-                      {r.tags.slice(0, 3).map(tag => (
-                        <span key={tag} className="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="text-right shrink-0">
-                    <div className="text-base font-bold">{r.avgRating}</div>
-                    <div className="text-xs text-gray-400">{r.reviewCount} reviews</div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <CityRestaurantList city={city} list={listWithDistrict} topDistricts={topDistricts} />
         </section>
 
         {/* Footer */}
