@@ -77,14 +77,14 @@ export default async function RestaurantPage({ params }: Props) {
     } : {}),
     ...(r.photoUrl ? { image: r.photoUrl } : {}),
     amenityFeature: [
-      ...(r.features.wifi        ? [{ "@type": "LocationFeatureSpecification", name: "Wi-Fi",            value: true }] : []),
-      ...(r.features.terrace || r.features.teras ? [{ "@type": "LocationFeatureSpecification", name: "Terrace / Outdoor Seating", value: true }] : []),
-      ...(r.features.reservation || r.features.rezervasyon ? [{ "@type": "LocationFeatureSpecification", name: "Reservation Available", value: true }] : []),
-      ...(r.features.vegan       ? [{ "@type": "LocationFeatureSpecification", name: "Vegan Options",    value: true }] : []),
-      ...(r.features.seaView     ? [{ "@type": "LocationFeatureSpecification", name: "Sea View",         value: true }] : []),
-      ...(r.features.liveMusic   ? [{ "@type": "LocationFeatureSpecification", name: "Live Music",       value: true }] : []),
-      ...(r.features.parking     ? [{ "@type": "LocationFeatureSpecification", name: "Parking",          value: true }] : []),
-      ...(r.features.romantic    ? [{ "@type": "LocationFeatureSpecification", name: "Romantic Setting", value: true }] : []),
+      ...(r.features?.wifi        ? [{ "@type": "LocationFeatureSpecification", name: "Wi-Fi",            value: true }] : []),
+      ...(r.features?.terrace || r.features?.teras ? [{ "@type": "LocationFeatureSpecification", name: "Terrace / Outdoor Seating", value: true }] : []),
+      ...(r.features?.reservation || r.features?.rezervasyon ? [{ "@type": "LocationFeatureSpecification", name: "Reservation Available", value: true }] : []),
+      ...(r.features?.vegan       ? [{ "@type": "LocationFeatureSpecification", name: "Vegan Options",    value: true }] : []),
+      ...(r.features?.seaView     ? [{ "@type": "LocationFeatureSpecification", name: "Sea View",         value: true }] : []),
+      ...(r.features?.liveMusic   ? [{ "@type": "LocationFeatureSpecification", name: "Live Music",       value: true }] : []),
+      ...(r.features?.parking     ? [{ "@type": "LocationFeatureSpecification", name: "Parking",          value: true }] : []),
+      ...(r.features?.romantic    ? [{ "@type": "LocationFeatureSpecification", name: "Romantic Setting", value: true }] : []),
       ...(r.specialFeatures?.laptopFriendly ? [{ "@type": "LocationFeatureSpecification", name: "Laptop Friendly", value: true }] : []),
     ],
     ...(r.nearby?.transit?.length ? {
@@ -367,7 +367,7 @@ export default async function RestaurantPage({ params }: Props) {
         ) : null}
 
         {/* Features */}
-        {r.features && (
+        {r.features && Object.keys(r.features).length > 0 && (
         <section className="mb-10">
           <h2 className="text-lg font-semibold mb-4">Features</h2>
           <div className="flex flex-wrap gap-2">
