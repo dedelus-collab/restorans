@@ -1,10 +1,11 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllCuisines, getAllDistricts, restaurants, weightedScore, getPriceSymbol } from "@/data/restaurants";
+import { getAllCuisines, getAllDistricts, restaurants, weightedScore } from "@/data/restaurants";
 import { KawaiiIcon, AniHead } from "@/components/AniMascot";
 import { MascotChatTrigger } from "@/components/MascotChatTrigger";
 import { IstanbulMapIllustrated } from "@/components/IstanbulMapIllustrated";
 import { SearchBar } from "@/components/SearchBar";
+import { RestaurantCard } from "@/components/RestaurantCard";
 
 const ISTANBUL_COUNT = restaurants.filter(r => r.citySlug === "istanbul").length;
 
@@ -210,39 +211,31 @@ export default function HomePage() {
             </h2>
             <Link href="/istanbul" className="text-xs text-blue-500 hover:underline font-medium">View all →</Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-            {topRated.map((r, i) => {
-              const avatars = ["chef","foodie","reviewer","explorer","star","foodie"] as const;
-              const avatar = avatars[i % avatars.length];
-              return (
-                <Link
-                  key={r.slug}
-                  href={`/istanbul/${r.slug}`}
-                  className="flex items-center gap-3 p-4 bg-white border border-gray-200 rounded-xl hover:border-amber-200 hover:shadow-md hover:bg-amber-50/20 transition-all group"
-                >
-                  <div className="relative shrink-0">
-                    <AniHead variant={avatar} className="w-10 h-10 group-hover:scale-110 transition-transform duration-200" />
-                    {i < 3 && (
-                      <span className="absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full bg-amber-400 text-white text-[9px] font-bold flex items-center justify-center">
-                        {i + 1}
-                      </span>
-                    )}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="font-semibold text-sm text-gray-900 truncate group-hover:text-amber-700 transition-colors">
-                      {r.name}
-                    </div>
-                    <div className="text-xs text-gray-400 mt-0.5 truncate">
-                      {r.cuisine} · {r.neighborhood}
-                    </div>
-                  </div>
-                  <div className="text-right shrink-0">
-                    <div className="text-sm font-bold text-amber-500">★ {r.avgRating}</div>
-                    <div className="text-xs text-gray-400 mt-0.5">{getPriceSymbol(r.priceRange)}</div>
-                  </div>
-                </Link>
-              );
-            })}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {topRated.map((r, i) => (
+              <div key={r.slug} className="relative">
+                {i < 3 && (
+                  <span className="absolute top-3 left-3 z-10 text-xs font-bold bg-amber-400 text-white px-2 py-0.5 rounded-full shadow">
+                    #{i + 1}
+                  </span>
+                )}
+                <RestaurantCard
+                  city="istanbul"
+                  slug={r.slug}
+                  name={r.name}
+                  neighborhood={r.neighborhood}
+                  cuisine={r.cuisine}
+                  cuisineSlug={r.cuisineSlug}
+                  priceRange={r.priceRange}
+                  avgRating={r.avgRating}
+                  reviewCount={r.reviewCount}
+                  llmSummary={r.llmSummary}
+                  verifiedData={r.verifiedData}
+                  popularDishes={r.specialFeatures?.popularDishes ?? []}
+                  variant="featured"
+                />
+              </div>
+            ))}
           </div>
         </section>
 
