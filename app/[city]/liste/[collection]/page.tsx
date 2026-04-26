@@ -53,7 +53,7 @@ export default async function CollectionPage({ params }: Props) {
     if (!d) continue;
     districtMap.set(d, (districtMap.get(d) || 0) + 1);
   }
-  const topHoods = Array.from(districtMap.entries()).sort((a, b) => b[1] - a[1]).slice(0, 8);
+  const topHoods = Array.from(districtMap.entries()).sort((a, b) => b[1] - a[1]);
 
   // Listeye district alanı ekle (CollectionList client component için)
   const listWithDistrict = list.map(r => ({
