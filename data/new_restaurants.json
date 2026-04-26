@@ -1777,5 +1777,6908 @@
       }
     ],
     "sentimentSummary": "Guests at Burgaz Cafe often praise the restaurant's unique island atmosphere, highlighting the beautiful views and charming ambiance. The quality of the food and the value for money are also frequently commended, with many guests noting that the cafe's prices are reasonable considering its location and the quality of the dishes."
+  },
+  {
+    "id": "6877d3f8",
+    "slug": "samsun-pide-evi",
+    "name": "Samsun Pide Evi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Suadiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.0,
+    "reviewCount": 216,
+    "address": "Şemsettin Günaltay Caddesi",
+    "lat": 40.9630537,
+    "lng": 29.0897487,
+    "phone": null,
+    "website": "https://restaurantguru.com/SAMSUN-Pide-Evi-Istanbul",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Samsun Pide Evi is a kebap restaurant in Suadiye Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Samsun Pide Evi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Samsun Pide Evi?",
+        "answer": "In Suadiye Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Suadiye Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "113ea216",
+    "slug": "bizim-doner",
+    "name": "Bizim Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Koşuyolu Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "Koşuyolu Caddesi",
+    "lat": 41.0115169,
+    "lng": 29.0388244,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Bizim Döner is a kebap restaurant in Koşuyolu Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Bizim Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Bizim Döner?",
+        "answer": "In Koşuyolu Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Koşuyolu Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "a6fcae71",
+    "slug": "ustaca-kebap",
+    "name": "Ustaca Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Koşuyolu Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 1153,
+    "address": "Koşuyolu Caddesi",
+    "lat": 41.0108949,
+    "lng": 29.0382888,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Ustaca Kebap is a kebap restaurant in Koşuyolu Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Ustaca Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Ustaca Kebap?",
+        "answer": "In Koşuyolu Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Koşuyolu Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "4ac2c1b4",
+    "slug": "asirlik-kebap",
+    "name": "Asirlik Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.4,
+    "reviewCount": 1020,
+    "address": "",
+    "lat": 40.9892241,
+    "lng": 29.024417,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Asirlik Kebap is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Asirlik Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Asirlik Kebap?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "f8699e6b",
+    "slug": "adiyman-cigkofte",
+    "name": "Adıyman Çiğköfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bostancı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.9,
+    "reviewCount": 15,
+    "address": "Prof. Dr. Kemal Akgüder Caddesi",
+    "lat": 40.9628857,
+    "lng": 29.1000767,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Adıyman Çiğköfte is a kebap restaurant in Bostancı Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Adıyman Çiğköfte serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Adıyman Çiğköfte?",
+        "answer": "In Bostancı Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Bostancı Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "89dd6a9f",
+    "slug": "minik-usta",
+    "name": "Minik Usta",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bostancı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 7016,
+    "address": "Prof. Dr. Kemal Akgüder Caddesi",
+    "lat": 40.9639749,
+    "lng": 29.1005711,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Minik Usta is a kebap restaurant in Bostancı Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Minik Usta serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Minik Usta?",
+        "answer": "In Bostancı Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Bostancı Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "fd932781",
+    "slug": "sule-nin-mutfagi",
+    "name": "Şule'nin Mutfağı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kozyatağı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.9,
+    "reviewCount": 8361,
+    "address": "Şemsettin Günaltay Caddesi",
+    "lat": 40.9614675,
+    "lng": 29.0930282,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Şule'nin Mutfağı is a kebap restaurant in Kozyatağı Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Şule'nin Mutfağı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Şule'nin Mutfağı?",
+        "answer": "In Kozyatağı Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Kozyatağı Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "6f04374c",
+    "slug": "egenin-incisi",
+    "name": "Egenin İncisi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Suadiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 1389,
+    "address": "Şemsettin Günaltay Caddesi",
+    "lat": 40.9650718,
+    "lng": 29.0878081,
+    "phone": null,
+    "website": "http://www.egeninincisi.com.tr",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Egenin İncisi is a kebap restaurant in Suadiye Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Egenin İncisi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Egenin İncisi?",
+        "answer": "In Suadiye Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Suadiye Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "78dc433f",
+    "slug": "yerinde-pide",
+    "name": "Yerinde Pide",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Suadiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 845,
+    "address": "Şemsettin Günaltay Caddesi",
+    "lat": 40.9649704,
+    "lng": 29.0878928,
+    "phone": null,
+    "website": "https://yerindepide.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Yerinde Pide is a kebap restaurant in Suadiye Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Yerinde Pide serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Yerinde Pide?",
+        "answer": "In Suadiye Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Suadiye Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "6624a970",
+    "slug": "hababam-kofte",
+    "name": "Hababam Köfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Suadiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 7016,
+    "address": "Ayşe Çavuş Caddesi",
+    "lat": 40.9617578,
+    "lng": 29.0846899,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Hababam Köfte is a kebap restaurant in Suadiye Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hababam Köfte serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hababam Köfte?",
+        "answer": "In Suadiye Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Suadiye Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "c0a06485",
+    "slug": "benusen-restoran",
+    "name": "Benusen Restoran",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 1360,
+    "address": "Neşet Ömer Sk",
+    "lat": 40.9894677,
+    "lng": 29.0224099,
+    "phone": "+90 216 338 84 18",
+    "website": "http://benusenesnaflokantasi.com",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Benusen Restoran is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Benusen Restoran serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Benusen Restoran?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "eda058cc",
+    "slug": "mujgan",
+    "name": "Müjgan",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rasimpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.6,
+    "reviewCount": 11418,
+    "address": "Duatepe Sokağı",
+    "lat": 40.9957692,
+    "lng": 29.0302144,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Müjgan is a kebap restaurant in Rasimpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Müjgan serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Müjgan?",
+        "answer": "In Rasimpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Rasimpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "258691eb",
+    "slug": "kadim-iskembe-salonu",
+    "name": "Kadim İşkembe Salonu",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 1648,
+    "address": "Serasker Caddesi",
+    "lat": 40.9897419,
+    "lng": 29.0264442,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Kadim İşkembe Salonu is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Kadim İşkembe Salonu serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Kadim İşkembe Salonu?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "538d87d5",
+    "slug": "balikci-lokantasi",
+    "name": "Balıkçı Lokantası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rasimpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.6,
+    "reviewCount": 2111,
+    "address": "Tayyareci Sami Sokağı",
+    "lat": 40.9937337,
+    "lng": 29.0257728,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Balıkçı Lokantası is a kebap restaurant in Rasimpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Balıkçı Lokantası serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Balıkçı Lokantası?",
+        "answer": "In Rasimpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Rasimpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "09a0fc74",
+    "slug": "saca-ocakbasi",
+    "name": "Saca Ocakbaşı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fenerbahçe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "Dr. Faruk Ayanoğlu Caddesi",
+    "lat": 40.9739271,
+    "lng": 29.0459455,
+    "phone": null,
+    "website": "https://www.sacagrup.com/saca-ocakbasi-fenerbahce/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Saca Ocakbaşı is a kebap restaurant in Fenerbahçe Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Saca Ocakbaşı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Saca Ocakbaşı?",
+        "answer": "In Fenerbahçe Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Fenerbahçe Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "fa078497",
+    "slug": "hira-ev-yemekleri",
+    "name": "Hira Ev Yemekleri",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Koşuyolu Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "Katip Salih Sokağı",
+    "lat": 41.0103237,
+    "lng": 29.0353808,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Hira Ev Yemekleri is a kebap restaurant in Koşuyolu Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hira Ev Yemekleri serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hira Ev Yemekleri?",
+        "answer": "In Koşuyolu Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Koşuyolu Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "32102b28",
+    "slug": "hd-iskender",
+    "name": "HD İskender",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "",
+    "lat": 40.9912711,
+    "lng": 29.0239346,
+    "phone": null,
+    "website": "https://hdiskender.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "HD İskender is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does HD İskender serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is HD İskender?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "2fc43b97",
+    "slug": "kosebasi",
+    "name": "Köşebaşı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Göztepe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.1,
+    "reviewCount": 1337,
+    "address": "Bağdat Caddesi",
+    "lat": 40.9716733,
+    "lng": 29.0600503,
+    "phone": null,
+    "website": "https://www.kosebasi.com/sube/cadde/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Köşebaşı is a kebap restaurant in Göztepe Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Köşebaşı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Köşebaşı?",
+        "answer": "In Göztepe Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Göztepe Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "2d250e35",
+    "slug": "hasel-gorele-pide",
+    "name": "Hasel Görele Pide",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Esatpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 120,
+    "address": "",
+    "lat": 41.0067983,
+    "lng": 29.0849848,
+    "phone": "+90 216 317 5610",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Hasel Görele Pide is a kebap restaurant in Esatpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hasel Görele Pide serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hasel Görele Pide?",
+        "answer": "In Esatpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Esatpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "0944e2a0",
+    "slug": "cadd-ist-klal-doner",
+    "name": "Caddê İst'klal Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.1,
+    "reviewCount": 1025,
+    "address": "",
+    "lat": 40.991394,
+    "lng": 29.028178,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Caddê İst'klal Döner is a kebap restaurant in Osmanağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Caddê İst'klal Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Caddê İst'klal Döner?",
+        "answer": "In Osmanağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Osmanağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "e1278826",
+    "slug": "onurbalaban",
+    "name": "OnurBalaban",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kozyatağı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 383,
+    "address": "Kaya Sultan Sokağı",
+    "lat": 40.9674481,
+    "lng": 29.093233,
+    "phone": "+902164672368",
+    "website": "https://www.balabanvedatusta.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "OnurBalaban is a kebap restaurant in Kozyatağı Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does OnurBalaban serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is OnurBalaban?",
+        "answer": "In Kozyatağı Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Kozyatağı Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "3fd20ffd",
+    "slug": "sahan-kebap",
+    "name": "Sahan Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caddebostan Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.8,
+    "reviewCount": 254,
+    "address": "Plaj Yolu Sokağı",
+    "lat": 40.9665639,
+    "lng": 29.0632222,
+    "phone": null,
+    "website": "https://www.sahan.com/sahan-caddebostan/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Sahan Kebap is a kebap restaurant in Caddebostan Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Sahan Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Sahan Kebap?",
+        "answer": "In Caddebostan Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caddebostan Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "30fc00d4",
+    "slug": "tadinda-anadolu",
+    "name": "Tadında Anadolu",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Altunizade Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.9,
+    "reviewCount": 8361,
+    "address": "",
+    "lat": 41.0207668,
+    "lng": 29.0396613,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Tadında Anadolu is a kebap restaurant in Altunizade Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Tadında Anadolu serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Tadında Anadolu?",
+        "answer": "In Altunizade Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Altunizade Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "9b2d45da",
+    "slug": "ako-adapazari-islama-kofte",
+    "name": "AKO Adapazarı Islama Köfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 1207,
+    "address": "",
+    "lat": 40.9909803,
+    "lng": 29.0242398,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "AKO Adapazarı Islama Köfte is a kebap restaurant in Osmanağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does AKO Adapazarı Islama Köfte serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is AKO Adapazarı Islama Köfte?",
+        "answer": "In Osmanağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Osmanağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "a55c318f",
+    "slug": "kardesim-kebap",
+    "name": "Kardeşim Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Koşuyolu Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 2852,
+    "address": "Koşuyolu Caddesi",
+    "lat": 41.0089983,
+    "lng": 29.0369241,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Kardeşim Kebap is a kebap restaurant in Koşuyolu Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Kardeşim Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Kardeşim Kebap?",
+        "answer": "In Koşuyolu Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Koşuyolu Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "d3ebb025",
+    "slug": "kebapci-iskender",
+    "name": "Kebapçı İskender",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.7,
+    "reviewCount": 2617,
+    "address": "",
+    "lat": 40.9902293,
+    "lng": 29.0228753,
+    "phone": null,
+    "website": "https://iskenderiskenderoglu.com.tr/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Kebapçı İskender is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Kebapçı İskender serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Kebapçı İskender?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "9ee2aea3",
+    "slug": "ikizler-tekirdag-koftecisi",
+    "name": "İkizler Tekirdağ Köftecisi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.1,
+    "reviewCount": 36,
+    "address": "",
+    "lat": 40.9891621,
+    "lng": 29.029544,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "İkizler Tekirdağ Köftecisi is a kebap restaurant in Osmanağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does İkizler Tekirdağ Köftecisi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is İkizler Tekirdağ Köftecisi?",
+        "answer": "In Osmanağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Osmanağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "8a2c0797",
+    "slug": "kassab-kofte-doner",
+    "name": "Kassab Köfte & Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.0,
+    "reviewCount": 958,
+    "address": "Moda Caddesi",
+    "lat": 40.9820554,
+    "lng": 29.0230163,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Kassab Köfte & Döner is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Kassab Köfte & Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Kassab Köfte & Döner?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "19c3038e",
+    "slug": "emir-kebap",
+    "name": "Emir Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Site Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "",
+    "lat": 41.0093193,
+    "lng": 29.1144068,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Emir Kebap is a kebap restaurant in Site Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Emir Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Emir Kebap?",
+        "answer": "In Site Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Site Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "89d4bfd7",
+    "slug": "sampi-pide",
+    "name": "Sampi Pide",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Altunizade Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "",
+    "lat": 41.0226394,
+    "lng": 29.044897,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Sampi Pide is a kebap restaurant in Altunizade Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Sampi Pide serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Sampi Pide?",
+        "answer": "In Altunizade Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Altunizade Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "a0e807f9",
+    "slug": "irem-in-mutfagi",
+    "name": "İrem'in Mutfağı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Hasanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "",
+    "lat": 40.9936238,
+    "lng": 29.0383023,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "İrem'in Mutfağı is a kebap restaurant in Hasanpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does İrem'in Mutfağı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is İrem'in Mutfağı?",
+        "answer": "In Hasanpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Hasanpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "f2f03d44",
+    "slug": "koyum-kofte",
+    "name": "Köyüm Köfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sahrayıcedit Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.8,
+    "reviewCount": 40,
+    "address": "Atatürk Caddesi",
+    "lat": 40.9811595,
+    "lng": 29.0828614,
+    "phone": null,
+    "website": "https://www.koyumkofte.com.tr/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Köyüm Köfte is a kebap restaurant in Sahrayıcedit Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Köyüm Köfte serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Köyüm Köfte?",
+        "answer": "In Sahrayıcedit Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Sahrayıcedit Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "b7f2cc85",
+    "slug": "kitchen-35",
+    "name": "Kitchen 35",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sahrayıcedit Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.8,
+    "reviewCount": 1675,
+    "address": "",
+    "lat": 40.9847503,
+    "lng": 29.0864671,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Kitchen 35 is a kebap restaurant in Sahrayıcedit Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Kitchen 35 serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Kitchen 35?",
+        "answer": "In Sahrayıcedit Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Sahrayıcedit Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "14f0792c",
+    "slug": "marmaris-expres",
+    "name": "Marmaris Expres",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Mustafa Kemal Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.8,
+    "reviewCount": 111,
+    "address": "3004. Cadde",
+    "lat": 40.9976675,
+    "lng": 29.0901148,
+    "phone": "+90 505 047 34 60",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Marmaris Expres is a kebap restaurant in Mustafa Kemal Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Marmaris Expres serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Marmaris Expres?",
+        "answer": "In Mustafa Kemal Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Mustafa Kemal Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "dc8e2d5e",
+    "slug": "kofte-piyaz",
+    "name": "Köfte Piyaz",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kısıklı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "",
+    "lat": 41.0242809,
+    "lng": 29.0828377,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Köfte Piyaz is a kebap restaurant in Kısıklı Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Köfte Piyaz serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Köfte Piyaz?",
+        "answer": "In Kısıklı Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Kısıklı Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "125443f6",
+    "slug": "acibadem-sahra-kebap-ve-durum-evi",
+    "name": "Acıbadem Sahra Kebap Ve Dürüm Evi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Acıbadem Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 1227,
+    "address": "Acıbadem Caddesi",
+    "lat": 41.0006103,
+    "lng": 29.0399603,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Acıbadem Sahra Kebap Ve Dürüm Evi is a kebap restaurant in Acıbadem Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Acıbadem Sahra Kebap Ve Dürüm Evi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Acıbadem Sahra Kebap Ve Dürüm Evi?",
+        "answer": "In Acıbadem Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Acıbadem Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "889be1d2",
+    "slug": "et-inn-kebap-steak",
+    "name": "Et-Inn Kebap&Steak",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sahrayıcedit Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 578,
+    "address": "Uçar Sokağı",
+    "lat": 40.982077,
+    "lng": 29.0893307,
+    "phone": "0216 301 29 29",
+    "website": "etinn.com",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Et-Inn Kebap&Steak is a kebap restaurant in Sahrayıcedit Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Et-Inn Kebap&Steak serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Et-Inn Kebap&Steak?",
+        "answer": "In Sahrayıcedit Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Sahrayıcedit Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "2065138c",
+    "slug": "bodrum-manti-cafe-saskinbakkal",
+    "name": "Bodrum Mantı & Cafe Şaşkınbakkal",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Suadiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.0,
+    "reviewCount": 758,
+    "address": "Bağdat Caddesi",
+    "lat": 40.9634599,
+    "lng": 29.0743529,
+    "phone": "+90 216 408 10 98",
+    "website": "bodrummanti.com.tr",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Bodrum Mantı & Cafe Şaşkınbakkal is a kebap restaurant in Suadiye Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Bodrum Mantı & Cafe Şaşkınbakkal serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Bodrum Mantı & Cafe Şaşkınbakkal?",
+        "answer": "In Suadiye Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Suadiye Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "09ebda57",
+    "slug": "irfan-usta-lahmacun",
+    "name": "İrfan Usta Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "19 Mayıs Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 7016,
+    "address": "",
+    "lat": 40.9686824,
+    "lng": 29.0855449,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "İrfan Usta Lahmacun is a kebap restaurant in 19 Mayıs Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does İrfan Usta Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is İrfan Usta Lahmacun?",
+        "answer": "In 19 Mayıs Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in 19 Mayıs Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "4691639e",
+    "slug": "kosk-pide-lahmacun",
+    "name": "Köşk Pide Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Zühtüpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 650,
+    "address": "",
+    "lat": 40.9856858,
+    "lng": 29.0375015,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Köşk Pide Lahmacun is a kebap restaurant in Zühtüpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Köşk Pide Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Köşk Pide Lahmacun?",
+        "answer": "In Zühtüpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Zühtüpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "8dd4d3e3",
+    "slug": "donerci-hamdi-usta",
+    "name": "Dönerci Hamdi Usta",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "19 Mayıs Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.1,
+    "reviewCount": 499,
+    "address": "",
+    "lat": 40.9695578,
+    "lng": 29.0844801,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Dönerci Hamdi Usta is a kebap restaurant in 19 Mayıs Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Dönerci Hamdi Usta serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Dönerci Hamdi Usta?",
+        "answer": "In 19 Mayıs Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in 19 Mayıs Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "0c979b65",
+    "slug": "hacibasar-kebap",
+    "name": "Hacıbaşar Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Acıbadem Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 1153,
+    "address": "",
+    "lat": 40.9996078,
+    "lng": 29.03839,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Hacıbaşar Kebap is a kebap restaurant in Acıbadem Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hacıbaşar Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hacıbaşar Kebap?",
+        "answer": "In Acıbadem Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Acıbadem Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "99af97ad",
+    "slug": "tarihi-kadikoy-donercisi",
+    "name": "Tarihi Kadıköy Dönercisi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Acıbadem Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.0,
+    "reviewCount": 248,
+    "address": "",
+    "lat": 41.0015821,
+    "lng": 29.0407531,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Tarihi Kadıköy Dönercisi is a kebap restaurant in Acıbadem Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Tarihi Kadıköy Dönercisi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Tarihi Kadıköy Dönercisi?",
+        "answer": "In Acıbadem Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Acıbadem Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "9f973729",
+    "slug": "tasfirin",
+    "name": "TaşFırın",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Esatpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.1,
+    "reviewCount": 3095,
+    "address": "Ziya Paşa Caddesi",
+    "lat": 41.0003111,
+    "lng": 29.0851264,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "TaşFırın is a kebap restaurant in Esatpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does TaşFırın serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is TaşFırın?",
+        "answer": "In Esatpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Esatpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "d829c3de",
+    "slug": "damla-pide",
+    "name": "Damla Pide",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rasimpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 617,
+    "address": "",
+    "lat": 40.9962827,
+    "lng": 29.0291048,
+    "phone": "+90 216 3482745",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Damla Pide is a kebap restaurant in Rasimpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Damla Pide serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Damla Pide?",
+        "answer": "In Rasimpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Rasimpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "9cfede03",
+    "slug": "dayi-kurek-lahmacun",
+    "name": "Dayı Kürek Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Muratreis Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "Nuh Kuyusu Caddesi",
+    "lat": 41.0227899,
+    "lng": 29.036023,
+    "phone": null,
+    "website": "https://lezzetdayiyaceker.com/subeler/altunizade",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Dayı Kürek Lahmacun is a kebap restaurant in Muratreis Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Dayı Kürek Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Dayı Kürek Lahmacun?",
+        "answer": "In Muratreis Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Muratreis Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "489c43cb",
+    "slug": "burak-iskender-kebab",
+    "name": "Burak Iskender Kebab",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Erenköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 478,
+    "address": "",
+    "lat": 40.9721225,
+    "lng": 29.0776635,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Burak Iskender Kebab is a kebap restaurant in Erenköy Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Burak Iskender Kebab serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Burak Iskender Kebab?",
+        "answer": "In Erenköy Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Erenköy Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "5d17e990",
+    "slug": "musaade-meyhane",
+    "name": "Müsaade Meyhane",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 719,
+    "address": "Dumlupınar Sokağı",
+    "lat": 40.9889231,
+    "lng": 29.0243632,
+    "phone": "+905442047254",
+    "website": "https://musaademeyhane.com",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Müsaade Meyhane is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Müsaade Meyhane serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Müsaade Meyhane?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "232444fd",
+    "slug": "donerci-necip-usta",
+    "name": "Dönerci Necip Usta",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Merdivenköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.6,
+    "reviewCount": 586,
+    "address": "",
+    "lat": 40.9810548,
+    "lng": 29.0723442,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Dönerci Necip Usta is a kebap restaurant in Merdivenköy Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Dönerci Necip Usta serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Dönerci Necip Usta?",
+        "answer": "In Merdivenköy Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Merdivenköy Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "49a21922",
+    "slug": "gaziantep-lahmacun-pide",
+    "name": "Gaziantep Lahmacun Pide",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Göztepe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 1658,
+    "address": "",
+    "lat": 40.973326,
+    "lng": 29.0625291,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Gaziantep Lahmacun Pide is a kebap restaurant in Göztepe Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Gaziantep Lahmacun Pide serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Gaziantep Lahmacun Pide?",
+        "answer": "In Göztepe Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Göztepe Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "6157521d",
+    "slug": "babus-hatay-doner-kofte",
+    "name": "Babuş Hatay Döner & Köfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Feneryolu Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.8,
+    "reviewCount": 254,
+    "address": "",
+    "lat": 40.9849445,
+    "lng": 29.0503584,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Babuş Hatay Döner & Köfte is a kebap restaurant in Feneryolu Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Babuş Hatay Döner & Köfte serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Babuş Hatay Döner & Köfte?",
+        "answer": "In Feneryolu Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Feneryolu Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "5d1c3c83",
+    "slug": "calakasik-lokantasi",
+    "name": "Çalakaşık Lokantası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 902,
+    "address": "",
+    "lat": 40.9896255,
+    "lng": 29.0275297,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Çalakaşık Lokantası is a kebap restaurant in Osmanağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Çalakaşık Lokantası serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Çalakaşık Lokantası?",
+        "answer": "In Osmanağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Osmanağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "ff129466",
+    "slug": "adana-isi",
+    "name": "Adana İşi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sahrayıcedit Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 559,
+    "address": "",
+    "lat": 40.9799285,
+    "lng": 29.0840027,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Adana İşi is a kebap restaurant in Sahrayıcedit Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Adana İşi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Adana İşi?",
+        "answer": "In Sahrayıcedit Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Sahrayıcedit Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "03fa9348",
+    "slug": "cig-kofteci-gakgos-usta",
+    "name": "Çiğ Köfteci Gakgoş Usta",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fenerbahçe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 539,
+    "address": "",
+    "lat": 40.9817605,
+    "lng": 29.0408577,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Çiğ Köfteci Gakgoş Usta is a kebap restaurant in Fenerbahçe Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Çiğ Köfteci Gakgoş Usta serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Çiğ Köfteci Gakgoş Usta?",
+        "answer": "In Fenerbahçe Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Fenerbahçe Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "de9c1501",
+    "slug": "asirlik-balik",
+    "name": "Asirlik Balik",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.4,
+    "reviewCount": 1020,
+    "address": "",
+    "lat": 40.9893748,
+    "lng": 29.0242994,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Asirlik Balik is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Asirlik Balik serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Asirlik Balik?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "62ab21fd",
+    "slug": "simsek-doner",
+    "name": "Şimşek Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.1,
+    "reviewCount": 312,
+    "address": "",
+    "lat": 40.9898531,
+    "lng": 29.030934,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Şimşek Döner is a kebap restaurant in Osmanağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Şimşek Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Şimşek Döner?",
+        "answer": "In Osmanağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Osmanağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "1a54d512",
+    "slug": "maharet-kebap-lahmacun",
+    "name": "Maharet Kebap Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Merdivenköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "",
+    "lat": 40.9828092,
+    "lng": 29.0660604,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Maharet Kebap Lahmacun is a kebap restaurant in Merdivenköy Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Maharet Kebap Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Maharet Kebap Lahmacun?",
+        "answer": "In Merdivenköy Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Merdivenköy Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "38110d99",
+    "slug": "keniya-cafe",
+    "name": "Keniya cafe",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rasimpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 233,
+    "address": "",
+    "lat": 40.9922493,
+    "lng": 29.0312889,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Keniya cafe is a kebap restaurant in Rasimpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Keniya cafe serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Keniya cafe?",
+        "answer": "In Rasimpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Rasimpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "5c4db02e",
+    "slug": "leylak",
+    "name": "Leylak",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rasimpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.8,
+    "reviewCount": 1017,
+    "address": "",
+    "lat": 40.9945541,
+    "lng": 29.0297734,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Leylak is a kebap restaurant in Rasimpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Leylak serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Leylak?",
+        "answer": "In Rasimpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Rasimpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "99e36c28",
+    "slug": "hane",
+    "name": "Hane",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2694,
+    "address": "Mimar Çıkmazı Sokağı",
+    "lat": 40.98972,
+    "lng": 29.0283219,
+    "phone": "+905523880300",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Hane is a kebap restaurant in Osmanağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hane serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hane?",
+        "answer": "In Osmanağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Osmanağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "7f1ab193",
+    "slug": "ciya-sofrasi",
+    "name": "Çiya Sofrası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.0,
+    "reviewCount": 13223,
+    "address": "Güneşlibahçe Sokağı",
+    "lat": 40.9893469,
+    "lng": 29.0244294,
+    "phone": "+902163303190",
+    "website": "http://www.ciya.com.tr/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Çiya Sofrası is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Çiya Sofrası serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Çiya Sofrası?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "7fb94452",
+    "slug": "meshur-menemenci-cemal-polat",
+    "name": "Meşhur Menemenci Cemal Polat",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 1685,
+    "address": "",
+    "lat": 40.9900444,
+    "lng": 29.0262706,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Meşhur Menemenci Cemal Polat is a kebap restaurant in Osmanağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Meşhur Menemenci Cemal Polat serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Meşhur Menemenci Cemal Polat?",
+        "answer": "In Osmanağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Osmanağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "1ec06ba8",
+    "slug": "kimyon",
+    "name": "Kimyon",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 3405,
+    "address": "",
+    "lat": 40.9867504,
+    "lng": 29.0267703,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Kimyon is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Kimyon serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Kimyon?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "dc1abe00",
+    "slug": "ethem-et-adana-kebap",
+    "name": "Ethem Et & Adana Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Erenköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 411,
+    "address": "Ethem Efendi Caddesi",
+    "lat": 40.9722072,
+    "lng": 29.0740471,
+    "phone": "+90 216 514 8800",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Ethem Et & Adana Kebap is a kebap restaurant in Erenköy Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Ethem Et & Adana Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Ethem Et & Adana Kebap?",
+        "answer": "In Erenköy Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Erenköy Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "bfeeb0f7",
+    "slug": "urfali-63-kasim-usta",
+    "name": "Urfalı 63 Kasım Usta",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Mimar Sinan Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 1153,
+    "address": "",
+    "lat": 41.0243329,
+    "lng": 29.0161759,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Urfalı 63 Kasım Usta is a kebap restaurant in Mimar Sinan Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Urfalı 63 Kasım Usta serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Urfalı 63 Kasım Usta?",
+        "answer": "In Mimar Sinan Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Mimar Sinan Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "646919c6",
+    "slug": "donerci-celal-usta-umraniye-atakent-subesi",
+    "name": "Dönerci Celal Usta - Ümraniye (Atakent) Şubesi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Atakent Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 6011,
+    "address": "Reşitpaşa Caddesi",
+    "lat": 41.0146948,
+    "lng": 29.1036405,
+    "phone": null,
+    "website": "https://www.donercicelalusta.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Dönerci Celal Usta - Ümraniye (Atakent) Şubesi is a kebap restaurant in Atakent Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Dönerci Celal Usta - Ümraniye (Atakent) Şubesi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Dönerci Celal Usta - Ümraniye (Atakent) Şubesi?",
+        "answer": "In Atakent Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Atakent Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "5fe94195",
+    "slug": "adana-ocakbasi-suadiye",
+    "name": "Adana Ocakbaşı Suadiye",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Suadiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.0,
+    "reviewCount": 390,
+    "address": "Ayşe Çavuş Caddesi",
+    "lat": 40.961447,
+    "lng": 29.0840536,
+    "phone": null,
+    "website": "https://grablocals.com/listing/adana-ocakbasi-suadiye/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Adana Ocakbaşı Suadiye is a kebap restaurant in Suadiye Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Adana Ocakbaşı Suadiye serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Adana Ocakbaşı Suadiye?",
+        "answer": "In Suadiye Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Suadiye Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "f6e7ab3f",
+    "slug": "bebe-icli-kofte",
+    "name": "Bebe İçli Köfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Suadiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.6,
+    "reviewCount": 1023,
+    "address": "",
+    "lat": 40.9615386,
+    "lng": 29.0841231,
+    "phone": null,
+    "website": "https://www.bebeiclikofte.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Bebe İçli Köfte is a kebap restaurant in Suadiye Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Bebe İçli Köfte serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Bebe İçli Köfte?",
+        "answer": "In Suadiye Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Suadiye Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "93cc8448",
+    "slug": "vefali-kofteci",
+    "name": "Vefalı Köfteci",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caddebostan Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 827,
+    "address": "Bilim Sokağı",
+    "lat": 40.9647834,
+    "lng": 29.075038,
+    "phone": null,
+    "website": "http://vefalikofteci.com.tr/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Vefalı Köfteci is a kebap restaurant in Caddebostan Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Vefalı Köfteci serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Vefalı Köfteci?",
+        "answer": "In Caddebostan Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caddebostan Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "6dd1f322",
+    "slug": "a-c-t-durum-ve-meze",
+    "name": "A.Ç.T DÜRÜM ve MEZE",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rasimpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.8,
+    "reviewCount": 437,
+    "address": "",
+    "lat": 40.9946385,
+    "lng": 29.0299336,
+    "phone": null,
+    "website": "https://qrmenu.actdurum.com",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "A.Ç.T DÜRÜM ve MEZE is a kebap restaurant in Rasimpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does A.Ç.T DÜRÜM ve MEZE serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is A.Ç.T DÜRÜM ve MEZE?",
+        "answer": "In Rasimpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Rasimpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "05f2c07d",
+    "slug": "lahmacun-dukkani",
+    "name": "Lahmacun Dükkani",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rasimpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.6,
+    "reviewCount": 1027,
+    "address": "",
+    "lat": 40.9914457,
+    "lng": 29.0301497,
+    "phone": null,
+    "website": "http://lahmacundukkani.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Lahmacun Dükkani is a kebap restaurant in Rasimpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Lahmacun Dükkani serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Lahmacun Dükkani?",
+        "answer": "In Rasimpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Rasimpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "eaf19a54",
+    "slug": "murat-kebap",
+    "name": "Murat Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Göztepe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 1153,
+    "address": "Ömerpaşa Sokağı",
+    "lat": 40.9724935,
+    "lng": 29.0685744,
+    "phone": "+90 216 360 2814",
+    "website": "https://muratkebap.dijital.menu/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Murat Kebap is a kebap restaurant in Göztepe Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Murat Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Murat Kebap?",
+        "answer": "In Göztepe Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Göztepe Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "3253dc6c",
+    "slug": "metet-kozde-doner",
+    "name": "Metet Közde Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caddebostan Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.1,
+    "reviewCount": 1025,
+    "address": "",
+    "lat": 40.9720839,
+    "lng": 29.0615913,
+    "phone": null,
+    "website": "https://metetdoner.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Metet Közde Döner is a kebap restaurant in Caddebostan Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Metet Közde Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Metet Közde Döner?",
+        "answer": "In Caddebostan Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caddebostan Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "daab30c8",
+    "slug": "valibey-kebap-kunefe",
+    "name": "Valibey Kebap & Künefe",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kozyatağı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 562,
+    "address": "Bayar Caddesi",
+    "lat": 40.9708019,
+    "lng": 29.0992371,
+    "phone": null,
+    "website": "https://www.valibeykebap.com",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Valibey Kebap & Künefe is a kebap restaurant in Kozyatağı Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Valibey Kebap & Künefe serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Valibey Kebap & Künefe?",
+        "answer": "In Kozyatağı Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Kozyatağı Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "d0764957",
+    "slug": "ayik-corba-kebap",
+    "name": "Ayık Çorba Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 4001,
+    "address": "Dumlupınar Sokağı",
+    "lat": 40.9890876,
+    "lng": 29.0244859,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Ayık Çorba Kebap is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Ayık Çorba Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Ayık Çorba Kebap?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "81f24580",
+    "slug": "palulu-cumali-adana-kebapcisi",
+    "name": "Palulu Cumali Adana Kebapçısı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Merdivenköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 56,
+    "address": "Hoşgörü Sokağı",
+    "lat": 40.9810851,
+    "lng": 29.0751232,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Palulu Cumali Adana Kebapçısı is a kebap restaurant in Merdivenköy Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Palulu Cumali Adana Kebapçısı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Palulu Cumali Adana Kebapçısı?",
+        "answer": "In Merdivenköy Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Merdivenköy Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "0511f871",
+    "slug": "direkli-koftecisi",
+    "name": "Direkli Köftecisi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.6,
+    "reviewCount": 642,
+    "address": "",
+    "lat": 40.9855267,
+    "lng": 29.0251859,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Direkli Köftecisi is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Direkli Köftecisi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Direkli Köftecisi?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "f7bedc8a",
+    "slug": "yildiz-3-kofte-salonu",
+    "name": "Yıldız 3 Köfte Salonu",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.6,
+    "reviewCount": 109,
+    "address": "",
+    "lat": 40.9851607,
+    "lng": 29.0264767,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Yıldız 3 Köfte Salonu is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Yıldız 3 Köfte Salonu serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Yıldız 3 Köfte Salonu?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "eb61f7cf",
+    "slug": "kadi-lokantasi",
+    "name": "Kadı Lokantasi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rasimpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "",
+    "lat": 40.9929689,
+    "lng": 29.0301332,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Kadı Lokantasi is a kebap restaurant in Rasimpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Kadı Lokantasi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Kadı Lokantasi?",
+        "answer": "In Rasimpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Rasimpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "55d4c6b6",
+    "slug": "donerci-mehmet-usta",
+    "name": "Dönerci Mehmet Usta",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fenerbahçe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 316,
+    "address": "",
+    "lat": 40.9753578,
+    "lng": 29.0528754,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Dönerci Mehmet Usta is a kebap restaurant in Fenerbahçe Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Dönerci Mehmet Usta serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Dönerci Mehmet Usta?",
+        "answer": "In Fenerbahçe Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Fenerbahçe Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "527b442d",
+    "slug": "intiba-doner",
+    "name": "İntiba Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Acıbadem Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 1393,
+    "address": "Şehit Emin Çölen Sokağı",
+    "lat": 41.0028249,
+    "lng": 29.0434584,
+    "phone": null,
+    "website": "https://intiba.com.tr",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "İntiba Döner is a kebap restaurant in Acıbadem Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does İntiba Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is İntiba Döner?",
+        "answer": "In Acıbadem Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Acıbadem Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "1fb46199",
+    "slug": "uskup-kofte",
+    "name": "Üsküp Köfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Zühtüpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 312,
+    "address": "",
+    "lat": 40.9842035,
+    "lng": 29.0389107,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Üsküp Köfte is a kebap restaurant in Zühtüpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Üsküp Köfte serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Üsküp Köfte?",
+        "answer": "In Zühtüpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Zühtüpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "bc39d18d",
+    "slug": "osifa-cigkofte",
+    "name": "Oşifa Çiğköfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fenerbahçe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 539,
+    "address": "Bağdat Caddesi",
+    "lat": 40.9747453,
+    "lng": 29.0532036,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Oşifa Çiğköfte is a kebap restaurant in Fenerbahçe Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Oşifa Çiğköfte serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Oşifa Çiğköfte?",
+        "answer": "In Fenerbahçe Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Fenerbahçe Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "b932ce54",
+    "slug": "bedri-usta-ciftehavuzlar-pide-lahmacun",
+    "name": "Bedri Usta Çiftehavuzlar Pide & Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caddebostan Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.9,
+    "reviewCount": 78,
+    "address": "Bağdat Caddesi",
+    "lat": 40.9737145,
+    "lng": 29.0561485,
+    "phone": null,
+    "website": "https://bedriusta.com/ciftehavuzlar/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Bedri Usta Çiftehavuzlar Pide & Lahmacun is a kebap restaurant in Caddebostan Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Bedri Usta Çiftehavuzlar Pide & Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Bedri Usta Çiftehavuzlar Pide & Lahmacun?",
+        "answer": "In Caddebostan Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caddebostan Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "2fb1805e",
+    "slug": "bagdat-doner",
+    "name": "Bağdat Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Göztepe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.1,
+    "reviewCount": 311,
+    "address": "",
+    "lat": 40.9813254,
+    "lng": 29.0679305,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Bağdat Döner is a kebap restaurant in Göztepe Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Bağdat Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Bağdat Döner?",
+        "answer": "In Göztepe Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Göztepe Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "a99de725",
+    "slug": "2-de-1-kofte",
+    "name": "2'de 1 Köfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Göztepe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.6,
+    "reviewCount": 241,
+    "address": "Tütüncü Mehmet Efendi Caddesi",
+    "lat": 40.9812429,
+    "lng": 29.0678931,
+    "phone": null,
+    "website": "https://www.yummyadvisor.com/tr-tr-Istanbul/dx0mla-2'de-1-Kofte/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "2'de 1 Köfte is a kebap restaurant in Göztepe Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does 2'de 1 Köfte serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is 2'de 1 Köfte?",
+        "answer": "In Göztepe Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Göztepe Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "13b74958",
+    "slug": "nur-kebap-lahmacun-pide-salonu",
+    "name": "Nur Kebap Lahmacun Pide salonu",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Feneryolu Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 1273,
+    "address": "",
+    "lat": 40.9829383,
+    "lng": 29.0406617,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Nur Kebap Lahmacun Pide salonu is a kebap restaurant in Feneryolu Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Nur Kebap Lahmacun Pide salonu serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Nur Kebap Lahmacun Pide salonu?",
+        "answer": "In Feneryolu Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Feneryolu Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "43f2db00",
+    "slug": "yanyali-fehmi-lokantasi",
+    "name": "Yanyalı Fehmi Lokantası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.1,
+    "reviewCount": 2703,
+    "address": "Yağlıkçı İsmail Sokağı",
+    "lat": 40.9907651,
+    "lng": 29.025509,
+    "phone": null,
+    "website": "http://www.fehmilokantasi.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Yanyalı Fehmi Lokantası is a kebap restaurant in Osmanağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Yanyalı Fehmi Lokantası serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Yanyalı Fehmi Lokantası?",
+        "answer": "In Osmanağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Osmanağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "c64a0c74",
+    "slug": "ciya-kebap",
+    "name": "Çiya Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.0,
+    "reviewCount": 13224,
+    "address": "",
+    "lat": 40.9892858,
+    "lng": 29.0242265,
+    "phone": "+902163363013",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Çiya Kebap is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Çiya Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Çiya Kebap?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "0afcdffc",
+    "slug": "semsur-cigkofte",
+    "name": "Semsür Çiğköfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Mimar Sinan Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 235,
+    "address": "",
+    "lat": 41.0242983,
+    "lng": 29.0123122,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Semsür Çiğköfte is a kebap restaurant in Mimar Sinan Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Semsür Çiğköfte serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Semsür Çiğköfte?",
+        "answer": "In Mimar Sinan Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Mimar Sinan Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "f88227f6",
+    "slug": "ibb-uskudar-kent-lokantasi",
+    "name": "İBB Üsküdar Kent Lokantası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Mimar Sinan Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 734,
+    "address": "",
+    "lat": 41.0234131,
+    "lng": 29.0170969,
+    "phone": null,
+    "website": "https://tesislerimiz.ibb.istanbul/uskudar-kent-lokantasi/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "İBB Üsküdar Kent Lokantası is a kebap restaurant in Mimar Sinan Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does İBB Üsküdar Kent Lokantası serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is İBB Üsküdar Kent Lokantası?",
+        "answer": "In Mimar Sinan Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Mimar Sinan Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "86d5b0fc",
+    "slug": "donerci-semih-ersoy",
+    "name": "Dönerci Semih Ersoy",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Namık Kemal Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 2114,
+    "address": "",
+    "lat": 41.0238432,
+    "lng": 29.0928519,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Dönerci Semih Ersoy is a kebap restaurant in Namık Kemal Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Dönerci Semih Ersoy serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Dönerci Semih Ersoy?",
+        "answer": "In Namık Kemal Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Namık Kemal Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "a1b4e852",
+    "slug": "hot-doner",
+    "name": "Hot Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Namık Kemal Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "",
+    "lat": 41.0236425,
+    "lng": 29.092246,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Hot Döner is a kebap restaurant in Namık Kemal Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hot Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hot Döner?",
+        "answer": "In Namık Kemal Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Namık Kemal Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "944aeb51",
+    "slug": "hasan-usta-kebap",
+    "name": "Hasan Usta Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Koşuyolu Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 12088,
+    "address": "",
+    "lat": 41.0044111,
+    "lng": 29.0281133,
+    "phone": null,
+    "website": "https://www.hasanustakebap.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Hasan Usta Kebap is a kebap restaurant in Koşuyolu Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hasan Usta Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hasan Usta Kebap?",
+        "answer": "In Koşuyolu Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Koşuyolu Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "fd4996e9",
+    "slug": "suhan-kebap",
+    "name": "Suhan Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "19 Mayıs Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.7,
+    "reviewCount": 268,
+    "address": "İnönü Caddesi",
+    "lat": 40.9782545,
+    "lng": 29.0921086,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Suhan Kebap is a kebap restaurant in 19 Mayıs Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Suhan Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Suhan Kebap?",
+        "answer": "In 19 Mayıs Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in 19 Mayıs Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "0122e3d5",
+    "slug": "safran-restsurant",
+    "name": "Safran Restsurant",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 578,
+    "address": "",
+    "lat": 40.9900978,
+    "lng": 29.0277954,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Safran Restsurant is a kebap restaurant in Osmanağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Safran Restsurant serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Safran Restsurant?",
+        "answer": "In Osmanağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Osmanağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "2e6620f5",
+    "slug": "abooov-kebap",
+    "name": "Abooov Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Acıbadem Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 1054,
+    "address": "Sarayardı Caddesi",
+    "lat": 40.9959428,
+    "lng": 29.0368658,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Abooov Kebap is a kebap restaurant in Acıbadem Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Abooov Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Abooov Kebap?",
+        "answer": "In Acıbadem Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Acıbadem Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "009000c7",
+    "slug": "happu-antakya-fine-food",
+    "name": "Happu Antakya-Fine Food",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bostancı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 5.0,
+    "reviewCount": 92,
+    "address": "Yeni Yol Sokağı",
+    "lat": 40.9604315,
+    "lng": 29.0954137,
+    "phone": "+90 542 837 16 89",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Happu Antakya-Fine Food is a kebap restaurant in Bostancı Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Happu Antakya-Fine Food serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Happu Antakya-Fine Food?",
+        "answer": "In Bostancı Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Bostancı Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "0b081ed3",
+    "slug": "mantimia",
+    "name": "Mantımia",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Erenköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "Şemsettin Günaltay Caddesi",
+    "lat": 40.9760034,
+    "lng": 29.0793729,
+    "phone": null,
+    "website": "https://www.mantimia.com",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Mantımia is a kebap restaurant in Erenköy Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Mantımia serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Mantımia?",
+        "answer": "In Erenköy Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Erenköy Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "2102e216",
+    "slug": "nakkas-kebap",
+    "name": "Nakkaş Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Feneryolu Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.8,
+    "reviewCount": 254,
+    "address": "",
+    "lat": 40.9826856,
+    "lng": 29.0540293,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Nakkaş Kebap is a kebap restaurant in Feneryolu Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Nakkaş Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Nakkaş Kebap?",
+        "answer": "In Feneryolu Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Feneryolu Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "64c16fff",
+    "slug": "vegan-masa",
+    "name": "Vegan Masa",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.9,
+    "reviewCount": 339,
+    "address": "",
+    "lat": 40.991388,
+    "lng": 29.0276821,
+    "phone": null,
+    "website": "https://allzinapp.com/veganmasakadikoy",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Vegan Masa is a kebap restaurant in Osmanağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Vegan Masa serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Vegan Masa?",
+        "answer": "In Osmanağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Osmanağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "e3398841",
+    "slug": "arsamiea-adiyaman-cigkoftesi",
+    "name": "Arsamiea Adıyaman Çiğköftesi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kozyatağı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.6,
+    "reviewCount": 81,
+    "address": "",
+    "lat": 40.965979,
+    "lng": 29.0915246,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Arsamiea Adıyaman Çiğköftesi is a kebap restaurant in Kozyatağı Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Arsamiea Adıyaman Çiğköftesi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Arsamiea Adıyaman Çiğköftesi?",
+        "answer": "In Kozyatağı Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Kozyatağı Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "3aa35ef0",
+    "slug": "kofteci-ramiz",
+    "name": "Köfteci Ramiz",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Acıbadem Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.0,
+    "reviewCount": 95,
+    "address": "",
+    "lat": 40.9998982,
+    "lng": 29.0323207,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Köfteci Ramiz is a kebap restaurant in Acıbadem Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Köfteci Ramiz serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Köfteci Ramiz?",
+        "answer": "In Acıbadem Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Acıbadem Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "c94632dd",
+    "slug": "ha-bu-doner-gece-donercisi",
+    "name": "Ha Bu Döner Gece Dönercisi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sahrayıcedit Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 1007,
+    "address": "",
+    "lat": 40.9830505,
+    "lng": 29.0925773,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Ha Bu Döner Gece Dönercisi is a kebap restaurant in Sahrayıcedit Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Ha Bu Döner Gece Dönercisi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Ha Bu Döner Gece Dönercisi?",
+        "answer": "In Sahrayıcedit Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Sahrayıcedit Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "bc35ba79",
+    "slug": "hunkar-pide-borek",
+    "name": "Hünkar Pide&Börek",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Mimar Sinan Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 1024,
+    "address": "",
+    "lat": 41.024797,
+    "lng": 29.0176201,
+    "phone": "+90 216 391 2139",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Hünkar Pide&Börek is a kebap restaurant in Mimar Sinan Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hünkar Pide&Börek serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hünkar Pide&Börek?",
+        "answer": "In Mimar Sinan Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Mimar Sinan Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "cc82775f",
+    "slug": "pidem",
+    "name": "Pidem",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caferağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 2504,
+    "address": "",
+    "lat": 40.9910037,
+    "lng": 29.0237672,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Pidem is a kebap restaurant in Caferağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Pidem serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Pidem?",
+        "answer": "In Caferağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Caferağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "5006081c",
+    "slug": "guneli-firin",
+    "name": "Güneli Fırın",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 781,
+    "address": "",
+    "lat": 40.9920255,
+    "lng": 29.0289062,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Güneli Fırın is a kebap restaurant in Osmanağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Güneli Fırın serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Güneli Fırın?",
+        "answer": "In Osmanağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Osmanağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "9525c207",
+    "slug": "adanali-umit-usta",
+    "name": "Adanali Ümit Usta",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kozyatağı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.6,
+    "reviewCount": 4532,
+    "address": "Kadı Paşa Sokağı",
+    "lat": 40.9686631,
+    "lng": 29.0920218,
+    "phone": null,
+    "website": "https://www.umitusta.com.tr/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Adanali Ümit Usta is a kebap restaurant in Kozyatağı Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Adanali Ümit Usta serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Adanali Ümit Usta?",
+        "answer": "In Kozyatağı Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Kozyatağı Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "b0dac39e",
+    "slug": "selim-kebap-kadikoy",
+    "name": "Selim Kebap Kadıköy",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Zühtüpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 1153,
+    "address": "Şefik Bey Sokağı",
+    "lat": 40.987563,
+    "lng": 29.0349704,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Selim Kebap Kadıköy is a kebap restaurant in Zühtüpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Selim Kebap Kadıköy serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Selim Kebap Kadıköy?",
+        "answer": "In Zühtüpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Zühtüpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "07126e5b",
+    "slug": "durumcu-esnaf-goztepe-subesi",
+    "name": "Dürümcü esnaf Göztepe Şubesi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Göztepe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 242,
+    "address": "",
+    "lat": 40.9810073,
+    "lng": 29.0677491,
+    "phone": "0501 946 05 12",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Dürümcü esnaf Göztepe Şubesi is a kebap restaurant in Göztepe Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Dürümcü esnaf Göztepe Şubesi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Dürümcü esnaf Göztepe Şubesi?",
+        "answer": "In Göztepe Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Göztepe Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "90eff464",
+    "slug": "manti-point",
+    "name": "Mantı Point",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.9,
+    "reviewCount": 52,
+    "address": "Vişne Sokağı",
+    "lat": 40.9902601,
+    "lng": 29.0313802,
+    "phone": "0530 923 22 84",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Mantı Point is a kebap restaurant in Osmanağa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Mantı Point serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Mantı Point?",
+        "answer": "In Osmanağa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Osmanağa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "8bd3cbe7",
+    "slug": "brops-world-cuisine",
+    "name": "Brops World Cuisine",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fenerbahçe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 164,
+    "address": "Fener Kalamış Caddesi",
+    "lat": 40.9734454,
+    "lng": 29.0414638,
+    "phone": "0545 855 02 55",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Brops World Cuisine is a kebap restaurant in Fenerbahçe Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Brops World Cuisine serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Brops World Cuisine?",
+        "answer": "In Fenerbahçe Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Fenerbahçe Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "a76782ee",
+    "slug": "hos-sefa-lokantasi",
+    "name": "Hoş Sefa Lokantası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rasimpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.9,
+    "reviewCount": 275,
+    "address": "Karakolhane Caddesi",
+    "lat": 40.9940057,
+    "lng": 29.0301269,
+    "phone": "0532 290 24 18",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Hoş Sefa Lokantası is a kebap restaurant in Rasimpaşa Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hoş Sefa Lokantası serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hoş Sefa Lokantası?",
+        "answer": "In Rasimpaşa Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Rasimpaşa Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "051e533d",
+    "slug": "develi-kebap-kalamis",
+    "name": "Develi Kebap Kalamış",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fenerbahçe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.1,
+    "reviewCount": 3398,
+    "address": "",
+    "lat": 40.9765055,
+    "lng": 29.0396237,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Develi Kebap Kalamış is a kebap restaurant in Fenerbahçe Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Develi Kebap Kalamış serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Develi Kebap Kalamış?",
+        "answer": "In Fenerbahçe Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Fenerbahçe Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "0fee8976",
+    "slug": "filizler-koftecisi",
+    "name": "Filizler Köftecisi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Aziz Mahmut Hüdayi Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 1218,
+    "address": "Üsküdar Harem Sahil Yolu",
+    "lat": 41.02247,
+    "lng": 29.0069937,
+    "phone": "+90 216 3420000",
+    "website": "http://www.filizler.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Filizler Köftecisi is a kebap restaurant in Aziz Mahmut Hüdayi Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Filizler Köftecisi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Filizler Köftecisi?",
+        "answer": "In Aziz Mahmut Hüdayi Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Aziz Mahmut Hüdayi Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "de943a3a",
+    "slug": "nurten-ev-yemekleri",
+    "name": "Nurten Ev Yemekleri",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Suadiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2162,
+    "address": "Emin Ali Paşa Caddesi",
+    "lat": 40.9603484,
+    "lng": 29.0912244,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Nurten Ev Yemekleri is a kebap restaurant in Suadiye Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Nurten Ev Yemekleri serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Nurten Ev Yemekleri?",
+        "answer": "In Suadiye Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Suadiye Mahallesi",
+      "Kadıköy district"
+    ]
+  },
+  {
+    "id": "179c9dd5",
+    "slug": "eda-kebap",
+    "name": "Eda Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kozyatağı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.0,
+    "reviewCount": 889,
+    "address": "Kaya Sultan Sokağı",
+    "lat": 40.9681701,
+    "lng": 29.0954525,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Kadıköy",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Kadıköy.",
+    "llmSummary": "Eda Kebap is a kebap restaurant in Kozyatağı Mahallesi, Kadıköy, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Eda Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Eda Kebap?",
+        "answer": "In Kozyatağı Mahallesi, Kadıköy, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly to check."
+      }
+    ],
+    "lastUpdated": "2026-04-25",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap restaurant in Kozyatağı Mahallesi",
+      "Kadıköy district"
+    ]
   }
 ]
