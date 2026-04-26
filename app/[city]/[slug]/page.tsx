@@ -76,6 +76,28 @@ export default async function RestaurantPage({ params }: Props) {
       hasMap: r.reservationLinks.googleMaps,
     } : {}),
     ...(r.photoUrl ? { image: r.photoUrl } : {}),
+    amenityFeature: [
+      ...(r.features.wifi        ? [{ "@type": "LocationFeatureSpecification", name: "Wi-Fi",            value: true }] : []),
+      ...(r.features.terrace || r.features.teras ? [{ "@type": "LocationFeatureSpecification", name: "Terrace / Outdoor Seating", value: true }] : []),
+      ...(r.features.reservation || r.features.rezervasyon ? [{ "@type": "LocationFeatureSpecification", name: "Reservation Available", value: true }] : []),
+      ...(r.features.vegan       ? [{ "@type": "LocationFeatureSpecification", name: "Vegan Options",    value: true }] : []),
+      ...(r.features.seaView     ? [{ "@type": "LocationFeatureSpecification", name: "Sea View",         value: true }] : []),
+      ...(r.features.liveMusic   ? [{ "@type": "LocationFeatureSpecification", name: "Live Music",       value: true }] : []),
+      ...(r.features.parking     ? [{ "@type": "LocationFeatureSpecification", name: "Parking",          value: true }] : []),
+      ...(r.features.romantic    ? [{ "@type": "LocationFeatureSpecification", name: "Romantic Setting", value: true }] : []),
+      ...(r.specialFeatures?.laptopFriendly ? [{ "@type": "LocationFeatureSpecification", name: "Laptop Friendly", value: true }] : []),
+    ],
+    ...(r.nearby?.transit?.length ? {
+      containsPlace: r.nearby.transit.map(t => ({
+        "@type": "Place",
+        name: t.name,
+        additionalProperty: [
+          { "@type": "PropertyValue", name: "transit_type",  value: t.type },
+          { "@type": "PropertyValue", name: "distance_m",    value: t.distance_m.toString() },
+          { "@type": "PropertyValue", name: "walk_minutes",  value: t.walk_min.toString() },
+        ],
+      })),
+    } : {}),
     additionalProperty: [
       { "@type": "PropertyValue", name: "llm_summary", value: r.llmSummary },
       { "@type": "PropertyValue", name: "sentiment_summary", value: r.sentimentSummary },
@@ -223,6 +245,42 @@ export default async function RestaurantPage({ params }: Props) {
             )}
           </dl>
         </section>
+
+        {/* Getting Here — Transit */}
+        {r.nearby?.transit && r.nearby.transit.length > 0 && (
+          <section className="mb-10">
+            <h2 className="text-lg font-semibold mb-4">Getting Here</h2>
+            <div className="space-y-2">
+              {r.nearby.transit.map((t, i) => {
+                const icons: Record<string, string> = {
+                  metro: "🚇", tramvay: "🚊", vapur: "⛴️", marmaray: "🚆",
+                };
+                const icon = icons[t.type] ?? "🚏";
+                return (
+                  <div key={i} className="flex items-center gap-3 text-sm p-3 bg-blue-50 rounded-lg border border-blue-100">
+                    <span className="text-lg shrink-0">{icon}</span>
+                    <div>
+                      <span className="font-medium text-gray-900">{t.name}</span>
+                      <span className="text-gray-500 ml-2">
+                        {t.walk_min} min walk · {t.distance_m}m
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            {r.nearby.landmarks && r.nearby.landmarks.length > 0 && (
+              <div className="mt-3 space-y-1">
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Nearby Landmarks</p>
+                {r.nearby.landmarks.slice(0, 4).map((l, i) => (
+                  <p key={i} className="text-sm text-gray-600">
+                    {l.name} <span className="text-gray-400">— {l.walk_min} min walk</span>
+                  </p>
+                ))}
+              </div>
+            )}
+          </section>
+        )}
 
         {/* Contextual Ratings */}
         {r.specialFeatures?.contextualRatings && (
