@@ -8680,5 +8680,5374 @@
       "Kebap restaurant in Kozyatağı Mahallesi",
       "Kadıköy district"
     ]
+  },
+  {
+    "id": "9961debd",
+    "slug": "etiler-marmaris",
+    "name": "Etiler Marmaris",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Levent Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 212,
+    "address": "",
+    "lat": 41.0757092,
+    "lng": 29.0192746,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Etiler Marmaris is a kebap restaurant in Levent Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Etiler Marmaris serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Etiler Marmaris?",
+        "answer": "In Levent Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Levent Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "54853a90",
+    "slug": "oz-gaziantep-kebap-lahmacun",
+    "name": "Öz Gaziantep Kebap Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Çatma Mescit Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "Catma Mescit Cesme Sokagi",
+    "lat": 41.0326501,
+    "lng": 28.9688114,
+    "phone": "02122380032",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Öz Gaziantep Kebap Lahmacun is a kebap restaurant in Çatma Mescit Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Öz Gaziantep Kebap Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Öz Gaziantep Kebap Lahmacun?",
+        "answer": "In Çatma Mescit Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Çatma Mescit Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "11aec36e",
+    "slug": "dilruba",
+    "name": "Dilruba",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "İcadiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.0,
+    "reviewCount": 5415,
+    "address": "",
+    "lat": 41.0322239,
+    "lng": 29.0292102,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Dilruba is a kebap restaurant in İcadiye Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Dilruba serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Dilruba?",
+        "answer": "In İcadiye Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in İcadiye Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "7d9b3b36",
+    "slug": "osman-oglu-kebap",
+    "name": "Osman Oglu Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Cibali Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 450,
+    "address": "Abdülezelpaşa Caddesi",
+    "lat": 41.0235841,
+    "lng": 28.9604911,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Osman Oglu Kebap is a kebap restaurant in Cibali Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Osman Oglu Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Osman Oglu Kebap?",
+        "answer": "In Cibali Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Cibali Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "a79f266c",
+    "slug": "altinay-kebap-ve-lahmacun",
+    "name": "Altınay Kebap Ve Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Ayvansaray Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 1701,
+    "address": "Salma Tomruk Caddesi",
+    "lat": 41.0311378,
+    "lng": 28.9408609,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Altınay Kebap Ve Lahmacun is a kebap restaurant in Ayvansaray Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Altınay Kebap Ve Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Altınay Kebap Ve Lahmacun?",
+        "answer": "In Ayvansaray Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Ayvansaray Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "b573d0f1",
+    "slug": "kanaat-lokantasi",
+    "name": "Kanaat Lokantası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sultantepe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.7,
+    "reviewCount": 6749,
+    "address": "Selmani Pak Caddesi",
+    "lat": 41.0258196,
+    "lng": 29.0164724,
+    "phone": null,
+    "website": "http://www.kanaatlokantasi.com.tr",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Kanaat Lokantası is a kebap restaurant in Sultantepe Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Kanaat Lokantası serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Kanaat Lokantası?",
+        "answer": "In Sultantepe Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sultantepe Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "c53e0aa5",
+    "slug": "sans",
+    "name": "Sans",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Levent Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 649,
+    "address": "Palmiye Sokağı",
+    "lat": 41.0809906,
+    "lng": 29.0149292,
+    "phone": "+90 212 280 38 38",
+    "website": "https://sansrestaurant.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Sans is a kebap restaurant in Levent Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Sans serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Sans?",
+        "answer": "In Levent Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Levent Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "78225041",
+    "slug": "lalezar-meyhanesi",
+    "name": "Lalezar Meyhanesi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Paşa",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.9,
+    "reviewCount": 125,
+    "address": "Cumhuriyet Caddesi",
+    "lat": 41.0440882,
+    "lng": 28.9894012,
+    "phone": "+90 212 3156000/8426",
+    "website": "https://www3.hilton.com/en/hotels/turkey/hilton-istanbul-bosphorus-ISTHITW/dining/index.html?WT.mc_id=zELWAKN0EMEA1HI2DMH3LocalSearch4DGGenericx6ISTHITW",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Lalezar Meyhanesi is a kebap restaurant in Paşa, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Lalezar Meyhanesi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Lalezar Meyhanesi?",
+        "answer": "In Paşa, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Paşa",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "bd15f2be",
+    "slug": "tariflerle-yemekler",
+    "name": "Tariflerle Yemekler",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Mecidiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 3,
+    "address": "",
+    "lat": 41.0485766,
+    "lng": 29.0267888,
+    "phone": null,
+    "website": "https://tariflerleyemekler.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Tariflerle Yemekler is a kebap restaurant in Mecidiye Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Tariflerle Yemekler serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Tariflerle Yemekler?",
+        "answer": "In Mecidiye Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Mecidiye Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "922ed53c",
+    "slug": "uzman-kebap",
+    "name": "Uzman Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Selami Ali Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "Gazi Caddesi",
+    "lat": 41.0236239,
+    "lng": 29.0342055,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Uzman Kebap is a kebap restaurant in Selami Ali Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Uzman Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Uzman Kebap?",
+        "answer": "In Selami Ali Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Selami Ali Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "a3299671",
+    "slug": "hakiki-kebap",
+    "name": "Hakiki Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "İcadiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 1109,
+    "address": "Cumhuriyet Caddesi",
+    "lat": 41.0249104,
+    "lng": 29.0359419,
+    "phone": null,
+    "website": "https://www.hakikikebap.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Hakiki Kebap is a kebap restaurant in İcadiye Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hakiki Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hakiki Kebap?",
+        "answer": "In İcadiye Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in İcadiye Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "d1eddead",
+    "slug": "emin-baba-durum-evi",
+    "name": "Emin Baba Dürüm Evi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fulya Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 241,
+    "address": "",
+    "lat": 41.062657,
+    "lng": 28.9974628,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Emin Baba Dürüm Evi is a kebap restaurant in Fulya Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Emin Baba Dürüm Evi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Emin Baba Dürüm Evi?",
+        "answer": "In Fulya Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Fulya Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "a320ac05",
+    "slug": "yildiz-konyali",
+    "name": "Yıldız Konyalı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fulya Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 449,
+    "address": "",
+    "lat": 41.062746,
+    "lng": 28.9985545,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Yıldız Konyalı is a kebap restaurant in Fulya Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Yıldız Konyalı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Yıldız Konyalı?",
+        "answer": "In Fulya Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Fulya Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "6ebdbee5",
+    "slug": "ortaklar-kanat-durum-evi",
+    "name": "Ortaklar Kanat & Dürüm Evi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fulya Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 204,
+    "address": "",
+    "lat": 41.063334,
+    "lng": 28.9984009,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Ortaklar Kanat & Dürüm Evi is a kebap restaurant in Fulya Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Ortaklar Kanat & Dürüm Evi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Ortaklar Kanat & Dürüm Evi?",
+        "answer": "In Fulya Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Fulya Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "10b74716",
+    "slug": "asiri-karadeniz-pide-lahmacun",
+    "name": "Asiri Karadeniz Pide Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Meşrutiyet Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 36,
+    "address": "",
+    "lat": 41.0549843,
+    "lng": 28.9933794,
+    "phone": "02122325082",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Asiri Karadeniz Pide Lahmacun is a kebap restaurant in Meşrutiyet Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Asiri Karadeniz Pide Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Asiri Karadeniz Pide Lahmacun?",
+        "answer": "In Meşrutiyet Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Meşrutiyet Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "ca328e90",
+    "slug": "usta-donerci",
+    "name": "Usta Dönerci",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fulya Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "",
+    "lat": 41.0663468,
+    "lng": 29.0030371,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Usta Dönerci is a kebap restaurant in Fulya Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Usta Dönerci serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Usta Dönerci?",
+        "answer": "In Fulya Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Fulya Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "cbd4e0fa",
+    "slug": "beyzade-kunefe",
+    "name": "Beyzade Künefe",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Alibeyköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 27126,
+    "address": "Vardar Bulvarı",
+    "lat": 41.075559,
+    "lng": 28.9421711,
+    "phone": "+90 212 261 67 67",
+    "website": "https://www.beyzadekunefe.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Beyzade Künefe is a kebap restaurant in Alibeyköy Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Beyzade Künefe serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Beyzade Künefe?",
+        "answer": "In Alibeyköy Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Alibeyköy Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "4ef0b815",
+    "slug": "cafe-berry",
+    "name": "Cafe Berry",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kalyoncu Kulluğu",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 234,
+    "address": "",
+    "lat": 41.0362791,
+    "lng": 28.9753057,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Cafe Berry is a kebap restaurant in Kalyoncu Kulluğu, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Cafe Berry serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Cafe Berry?",
+        "answer": "In Kalyoncu Kulluğu, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Kalyoncu Kulluğu",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "2a27b0f8",
+    "slug": "saray-lokantasi",
+    "name": "Saray Lokantası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kalyoncu Kulluğu",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 606,
+    "address": "",
+    "lat": 41.0357258,
+    "lng": 28.9755313,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Saray Lokantası is a kebap restaurant in Kalyoncu Kulluğu, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Saray Lokantası serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Saray Lokantası?",
+        "answer": "In Kalyoncu Kulluğu, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Kalyoncu Kulluğu",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "bcc3a88b",
+    "slug": "tahtasaray",
+    "name": "Tahtasaray",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Konaklar Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 1985,
+    "address": "Meşeli Sokağı",
+    "lat": 41.087897,
+    "lng": 29.0118426,
+    "phone": "+902122838585",
+    "website": "https://tahtasaray.com",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Tahtasaray is a kebap restaurant in Konaklar Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Tahtasaray serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Tahtasaray?",
+        "answer": "In Konaklar Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Konaklar Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "662f0c95",
+    "slug": "kofteci-halil-rumelihisari",
+    "name": "Köfteci halil Rumelihisarı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rumelihisarı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 54,
+    "address": "Arpacı Çeşme Sokağı",
+    "lat": 41.0887692,
+    "lng": 29.0567056,
+    "phone": "+90 212 358 55 31",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Köfteci halil Rumelihisarı is a kebap restaurant in Rumelihisarı Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Köfteci halil Rumelihisarı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Köfteci halil Rumelihisarı?",
+        "answer": "In Rumelihisarı Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Rumelihisarı Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "3a53ee22",
+    "slug": "koprualti",
+    "name": "Köprüaltı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rumelihisarı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 5.0,
+    "reviewCount": 1,
+    "address": "Yahya Kemal Caddesi",
+    "lat": 41.0883221,
+    "lng": 29.0567246,
+    "phone": "+90 212 287 7323",
+    "website": "http://koprualti.kim/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Köprüaltı is a kebap restaurant in Rumelihisarı Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Köprüaltı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Köprüaltı?",
+        "answer": "In Rumelihisarı Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Rumelihisarı Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "acede558",
+    "slug": "nezih-kebap-yuvalama",
+    "name": "Nezih Kebap-Yuvalama",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rumelihisarı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.7,
+    "reviewCount": 2520,
+    "address": "Yahya Kemal Caddesi",
+    "lat": 41.0862376,
+    "lng": 29.0567643,
+    "phone": "+90 212 265 74 55",
+    "website": "https://www.nezihkebap.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Nezih Kebap-Yuvalama is a kebap restaurant in Rumelihisarı Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Nezih Kebap-Yuvalama serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Nezih Kebap-Yuvalama?",
+        "answer": "In Rumelihisarı Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Rumelihisarı Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "a3c30502",
+    "slug": "bebek-koftecisi",
+    "name": "Bebek Köftecisi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bebek Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 20,
+    "address": "Bebek Hamamı Sokağı",
+    "lat": 41.0771501,
+    "lng": 29.0429169,
+    "phone": "+90 212 264 40 18",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Bebek Köftecisi is a kebap restaurant in Bebek Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Bebek Köftecisi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Bebek Köftecisi?",
+        "answer": "In Bebek Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Bebek Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "77e60b33",
+    "slug": "whisper-kitchen-bar",
+    "name": "Whisper Kitchen Bar",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Arnavutköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 584,
+    "address": "Bebek Arnavutköy Caddesi",
+    "lat": 41.0675437,
+    "lng": 29.0444219,
+    "phone": "+90 212 263 10 45",
+    "website": "whisperistanbul.com",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Whisper Kitchen Bar is a kebap restaurant in Arnavutköy Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Whisper Kitchen Bar serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Whisper Kitchen Bar?",
+        "answer": "In Arnavutköy Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Arnavutköy Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "066826b0",
+    "slug": "sanda-tiryaki-ocakbasi-restaurant",
+    "name": "Şanda Tiryaki Ocakbaşı Restaurant",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kuruçeşme Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 622,
+    "address": "Yeşilpınar Sokağı",
+    "lat": 41.0650522,
+    "lng": 29.0369574,
+    "phone": "+90 212 265 13 90",
+    "website": "sandatiryaki.com.tr",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Şanda Tiryaki Ocakbaşı Restaurant is a kebap restaurant in Kuruçeşme Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Şanda Tiryaki Ocakbaşı Restaurant serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Şanda Tiryaki Ocakbaşı Restaurant?",
+        "answer": "In Kuruçeşme Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Kuruçeşme Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "337bfa95",
+    "slug": "adnan-sarihan-gusto",
+    "name": "Adnan Sarıhan gusto",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Etiler Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 1376,
+    "address": "Nispetiye Caddesi",
+    "lat": 41.0809106,
+    "lng": 29.0364551,
+    "phone": "02123584848",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Adnan Sarıhan gusto is a kebap restaurant in Etiler Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Adnan Sarıhan gusto serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Adnan Sarıhan gusto?",
+        "answer": "In Etiler Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Etiler Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "3d0d3e06",
+    "slug": "isos-doner",
+    "name": "İsos Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 2.7,
+    "reviewCount": 720,
+    "address": "",
+    "lat": 41.043267,
+    "lng": 29.0063794,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "İsos Döner is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does İsos Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is İsos Döner?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "a63772ca",
+    "slug": "ist-too",
+    "name": "Ist Too",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 406,
+    "address": "Hayrettin İskelesi Sokak",
+    "lat": 41.0404011,
+    "lng": 29.0054246,
+    "phone": "+90 212 275 88 88",
+    "website": "https://www.shangri-la.com/tr/istanbul/shangrila/dining/restaurants/ist-too/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Ist Too is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Ist Too serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Ist Too?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "6b6e1be9",
+    "slug": "hamurita",
+    "name": "Hamurita",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 212,
+    "address": "Yenilik Sokağı",
+    "lat": 41.0441929,
+    "lng": 29.0032299,
+    "phone": "+90 212 236 71 33",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Hamurita is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hamurita serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hamurita?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "2217e72d",
+    "slug": "atistir-1989",
+    "name": "Atıştır 1989",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Vişnezade Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 115,
+    "address": "Süleyman Seba Caddesi",
+    "lat": 41.043094,
+    "lng": 28.9976125,
+    "phone": null,
+    "website": "https://quickly.restaurant/atistir",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Atıştır 1989 is a kebap restaurant in Vişnezade Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Atıştır 1989 serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Atıştır 1989?",
+        "answer": "In Vişnezade Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Vişnezade Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "5a1bbb1d",
+    "slug": "buketist-lahmacun",
+    "name": "Buketist Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "",
+    "lat": 41.0431813,
+    "lng": 29.0056091,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Buketist Lahmacun is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Buketist Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Buketist Lahmacun?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "bb97ea09",
+    "slug": "kosem-doner",
+    "name": "Köşem Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Alibeyköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "",
+    "lat": 41.0764478,
+    "lng": 28.9468982,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Köşem Döner is a kebap restaurant in Alibeyköy Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Köşem Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Köşem Döner?",
+        "answer": "In Alibeyköy Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Alibeyköy Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "b5191dfc",
+    "slug": "cadde-katik-alibeykoy",
+    "name": "Cadde Katık Alibeyköy",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Çırçır Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 2.7,
+    "reviewCount": 195,
+    "address": "",
+    "lat": 41.0768582,
+    "lng": 28.9412844,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Cadde Katık Alibeyköy is a kebap restaurant in Çırçır Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Cadde Katık Alibeyköy serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Cadde Katık Alibeyköy?",
+        "answer": "In Çırçır Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Çırçır Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "2b8caedd",
+    "slug": "corba-dunyasi-deniz-lokantasi",
+    "name": "Çorba Dünyasi Deniz Lokantasi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Camiikebir",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "",
+    "lat": 41.0324509,
+    "lng": 28.9663957,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Çorba Dünyasi Deniz Lokantasi is a kebap restaurant in Camiikebir, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Çorba Dünyasi Deniz Lokantasi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Çorba Dünyasi Deniz Lokantasi?",
+        "answer": "In Camiikebir, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Camiikebir",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "bc635c77",
+    "slug": "et-lokantasi",
+    "name": "Et Lokantasi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Camiikebir",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 450,
+    "address": "",
+    "lat": 41.0326045,
+    "lng": 28.9671229,
+    "phone": "235 05 33",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Et Lokantasi is a kebap restaurant in Camiikebir, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Et Lokantasi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Et Lokantasi?",
+        "answer": "In Camiikebir, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Camiikebir",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "2ba8643a",
+    "slug": "rice-house",
+    "name": "Rice House",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Beylerbeyi Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 1540,
+    "address": "Arabacılar Sokağı",
+    "lat": 41.0444213,
+    "lng": 29.0450087,
+    "phone": "0216 321 33 23",
+    "website": "https://www.ricehousee.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Rice House is a kebap restaurant in Beylerbeyi Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Rice House serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Rice House?",
+        "answer": "In Beylerbeyi Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Beylerbeyi Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "61a1214b",
+    "slug": "garden-iskender",
+    "name": "Garden Iskender",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Meşrutiyet Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 1696,
+    "address": "",
+    "lat": 41.0552157,
+    "lng": 28.9874122,
+    "phone": null,
+    "website": "https://www.gardeniskender.com",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Garden Iskender is a kebap restaurant in Meşrutiyet Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Garden Iskender serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Garden Iskender?",
+        "answer": "In Meşrutiyet Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Meşrutiyet Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "391e82c9",
+    "slug": "la-sirene-bebek",
+    "name": "La Sirene Bebek",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bebek Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.7,
+    "reviewCount": 1828,
+    "address": "",
+    "lat": 41.076534,
+    "lng": 29.0443309,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "La Sirene Bebek is a kebap restaurant in Bebek Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does La Sirene Bebek serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is La Sirene Bebek?",
+        "answer": "In Bebek Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Bebek Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "507fbdc1",
+    "slug": "sorriso-restaurant-kurucesme",
+    "name": "Sorriso Restaurant Kuruçeşme",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kuruçeşme Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 450,
+    "address": "Arnavutköy Kuruçeşme Caddesi",
+    "lat": 41.0599153,
+    "lng": 29.0358392,
+    "phone": "+90 532 399 8304",
+    "website": "http://sorrisokurucesme.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Sorriso Restaurant Kuruçeşme is a kebap restaurant in Kuruçeşme Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Sorriso Restaurant Kuruçeşme serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Sorriso Restaurant Kuruçeşme?",
+        "answer": "In Kuruçeşme Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Kuruçeşme Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "54c14bc1",
+    "slug": "macboos-restaurant",
+    "name": "Macboos Restaurant",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kuruçeşme Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.5,
+    "reviewCount": 1047,
+    "address": "",
+    "lat": 41.0583602,
+    "lng": 29.0351414,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Macboos Restaurant is a kebap restaurant in Kuruçeşme Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Macboos Restaurant serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Macboos Restaurant?",
+        "answer": "In Kuruçeşme Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Kuruçeşme Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "7a664de6",
+    "slug": "adana-ocakbasi",
+    "name": "Adana Ocakbaşı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bozkurt Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.9,
+    "reviewCount": 125,
+    "address": "",
+    "lat": 41.0518418,
+    "lng": 28.9853236,
+    "phone": "+902122470143",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Adana Ocakbaşı is a kebap restaurant in Bozkurt Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Adana Ocakbaşı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Adana Ocakbaşı?",
+        "answer": "In Bozkurt Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Bozkurt Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "eb2815f5",
+    "slug": "balkan-lokantasi",
+    "name": "Balkan Lokantası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 450,
+    "address": "",
+    "lat": 41.0436308,
+    "lng": 29.0062734,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Balkan Lokantası is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Balkan Lokantası serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Balkan Lokantası?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "776d0ebf",
+    "slug": "bahar-pide-doner-salonu",
+    "name": "Bahar Pide Döner Salonu",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fulya Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "Şehit Niyazi Sokağı",
+    "lat": 41.0639883,
+    "lng": 28.9937875,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Bahar Pide Döner Salonu is a kebap restaurant in Fulya Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Bahar Pide Döner Salonu serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Bahar Pide Döner Salonu?",
+        "answer": "In Fulya Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Fulya Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "8a700e61",
+    "slug": "mercan-kebap",
+    "name": "Mercan Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fulya Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 228,
+    "address": "",
+    "lat": 41.0636634,
+    "lng": 28.9937749,
+    "phone": "+902122740080",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Mercan Kebap is a kebap restaurant in Fulya Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Mercan Kebap serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Mercan Kebap?",
+        "answer": "In Fulya Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Fulya Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "1ee315af",
+    "slug": "cantinery",
+    "name": "Cantinery",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Levazım Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.1,
+    "reviewCount": 955,
+    "address": "Koru Sokağı",
+    "lat": 41.0662128,
+    "lng": 29.0169299,
+    "phone": "+902123536365",
+    "website": "https://www.cantinery.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Cantinery is a kebap restaurant in Levazım Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Cantinery serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Cantinery?",
+        "answer": "In Levazım Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Levazım Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "59be2ea6",
+    "slug": "balat-pide-lahmacun",
+    "name": "Balat Pide Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Ayvansaray Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "",
+    "lat": 41.0326308,
+    "lng": 28.9459801,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Balat Pide Lahmacun is a kebap restaurant in Ayvansaray Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Balat Pide Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Balat Pide Lahmacun?",
+        "answer": "In Ayvansaray Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Ayvansaray Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "ff4fdc7f",
+    "slug": "hadika-kahvalti-evi",
+    "name": "Hadika Kahvaltı Evi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Meşrutiyet Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 1672,
+    "address": "",
+    "lat": 41.055822,
+    "lng": 28.9898775,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Hadika Kahvaltı Evi is a kebap restaurant in Meşrutiyet Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hadika Kahvaltı Evi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hadika Kahvaltı Evi?",
+        "answer": "In Meşrutiyet Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Meşrutiyet Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "6a552e63",
+    "slug": "tike-restoran",
+    "name": "Tike Restoran",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Akat Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 406,
+    "address": "Tepecik Yolu",
+    "lat": 41.0868123,
+    "lng": 29.0318827,
+    "phone": null,
+    "website": "https://tike.com.tr/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Tike Restoran is a kebap restaurant in Akat Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Tike Restoran serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Tike Restoran?",
+        "answer": "In Akat Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Akat Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "457a6e18",
+    "slug": "mehmet-namli-kebap-durum-lahmacun",
+    "name": "MEHMET NAMLI KEBAP & DÜRÜM & LAHMACUN",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Dikilitaş Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.0,
+    "reviewCount": 371,
+    "address": "",
+    "lat": 41.0588801,
+    "lng": 29.0045788,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "MEHMET NAMLI KEBAP & DÜRÜM & LAHMACUN is a kebap restaurant in Dikilitaş Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does MEHMET NAMLI KEBAP & DÜRÜM & LAHMACUN serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is MEHMET NAMLI KEBAP & DÜRÜM & LAHMACUN?",
+        "answer": "In Dikilitaş Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Dikilitaş Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "cb23a834",
+    "slug": "hisko",
+    "name": "Hisko",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Tomtom",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 730,
+    "address": "",
+    "lat": 41.0279781,
+    "lng": 28.98011,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Hisko is a kebap restaurant in Tomtom, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Hisko serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Hisko?",
+        "answer": "In Tomtom, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Tomtom",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "40c59992",
+    "slug": "ibb-hisarustu-kent-lokantasi",
+    "name": "İBB Hisarüstü Kent Lokantası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rumelihisarı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.6,
+    "reviewCount": 266,
+    "address": "",
+    "lat": 41.085509,
+    "lng": 29.0471957,
+    "phone": null,
+    "website": "https://tesislerimiz.ibb.istanbul/hisarustu-kent-lokantasi/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "İBB Hisarüstü Kent Lokantası is a kebap restaurant in Rumelihisarı Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does İBB Hisarüstü Kent Lokantası serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is İBB Hisarüstü Kent Lokantası?",
+        "answer": "In Rumelihisarı Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Rumelihisarı Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "5a25e7d6",
+    "slug": "baklava-hanem",
+    "name": "Baklava Hanem",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Duatepe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 52,
+    "address": "Ergenekon Caddesi",
+    "lat": 41.0538868,
+    "lng": 28.9822435,
+    "phone": "02122408812",
+    "website": "https://www.baklavahanem.com.tr/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Baklava Hanem is a kebap restaurant in Duatepe Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Baklava Hanem serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Baklava Hanem?",
+        "answer": "In Duatepe Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Duatepe Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "624fa8d3",
+    "slug": "balkon-cafe",
+    "name": "Balkon Cafe",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 775,
+    "address": "Çelebioğlu Sokağı",
+    "lat": 41.043647,
+    "lng": 29.0029112,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Balkon Cafe is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Balkon Cafe serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Balkon Cafe?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "25b2e484",
+    "slug": "besiktas-citir",
+    "name": "Beşiktaş Çıtır",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Türkali Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 1701,
+    "address": "Altıntaş Sokağı",
+    "lat": 41.0446607,
+    "lng": 29.0035045,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Beşiktaş Çıtır is a kebap restaurant in Türkali Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Beşiktaş Çıtır serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Beşiktaş Çıtır?",
+        "answer": "In Türkali Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Türkali Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "51abb0ab",
+    "slug": "durumcu-destan-kebap-durum",
+    "name": "Dürümcü - Destan Kebap & Dürüm",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Ayvansaray Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.0,
+    "reviewCount": 138,
+    "address": "Ayvansaray Kuyusu Sokağı",
+    "lat": 41.0391726,
+    "lng": 28.9432626,
+    "phone": "05013361779",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Dürümcü - Destan Kebap & Dürüm is a kebap restaurant in Ayvansaray Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Dürümcü - Destan Kebap & Dürüm serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Dürümcü - Destan Kebap & Dürüm?",
+        "answer": "In Ayvansaray Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Ayvansaray Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "9f476212",
+    "slug": "pirim-cigkufte",
+    "name": "Pirim Ciğküfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sultantepe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 471,
+    "address": "",
+    "lat": 41.0261988,
+    "lng": 29.0161586,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Pirim Ciğküfte is a kebap restaurant in Sultantepe Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Pirim Ciğküfte serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Pirim Ciğküfte?",
+        "answer": "In Sultantepe Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sultantepe Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "0f9a89eb",
+    "slug": "erol-bufe",
+    "name": "Erol Büfe",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Halil Rıfat Paşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 35,
+    "address": "Yüzer Havuz Sokağı",
+    "lat": 41.0597459,
+    "lng": 28.9688582,
+    "phone": "+90 212 210 01 33",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Erol Büfe is a kebap restaurant in Halil Rıfat Paşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Erol Büfe serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Erol Büfe?",
+        "answer": "In Halil Rıfat Paşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Halil Rıfat Paşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "83217073",
+    "slug": "doner-bank",
+    "name": "Döner Bank",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Halil Rıfat Paşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 1404,
+    "address": "Yüzer Havuz Sokağı",
+    "lat": 41.059295,
+    "lng": 28.9697412,
+    "phone": "+90 212 394 04 81;+90 212 210 96 80",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Döner Bank is a kebap restaurant in Halil Rıfat Paşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Döner Bank serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Döner Bank?",
+        "answer": "In Halil Rıfat Paşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Halil Rıfat Paşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "efa82db6",
+    "slug": "urfam-lahmacun",
+    "name": "Urfam Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rumelihisarı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.8,
+    "reviewCount": 1019,
+    "address": "Cami Sokağı",
+    "lat": 41.0857774,
+    "lng": 29.0465202,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Urfam Lahmacun is a kebap restaurant in Rumelihisarı Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Urfam Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Urfam Lahmacun?",
+        "answer": "In Rumelihisarı Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Rumelihisarı Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "fbaf0756",
+    "slug": "komagene",
+    "name": "Komagene",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Ahmediye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "Doktor Fahri Atabey Caddesi",
+    "lat": 41.0211392,
+    "lng": 29.01693,
+    "phone": "+90 216 344 00 60",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Komagene is a kebap restaurant in Ahmediye Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Komagene serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Komagene?",
+        "answer": "In Ahmediye Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Ahmediye Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "56395677",
+    "slug": "oncu",
+    "name": "Öncü",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.4,
+    "reviewCount": 1214,
+    "address": "",
+    "lat": 41.0437954,
+    "lng": 29.0033856,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Öncü is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Öncü serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Öncü?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "559e4b28",
+    "slug": "white-pepper",
+    "name": "White Pepper",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Vişnezade Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 335,
+    "address": "Dolmabahçe Caddesi",
+    "lat": 41.039074,
+    "lng": 28.9954681,
+    "phone": "+90 212 291 39 90",
+    "website": "https://www.divan.com.tr/restoran/white-pepper",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "White Pepper is a kebap restaurant in Vişnezade Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does White Pepper serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is White Pepper?",
+        "answer": "In Vişnezade Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Vişnezade Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "6de80440",
+    "slug": "karkas-ocakbasi",
+    "name": "Karkas Ocakbaşı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rumelihisarı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 363,
+    "address": "Yahya Kemal Caddesi",
+    "lat": 41.0884275,
+    "lng": 29.0567821,
+    "phone": null,
+    "website": "https://www.karkasocakbasi.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Karkas Ocakbaşı is a kebap restaurant in Rumelihisarı Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Karkas Ocakbaşı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Karkas Ocakbaşı?",
+        "answer": "In Rumelihisarı Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Rumelihisarı Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "5fc54417",
+    "slug": "meshur-bodrum-doner",
+    "name": "Meşhur Bodrum Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Alibeyköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "",
+    "lat": 41.0758612,
+    "lng": 28.9464685,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Meşhur Bodrum Döner is a kebap restaurant in Alibeyköy Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Meşhur Bodrum Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Meşhur Bodrum Döner?",
+        "answer": "In Alibeyköy Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Alibeyköy Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "d5690114",
+    "slug": "elise-pide-lahmacun",
+    "name": "Elise Pide Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Mecidiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.9,
+    "reviewCount": 1129,
+    "address": "Eskibahçe Sokağı",
+    "lat": 41.0491056,
+    "lng": 29.0253102,
+    "phone": "+90 212 260 3644",
+    "website": "https://elisepidelahmacun.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Elise Pide Lahmacun is a kebap restaurant in Mecidiye Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Elise Pide Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Elise Pide Lahmacun?",
+        "answer": "In Mecidiye Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Mecidiye Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "3f903180",
+    "slug": "mercan-kebap-salonu",
+    "name": "Mercan Kebap Salonu",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Vişnezade Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 228,
+    "address": "Şair Nedim Caddesi",
+    "lat": 41.0445975,
+    "lng": 29.0002997,
+    "phone": "+90 212 259 38 99",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Mercan Kebap Salonu is a kebap restaurant in Vişnezade Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Mercan Kebap Salonu serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Mercan Kebap Salonu?",
+        "answer": "In Vişnezade Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Vişnezade Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "6cca4ad8",
+    "slug": "ekizler-gorele-pide",
+    "name": "Ekizler Görele Pide",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Beylerbeyi Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "",
+    "lat": 41.0391813,
+    "lng": 29.0530178,
+    "phone": "+90 216 318 6042",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Ekizler Görele Pide is a kebap restaurant in Beylerbeyi Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Ekizler Görele Pide serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Ekizler Görele Pide?",
+        "answer": "In Beylerbeyi Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Beylerbeyi Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "8482c74a",
+    "slug": "ygt-urfam-ocakbasi",
+    "name": "YGT Urfam Ocakbaşı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Konaklar Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.5,
+    "reviewCount": 1023,
+    "address": "",
+    "lat": 41.0944962,
+    "lng": 29.0155667,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "YGT Urfam Ocakbaşı is a kebap restaurant in Konaklar Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does YGT Urfam Ocakbaşı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is YGT Urfam Ocakbaşı?",
+        "answer": "In Konaklar Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Konaklar Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "9642c3ac",
+    "slug": "ciftlik-doner",
+    "name": "Çiftlik Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 963,
+    "address": "",
+    "lat": 41.0437139,
+    "lng": 29.0043546,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Çiftlik Döner is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Çiftlik Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Çiftlik Döner?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "3d1ad9a2",
+    "slug": "durumcu-sedat-usta-alibeykoy",
+    "name": "Dürümcü Sedat Usta Alibeyköy",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Alibeyköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.8,
+    "reviewCount": 69,
+    "address": "",
+    "lat": 41.0770766,
+    "lng": 28.94922,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Dürümcü Sedat Usta Alibeyköy is a kebap restaurant in Alibeyköy Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Dürümcü Sedat Usta Alibeyköy serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Dürümcü Sedat Usta Alibeyköy?",
+        "answer": "In Alibeyköy Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Alibeyköy Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "3c2b70b4",
+    "slug": "oligark-istanbul",
+    "name": "Oligark İstanbul",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kuruçeşme Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.0,
+    "reviewCount": 2082,
+    "address": "Muallim Naci Caddesi",
+    "lat": 41.0560637,
+    "lng": 29.0353056,
+    "phone": "+90 212 265 65 12",
+    "website": "https://oligarkistanbul.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Oligark İstanbul is a kebap restaurant in Kuruçeşme Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Oligark İstanbul serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Oligark İstanbul?",
+        "answer": "In Kuruçeşme Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Kuruçeşme Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "c1dd8519",
+    "slug": "emirgan-sutis",
+    "name": "Emirgan Sütiş",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Arnavutköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.5,
+    "reviewCount": 1092,
+    "address": "Bebek Arnavutköy Caddesi",
+    "lat": 41.0677931,
+    "lng": 29.0451179,
+    "phone": "+90 212 263 2543",
+    "website": "https://www.sutis.com.tr/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Emirgan Sütiş is a kebap restaurant in Arnavutköy Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Emirgan Sütiş serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Emirgan Sütiş?",
+        "answer": "In Arnavutköy Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Arnavutköy Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "ee0a4b57",
+    "slug": "sarioglu-bufe",
+    "name": "Sarıoglu büfe",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fetihtepe",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.9,
+    "reviewCount": 109,
+    "address": "",
+    "lat": 41.0464452,
+    "lng": 28.9585032,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Sarıoglu büfe is a kebap restaurant in Fetihtepe, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Sarıoglu büfe serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Sarıoglu büfe?",
+        "answer": "In Fetihtepe, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Fetihtepe",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "dba1803f",
+    "slug": "yildiz-teknik-universitesi-hisar-tesisleri",
+    "name": "Yıldız Teknik Üniversitesi Hisar Tesisleri",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Rumelihisarı Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.1,
+    "reviewCount": 2831,
+    "address": "",
+    "lat": 41.0903241,
+    "lng": 29.0541857,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Yıldız Teknik Üniversitesi Hisar Tesisleri is a kebap restaurant in Rumelihisarı Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Yıldız Teknik Üniversitesi Hisar Tesisleri serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Yıldız Teknik Üniversitesi Hisar Tesisleri?",
+        "answer": "In Rumelihisarı Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Rumelihisarı Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "6a32ad3f",
+    "slug": "kasap-doner",
+    "name": "KASAP DÖNER",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": null,
+    "address": "",
+    "lat": 41.0436139,
+    "lng": 29.0041656,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "KASAP DÖNER is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does KASAP DÖNER serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is KASAP DÖNER?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "d40967e3",
+    "slug": "atalay-kebab",
+    "name": "Atalay Kebab",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Türkali Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 193,
+    "address": "",
+    "lat": 41.0451577,
+    "lng": 29.0030998,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Atalay Kebab is a kebap restaurant in Türkali Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Atalay Kebab serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Atalay Kebab?",
+        "answer": "In Türkali Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Türkali Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "cb0a9e14",
+    "slug": "fistik-kebap-ve-lahmacun-salonu",
+    "name": "Fistik Kebap ve Lahmacun Salonu",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Arnavutköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.9,
+    "reviewCount": 4396,
+    "address": "",
+    "lat": 41.0673589,
+    "lng": 29.0433647,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Fistik Kebap ve Lahmacun Salonu is a kebap restaurant in Arnavutköy Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Fistik Kebap ve Lahmacun Salonu serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Fistik Kebap ve Lahmacun Salonu?",
+        "answer": "In Arnavutköy Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Arnavutköy Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "0d7fa54c",
+    "slug": "tarihi-karadeniz-doner",
+    "name": "Tarihi Karadeniz Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 1211,
+    "address": "",
+    "lat": 41.0435835,
+    "lng": 29.0039202,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Tarihi Karadeniz Döner is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Tarihi Karadeniz Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Tarihi Karadeniz Döner?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "fc451cc1",
+    "slug": "fistik-kebap-lahmacun",
+    "name": "Fistik Kebap Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Mecidiye Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.9,
+    "reviewCount": 4396,
+    "address": "",
+    "lat": 41.0486711,
+    "lng": 29.025103,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Fistik Kebap Lahmacun is a kebap restaurant in Mecidiye Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Fistik Kebap Lahmacun serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Fistik Kebap Lahmacun?",
+        "answer": "In Mecidiye Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Mecidiye Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "7a4718fe",
+    "slug": "citir-usta-pideci",
+    "name": "Çıtır Usta Pideci",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Türkali Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "",
+    "lat": 41.0479361,
+    "lng": 29.0023532,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Çıtır Usta Pideci is a kebap restaurant in Türkali Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Çıtır Usta Pideci serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Çıtır Usta Pideci?",
+        "answer": "In Türkali Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Türkali Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "6e8b333e",
+    "slug": "farmet-doner",
+    "name": "Farmet Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bebek Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 60,
+    "address": "Cevdetpaşa Caddesi",
+    "lat": 41.0760203,
+    "lng": 29.0429479,
+    "phone": "+90 212 257 03 03",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Farmet Döner is a kebap restaurant in Bebek Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Farmet Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Farmet Döner?",
+        "answer": "In Bebek Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Bebek Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "a7d94bc1",
+    "slug": "ayla-tantuni",
+    "name": "Ayla tantuni",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.5,
+    "reviewCount": 202,
+    "address": "",
+    "lat": 41.0435628,
+    "lng": 29.0037543,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Ayla tantuni is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Ayla tantuni serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Ayla tantuni?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "461d277f",
+    "slug": "kaburgaci-cabbar-ocakbasi",
+    "name": "Kaburgacı Cabbar Ocakbaşı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kuruçeşme Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.3,
+    "reviewCount": 308,
+    "address": "Muallim Naci Caddesi",
+    "lat": 41.059345,
+    "lng": 29.0360908,
+    "phone": "0532 359 04 53",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Kaburgacı Cabbar Ocakbaşı is a kebap restaurant in Kuruçeşme Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Kaburgacı Cabbar Ocakbaşı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Kaburgacı Cabbar Ocakbaşı?",
+        "answer": "In Kuruçeşme Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Kuruçeşme Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "3b207b9e",
+    "slug": "meydandaki-kofteci",
+    "name": "Meydandaki Köfteci",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 449,
+    "address": "",
+    "lat": 41.0434138,
+    "lng": 29.0061102,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Meydandaki Köfteci is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Meydandaki Köfteci serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Meydandaki Köfteci?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "c15a9a09",
+    "slug": "pita-doner",
+    "name": "Pita Döner",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Cihannüma Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.7,
+    "reviewCount": 2184,
+    "address": "",
+    "lat": 41.0434183,
+    "lng": 29.0067475,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Pita Döner is a kebap restaurant in Cihannüma Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Pita Döner serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Pita Döner?",
+        "answer": "In Cihannüma Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Cihannüma Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "d8532a0e",
+    "slug": "al-lado-est-dogu-karadeniz-pide-sarayi",
+    "name": "Al Lado Está Dogu Karadeniz Pide Sarayi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 655,
+    "address": "Şair Nedim Caddesi",
+    "lat": 41.0444726,
+    "lng": 29.0006836,
+    "phone": "+90 212 236 46 31",
+    "website": "http://www.tacodelreyes.com/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Al Lado Está Dogu Karadeniz Pide Sarayi is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Al Lado Está Dogu Karadeniz Pide Sarayi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Al Lado Está Dogu Karadeniz Pide Sarayi?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "da2f9577",
+    "slug": "donerci-serkan-usta",
+    "name": "Dönerci Serkan Usta",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Etiler Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 3.9,
+    "reviewCount": 1373,
+    "address": "Nisbetiye Caddesi",
+    "lat": 41.0797742,
+    "lng": 29.0325604,
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Dönerci Serkan Usta is a kebap restaurant in Etiler Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Dönerci Serkan Usta serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Dönerci Serkan Usta?",
+        "answer": "In Etiler Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Etiler Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "07c1edd5",
+    "slug": "meshur-besiktas-koftecisi",
+    "name": "Meşhur Beşiktaş Köftecisi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Sinanpaşa Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.4,
+    "reviewCount": 465,
+    "address": "Şair Leyla Sokağı",
+    "lat": 41.0433319,
+    "lng": 29.0045131,
+    "phone": "02122599174",
+    "website": "http://besiktaskoftecisi.com",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Meşhur Beşiktaş Köftecisi is a kebap restaurant in Sinanpaşa Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Meşhur Beşiktaş Köftecisi serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Meşhur Beşiktaş Köftecisi?",
+        "answer": "In Sinanpaşa Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Sinanpaşa Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "b2fa4986",
+    "slug": "oses-cig-kofte",
+    "name": "Oses Çiğ Köfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Gayrettepe Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.2,
+    "reviewCount": 31,
+    "address": "Cemil Aslan Güder Sokağı",
+    "lat": 41.0634853,
+    "lng": 29.0047708,
+    "phone": "+90 212 274 00 24",
+    "website": "https://www.oses.com.tr/",
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Oses Çiğ Köfte is a kebap restaurant in Gayrettepe Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Oses Çiğ Köfte serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Oses Çiğ Köfte?",
+        "answer": "In Gayrettepe Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Gayrettepe Mahallesi",
+      "Beşiktaş district"
+    ]
+  },
+  {
+    "id": "9e9c4261",
+    "slug": "tam-ocakbasi",
+    "name": "Tam Ocakbaşı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Arnavutköy Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 4.1,
+    "reviewCount": 70,
+    "address": "Bebek Arnavutköy Caddesi",
+    "lat": 41.0676352,
+    "lng": 29.0439887,
+    "phone": "+90 539 927 91 07",
+    "website": null,
+    "openingHours": null,
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Beşiktaş",
+      "Turkish Cuisine"
+    ],
+    "sentimentSummary": "A local kebap spot in Beşiktaş.",
+    "llmSummary": "Tam Ocakbaşı is a kebap restaurant in Arnavutköy Mahallesi, Beşiktaş, Istanbul.",
+    "faq": [
+      {
+        "question": "What does Tam Ocakbaşı serve?",
+        "answer": "Kebap and Turkish grilled dishes."
+      },
+      {
+        "question": "Where is Tam Ocakbaşı?",
+        "answer": "In Arnavutköy Mahallesi, Beşiktaş, Istanbul."
+      },
+      {
+        "question": "Do they take reservations?",
+        "answer": "Contact the restaurant directly."
+      }
+    ],
+    "lastUpdated": "2026-04-26",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {},
+    "highlights": [
+      "Kebap in Arnavutköy Mahallesi",
+      "Beşiktaş district"
+    ]
   }
 ]
