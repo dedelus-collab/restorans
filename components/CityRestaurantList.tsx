@@ -40,10 +40,10 @@ export function CityRestaurantList({ city, list, topDistricts }: Props) {
         <div className="mb-6 flex flex-wrap gap-2">
           <button
             onClick={() => setActive(null)}
-            className={`text-sm px-3 py-1.5 rounded-full transition-colors ${
+            className={`text-sm px-3 py-1.5 rounded-full border transition-colors ${
               active === null
-                ? "bg-gray-900 text-white"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                ? "bg-blue-600 border-blue-600 text-white shadow-sm"
+                : "bg-blue-50 border-blue-100 text-blue-700 hover:bg-blue-100"
             }`}
           >
             All ({list.length})
@@ -52,13 +52,13 @@ export function CityRestaurantList({ city, list, topDistricts }: Props) {
             <button
               key={name}
               onClick={() => setActive(active === name ? null : name)}
-              className={`text-sm px-3 py-1.5 rounded-full transition-colors ${
+              className={`text-sm px-3 py-1.5 rounded-full border transition-colors ${
                 active === name
-                  ? "bg-gray-900 text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  ? "bg-blue-600 border-blue-600 text-white shadow-sm"
+                  : "bg-blue-50 border-blue-100 text-blue-700 hover:bg-blue-100"
               }`}
             >
-              {name} <span className={active === name ? "text-gray-300" : "text-gray-400"}>({count})</span>
+              {name} <span className={active === name ? "text-blue-200" : "text-blue-400"}>({count})</span>
             </button>
           ))}
         </div>

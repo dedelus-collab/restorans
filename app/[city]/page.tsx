@@ -56,9 +56,7 @@ export default async function CityPage({ params }: Props) {
     ...r,
     district: getDistrictForRestaurant(r),
   }));
-  const topDistricts: [string, number][] = districts
-    .slice(0, 15)
-    .map(d => [d.name, d.count]);
+  const topDistricts: [string, number][] = districts.map(d => [d.name, d.count]);
 
   const totalReviews = restaurants.reduce((s, r) => s + (r.reviewCount || 0), 0);
   const avgRating = (
@@ -125,38 +123,48 @@ export default async function CityPage({ params }: Props) {
     ],
   };
 
+  const statCards = [
+    { value: restaurants.length.toString(), label: "Restaurants", bg: "bg-blue-50 border-blue-100", val: "text-blue-700" },
+    { value: avgRating + "/5",              label: "Avg. rating",  bg: "bg-amber-50 border-amber-100", val: "text-amber-700" },
+    { value: (totalReviews / 1000).toFixed(0) + "K", label: "Total reviews", bg: "bg-violet-50 border-violet-100", val: "text-violet-700" },
+    { value: districts.length.toString(),   label: "Districts",   bg: "bg-emerald-50 border-emerald-100", val: "text-emerald-700" },
+  ];
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetJsonLd) }} />
 
-      <main className="max-w-4xl mx-auto px-6 py-16">
+      <main className="max-w-4xl mx-auto px-6 py-12">
 
         {/* Breadcrumb */}
-        <nav className="text-xs text-gray-400 mb-6">
-          <Link href="/" className="hover:underline">restorans</Link>
-          <span className="mx-2">/</span>
-          <span className="text-gray-700">{cityName}</span>
+        <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
+          <Link href="/" className="hover:text-gray-600 transition-colors">restorans</Link>
+          <span>/</span>
+          <span className="text-gray-700 font-medium">{cityName}</span>
         </nav>
 
-        {/* Header */}
-        <header className="mb-12">
-          <h1 className="text-3xl font-bold mb-3">{cityName} Restaurants</h1>
-          <p className="text-gray-600 mb-6 leading-relaxed">
-            Structured data for <strong className="text-gray-900">{restaurants.length} restaurants</strong> in {cityName}{" "}
-            — each profile includes FAQ, transit distances, nearby landmarks, and popular dishes.
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-gray-100 pt-6">
-            {[
-              { value: restaurants.length.toString(), label: "Restaurants" },
-              { value: avgRating + "/5", label: "Avg. rating" },
-              { value: (totalReviews / 1000).toFixed(0) + "K", label: "Total reviews" },
-              { value: districts.length.toString(), label: "Districts" },
-            ].map(stat => (
-              <div key={stat.label} className="text-center">
-                <div className="text-xl font-bold text-gray-900">{stat.value}</div>
-                <div className="text-xs text-gray-400 mt-0.5">{stat.label}</div>
+        {/* Hero card */}
+        <header className="mb-10 rounded-2xl bg-gradient-to-br from-slate-50 via-white to-blue-50/60 border border-slate-200/80 px-8 py-8 shadow-sm">
+          <div className="flex items-start justify-between gap-4 mb-4">
+            <div>
+              <div className="inline-flex items-center gap-1.5 text-xs font-medium text-blue-600 bg-blue-50 border border-blue-100 rounded-full px-3 py-1 mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block" />
+                AI-Native · Schema.org compliant
+              </div>
+              <h1 className="text-3xl font-bold text-gray-900 mb-2">{cityName} Restaurants</h1>
+              <p className="text-gray-500 leading-relaxed max-w-xl">
+                Structured data for <strong className="text-gray-800">{restaurants.length} restaurants</strong> —
+                each profile includes FAQ, transit distances, nearby landmarks, and popular dishes.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6">
+            {statCards.map(s => (
+              <div key={s.label} className={`rounded-xl border ${s.bg} px-4 py-3 text-center`}>
+                <div className={`text-2xl font-bold ${s.val}`}>{s.value}</div>
+                <div className="text-xs text-gray-500 mt-0.5">{s.label}</div>
               </div>
             ))}
           </div>
@@ -164,9 +172,9 @@ export default async function CityPage({ params }: Props) {
 
         {/* Scenario collections */}
         {scenarioCollections.length > 0 && (
-          <section className="mb-12">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
-              <AniHead variant="star" className="w-7 h-7 shrink-0" />
+          <section className="mb-10">
+            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4 flex items-center gap-2">
+              <span className="w-0.5 h-3.5 bg-rose-400 rounded-full inline-block" />
               What Are You Looking For?
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
@@ -185,7 +193,7 @@ export default async function CityPage({ params }: Props) {
                   <Link
                     key={c.slug}
                     href={`/${city}/liste/${c.slug}`}
-                    className="border border-gray-200 rounded-xl px-3 py-4 hover:border-gray-300 hover:shadow-md transition-all group flex flex-col items-center text-center"
+                    className="border border-gray-200 bg-white rounded-xl px-3 py-4 hover:border-rose-200 hover:bg-rose-50/40 hover:shadow-md transition-all group flex flex-col items-center text-center"
                   >
                     <AniChibi variant={variant} className="w-20 h-auto mb-2 group-hover:scale-105 transition-transform duration-200" />
                     <div className="font-medium text-sm text-gray-900 leading-tight">{c.title.replace(`${cityName}&apos;da `, "").replace(`${cityName}'da `, "").split(" ").slice(0, 4).join(" ")}</div>
@@ -199,9 +207,9 @@ export default async function CityPage({ params }: Props) {
 
         {/* Cuisine collections */}
         {cuisineCollections.length > 0 && (
-          <section className="mb-12">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
-              <AniHead variant="foodie" className="w-7 h-7 shrink-0" />
+          <section className="mb-10">
+            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4 flex items-center gap-2">
+              <span className="w-0.5 h-3.5 bg-orange-400 rounded-full inline-block" />
               By Cuisine
             </h2>
             <div className="flex flex-wrap gap-2">
@@ -211,10 +219,10 @@ export default async function CityPage({ params }: Props) {
                   <Link
                     key={c.slug}
                     href={`/${city}/liste/${c.slug}`}
-                    className="text-sm border border-gray-200 hover:border-gray-400 text-gray-700 px-4 py-2 rounded-full transition-colors"
+                    className="text-sm bg-orange-50 border border-orange-100 hover:border-orange-300 hover:bg-orange-100/60 text-orange-800 px-4 py-1.5 rounded-full transition-colors"
                   >
                     {cuisines.find(cu => c.slug.startsWith(cu.slug))?.name ?? c.title.split(" ").pop()}
-                    <span className="text-gray-400 ml-1.5">({count})</span>
+                    <span className="text-orange-400 ml-1.5">({count})</span>
                   </Link>
                 );
               })}
@@ -224,9 +232,9 @@ export default async function CityPage({ params }: Props) {
 
         {/* Vibe collections */}
         {vibeCollections.length > 0 && (
-          <section className="mb-12">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
-              <AniHead variant="explorer" className="w-7 h-7 shrink-0" />
+          <section className="mb-10">
+            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4 flex items-center gap-2">
+              <span className="w-0.5 h-3.5 bg-violet-400 rounded-full inline-block" />
               Ambiance & Vibe
             </h2>
             <div className="flex flex-wrap gap-2">
@@ -244,11 +252,11 @@ export default async function CityPage({ params }: Props) {
                   <Link
                     key={c.slug}
                     href={`/${city}/liste/${c.slug}`}
-                    className="text-sm bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-700 px-3 py-1.5 rounded-lg transition-colors flex items-center gap-1.5"
+                    className="text-sm bg-violet-50 hover:bg-violet-100/60 border border-violet-100 hover:border-violet-300 text-violet-800 px-3 py-1.5 rounded-lg transition-colors flex items-center gap-1.5"
                   >
                     <AniHead variant={variant} className="w-5 h-5 shrink-0" />
                     {c.title.replace(`${cityName}&apos;da `, "").replace(`${cityName}'da `, "").split(" ").slice(0, 3).join(" ")}
-                    <span className="text-gray-400 ml-1.5">({count})</span>
+                    <span className="text-violet-400 ml-1.5">({count})</span>
                   </Link>
                 );
               })}
@@ -256,46 +264,23 @@ export default async function CityPage({ params }: Props) {
           </section>
         )}
 
-        {/* By District */}
-        {districts.length > 1 && (
-          <section className="mb-12">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
-              <AniHead variant="reviewer" className="w-7 h-7 shrink-0" />
-              By District
-            </h2>
-            <div className="flex flex-wrap gap-2">
-              {districts.filter(d => d.count >= 2).map(d => (
-                <Link
-                  key={d.slug}
-                  href={`/${city}/ilce/${d.slug}`}
-                  className="text-sm bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-700 px-3 py-1 rounded transition-colors"
-                >
-                  {d.name} <span className="text-gray-400">({d.count})</span>
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
-
         {/* All restaurants */}
-        <section>
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
-            <AniHead variant="chef" className="w-7 h-7 shrink-0" />
+        <section className="rounded-2xl border border-slate-200/80 bg-white shadow-sm px-6 py-6">
+          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-5 flex items-center gap-2">
+            <span className="w-0.5 h-3.5 bg-blue-400 rounded-full inline-block" />
             All Restaurants
           </h2>
           <CityRestaurantList city={city} list={listWithDistrict} topDistricts={topDistricts} />
         </section>
 
         {/* Footer */}
-        <footer className="mt-16 pt-8 border-t border-gray-100 text-xs text-gray-400 space-y-1">
-          <p>Last updated: <strong className="text-gray-600">{lastUpdated}</strong></p>
-          <p>
+        <footer className="mt-10 pt-6 border-t border-gray-100 text-xs text-gray-400 flex items-center justify-between flex-wrap gap-2">
+          <span>Last updated: <strong className="text-gray-600">{lastUpdated}</strong></span>
+          <span className="flex gap-3">
             <a href={`/api/restaurants?city=${city}`} className="text-blue-500 hover:underline">JSON API</a>
-            {" · "}
             <a href="/sitemap.xml" className="text-blue-500 hover:underline">sitemap.xml</a>
-            {" · "}
             <a href="/llms.txt" className="text-blue-500 hover:underline">llms.txt</a>
-          </p>
+          </span>
         </footer>
       </main>
     </>
