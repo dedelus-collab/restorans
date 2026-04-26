@@ -140,7 +140,7 @@ export const COLLECTIONS: Collection[] = [
     category: "scenario",
     related: ["manzarali-istanbul", "bogaz-manzarali-istanbul", "fine-dining-istanbul", "balik-deniz-urunleri-istanbul", "teras-istanbul"],
     filter: r =>
-      r.tags.some(t => /romantik/i.test(t)) ||
+      r.tags.some(t => /romantik|romantic/i.test(t)) ||
       !!r.features?.romantic,
   },
   {
@@ -170,7 +170,7 @@ export const COLLECTIONS: Collection[] = [
     category: "scenario",
     related: ["meyhane-istanbul", "burger-steak-istanbul", "romantik-aksam-yemegi-istanbul"],
     filter: r =>
-      r.tags.some(t => /gece|geç saate/i.test(t)),
+      r.tags.some(t => /gece|geç saate|late.?night/i.test(t)),
   },
   {
     slug: "aile-dostu-istanbul",
@@ -179,7 +179,7 @@ export const COLLECTIONS: Collection[] = [
     category: "scenario",
     related: ["kahvalti-istanbul", "uygun-fiyatli-istanbul", "teras-istanbul", "kebap-istanbul"],
     filter: r =>
-      r.tags.some(t => /aile/i.test(t)),
+      r.tags.some(t => /aile|family/i.test(t)),
   },
   {
     slug: "vejetaryen-vegan-istanbul",
