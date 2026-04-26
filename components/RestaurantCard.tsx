@@ -78,7 +78,7 @@ export function RestaurantCard({
         {/* Content */}
         <div className="p-4">
           <h3 className="font-bold text-gray-900 text-base mb-1 line-clamp-1 group-hover:text-blue-600 transition-colors">{name}</h3>
-          <p className="text-xs text-gray-500 mb-2">{location} · {cuisine} · <span className="text-gray-700 font-medium">{getPriceSymbol(priceRange)}</span></p>
+          <p className="text-xs text-gray-600 mb-2">{location} · {cuisine} · <span className="text-gray-800 font-semibold">{getPriceSymbol(priceRange)}</span></p>
           {avgRating != null && (
             <div className="flex items-center gap-1.5 mb-2">
               <Stars rating={avgRating} />
@@ -87,7 +87,7 @@ export function RestaurantCard({
             </div>
           )}
           {llmSummary && (
-            <p className="text-xs text-gray-500 line-clamp-2 leading-relaxed">{llmSummary}</p>
+            <p className="text-xs text-gray-600 line-clamp-2 leading-relaxed">{llmSummary}</p>
           )}
         </div>
       </Link>
@@ -114,20 +114,20 @@ export function RestaurantCard({
           {avgRating != null && (
             <div className="shrink-0 text-right">
               <div className="text-sm font-bold text-gray-900">{avgRating}</div>
-              <div className="text-xs text-gray-400">{reviewCount != null ? (reviewCount >= 1000 ? (reviewCount/1000).toFixed(1)+"K" : reviewCount) : ""}</div>
+              <div className="text-xs text-gray-500">{reviewCount != null ? (reviewCount >= 1000 ? (reviewCount/1000).toFixed(1)+"K" : reviewCount) : ""}</div>
             </div>
           )}
         </div>
-        <p className="text-xs text-gray-500 mt-0.5">{location} · {cuisine} · <span className="font-medium text-gray-700">{getPriceSymbol(priceRange)}</span></p>
+        <p className="text-xs text-gray-600 mt-0.5">{location} · {cuisine} · <span className="font-semibold text-gray-800">{getPriceSymbol(priceRange)}</span></p>
         {avgRating != null && (
           <div className="mt-0.5">
             <Stars rating={avgRating} />
           </div>
         )}
         {popularDishes.length > 0 ? (
-          <p className="text-xs text-gray-400 mt-1 line-clamp-1">{popularDishes.slice(0, 3).join(" · ")}</p>
+          <p className="text-xs text-gray-500 mt-1 line-clamp-1">{popularDishes.slice(0, 3).join(" · ")}</p>
         ) : llmSummary ? (
-          <p className="text-xs text-gray-500 mt-1 line-clamp-1">{llmSummary}</p>
+          <p className="text-xs text-gray-600 mt-1 line-clamp-1">{llmSummary}</p>
         ) : null}
       </div>
     </Link>

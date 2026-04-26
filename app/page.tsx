@@ -133,10 +133,10 @@ export default function HomePage() {
                 <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight tracking-tight">
                   Where to Eat<br className="hidden sm:block" /> in Istanbul?
                 </h1>
-                <p className="text-base text-gray-500 leading-relaxed max-w-xl mb-0">
-                  Curated restaurant data with <span className="text-gray-800 font-medium">popular dishes</span>,{" "}
-                  <span className="text-gray-800 font-medium">transit distances</span>, and{" "}
-                  <span className="text-gray-800 font-medium">AI-ready summaries</span>.
+                <p className="text-base text-gray-600 leading-relaxed max-w-xl mb-0">
+                  Curated restaurant data with <span className="text-gray-900 font-semibold">popular dishes</span>,{" "}
+                  <span className="text-gray-900 font-semibold">transit distances</span>, and{" "}
+                  <span className="text-gray-900 font-semibold">AI-ready summaries</span>.
                   Structured for ChatGPT, Perplexity, and beyond.
                 </p>
               </div>
@@ -154,7 +154,7 @@ export default function HomePage() {
               <div key={stat.label} className={`${stat.bg} border rounded-xl px-4 py-4`}>
                 <div className="text-lg mb-0.5">{stat.icon}</div>
                 <div className="text-xl font-bold text-gray-900 leading-tight">{stat.value}</div>
-                <div className="text-xs text-gray-500 mt-0.5">{stat.label}</div>
+                <div className="text-xs font-medium text-gray-600 mt-0.5">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -162,8 +162,8 @@ export default function HomePage() {
 
         {/* Search */}
         <section className="mb-14">
-          <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2 mb-3">
-            <span className="w-0.5 h-4 bg-blue-400 rounded-full inline-block"></span>
+          <h2 className="text-base font-bold text-gray-900 flex items-center gap-2 mb-3">
+            <span className="w-0.5 h-4 bg-blue-500 rounded-full inline-block"></span>
             Find the perfect place to eat
           </h2>
 
@@ -184,8 +184,8 @@ export default function HomePage() {
                   {c.emoji}
                 </div>
                 <div className="min-w-0">
-                  <div className="font-semibold text-sm text-gray-900 leading-tight">{c.label}</div>
-                  <div className="text-xs text-gray-500 mt-0.5 truncate">{c.desc}</div>
+                  <div className="font-bold text-sm text-gray-900 leading-tight">{c.label}</div>
+                  <div className="text-xs text-gray-600 mt-0.5 truncate">{c.desc}</div>
                 </div>
               </Link>
             ))}
@@ -195,11 +195,11 @@ export default function HomePage() {
         {/* Top Rated */}
         <section className="mb-14">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2">
-              <span className="w-0.5 h-4 bg-amber-400 rounded-full inline-block"></span>
+            <h2 className="text-base font-bold text-gray-900 flex items-center gap-2">
+              <span className="w-0.5 h-4 bg-amber-500 rounded-full inline-block"></span>
               Top Rated Restaurants
             </h2>
-            <Link href="/istanbul" className="text-xs text-blue-500 hover:underline font-medium">View all →</Link>
+            <Link href="/istanbul" className="text-xs text-blue-600 hover:underline font-semibold">View all →</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {topRated.map((r, i) => (
@@ -238,21 +238,21 @@ export default function HomePage() {
         <section className="mb-14 grid sm:grid-cols-2 gap-8">
           <div>
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2">
-                <span className="w-0.5 h-4 bg-indigo-400 rounded-full inline-block"></span>
+              <h2 className="text-base font-bold text-gray-900 flex items-center gap-2">
+                <span className="w-0.5 h-4 bg-indigo-500 rounded-full inline-block"></span>
                 By District
               </h2>
-              <Link href="/istanbul" className="text-xs text-blue-500 hover:underline font-medium">All →</Link>
+              <Link href="/istanbul" className="text-xs text-blue-600 hover:underline font-semibold">All →</Link>
             </div>
             <div className="flex flex-col gap-1.5">
               {districts.slice(0, 8).map(d => (
                 <Link
                   key={d.slug}
                   href={`/istanbul/ilce/${d.slug}`}
-                  className="flex items-center justify-between text-sm bg-white hover:bg-gray-50 border border-gray-200 hover:border-gray-300 text-gray-700 px-3.5 py-2.5 rounded-lg transition-colors group"
+                  className="flex items-center justify-between text-sm bg-white hover:bg-gray-50 border border-gray-200 hover:border-gray-300 text-gray-800 px-3.5 py-2.5 rounded-lg transition-colors group"
                 >
-                  <span className="font-medium group-hover:text-gray-900">{d.name}</span>
-                  <span className="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">{d.count}</span>
+                  <span className="font-semibold group-hover:text-gray-900">{d.name}</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 font-medium px-2 py-0.5 rounded-full">{d.count}</span>
                 </Link>
               ))}
             </div>
@@ -260,8 +260,8 @@ export default function HomePage() {
 
           <div>
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2">
-                <span className="w-0.5 h-4 bg-rose-400 rounded-full inline-block"></span>
+              <h2 className="text-base font-bold text-gray-900 flex items-center gap-2">
+                <span className="w-0.5 h-4 bg-rose-500 rounded-full inline-block"></span>
                 By Cuisine
               </h2>
             </div>
@@ -270,10 +270,10 @@ export default function HomePage() {
                 <Link
                   key={c.slug}
                   href={`/istanbul/liste/${c.slug}-istanbul`}
-                  className="text-sm bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-700 px-3.5 py-1.5 rounded-full transition-colors"
+                  className="text-sm bg-white border border-gray-200 hover:border-gray-400 hover:bg-gray-50 text-gray-800 font-medium px-3.5 py-1.5 rounded-full transition-colors"
                 >
                   {c.name}
-                  <span className="text-gray-400 ml-1.5 text-xs">({c.count})</span>
+                  <span className="text-gray-500 ml-1.5 text-xs">({c.count})</span>
                 </Link>
               ))}
             </div>
@@ -283,8 +283,8 @@ export default function HomePage() {
 
         {/* Recently Added */}
         <section className="mb-14">
-          <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2 mb-4">
-            <span className="w-0.5 h-4 bg-green-400 rounded-full inline-block"></span>
+          <h2 className="text-base font-bold text-gray-900 flex items-center gap-2 mb-4">
+            <span className="w-0.5 h-4 bg-green-500 rounded-full inline-block"></span>
             Recently Added
           </h2>
           <div className="flex flex-col gap-2">
@@ -295,17 +295,17 @@ export default function HomePage() {
                 className="flex items-center justify-between px-4 py-3 border border-gray-200 rounded-xl hover:border-gray-300 hover:bg-gray-50 transition-all group"
               >
                 <div className="flex items-center gap-3 min-w-0">
-                  <span className="w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-green-500 shrink-0" />
                   <div className="min-w-0">
-                    <span className="text-sm font-medium text-gray-900 group-hover:text-blue-600 transition-colors">{r.name}</span>
-                    <span className="text-xs text-gray-400 ml-2">{r.cuisine} · {r.neighborhood}</span>
+                    <span className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">{r.name}</span>
+                    <span className="text-xs text-gray-500 ml-2">{r.cuisine} · {r.neighborhood}</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 shrink-0 ml-4">
                   {r.avgRating != null && (
-                    <span className="text-xs font-semibold text-gray-600">★ {r.avgRating}</span>
+                    <span className="text-xs font-bold text-gray-700">★ {r.avgRating}</span>
                   )}
-                  <span className="text-xs text-gray-400">
+                  <span className="text-xs text-gray-500">
                     {r.lastUpdated ? new Date(r.lastUpdated).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : ""}
                   </span>
                 </div>
@@ -316,8 +316,8 @@ export default function HomePage() {
 
         {/* Travel Tips */}
         <section className="mb-14">
-          <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2 mb-4">
-            <span className="w-0.5 h-4 bg-violet-400 rounded-full inline-block"></span>
+          <h2 className="text-base font-bold text-gray-900 flex items-center gap-2 mb-4">
+            <span className="w-0.5 h-4 bg-violet-500 rounded-full inline-block"></span>
             Dining in Istanbul — Tips
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -331,8 +331,8 @@ export default function HomePage() {
                 <div className="flex items-start gap-3">
                   <span className="text-xl shrink-0">{tip.icon}</span>
                   <div>
-                    <h3 className="font-semibold text-sm text-gray-900 mb-1">{tip.title}</h3>
-                    <p className="text-sm text-gray-500 leading-relaxed">{tip.body}</p>
+                    <h3 className="font-bold text-sm text-gray-900 mb-1">{tip.title}</h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">{tip.body}</p>
                   </div>
                 </div>
               </div>
@@ -374,7 +374,7 @@ export default function HomePage() {
         {/* API Docs + JSON Preview */}
         <section className="border border-gray-200 rounded-xl p-6 mb-14">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="font-semibold text-gray-900">API — Live Data Preview</h2>
+            <h2 className="font-bold text-gray-900">API — Live Data Preview</h2>
             <a
               href="https://restaurantsistanbul.vercel.app/api/openapi.json"
               target="_blank"
@@ -384,7 +384,7 @@ export default function HomePage() {
               OpenAPI Spec →
             </a>
           </div>
-          <pre className="bg-gray-50 border border-gray-100 rounded-lg p-4 text-xs text-gray-600 overflow-x-auto leading-relaxed">
+          <pre className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs text-gray-700 overflow-x-auto leading-relaxed">
 {`GET /api/restaurants?city=istanbul&maxPrice=2&minRating=4.5
 
 {
@@ -411,8 +411,8 @@ export default function HomePage() {
 
         {/* What's in each profile */}
         <section className="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-14">
-          <h2 className="font-semibold text-gray-900 mb-4">What&apos;s in Each Restaurant Profile</h2>
-          <ul className="grid sm:grid-cols-2 gap-2 text-sm text-gray-600">
+          <h2 className="font-bold text-gray-900 mb-4">What&apos;s in Each Restaurant Profile</h2>
+          <ul className="grid sm:grid-cols-2 gap-2 text-sm text-gray-700">
             {[
               ["llm_summary", "2-3 sentence summary directly usable by LLMs"],
               ["faq", "10–12 frequently asked questions (transit, reservations, menu...)"],
@@ -424,12 +424,12 @@ export default function HomePage() {
               ["Schema.org/Restaurant", "Machine-readable structured data"],
             ].map(([key, desc]) => (
               <li key={key} className="flex gap-2">
-                <span className="text-gray-400 font-mono text-xs mt-0.5 shrink-0">{key}</span>
-                <span className="text-gray-500">{desc}</span>
+                <span className="text-gray-500 font-mono text-xs mt-0.5 shrink-0">{key}</span>
+                <span className="text-gray-700">{desc}</span>
               </li>
             ))}
           </ul>
-          <div className="mt-4 pt-4 border-t border-gray-200 flex gap-4 text-xs text-gray-400">
+          <div className="mt-4 pt-4 border-t border-gray-200 flex gap-4 text-xs text-gray-500">
             <Link href="/api/restaurants?city=istanbul" className="text-blue-500 hover:underline">JSON API</Link>
             <Link href="/llms.txt" className="text-blue-500 hover:underline">llms.txt</Link>
             <Link href="/sitemap.xml" className="text-blue-500 hover:underline">sitemap.xml</Link>
@@ -445,7 +445,7 @@ export default function HomePage() {
             Browse All {istanbulRestaurants.length.toLocaleString()} Restaurants
             <span className="text-gray-400">→</span>
           </Link>
-          <p className="text-xs text-gray-400 mt-3">Updated daily · Free to browse · API available</p>
+          <p className="text-xs text-gray-500 mt-3 font-medium">Updated daily · Free to browse · API available</p>
         </div>
 
       </main>
