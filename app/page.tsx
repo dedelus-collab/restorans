@@ -24,14 +24,14 @@ export const metadata: Metadata = {
 };
 
 const FEATURED_COLLECTIONS = [
-  { slug: "romantik-aksam-yemegi-istanbul", label: "Romantic", kawaii: "romantic" as const, desc: "For special evenings" },
-  { slug: "balik-deniz-urunleri-istanbul", label: "Fish", kawaii: "fish" as const, desc: "Fresh Bosphorus fish" },
-  { slug: "kebap-istanbul", label: "Kebap", kawaii: "kebap" as const, desc: "Adana to İskender" },
-  { slug: "manzarali-istanbul", label: "Scenic", kawaii: "scenic" as const, desc: "Bosphorus & skyline views" },
-  { slug: "is-yemegi-istanbul", label: "Business", kawaii: "business" as const, desc: "Quiet & efficient" },
-  { slug: "gec-acik-istanbul", label: "Late Night", kawaii: "night" as const, desc: "Open until late" },
-  { slug: "kahvalti-istanbul", label: "Breakfast", kawaii: "breakfast" as const, desc: "Serpme & brunch" },
-  { slug: "fine-dining-istanbul", label: "Fine Dining", kawaii: "finedining" as const, desc: "Prestigious venues" },
+  { slug: "romantik-aksam-yemegi-istanbul", label: "Romantic",    kawaii: "romantic"   as const, desc: "For special evenings",        color: "bg-rose-50 border-rose-100 group-hover:bg-rose-50/80 group-hover:border-rose-200",    iconBg: "bg-rose-100/70" },
+  { slug: "balik-deniz-urunleri-istanbul",  label: "Fish",        kawaii: "fish"        as const, desc: "Fresh Bosphorus fish",         color: "bg-cyan-50 border-cyan-100 group-hover:bg-cyan-50/80 group-hover:border-cyan-200",     iconBg: "bg-cyan-100/70" },
+  { slug: "kebap-istanbul",                 label: "Kebap",       kawaii: "kebap"       as const, desc: "Adana to İskender",            color: "bg-orange-50 border-orange-100 group-hover:bg-orange-50/80 group-hover:border-orange-200", iconBg: "bg-orange-100/70" },
+  { slug: "manzarali-istanbul",             label: "Scenic",      kawaii: "scenic"      as const, desc: "Bosphorus & skyline views",    color: "bg-sky-50 border-sky-100 group-hover:bg-sky-50/80 group-hover:border-sky-200",        iconBg: "bg-sky-100/70" },
+  { slug: "is-yemegi-istanbul",             label: "Business",    kawaii: "business"    as const, desc: "Quiet & efficient",            color: "bg-slate-50 border-slate-200 group-hover:bg-slate-100/60 group-hover:border-slate-300", iconBg: "bg-slate-200/60" },
+  { slug: "gec-acik-istanbul",              label: "Late Night",  kawaii: "night"       as const, desc: "Open until late",              color: "bg-indigo-50 border-indigo-100 group-hover:bg-indigo-50/80 group-hover:border-indigo-200", iconBg: "bg-indigo-100/70" },
+  { slug: "kahvalti-istanbul",              label: "Breakfast",   kawaii: "breakfast"   as const, desc: "Serpme & brunch",              color: "bg-yellow-50 border-yellow-100 group-hover:bg-yellow-50/80 group-hover:border-yellow-200", iconBg: "bg-yellow-100/70" },
+  { slug: "fine-dining-istanbul",           label: "Fine Dining", kawaii: "finedining"  as const, desc: "Prestigious venues",           color: "bg-purple-50 border-purple-100 group-hover:bg-purple-50/80 group-hover:border-purple-200", iconBg: "bg-purple-100/70" },
 ];
 
 export default function HomePage() {
@@ -148,15 +148,15 @@ export default function HomePage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[
-              { value: istanbulRestaurants.length.toLocaleString(), label: "Restaurants", icon: "🍽️" },
-              { value: avgRating + " / 5", label: "Avg. rating", icon: "★" },
-              { value: (totalReviews / 1000).toFixed(0) + "K+", label: "Total reviews", icon: "💬" },
-              { value: districts.length + "+ areas", label: "Districts covered", icon: "📍" },
+              { value: istanbulRestaurants.length.toLocaleString(), label: "Restaurants", icon: "🍽️", bg: "bg-blue-50 border-blue-100" },
+              { value: avgRating + " / 5",                          label: "Avg. rating",       icon: "★",  bg: "bg-amber-50 border-amber-100" },
+              { value: (totalReviews / 1000).toFixed(0) + "K+",     label: "Total reviews",     icon: "💬", bg: "bg-violet-50 border-violet-100" },
+              { value: districts.length + "+ areas",                 label: "Districts covered", icon: "📍", bg: "bg-emerald-50 border-emerald-100" },
             ].map(stat => (
-              <div key={stat.label} className="bg-white border border-gray-200 rounded-xl px-4 py-4 shadow-sm">
+              <div key={stat.label} className={`${stat.bg} border rounded-xl px-4 py-4`}>
                 <div className="text-lg mb-0.5">{stat.icon}</div>
                 <div className="text-xl font-bold text-gray-900 leading-tight">{stat.value}</div>
-                <div className="text-xs text-gray-400 mt-0.5">{stat.label}</div>
+                <div className="text-xs text-gray-500 mt-0.5">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -186,14 +186,14 @@ export default function HomePage() {
               <Link
                 key={c.slug}
                 href={`/istanbul/liste/${c.slug}`}
-                className="group relative border border-gray-200 bg-white rounded-xl p-3.5 hover:border-blue-200 hover:shadow-md hover:bg-blue-50/30 transition-all flex gap-3 items-center"
+                className={`group relative border rounded-xl p-3.5 hover:shadow-md transition-all flex gap-3 items-center ${c.color}`}
               >
-                <div className="w-10 h-10 rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center shrink-0 group-hover:border-blue-100 group-hover:bg-white transition-colors">
+                <div className={`w-10 h-10 rounded-lg flex items-center justify-center shrink-0 transition-colors ${c.iconBg}`}>
                   <KawaiiIcon variant={c.kawaii} className="w-8 h-8 group-hover:scale-110 transition-transform duration-200" />
                 </div>
                 <div className="min-w-0">
                   <div className="font-semibold text-sm text-gray-900 leading-tight">{c.label}</div>
-                  <div className="text-xs text-gray-400 mt-0.5 truncate">{c.desc}</div>
+                  <div className="text-xs text-gray-500 mt-0.5 truncate">{c.desc}</div>
                 </div>
               </Link>
             ))}
