@@ -54,37 +54,33 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" style={{ colorScheme: "light" }}>
       <body className="bg-white text-gray-900 antialiased">
-        <nav className="border-b border-gray-100 bg-white sticky top-0 z-10">
-          <div className="max-w-4xl mx-auto px-6 h-12 flex items-center justify-between">
-            <Link href="/" className="font-bold text-gray-900 tracking-tight">
-              Istanbul Restaurants
+        <nav className="border-b border-gray-100 bg-white/90 backdrop-blur-sm sticky top-0 z-10">
+          <div className="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
+            <Link href="/" className="flex items-center gap-2 font-bold text-gray-900 tracking-tight">
+              <span className="w-6 h-6 rounded-lg bg-gray-900 flex items-center justify-center text-white text-xs font-black">R</span>
+              <span>Istanbul Restaurants</span>
             </Link>
-            <div className="flex items-center gap-5 text-sm text-gray-500">
-              <Link href="/istanbul" className="hover:text-gray-900 transition-colors">
-                Istanbul
+            <div className="flex items-center gap-1 text-sm text-gray-500">
+              <Link href="/istanbul" className="hover:text-gray-900 hover:bg-gray-50 px-3 py-1.5 rounded-lg transition-colors">
+                Browse
               </Link>
-              <Link href="/istanbul/liste/romantik-aksam-yemegi-istanbul" className="hover:text-gray-900 transition-colors hidden sm:block">
+              <Link href="/istanbul/liste/romantik-aksam-yemegi-istanbul" className="hover:text-gray-900 hover:bg-gray-50 px-3 py-1.5 rounded-lg transition-colors hidden sm:block">
                 Romantic
               </Link>
-              <Link href="/istanbul/liste/manzarali-istanbul" className="hover:text-gray-900 transition-colors hidden sm:block">
-                Scenic
-              </Link>
-              <Link href="/istanbul/liste/kebap-istanbul" className="hover:text-gray-900 transition-colors hidden sm:block">
+              <Link href="/istanbul/liste/kebap-istanbul" className="hover:text-gray-900 hover:bg-gray-50 px-3 py-1.5 rounded-lg transition-colors hidden sm:block">
                 Kebap
               </Link>
-              <Link
-                href="/api-docs"
-                className="text-blue-500 font-semibold hover:underline text-xs"
-              >
-                API Docs
+              <Link href="/api-docs" className="hover:text-gray-900 hover:bg-gray-50 px-3 py-1.5 rounded-lg transition-colors hidden sm:block text-xs font-medium">
+                API
               </Link>
               <a
                 href="https://rapidapi.com/cccanguler/api/istanbul-restaurants"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors hidden sm:block"
+                className="ml-1 bg-gray-900 hover:bg-gray-700 text-white text-xs font-semibold px-4 py-2 rounded-lg transition-colors hidden sm:flex items-center gap-1.5"
               >
-                RapidAPI →
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+                RapidAPI
               </a>
             </div>
           </div>

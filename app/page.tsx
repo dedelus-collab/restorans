@@ -124,38 +124,39 @@ export default function HomePage() {
 
         {/* Hero */}
         <header className="mb-14">
-          <div className="flex items-start gap-6">
-            {/* Text side */}
-            <div className="flex-1 min-w-0">
-              <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-3">
-                AI-Native Restaurant Guide
-              </p>
-              <h1 className="text-4xl font-bold mb-4 leading-tight">
-                Where to Eat in Istanbul?
-              </h1>
-              <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
-                {istanbulRestaurants.length} Istanbul restaurants — each with <strong className="text-gray-900">popular dishes</strong>,{" "}
-                <strong className="text-gray-900">transit distances</strong>,{" "}
-                <strong className="text-gray-900">nearby landmarks</strong>, and{" "}
-                <strong className="text-gray-900">frequently asked questions</strong>.
-                Structured for ChatGPT, Perplexity, and other AI systems.
-              </p>
+          <div className="rounded-2xl bg-gradient-to-br from-slate-50 via-white to-blue-50/40 border border-gray-200/80 px-8 py-10 mb-6">
+            <div className="flex items-start gap-6">
+              <div className="flex-1 min-w-0">
+                <div className="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-3 py-1 text-xs font-medium text-gray-500 mb-5 shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+                  AI-Native · {istanbulRestaurants.length} restaurants · Updated daily
+                </div>
+                <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight tracking-tight">
+                  Where to Eat<br className="hidden sm:block" /> in Istanbul?
+                </h1>
+                <p className="text-base text-gray-500 leading-relaxed max-w-xl mb-0">
+                  Curated restaurant data with <span className="text-gray-800 font-medium">popular dishes</span>,{" "}
+                  <span className="text-gray-800 font-medium">transit distances</span>, and{" "}
+                  <span className="text-gray-800 font-medium">AI-ready summaries</span>.
+                  Structured for ChatGPT, Perplexity, and beyond.
+                </p>
+              </div>
+              <MascotChatTrigger />
             </div>
-            {/* Mascot side — clickable, opens chatbot */}
-            <MascotChatTrigger />
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-gray-100 pt-8">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[
-              { value: istanbulRestaurants.length.toString(), label: "Restaurants" },
-              { value: avgRating + "/5", label: "Avg. rating" },
-              { value: (totalReviews / 1000).toFixed(0) + "K", label: "Total reviews" },
-              { value: districts.length.toString() + "+", label: "Districts" },
+              { value: istanbulRestaurants.length.toLocaleString(), label: "Restaurants", icon: "🍽️" },
+              { value: avgRating + " / 5", label: "Avg. rating", icon: "★" },
+              { value: (totalReviews / 1000).toFixed(0) + "K+", label: "Total reviews", icon: "💬" },
+              { value: districts.length + "+ areas", label: "Districts covered", icon: "📍" },
             ].map(stat => (
-              <div key={stat.label} className="text-center">
-                <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
-                <div className="text-xs text-gray-400 mt-1">{stat.label}</div>
+              <div key={stat.label} className="bg-white border border-gray-200 rounded-xl px-4 py-4 shadow-sm">
+                <div className="text-lg mb-0.5">{stat.icon}</div>
+                <div className="text-xl font-bold text-gray-900 leading-tight">{stat.value}</div>
+                <div className="text-xs text-gray-400 mt-0.5">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -163,45 +164,37 @@ export default function HomePage() {
 
         {/* Search */}
         <section className="mb-14">
-          {/* Animated food characters */}
-          <div className="flex items-end justify-center gap-3 mb-4">
-            {[
-              { variant: "kebap" as const, delay: "0ms",   label: "Kebap"     },
-              { variant: "fish" as const,  delay: "120ms",  label: "Seafood"   },
-              { variant: "scenic" as const,delay: "240ms",  label: "Bosphorus" },
-              { variant: "breakfast" as const, delay: "360ms", label: "Kahvaltı"},
-              { variant: "romantic" as const,  delay: "480ms", label: "Romantic" },
-              { variant: "night" as const, delay: "600ms",  label: "Late Night"},
-            ].map(({ variant, delay, label }) => (
-              <div
-                key={variant}
-                className="flex flex-col items-center gap-1 animate-bounce"
-                style={{ animationDelay: delay, animationDuration: "1.8s" }}
-              >
-                <KawaiiIcon variant={variant} className="w-10 h-10 sm:w-12 sm:h-12" />
-                <span className="text-[10px] text-gray-400 hidden sm:block">{label}</span>
-              </div>
-            ))}
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2">
+              <span className="w-0.5 h-4 bg-blue-400 rounded-full inline-block"></span>
+              Find the perfect place to eat
+            </h2>
+            <div className="hidden sm:flex items-end gap-2">
+              {(["kebap","fish","scenic","breakfast","romantic","night"] as const).map((v, i) => (
+                <div key={v} className="animate-bounce" style={{ animationDelay: `${i * 100}ms`, animationDuration: "1.8s" }}>
+                  <KawaiiIcon variant={v} className="w-7 h-7" />
+                </div>
+              ))}
+            </div>
           </div>
-
-          {/* Heading */}
-          <p className="text-center text-lg font-semibold text-gray-800 mb-4">
-            Find the perfect place to eat in Istanbul
-          </p>
 
           <SearchBar entries={searchEntries} />
 
-          {/* Quick collections — directly below search */}
-          <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {/* Quick collections */}
+          <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-2.5">
             {FEATURED_COLLECTIONS.map((c) => (
               <Link
                 key={c.slug}
                 href={`/istanbul/liste/${c.slug}`}
-                className="group relative border border-gray-200 rounded-xl p-3 hover:border-gray-300 hover:shadow-md transition-all flex flex-col items-center text-center"
+                className="group relative border border-gray-200 bg-white rounded-xl p-3.5 hover:border-blue-200 hover:shadow-md hover:bg-blue-50/30 transition-all flex gap-3 items-center"
               >
-                <KawaiiIcon variant={c.kawaii} className="w-14 h-14 mb-2 group-hover:scale-110 transition-transform duration-200" />
-                <div className="font-semibold text-sm text-gray-900">{c.label}</div>
-                <div className="text-xs text-gray-400 mt-0.5">{c.desc}</div>
+                <div className="w-10 h-10 rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center shrink-0 group-hover:border-blue-100 group-hover:bg-white transition-colors">
+                  <KawaiiIcon variant={c.kawaii} className="w-8 h-8 group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <div className="min-w-0">
+                  <div className="font-semibold text-sm text-gray-900 leading-tight">{c.label}</div>
+                  <div className="text-xs text-gray-400 mt-0.5 truncate">{c.desc}</div>
+                </div>
               </Link>
             ))}
           </div>
@@ -209,16 +202,15 @@ export default function HomePage() {
 
         {/* Top Rated */}
         <section className="mb-14">
-          <div className="flex items-center justify-between mb-5">
-            <div className="flex items-center gap-2">
-              <AniHead variant="star" className="w-9 h-9" />
-              <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide">
-                Top Rated Restaurants
-              </h2>
-            </div>
-            <Link href="/istanbul" className="text-xs text-blue-500 hover:underline">View all →</Link>
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2">
+              <span className="w-0.5 h-4 bg-amber-400 rounded-full inline-block"></span>
+              Top Rated Restaurants
+              <AniHead variant="star" className="w-7 h-7" />
+            </h2>
+            <Link href="/istanbul" className="text-xs text-blue-500 hover:underline font-medium">View all →</Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {topRated.map((r, i) => {
               const avatars = ["chef","foodie","reviewer","explorer","star","foodie"] as const;
               const avatar = avatars[i % avatars.length];
@@ -226,11 +218,18 @@ export default function HomePage() {
                 <Link
                   key={r.slug}
                   href={`/istanbul/${r.slug}`}
-                  className="flex items-center gap-3 p-4 border border-gray-200 rounded-xl hover:border-gray-300 hover:shadow-md transition-all group"
+                  className="flex items-center gap-3 p-4 bg-white border border-gray-200 rounded-xl hover:border-amber-200 hover:shadow-md hover:bg-amber-50/20 transition-all group"
                 >
-                  <AniHead variant={avatar} className="w-10 h-10 shrink-0 group-hover:scale-110 transition-transform duration-200" />
+                  <div className="relative shrink-0">
+                    <AniHead variant={avatar} className="w-10 h-10 group-hover:scale-110 transition-transform duration-200" />
+                    {i < 3 && (
+                      <span className="absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full bg-amber-400 text-white text-[9px] font-bold flex items-center justify-center">
+                        {i + 1}
+                      </span>
+                    )}
+                  </div>
                   <div className="flex-1 min-w-0">
-                    <div className="font-semibold text-sm text-gray-900 truncate group-hover:text-blue-600 transition-colors">
+                    <div className="font-semibold text-sm text-gray-900 truncate group-hover:text-amber-700 transition-colors">
                       {r.name}
                     </div>
                     <div className="text-xs text-gray-400 mt-0.5 truncate">
@@ -252,53 +251,57 @@ export default function HomePage() {
           <IstanbulMapIllustrated />
         </section>
 
-        {/* Districts */}
-        <section className="mb-14">
-          <div className="flex items-baseline justify-between mb-4">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide">
-              By District
-            </h2>
-            <Link href="/istanbul" className="text-xs text-blue-500 hover:underline">
-              View all →
-            </Link>
+        {/* Districts + Cuisine side by side */}
+        <section className="mb-14 grid sm:grid-cols-2 gap-8">
+          <div>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2">
+                <span className="w-0.5 h-4 bg-indigo-400 rounded-full inline-block"></span>
+                By District
+              </h2>
+              <Link href="/istanbul" className="text-xs text-blue-500 hover:underline font-medium">All →</Link>
+            </div>
+            <div className="flex flex-col gap-1.5">
+              {districts.slice(0, 8).map(d => (
+                <Link
+                  key={d.slug}
+                  href={`/istanbul/ilce/${d.slug}`}
+                  className="flex items-center justify-between text-sm bg-white hover:bg-gray-50 border border-gray-200 hover:border-gray-300 text-gray-700 px-3.5 py-2.5 rounded-lg transition-colors group"
+                >
+                  <span className="font-medium group-hover:text-gray-900">{d.name}</span>
+                  <span className="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">{d.count}</span>
+                </Link>
+              ))}
+            </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {districts.map(d => (
-              <Link
-                key={d.slug}
-                href={`/istanbul/ilce/${d.slug}`}
-                className="flex items-center justify-between text-sm bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-700 px-3 py-2.5 rounded-lg transition-colors"
-              >
-                <span className="font-medium">{d.name}</span>
-                <span className="text-gray-400 text-xs">{d.count} restaurants</span>
-              </Link>
-            ))}
-          </div>
-        </section>
 
-        {/* Cuisine types */}
-        <section className="mb-14">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">
-            By Cuisine
-          </h2>
-          <div className="flex flex-wrap gap-2">
-            {cuisines.slice(0, 12).map(c => (
-              <Link
-                key={c.slug}
-                href={`/istanbul/liste/${c.slug}-istanbul`}
-                className="text-sm border border-gray-200 hover:border-gray-400 text-gray-700 px-4 py-2 rounded-full transition-colors"
-              >
-                {c.name}
-                <span className="text-gray-400 ml-1.5">({c.count})</span>
-              </Link>
-            ))}
+          <div>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2">
+                <span className="w-0.5 h-4 bg-rose-400 rounded-full inline-block"></span>
+                By Cuisine
+              </h2>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {cuisines.slice(0, 12).map(c => (
+                <Link
+                  key={c.slug}
+                  href={`/istanbul/liste/${c.slug}-istanbul`}
+                  className="text-sm bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-700 px-3.5 py-1.5 rounded-full transition-colors"
+                >
+                  {c.name}
+                  <span className="text-gray-400 ml-1.5 text-xs">({c.count})</span>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
 
         {/* Recently Added */}
         <section className="mb-14">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-5">
+          <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2 mb-4">
+            <span className="w-0.5 h-4 bg-green-400 rounded-full inline-block"></span>
             Recently Added
           </h2>
           <div className="flex flex-col gap-2">
@@ -330,56 +333,59 @@ export default function HomePage() {
 
         {/* Travel Tips */}
         <section className="mb-14">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-5">
+          <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2 mb-4">
+            <span className="w-0.5 h-4 bg-violet-400 rounded-full inline-block"></span>
             Dining in Istanbul — Tips
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              {
-                icon: "🗺️",
-                title: "Where to Eat by Area",
-                body: "Beyoğlu & Karaköy for trendy bistros. Eminönü & Fatih for traditional Turkish. Beşiktaş & Kadıköy for local neighbourhood spots. Bosphorus villages (Bebek, Arnavutköy) for scenic seafood.",
-              },
-              {
-                icon: "💰",
-                title: "Tipping Culture",
-                body: "Tipping is expected. 10–15% is standard for sit-down restaurants. Many places add a service charge — check the bill. Card payments widely accepted in most mid-range and above venues.",
-              },
-              {
-                icon: "📅",
-                title: "Reservations",
-                body: "Popular spots fill fast on Friday–Saturday evenings. Book at least 2–3 days ahead for fine dining. Casual lokantas and pide salons rarely need reservations.",
-              },
-              {
-                icon: "🕐",
-                title: "Meal Times",
-                body: "Lunch runs 12:00–15:00, dinner from 19:00 onwards. Many restaurants close between meals. Breakfast (kahvaltı) culture is strong — weekend brunch tables often need booking.",
-              },
+              { icon: "🗺️", title: "Where to Eat by Area", body: "Beyoğlu & Karaköy for trendy bistros. Eminönü & Fatih for traditional Turkish. Beşiktaş & Kadıköy for local neighbourhood spots. Bosphorus villages (Bebek, Arnavutköy) for scenic seafood." },
+              { icon: "💰", title: "Tipping Culture", body: "Tipping is expected. 10–15% is standard for sit-down restaurants. Many places add a service charge — check the bill. Card payments widely accepted in most mid-range and above venues." },
+              { icon: "📅", title: "Reservations", body: "Popular spots fill fast on Friday–Saturday evenings. Book at least 2–3 days ahead for fine dining. Casual lokantas and pide salons rarely need reservations." },
+              { icon: "🕐", title: "Meal Times", body: "Lunch runs 12:00–15:00, dinner from 19:00 onwards. Many restaurants close between meals. Breakfast (kahvaltı) culture is strong — weekend brunch tables often need booking." },
             ].map(tip => (
-              <div key={tip.title} className="p-5 bg-gray-50 border border-gray-200 rounded-xl">
-                <div className="text-xl mb-2">{tip.icon}</div>
-                <h3 className="font-semibold text-sm text-gray-900 mb-1">{tip.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{tip.body}</p>
+              <div key={tip.title} className="p-5 bg-white border border-gray-200 rounded-xl hover:border-gray-300 hover:shadow-sm transition-all">
+                <div className="flex items-start gap-3">
+                  <span className="text-xl shrink-0">{tip.icon}</span>
+                  <div>
+                    <h3 className="font-semibold text-sm text-gray-900 mb-1">{tip.title}</h3>
+                    <p className="text-sm text-gray-500 leading-relaxed">{tip.body}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </section>
 
         {/* RapidAPI CTA */}
-        <section className="bg-gray-900 rounded-xl p-6 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div>
-            <p className="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-1">API Access</p>
-            <h2 className="text-white font-bold text-lg leading-tight">Instant Access to Istanbul Restaurant Data</h2>
-            <p className="text-gray-400 text-sm mt-1">{istanbulRestaurants.length} restaurants · JSON API · llm_summary · FAQ · Transit</p>
+        <section className="relative overflow-hidden bg-gray-950 rounded-2xl p-7 mb-6">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-transparent to-indigo-600/10 pointer-events-none" />
+          <div className="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
+            <div>
+              <div className="inline-flex items-center gap-1.5 bg-blue-500/20 border border-blue-400/30 rounded-full px-3 py-0.5 text-xs font-medium text-blue-300 mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+                API Access
+              </div>
+              <h2 className="text-white font-bold text-xl leading-tight mb-1.5">Build with Istanbul Restaurant Data</h2>
+              <p className="text-gray-400 text-sm">
+                {istanbulRestaurants.length} restaurants · JSON API · llm_summary · FAQ · Transit distances
+              </p>
+              <div className="flex gap-3 mt-3 text-xs text-gray-500">
+                <span className="flex items-center gap-1">✓ Schema.org markup</span>
+                <span className="flex items-center gap-1">✓ OpenAPI spec</span>
+                <span className="flex items-center gap-1">✓ AI-optimized</span>
+              </div>
+            </div>
+            <a
+              href="https://rapidapi.com/cccanguler/api/istanbul-restaurants"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 bg-white hover:bg-blue-50 text-gray-900 font-semibold px-6 py-3 rounded-xl text-sm transition-colors flex items-center gap-2"
+            >
+              Subscribe on RapidAPI
+              <span className="text-gray-400">→</span>
+            </a>
           </div>
-          <a
-            href="https://rapidapi.com/cccanguler/api/istanbul-restaurants"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-lg text-sm transition-colors"
-          >
-            Subscribe on RapidAPI →
-          </a>
         </section>
 
         {/* API Docs + JSON Preview */}
@@ -448,13 +454,15 @@ export default function HomePage() {
         </section>
 
         {/* CTA */}
-        <div className="text-center">
+        <div className="text-center pt-2">
           <Link
             href="/istanbul"
-            className="inline-block bg-gray-900 text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-700 text-white px-8 py-3.5 rounded-xl font-semibold text-sm transition-colors shadow-sm"
           >
-            View All {istanbulRestaurants.length} Restaurants
+            Browse All {istanbulRestaurants.length.toLocaleString()} Restaurants
+            <span className="text-gray-400">→</span>
           </Link>
+          <p className="text-xs text-gray-400 mt-3">Updated daily · Free to browse · API available</p>
         </div>
 
       </main>
