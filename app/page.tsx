@@ -1,8 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllCuisines, getAllDistricts, restaurants, weightedScore } from "@/data/restaurants";
-import { KawaiiIcon, AniHead } from "@/components/AniMascot";
-import { MascotChatTrigger } from "@/components/MascotChatTrigger";
 import { IstanbulMapIllustrated } from "@/components/IstanbulMapIllustrated";
 import { SearchBar } from "@/components/SearchBar";
 import { RestaurantCard } from "@/components/RestaurantCard";
@@ -25,14 +23,14 @@ export const metadata: Metadata = {
 };
 
 const FEATURED_COLLECTIONS = [
-  { slug: "romantik-aksam-yemegi-istanbul", label: "Romantic",    kawaii: "romantic"   as const, desc: "For special evenings",        color: "bg-rose-50 border-rose-100 group-hover:bg-rose-50/80 group-hover:border-rose-200",    iconBg: "bg-rose-100/70" },
-  { slug: "balik-deniz-urunleri-istanbul",  label: "Fish",        kawaii: "fish"        as const, desc: "Fresh Bosphorus fish",         color: "bg-cyan-50 border-cyan-100 group-hover:bg-cyan-50/80 group-hover:border-cyan-200",     iconBg: "bg-cyan-100/70" },
-  { slug: "kebap-istanbul",                 label: "Kebap",       kawaii: "kebap"       as const, desc: "Adana to İskender",            color: "bg-orange-50 border-orange-100 group-hover:bg-orange-50/80 group-hover:border-orange-200", iconBg: "bg-orange-100/70" },
-  { slug: "manzarali-istanbul",             label: "Scenic",      kawaii: "scenic"      as const, desc: "Bosphorus & skyline views",    color: "bg-sky-50 border-sky-100 group-hover:bg-sky-50/80 group-hover:border-sky-200",        iconBg: "bg-sky-100/70" },
-  { slug: "is-yemegi-istanbul",             label: "Business",    kawaii: "business"    as const, desc: "Quiet & efficient",            color: "bg-slate-50 border-slate-200 group-hover:bg-slate-100/60 group-hover:border-slate-300", iconBg: "bg-slate-200/60" },
-  { slug: "gec-acik-istanbul",              label: "Late Night",  kawaii: "night"       as const, desc: "Open until late",              color: "bg-indigo-50 border-indigo-100 group-hover:bg-indigo-50/80 group-hover:border-indigo-200", iconBg: "bg-indigo-100/70" },
-  { slug: "kahvalti-istanbul",              label: "Breakfast",   kawaii: "breakfast"   as const, desc: "Serpme & brunch",              color: "bg-yellow-50 border-yellow-100 group-hover:bg-yellow-50/80 group-hover:border-yellow-200", iconBg: "bg-yellow-100/70" },
-  { slug: "fine-dining-istanbul",           label: "Fine Dining", kawaii: "finedining"  as const, desc: "Prestigious venues",           color: "bg-purple-50 border-purple-100 group-hover:bg-purple-50/80 group-hover:border-purple-200", iconBg: "bg-purple-100/70" },
+  { slug: "romantik-aksam-yemegi-istanbul", label: "Romantic",    emoji: "🌹", desc: "For special evenings",        gradient: "linear-gradient(135deg,#f43f5e,#9f1239)" },
+  { slug: "balik-deniz-urunleri-istanbul",  label: "Fish",        emoji: "🐟", desc: "Fresh Bosphorus fish",        gradient: "linear-gradient(135deg,#0ea5e9,#0369a1)" },
+  { slug: "kebap-istanbul",                 label: "Kebap",       emoji: "🥩", desc: "Adana to İskender",           gradient: "linear-gradient(135deg,#f97316,#dc2626)" },
+  { slug: "manzarali-istanbul",             label: "Scenic",      emoji: "🌉", desc: "Bosphorus & skyline views",   gradient: "linear-gradient(135deg,#38bdf8,#0369a1)" },
+  { slug: "is-yemegi-istanbul",             label: "Business",    emoji: "💼", desc: "Quiet & efficient",           gradient: "linear-gradient(135deg,#64748b,#334155)" },
+  { slug: "gec-acik-istanbul",              label: "Late Night",  emoji: "🌙", desc: "Open until late",             gradient: "linear-gradient(135deg,#6366f1,#3730a3)" },
+  { slug: "kahvalti-istanbul",              label: "Breakfast",   emoji: "🍳", desc: "Serpme & brunch",             gradient: "linear-gradient(135deg,#fcd34d,#f59e0b)" },
+  { slug: "fine-dining-istanbul",           label: "Fine Dining", emoji: "✨", desc: "Prestigious venues",          gradient: "linear-gradient(135deg,#a855f7,#7e22ce)" },
 ];
 
 export default function HomePage() {
@@ -142,7 +140,6 @@ export default function HomePage() {
                   Structured for ChatGPT, Perplexity, and beyond.
                 </p>
               </div>
-              <MascotChatTrigger />
             </div>
           </div>
 
@@ -165,19 +162,10 @@ export default function HomePage() {
 
         {/* Search */}
         <section className="mb-14">
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2">
-              <span className="w-0.5 h-4 bg-blue-400 rounded-full inline-block"></span>
-              Find the perfect place to eat
-            </h2>
-            <div className="hidden sm:flex items-end gap-2">
-              {(["kebap","fish","scenic","breakfast","romantic","night"] as const).map((v, i) => (
-                <div key={v} className="animate-bounce" style={{ animationDelay: `${i * 100}ms`, animationDuration: "1.8s" }}>
-                  <KawaiiIcon variant={v} className="w-7 h-7" />
-                </div>
-              ))}
-            </div>
-          </div>
+          <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2 mb-3">
+            <span className="w-0.5 h-4 bg-blue-400 rounded-full inline-block"></span>
+            Find the perfect place to eat
+          </h2>
 
           <SearchBar entries={searchEntries} />
 
@@ -187,10 +175,13 @@ export default function HomePage() {
               <Link
                 key={c.slug}
                 href={`/istanbul/liste/${c.slug}`}
-                className={`group relative border rounded-xl p-3.5 hover:shadow-md transition-all flex gap-3 items-center ${c.color}`}
+                className="group relative border border-gray-200 bg-white rounded-xl p-3.5 hover:shadow-md hover:-translate-y-0.5 transition-all flex gap-3 items-center overflow-hidden"
               >
-                <div className={`w-10 h-10 rounded-lg flex items-center justify-center shrink-0 transition-colors ${c.iconBg}`}>
-                  <KawaiiIcon variant={c.kawaii} className="w-8 h-8 group-hover:scale-110 transition-transform duration-200" />
+                <div
+                  className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 text-xl"
+                  style={{ background: c.gradient }}
+                >
+                  {c.emoji}
                 </div>
                 <div className="min-w-0">
                   <div className="font-semibold text-sm text-gray-900 leading-tight">{c.label}</div>
@@ -207,7 +198,6 @@ export default function HomePage() {
             <h2 className="text-sm font-semibold text-gray-900 flex items-center gap-2">
               <span className="w-0.5 h-4 bg-amber-400 rounded-full inline-block"></span>
               Top Rated Restaurants
-              <AniHead variant="star" className="w-7 h-7" />
             </h2>
             <Link href="/istanbul" className="text-xs text-blue-500 hover:underline font-medium">View all →</Link>
           </div>
