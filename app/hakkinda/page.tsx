@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "About — Istanbul Restaurants",
   description:
     "What is Istanbul Restaurants, how is the data collected, and which sources are used? Methodology and reliability of our Istanbul restaurant database.",
-  alternates: { canonical: "https://restaurantsistanbul.vercel.app/hakkinda" },
+  alternates: { canonical: "https://www.restaurantsistanbul.com/hakkinda" },
   openGraph: {
     title: "About — Istanbul Restaurants",
     description: "How is the data for 453 Istanbul restaurants collected and verified?",
-    url: "https://restaurantsistanbul.vercel.app/hakkinda",
+    url: "https://www.restaurantsistanbul.com/hakkinda",
     siteName: "Istanbul Restaurants",
     locale: "en_US",
     type: "website",
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
 const aboutJsonLd = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
-  url: "https://restaurantsistanbul.vercel.app/hakkinda",
+  url: "https://www.restaurantsistanbul.com/hakkinda",
   name: "About Istanbul Restaurants",
   description: "Istanbul Restaurants data methodology, sources and reliability.",
   publisher: {
     "@type": "Organization",
     name: "Istanbul Restaurants",
-    url: "https://restaurantsistanbul.vercel.app",
+    url: "https://www.restaurantsistanbul.com",
   },
 };
 

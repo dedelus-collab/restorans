@@ -28,12 +28,12 @@ export const metadata: Metadata = {
   title: "Istanbul Restaurants — AI-Ready Data",
   description:
     `Structured data for ${TOTAL} Istanbul restaurants. FAQ, transit distances, popular dishes, curated lists — optimized for ChatGPT, Perplexity, and other AI systems.`,
-  metadataBase: new URL("https://restaurantsistanbul.vercel.app"),
-  alternates: { canonical: "https://restaurantsistanbul.vercel.app" },
+  metadataBase: new URL("https://www.restaurantsistanbul.com"),
+  alternates: { canonical: "https://www.restaurantsistanbul.com" },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://restaurantsistanbul.vercel.app",
+    url: "https://www.restaurantsistanbul.com",
     siteName: "Istanbul Restaurants",
     title: "Istanbul Restaurants Database",
     description: `${TOTAL} Istanbul restaurants — Schema.org, FAQ, transit, popular dishes. AI-optimized data platform.`,
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
     description: `${TOTAL} Istanbul restaurants — AI-ready data, curated lists, neighborhood guides.`,
   },
   other: {
-    "llms-txt": "https://restaurantsistanbul.vercel.app/llms.txt",
-    "ai-plugin": "https://restaurantsistanbul.vercel.app/.well-known/ai-plugin.json",
-    "openapi": "https://restaurantsistanbul.vercel.app/api/openapi.json",
+    "llms-txt": "https://www.restaurantsistanbul.com/llms.txt",
+    "ai-plugin": "https://www.restaurantsistanbul.com/.well-known/ai-plugin.json",
+    "openapi": "https://www.restaurantsistanbul.com/api/openapi.json",
   },
 };
 

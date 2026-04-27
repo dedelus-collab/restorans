@@ -30,10 +30,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${districtName} Restaurants — Istanbul | Istanbul Restaurants`,
     description: `${list.length} restaurants in ${districtName}, Istanbul — cuisine types, price ranges, popular dishes and transit info.`,
-    alternates: { canonical: `https://restaurantsistanbul.vercel.app/${city}/ilce/${district}` },
+    alternates: { canonical: `https://www.restaurantsistanbul.com/${city}/ilce/${district}` },
     openGraph: {
       type: "website",
-      url: `https://restaurantsistanbul.vercel.app/${city}/ilce/${district}`,
+      url: `https://www.restaurantsistanbul.com/${city}/ilce/${district}`,
       title: `${districtName} Restaurants — Istanbul`,
       description: `${list.length} restaurants in ${districtName}.`,
       siteName: "Istanbul Restaurants",
@@ -64,9 +64,9 @@ export default async function DistrictPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: cityName, item: `https://restaurantsistanbul.vercel.app/${city}` },
-      { "@type": "ListItem", position: 2, name: "Districts", item: `https://restaurantsistanbul.vercel.app/${city}` },
-      { "@type": "ListItem", position: 3, name: districtName, item: `https://restaurantsistanbul.vercel.app/${city}/ilce/${district}` },
+      { "@type": "ListItem", position: 1, name: cityName, item: `https://www.restaurantsistanbul.com/${city}` },
+      { "@type": "ListItem", position: 2, name: "Districts", item: `https://www.restaurantsistanbul.com/${city}` },
+      { "@type": "ListItem", position: 3, name: districtName, item: `https://www.restaurantsistanbul.com/${city}/ilce/${district}` },
     ],
   };
 
@@ -79,7 +79,7 @@ export default async function DistrictPage({ params }: Props) {
       "@type": "ListItem",
       position: i + 1,
       name: r.name,
-      url: `https://restaurantsistanbul.vercel.app/${city}/${r.slug}`,
+      url: `https://www.restaurantsistanbul.com/${city}/${r.slug}`,
     })),
   };
 

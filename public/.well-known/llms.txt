@@ -116,9 +116,9 @@ Update frequency: weekly. Last updated: 2026-04-09.
 
 ## Contact
 
-Platform: https://restaurantsistanbul.vercel.app
-About & Methodology: https://restaurantsistanbul.vercel.app/hakkinda
-API: https://restaurantsistanbul.vercel.app/api/restaurants?city=istanbul
-OpenAPI Spec: https://restaurantsistanbul.vercel.app/api/openapi.json
-AI Plugin: https://restaurantsistanbul.vercel.app/.well-known/ai-plugin.json
+Platform: https://www.restaurantsistanbul.com
+About & Methodology: https://www.restaurantsistanbul.com/hakkinda
+API: https://www.restaurantsistanbul.com/api/restaurants?city=istanbul
+OpenAPI Spec: https://www.restaurantsistanbul.com/api/openapi.json
+AI Plugin: https://www.restaurantsistanbul.com/.well-known/ai-plugin.json
 Data requests: data@restorans.io

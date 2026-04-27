@@ -3,7 +3,7 @@ import { restaurants, getAllNeighborhoods } from "@/data/restaurants";
 import { COLLECTIONS } from "@/lib/collections";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://restaurantsistanbul.vercel.app";
+  const base = "https://www.restaurantsistanbul.com";
 
   const cities = [...new Set(restaurants.map(r => r.citySlug))];
 

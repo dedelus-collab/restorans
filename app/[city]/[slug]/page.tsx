@@ -17,10 +17,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${r.name} — ${r.neighborhood}, ${r.city} | Istanbul Restaurants`,
     description: r.llmSummary,
-    alternates: { canonical: `https://restaurantsistanbul.vercel.app/${city}/${slug}` },
+    alternates: { canonical: `https://www.restaurantsistanbul.com/${city}/${slug}` },
     openGraph: {
       type: "website",
-      url: `https://restaurantsistanbul.vercel.app/${city}/${slug}`,
+      url: `https://www.restaurantsistanbul.com/${city}/${slug}`,
       title: `${r.name} — ${r.neighborhood}, ${r.city}`,
       description: r.llmSummary ?? undefined,
       siteName: "Istanbul Restaurants",
@@ -42,7 +42,7 @@ export default async function RestaurantPage({ params }: Props) {
   const restaurantJsonLd = {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "@id": `https://restaurantsistanbul.vercel.app/${city}/${slug}`,
+    "@id": `https://www.restaurantsistanbul.com/${city}/${slug}`,
     name: r.name,
     description: r.llmSummary,
     servesCuisine: r.cuisine,
@@ -70,7 +70,7 @@ export default async function RestaurantPage({ params }: Props) {
     } : {}),
     openingHours: r.hoursEstimated ? undefined : r.openingHours,
     telephone: r.phone || undefined,
-    url: r.website || `https://restaurantsistanbul.vercel.app/${city}/${slug}`,
+    url: r.website || `https://www.restaurantsistanbul.com/${city}/${slug}`,
     ...(r.reservationLinks?.googleMaps ? {
       sameAs: [r.reservationLinks.googleMaps],
       hasMap: r.reservationLinks.googleMaps,
@@ -133,9 +133,9 @@ export default async function RestaurantPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Istanbul Restaurants", item: "https://restaurantsistanbul.vercel.app" },
-      { "@type": "ListItem", position: 2, name: r.city, item: `https://restaurantsistanbul.vercel.app/${city}` },
-      { "@type": "ListItem", position: 3, name: r.name, item: `https://restaurantsistanbul.vercel.app/${city}/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Istanbul Restaurants", item: "https://www.restaurantsistanbul.com" },
+      { "@type": "ListItem", position: 2, name: r.city, item: `https://www.restaurantsistanbul.com/${city}` },
+      { "@type": "ListItem", position: 3, name: r.name, item: `https://www.restaurantsistanbul.com/${city}/${slug}` },
     ],
   };
 

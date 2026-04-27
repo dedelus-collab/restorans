@@ -32,10 +32,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${hoodName} Restaurants — ${cityName} | Istanbul Restaurants`,
     description: `${list.length} restaurants in ${hoodName}: cuisine types, price ranges, signature dishes, walking distances to metro and landmarks. Structured data for AI systems.`,
-    alternates: { canonical: `https://restaurantsistanbul.vercel.app/${city}/mahalle/${hood}` },
+    alternates: { canonical: `https://www.restaurantsistanbul.com/${city}/mahalle/${hood}` },
     openGraph: {
       type: "website",
-      url: `https://restaurantsistanbul.vercel.app/${city}/mahalle/${hood}`,
+      url: `https://www.restaurantsistanbul.com/${city}/mahalle/${hood}`,
       title: `${hoodName} Restaurants — ${cityName}`,
       description: `${list.length} restaurants in ${hoodName} — FAQ, transit, popular dishes.`,
       siteName: "Istanbul Restaurants",
@@ -99,10 +99,10 @@ export default async function NeighborhoodPage({ params }: Props) {
   const placeJsonLd = {
     "@context": "https://schema.org",
     "@type": "Place",
-    "@id": `https://restaurantsistanbul.vercel.app/${city}/mahalle/${hood}`,
+    "@id": `https://www.restaurantsistanbul.com/${city}/mahalle/${hood}`,
     name: hoodName,
     description: `${hoodName} neighborhood in ${cityName}. ${list.length} restaurants, avg. rating ${avgRating}/5.`,
-    url: `https://restaurantsistanbul.vercel.app/${city}/mahalle/${hood}`,
+    url: `https://www.restaurantsistanbul.com/${city}/mahalle/${hood}`,
     geo: {
       "@type": "GeoCoordinates",
       latitude: parseFloat(avgLat.toFixed(5)),
@@ -111,7 +111,7 @@ export default async function NeighborhoodPage({ params }: Props) {
     containedInPlace: {
       "@type": "City",
       name: cityName,
-      url: `https://restaurantsistanbul.vercel.app/${city}`,
+      url: `https://www.restaurantsistanbul.com/${city}`,
     },
     ...(topLandmarks.length > 0 ? {
       amenityFeature: topLandmarks.map(([name]) => ({
@@ -126,13 +126,13 @@ export default async function NeighborhoodPage({ params }: Props) {
     "@type": "ItemList",
     name: `${hoodName} Restaurants`,
     description: `${list.length} restaurants in ${hoodName}.`,
-    url: `https://restaurantsistanbul.vercel.app/${city}/mahalle/${hood}`,
+    url: `https://www.restaurantsistanbul.com/${city}/mahalle/${hood}`,
     numberOfItems: list.length,
     itemListElement: sorted.map((r, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: r.name,
-      url: `https://restaurantsistanbul.vercel.app/${city}/${r.slug}`,
+      url: `https://www.restaurantsistanbul.com/${city}/${r.slug}`,
       description: r.llmSummary,
     })),
   };
@@ -141,8 +141,8 @@ export default async function NeighborhoodPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: cityName, item: `https://restaurantsistanbul.vercel.app/${city}` },
-      { "@type": "ListItem", position: 2, name: hoodName, item: `https://restaurantsistanbul.vercel.app/${city}/mahalle/${hood}` },
+      { "@type": "ListItem", position: 1, name: cityName, item: `https://www.restaurantsistanbul.com/${city}` },
+      { "@type": "ListItem", position: 2, name: hoodName, item: `https://www.restaurantsistanbul.com/${city}/mahalle/${hood}` },
     ],
   };
 
