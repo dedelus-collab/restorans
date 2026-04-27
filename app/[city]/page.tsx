@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { AniHead, AniChibi } from "@/components/AniMascot";
 import {
   getRestaurantsByCity,
   getAllDistricts,
@@ -42,6 +41,35 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
   };
 }
+
+// Photo + color per collection slug
+const COLLECTION_PHOTOS: Record<string, { photo: string; color: string; emoji: string }> = {
+  "romantik-aksam-yemegi-istanbul": { photo: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=75&auto=format&fit=crop", color: "#9f1239", emoji: "🌹" },
+  "is-yemegi-istanbul":             { photo: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=75&auto=format&fit=crop", color: "#1e3a5f", emoji: "💼" },
+  "ozel-gun-istanbul":              { photo: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=75&auto=format&fit=crop", color: "#7e22ce", emoji: "🎉" },
+  "gec-acik-istanbul":              { photo: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=75&auto=format&fit=crop&crop=bottom", color: "#1e1b4b", emoji: "🌙" },
+  "aile-dostu-istanbul":            { photo: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=75&auto=format&fit=crop", color: "#166534", emoji: "👨‍👩‍👧" },
+  "vejetaryen-vegan-istanbul":      { photo: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=75&auto=format&fit=crop", color: "#15803d", emoji: "🥗" },
+  "manzarali-istanbul":             { photo: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=600&q=75&auto=format&fit=crop", color: "#0369a1", emoji: "🌉" },
+  "bogaz-manzarali-istanbul":       { photo: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=75&auto=format&fit=crop", color: "#075985", emoji: "🚢" },
+  "uygun-fiyatli-istanbul":         { photo: "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=75&auto=format&fit=crop", color: "#92400e", emoji: "₺" },
+  "fine-dining-istanbul":           { photo: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=75&auto=format&fit=crop", color: "#3b0764", emoji: "✨" },
+  "teras-istanbul":                 { photo: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=75&auto=format&fit=crop", color: "#064e3b", emoji: "🌿" },
+  "kebap-istanbul":                 { photo: "https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600&q=75&auto=format&fit=crop", color: "#dc2626", emoji: "🥩" },
+  "balik-deniz-urunleri-istanbul":  { photo: "https://images.unsplash.com/photo-1560717845-968823efbee1?w=600&q=75&auto=format&fit=crop", color: "#0369a1", emoji: "🐟" },
+  "pizza-italyan-istanbul":         { photo: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=75&auto=format&fit=crop", color: "#166534", emoji: "🍕" },
+  "sushi-japon-istanbul":           { photo: "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=600&q=75&auto=format&fit=crop", color: "#9f1239", emoji: "🍣" },
+  "burger-steak-istanbul":          { photo: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=75&auto=format&fit=crop", color: "#b45309", emoji: "🍔" },
+  "kahvalti-istanbul":              { photo: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=75&auto=format&fit=crop", color: "#b45309", emoji: "🍳" },
+  "meyhane-istanbul":               { photo: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=75&auto=format&fit=crop", color: "#7e22ce", emoji: "🍷" },
+  "lokanta-istanbul":               { photo: "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=75&auto=format&fit=crop", color: "#c2410c", emoji: "🫕" },
+  "turk-mutfagi-istanbul":          { photo: "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=75&auto=format&fit=crop", color: "#991b1b", emoji: "🍲" },
+  "kafe-istanbul":                  { photo: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=75&auto=format&fit=crop", color: "#92400e", emoji: "☕" },
+  "pide-istanbul":                  { photo: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=75&auto=format&fit=crop", color: "#d97706", emoji: "🫓" },
+  "dunya-mutfagi-istanbul":         { photo: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=75&auto=format&fit=crop", color: "#0e7490", emoji: "🌍" },
+};
+
+const DEFAULT_COLLECTION = { photo: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=75&auto=format&fit=crop", color: "#334155", emoji: "🍽️" };
 
 export default async function CityPage({ params }: Props) {
   const { city } = await params;
@@ -123,165 +151,198 @@ export default async function CityPage({ params }: Props) {
     ],
   };
 
-  const statCards = [
-    { value: restaurants.length.toString(), label: "Restaurants", bg: "bg-blue-50 border-blue-100", val: "text-blue-700" },
-    { value: avgRating + "/5",              label: "Avg. rating",  bg: "bg-amber-50 border-amber-100", val: "text-amber-700" },
-    { value: (totalReviews / 1000).toFixed(0) + "K", label: "Total reviews", bg: "bg-violet-50 border-violet-100", val: "text-violet-700" },
-    { value: districts.length.toString(),   label: "Districts",   bg: "bg-emerald-50 border-emerald-100", val: "text-emerald-700" },
-  ];
-
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetJsonLd) }} />
 
-      <main className="max-w-4xl mx-auto px-6 py-12">
+      {/* ── HERO ── */}
+      <header className="relative flex flex-col justify-end overflow-hidden" style={{ minHeight: "420px" }}>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1527838832700-5059252407fa?w=1400&q=80&auto=format&fit=crop')",
+            backgroundSize: "cover",
+            backgroundPosition: "center 55%",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/70 to-gray-800/20" />
 
-        {/* Breadcrumb */}
-        <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
-          <Link href="/" className="hover:text-gray-600 transition-colors">restorans</Link>
-          <span>/</span>
-          <span className="text-gray-700 font-medium">{cityName}</span>
-        </nav>
-
-        {/* Hero card */}
-        <header className="mb-10 rounded-2xl bg-gradient-to-br from-slate-50 via-white to-blue-50/60 border border-slate-200/80 px-8 py-8 shadow-sm">
-          <div className="flex items-start justify-between gap-4 mb-4">
-            <div>
-              <div className="inline-flex items-center gap-1.5 text-xs font-medium text-blue-600 bg-blue-50 border border-blue-100 rounded-full px-3 py-1 mb-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block" />
-                AI-Native · Schema.org compliant
-              </div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">{cityName} Restaurants</h1>
-              <p className="text-gray-500 leading-relaxed max-w-xl">
-                Structured data for <strong className="text-gray-800">{restaurants.length} restaurants</strong> —
-                each profile includes FAQ, transit distances, nearby landmarks, and popular dishes.
-              </p>
-            </div>
+        <div className="relative max-w-4xl mx-auto px-6 pt-20 pb-10 w-full">
+          <nav className="text-xs text-white/50 mb-5 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-white/80 transition-colors">restorans</Link>
+            <span>/</span>
+            <span className="text-white/80 font-medium">{cityName}</span>
+          </nav>
+          <div className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 py-1 text-xs font-semibold text-white/90 mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
+            {restaurants.length} restaurants · Updated daily
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6">
-            {statCards.map(s => (
-              <div key={s.label} className={`rounded-xl border ${s.bg} px-4 py-3 text-center`}>
-                <div className={`text-2xl font-bold ${s.val}`}>{s.value}</div>
-                <div className="text-xs text-gray-500 mt-0.5">{s.label}</div>
+          <h1 className="text-5xl sm:text-6xl font-black text-white leading-none tracking-tight mb-3 drop-shadow-sm">
+            {cityName}<br />Restaurants
+          </h1>
+          <p className="text-white/70 text-base max-w-lg leading-relaxed">
+            Every neighborhood, every cuisine — curated, rated, and AI-ready.
+          </p>
+        </div>
+
+        {/* Stats strip */}
+        <div className="relative border-t border-white/10 bg-black/50 backdrop-blur-md">
+          <div className="max-w-4xl mx-auto px-6 py-4 flex gap-8 sm:gap-14 overflow-x-auto">
+            {[
+              { value: restaurants.length.toLocaleString(), label: "Restaurants" },
+              { value: avgRating + " ★", label: "Average rating" },
+              { value: (totalReviews / 1000).toFixed(0) + "K+", label: "Reviews" },
+              { value: districts.length + "+", label: "Districts" },
+            ].map(s => (
+              <div key={s.label} className="shrink-0">
+                <div className="text-xl font-black text-white leading-none">{s.value}</div>
+                <div className="text-xs text-white/50 mt-1">{s.label}</div>
               </div>
             ))}
           </div>
-        </header>
+        </div>
+      </header>
 
-        {/* Scenario collections */}
+      <main>
+
+        {/* ── SCENARIO COLLECTIONS ── */}
         {scenarioCollections.length > 0 && (
-          <section className="mb-10">
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4 flex items-center gap-2">
-              <span className="w-0.5 h-3.5 bg-rose-400 rounded-full inline-block" />
-              What Are You Looking For?
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-              {scenarioCollections.map((c, i) => {
-                const count = restaurants.filter(c.filter).length;
-                const slugVariant: Record<string, "chef"|"reviewer"|"foodie"|"explorer"|"star"> = {
-                  "romantik-aksam-yemegi-istanbul": "star",
-                  "is-yemegi-istanbul": "reviewer",
-                  "ozel-gun-istanbul": "star",
-                  "gec-acik-istanbul": "explorer",
-                  "aile-dostu-istanbul": "foodie",
-                  "vejetaryen-vegan-istanbul": "foodie",
-                };
-                const variant = slugVariant[c.slug] ?? (["chef","reviewer","foodie","explorer","star"] as const)[i % 5];
-                return (
-                  <Link
-                    key={c.slug}
-                    href={`/${city}/liste/${c.slug}`}
-                    className="border border-gray-200 bg-white rounded-xl px-3 py-4 hover:border-rose-200 hover:bg-rose-50/40 hover:shadow-md transition-all group flex flex-col items-center text-center"
-                  >
-                    <AniChibi variant={variant} className="w-20 h-auto mb-2 group-hover:scale-105 transition-transform duration-200" />
-                    <div className="font-medium text-sm text-gray-900 leading-tight">{c.title.replace(`${cityName}&apos;da `, "").replace(`${cityName}'da `, "").split(" ").slice(0, 4).join(" ")}</div>
-                    <div className="text-xs text-gray-400 mt-0.5">{count} restaurants</div>
-                  </Link>
-                );
-              })}
+          <section className="py-12 border-b border-gray-100">
+            <div className="max-w-4xl mx-auto px-6">
+              <h2 className="text-2xl font-black text-gray-900 mb-1">What Are You Looking For?</h2>
+              <p className="text-sm text-gray-500 mb-6">Browse by occasion</p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {scenarioCollections.map(c => {
+                  const count = restaurants.filter(c.filter).length;
+                  const theme = COLLECTION_PHOTOS[c.slug] ?? DEFAULT_COLLECTION;
+                  const shortTitle = c.title.split(" ").slice(0, 3).join(" ");
+                  return (
+                    <Link
+                      key={c.slug}
+                      href={`/${city}/liste/${c.slug}`}
+                      className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+                    >
+                      <div
+                        className="relative h-28 overflow-hidden"
+                        style={{ backgroundImage: `url('${theme.photo}')`, backgroundSize: "cover", backgroundPosition: "center" }}
+                      >
+                        <div className="absolute inset-0" style={{ background: `linear-gradient(to top, ${theme.color}ee, ${theme.color}44 55%, transparent)` }} />
+                        <span className="absolute bottom-2 left-3 text-2xl">{theme.emoji}</span>
+                      </div>
+                      <div className="p-3 bg-white">
+                        <div className="font-bold text-sm text-gray-900 group-hover:text-blue-600 transition-colors leading-tight">{shortTitle}</div>
+                        <div className="text-xs text-gray-500 mt-0.5">{count} restaurants</div>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </section>
         )}
 
-        {/* Cuisine collections */}
+        {/* ── CUISINE COLLECTIONS ── */}
         {cuisineCollections.length > 0 && (
-          <section className="mb-10">
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4 flex items-center gap-2">
-              <span className="w-0.5 h-3.5 bg-orange-400 rounded-full inline-block" />
-              By Cuisine
-            </h2>
-            <div className="flex flex-wrap gap-2">
-              {cuisineCollections.map(c => {
-                const count = restaurants.filter(c.filter).length;
-                return (
-                  <Link
-                    key={c.slug}
-                    href={`/${city}/liste/${c.slug}`}
-                    className="text-sm bg-orange-50 border border-orange-100 hover:border-orange-300 hover:bg-orange-100/60 text-orange-800 px-4 py-1.5 rounded-full transition-colors"
-                  >
-                    {cuisines.find(cu => c.slug.startsWith(cu.slug))?.name ?? c.title.split(" ").pop()}
-                    <span className="text-orange-400 ml-1.5">({count})</span>
-                  </Link>
-                );
-              })}
+          <section className="py-12 border-b border-gray-100">
+            <div className="max-w-4xl mx-auto px-6">
+              <h2 className="text-2xl font-black text-gray-900 mb-1">Browse by Cuisine</h2>
+              <p className="text-sm text-gray-500 mb-6">All food types available in {cityName}</p>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {cuisineCollections.map(c => {
+                  const count = restaurants.filter(c.filter).length;
+                  const theme = COLLECTION_PHOTOS[c.slug] ?? DEFAULT_COLLECTION;
+                  const name = cuisines.find(cu => c.slug.startsWith(cu.slug))?.name ?? c.title.split(" ")[0];
+                  return (
+                    <Link
+                      key={c.slug}
+                      href={`/${city}/liste/${c.slug}`}
+                      className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+                    >
+                      <div
+                        className="relative h-24 overflow-hidden"
+                        style={{ backgroundImage: `url('${theme.photo}')`, backgroundSize: "cover", backgroundPosition: "center" }}
+                      >
+                        <div className="absolute inset-0" style={{ background: `linear-gradient(to top, ${theme.color}dd, ${theme.color}33 60%, transparent)` }} />
+                        <span className="absolute bottom-2 left-3 text-xl">{theme.emoji}</span>
+                      </div>
+                      <div className="p-3 bg-white">
+                        <div className="font-bold text-sm text-gray-900 group-hover:text-blue-600 transition-colors">{name}</div>
+                        <div className="text-xs text-gray-500 mt-0.5">{count} restaurants</div>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </section>
         )}
 
-        {/* Vibe collections */}
+        {/* ── VIBE COLLECTIONS ── */}
         {vibeCollections.length > 0 && (
-          <section className="mb-10">
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4 flex items-center gap-2">
-              <span className="w-0.5 h-3.5 bg-violet-400 rounded-full inline-block" />
-              Ambiance & Vibe
-            </h2>
-            <div className="flex flex-wrap gap-2">
-              {vibeCollections.map((c, i) => {
-                const count = restaurants.filter(c.filter).length;
-                const vibeVariant: Record<string, "chef"|"reviewer"|"foodie"|"explorer"|"star"> = {
-                  "manzarali-istanbul": "explorer",
-                  "bogaz-manzarali-istanbul": "explorer",
-                  "uygun-fiyatli-istanbul": "reviewer",
-                  "fine-dining-istanbul": "star",
-                  "teras-istanbul": "foodie",
-                };
-                const variant = vibeVariant[c.slug] ?? (["explorer","star","foodie","reviewer","chef"] as const)[i % 5];
-                return (
-                  <Link
-                    key={c.slug}
-                    href={`/${city}/liste/${c.slug}`}
-                    className="text-sm bg-violet-50 hover:bg-violet-100/60 border border-violet-100 hover:border-violet-300 text-violet-800 px-3 py-1.5 rounded-lg transition-colors flex items-center gap-1.5"
-                  >
-                    <AniHead variant={variant} className="w-5 h-5 shrink-0" />
-                    {c.title.replace(`${cityName}&apos;da `, "").replace(`${cityName}'da `, "").split(" ").slice(0, 3).join(" ")}
-                    <span className="text-violet-400 ml-1.5">({count})</span>
-                  </Link>
-                );
-              })}
+          <section className="py-12 border-b border-gray-100">
+            <div className="max-w-4xl mx-auto px-6">
+              <h2 className="text-2xl font-black text-gray-900 mb-1">Ambiance & Vibe</h2>
+              <p className="text-sm text-gray-500 mb-6">Filter by experience</p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {vibeCollections.map(c => {
+                  const count = restaurants.filter(c.filter).length;
+                  const theme = COLLECTION_PHOTOS[c.slug] ?? DEFAULT_COLLECTION;
+                  const shortTitle = c.title.split(" ").slice(0, 4).join(" ");
+                  return (
+                    <Link
+                      key={c.slug}
+                      href={`/${city}/liste/${c.slug}`}
+                      className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+                    >
+                      <div
+                        className="relative h-28 overflow-hidden"
+                        style={{ backgroundImage: `url('${theme.photo}')`, backgroundSize: "cover", backgroundPosition: "center" }}
+                      >
+                        <div className="absolute inset-0" style={{ background: `linear-gradient(to top, ${theme.color}ee, ${theme.color}44 55%, transparent)` }} />
+                        <span className="absolute bottom-2 left-3 text-2xl">{theme.emoji}</span>
+                      </div>
+                      <div className="p-3 bg-white">
+                        <div className="font-bold text-sm text-gray-900 group-hover:text-blue-600 transition-colors leading-tight">{shortTitle}</div>
+                        <div className="text-xs text-gray-500 mt-0.5">{count} restaurants</div>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </section>
         )}
 
-        {/* All restaurants */}
-        <section className="rounded-2xl border border-slate-200/80 bg-white shadow-sm px-6 py-6">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-5 flex items-center gap-2">
-            <span className="w-0.5 h-3.5 bg-blue-400 rounded-full inline-block" />
-            All Restaurants
-          </h2>
-          <CityRestaurantList city={city} list={listWithDistrict} topDistricts={topDistricts} />
+        {/* ── ALL RESTAURANTS ── */}
+        <section className="py-12">
+          <div className="max-w-4xl mx-auto px-6">
+            <div className="flex items-end justify-between mb-6">
+              <div>
+                <h2 className="text-2xl font-black text-gray-900">All Restaurants</h2>
+                <p className="text-sm text-gray-500 mt-1">Filter by district · {restaurants.length} total</p>
+              </div>
+              <span className="text-xs text-gray-400">
+                Updated: <strong className="text-gray-600">{lastUpdated}</strong>
+              </span>
+            </div>
+            <CityRestaurantList city={city} list={listWithDistrict} topDistricts={topDistricts} />
+          </div>
         </section>
 
-        {/* Footer */}
-        <footer className="mt-10 pt-6 border-t border-gray-100 text-xs text-gray-400 flex items-center justify-between flex-wrap gap-2">
-          <span>Last updated: <strong className="text-gray-600">{lastUpdated}</strong></span>
-          <span className="flex gap-3">
-            <a href={`/api/restaurants?city=${city}`} className="text-blue-500 hover:underline">JSON API</a>
-            <a href="/sitemap.xml" className="text-blue-500 hover:underline">sitemap.xml</a>
-            <a href="/llms.txt" className="text-blue-500 hover:underline">llms.txt</a>
-          </span>
-        </footer>
+        {/* ── FOOTER LINKS ── */}
+        <div className="border-t border-gray-100 py-6">
+          <div className="max-w-4xl mx-auto px-6 flex items-center justify-between flex-wrap gap-2 text-xs text-gray-400">
+            <span>Data: OpenStreetMap + LLM enrichment</span>
+            <span className="flex gap-3">
+              <a href={`/api/restaurants?city=${city}`} className="text-blue-500 hover:underline">JSON API</a>
+              <a href="/sitemap.xml" className="text-blue-500 hover:underline">sitemap.xml</a>
+              <a href="/llms.txt" className="text-blue-500 hover:underline">llms.txt</a>
+            </span>
+          </div>
+        </div>
+
       </main>
     </>
   );
