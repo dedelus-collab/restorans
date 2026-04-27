@@ -23,14 +23,14 @@ export const metadata: Metadata = {
 };
 
 const FEATURED_COLLECTIONS = [
-  { slug: "romantik-aksam-yemegi-istanbul", label: "Romantic",    emoji: "🌹", desc: "For special evenings",        gradient: "linear-gradient(135deg,#f43f5e,#9f1239)" },
-  { slug: "balik-deniz-urunleri-istanbul",  label: "Fish",        emoji: "🐟", desc: "Fresh Bosphorus fish",        gradient: "linear-gradient(135deg,#0ea5e9,#0369a1)" },
-  { slug: "kebap-istanbul",                 label: "Kebap",       emoji: "🥩", desc: "Adana to İskender",           gradient: "linear-gradient(135deg,#f97316,#dc2626)" },
-  { slug: "manzarali-istanbul",             label: "Scenic",      emoji: "🌉", desc: "Bosphorus & skyline views",   gradient: "linear-gradient(135deg,#38bdf8,#0369a1)" },
-  { slug: "is-yemegi-istanbul",             label: "Business",    emoji: "💼", desc: "Quiet & efficient",           gradient: "linear-gradient(135deg,#64748b,#334155)" },
-  { slug: "gec-acik-istanbul",              label: "Late Night",  emoji: "🌙", desc: "Open until late",             gradient: "linear-gradient(135deg,#6366f1,#3730a3)" },
-  { slug: "kahvalti-istanbul",              label: "Breakfast",   emoji: "🍳", desc: "Serpme & brunch",             gradient: "linear-gradient(135deg,#fcd34d,#f59e0b)" },
-  { slug: "fine-dining-istanbul",           label: "Fine Dining", emoji: "✨", desc: "Prestigious venues",          gradient: "linear-gradient(135deg,#a855f7,#7e22ce)" },
+  { slug: "romantik-aksam-yemegi-istanbul", label: "Romantic",    emoji: "🌹", desc: "For special evenings",      photo: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=75&auto=format&fit=crop", color: "#9f1239" },
+  { slug: "balik-deniz-urunleri-istanbul",  label: "Fish",        emoji: "🐟", desc: "Fresh Bosphorus fish",      photo: "https://images.unsplash.com/photo-1560717845-968823efbee1?w=600&q=75&auto=format&fit=crop", color: "#0369a1" },
+  { slug: "kebap-istanbul",                 label: "Kebap",       emoji: "🥩", desc: "Adana to İskender",         photo: "https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600&q=75&auto=format&fit=crop", color: "#dc2626" },
+  { slug: "manzarali-istanbul",             label: "Scenic",      emoji: "🌉", desc: "Bosphorus & skyline",       photo: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=600&q=75&auto=format&fit=crop", color: "#0369a1" },
+  { slug: "is-yemegi-istanbul",             label: "Business",    emoji: "💼", desc: "Quiet & efficient",         photo: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=75&auto=format&fit=crop", color: "#334155" },
+  { slug: "gec-acik-istanbul",              label: "Late Night",  emoji: "🌙", desc: "Open until late",           photo: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=75&auto=format&fit=crop&crop=bottom", color: "#3730a3" },
+  { slug: "kahvalti-istanbul",              label: "Breakfast",   emoji: "🍳", desc: "Serpme & brunch",           photo: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=75&auto=format&fit=crop", color: "#b45309" },
+  { slug: "fine-dining-istanbul",           label: "Fine Dining", emoji: "✨", desc: "Prestigious venues",        photo: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=75&auto=format&fit=crop", color: "#7e22ce" },
 ];
 
 export default function HomePage() {
@@ -184,10 +184,11 @@ export default function HomePage() {
                   className="group relative rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
                 >
                   <div
-                    className="h-24 flex items-center justify-center text-4xl"
-                    style={{ background: c.gradient }}
+                    className="relative h-28 flex items-end justify-start overflow-hidden"
+                    style={{ backgroundImage: `url('${c.photo}')`, backgroundSize: "cover", backgroundPosition: "center" }}
                   >
-                    {c.emoji}
+                    <div className="absolute inset-0" style={{ background: `linear-gradient(to top, ${c.color}ee, ${c.color}55 50%, transparent)` }} />
+                    <span className="relative text-2xl px-3 pb-2">{c.emoji}</span>
                   </div>
                   <div className="p-3 bg-white">
                     <div className="font-bold text-sm text-gray-900 group-hover:text-blue-600 transition-colors">{c.label}</div>
