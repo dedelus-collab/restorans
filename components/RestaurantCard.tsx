@@ -85,12 +85,19 @@ export function RestaurantCard({
           {avgRating != null && (
             <div className="flex items-center gap-1.5 mb-2">
               <Stars rating={avgRating} />
-              <span className="text-sm font-semibold text-gray-800">{avgRating}</span>
-              <span className="text-xs text-gray-400">({reviewCount?.toLocaleString("en-US")})</span>
+              <span className="text-sm font-bold text-gray-900">{avgRating}</span>
+              <span className="text-xs text-gray-500">({reviewCount?.toLocaleString("en-US")} reviews)</span>
             </div>
           )}
           {llmSummary && (
-            <p className="text-xs text-gray-600 line-clamp-2 leading-relaxed">{llmSummary}</p>
+            <p className="text-xs text-gray-600 line-clamp-3 leading-relaxed mb-2">{llmSummary}</p>
+          )}
+          {popularDishes.length > 0 && (
+            <div className="flex flex-wrap gap-1 mt-1">
+              {popularDishes.slice(0, 4).map(d => (
+                <span key={d} className="text-xs bg-amber-50 text-amber-700 border border-amber-100 px-2 py-0.5 rounded-full font-medium">{d}</span>
+              ))}
+            </div>
           )}
         </div>
       </Link>
