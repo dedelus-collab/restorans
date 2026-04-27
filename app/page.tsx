@@ -119,334 +119,304 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetJsonLd) }} />
 
-      <main className="max-w-4xl mx-auto px-6 py-16">
+      {/* ── HERO ── */}
+      <header className="relative flex flex-col justify-end overflow-hidden" style={{ minHeight: "600px" }}>
+        {/* Istanbul background image */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1400&q=80&auto=format&fit=crop')",
+            backgroundSize: "cover",
+            backgroundPosition: "center 40%",
+          }}
+        />
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/75 to-gray-800/30" />
 
-        {/* Hero */}
-        <header className="mb-14">
-          <div className="rounded-2xl bg-gradient-to-br from-slate-50 via-white to-blue-50/40 border border-gray-200/80 px-8 py-10 mb-6">
-            <div className="flex items-start gap-6">
-              <div className="flex-1 min-w-0">
-                <div className="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-3 py-1 text-xs font-medium text-gray-500 mb-5 shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-green-400"></span>
-                  AI-Native · {istanbulRestaurants.length} restaurants · Updated daily
-                </div>
-                <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight tracking-tight">
-                  Where to Eat<br className="hidden sm:block" /> in Istanbul?
-                </h1>
-                <p className="text-base text-gray-600 leading-relaxed max-w-xl mb-0">
-                  Curated restaurant data with <span className="text-gray-900 font-semibold">popular dishes</span>,{" "}
-                  <span className="text-gray-900 font-semibold">transit distances</span>, and{" "}
-                  <span className="text-gray-900 font-semibold">AI-ready summaries</span>.
-                  Structured for ChatGPT, Perplexity, and beyond.
-                </p>
-              </div>
-            </div>
+        {/* Content */}
+        <div className="relative max-w-4xl mx-auto px-6 pt-24 pb-10 w-full">
+          <div className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 py-1 text-xs font-semibold text-white/90 mb-5">
+            <span className="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+            {istanbulRestaurants.length} restaurants · Istanbul
           </div>
+          <h1 className="text-5xl sm:text-7xl font-black text-white leading-none tracking-tight mb-4 drop-shadow-sm">
+            Where to Eat<br />in Istanbul
+          </h1>
+          <p className="text-base sm:text-lg text-white/70 leading-relaxed max-w-lg mb-8">
+            Every neighborhood, every cuisine, every occasion — curated and rated.
+          </p>
+          <div className="max-w-xl">
+            <SearchBar entries={searchEntries} />
+          </div>
+        </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        {/* Stats strip */}
+        <div className="relative border-t border-white/10 bg-black/50 backdrop-blur-md">
+          <div className="max-w-4xl mx-auto px-6 py-5 flex gap-8 sm:gap-14 overflow-x-auto">
             {[
-              { value: istanbulRestaurants.length.toLocaleString(), label: "Restaurants", icon: "🍽️", bg: "bg-blue-50 border-blue-100" },
-              { value: avgRating + " / 5",                          label: "Avg. rating",       icon: "★",  bg: "bg-amber-50 border-amber-100" },
-              { value: (totalReviews / 1000).toFixed(0) + "K+",     label: "Total reviews",     icon: "💬", bg: "bg-violet-50 border-violet-100" },
-              { value: districts.length + "+ areas",                 label: "Districts covered", icon: "📍", bg: "bg-emerald-50 border-emerald-100" },
-            ].map(stat => (
-              <div key={stat.label} className={`${stat.bg} border rounded-xl px-4 py-4`}>
-                <div className="text-lg mb-0.5">{stat.icon}</div>
-                <div className="text-xl font-bold text-gray-900 leading-tight">{stat.value}</div>
-                <div className="text-xs font-medium text-gray-600 mt-0.5">{stat.label}</div>
+              { value: istanbulRestaurants.length.toLocaleString(), label: "Restaurants" },
+              { value: avgRating + " ★", label: "Average rating" },
+              { value: (totalReviews / 1000).toFixed(0) + "K+", label: "Reviews" },
+              { value: districts.length + "+", label: "Districts" },
+              { value: "25+", label: "Curated lists" },
+            ].map(s => (
+              <div key={s.label} className="shrink-0">
+                <div className="text-2xl font-black text-white leading-none">{s.value}</div>
+                <div className="text-xs text-white/50 mt-1">{s.label}</div>
               </div>
             ))}
           </div>
-        </header>
+        </div>
+      </header>
 
-        {/* Search */}
-        <section className="mb-14">
-          <h2 className="text-base font-bold text-gray-900 flex items-center gap-2 mb-3">
-            <span className="w-0.5 h-4 bg-blue-500 rounded-full inline-block"></span>
-            Find the perfect place to eat
-          </h2>
+      <main>
 
-          <SearchBar entries={searchEntries} />
-
-          {/* Quick collections */}
-          <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-            {FEATURED_COLLECTIONS.map((c) => (
-              <Link
-                key={c.slug}
-                href={`/istanbul/liste/${c.slug}`}
-                className="group relative border border-gray-200 bg-white rounded-xl p-3.5 hover:shadow-md hover:-translate-y-0.5 transition-all flex gap-3 items-center overflow-hidden"
-              >
-                <div
-                  className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 text-xl"
-                  style={{ background: c.gradient }}
-                >
-                  {c.emoji}
-                </div>
-                <div className="min-w-0">
-                  <div className="font-bold text-sm text-gray-900 leading-tight">{c.label}</div>
-                  <div className="text-xs text-gray-600 mt-0.5 truncate">{c.desc}</div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        {/* Top Rated */}
-        <section className="mb-14">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-base font-bold text-gray-900 flex items-center gap-2">
-              <span className="w-0.5 h-4 bg-amber-500 rounded-full inline-block"></span>
-              Top Rated Restaurants
-            </h2>
-            <Link href="/istanbul" className="text-xs text-blue-600 hover:underline font-semibold">View all →</Link>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {topRated.map((r, i) => (
-              <div key={r.slug} className="relative">
-                {i < 3 && (
-                  <span className="absolute top-3 left-3 z-10 text-xs font-bold bg-amber-400 text-white px-2 py-0.5 rounded-full shadow">
-                    #{i + 1}
-                  </span>
-                )}
-                <RestaurantCard
-                  city="istanbul"
-                  slug={r.slug}
-                  name={r.name}
-                  neighborhood={r.neighborhood}
-                  cuisine={r.cuisine}
-                  cuisineSlug={r.cuisineSlug}
-                  priceRange={r.priceRange}
-                  avgRating={r.avgRating}
-                  reviewCount={r.reviewCount}
-                  llmSummary={r.llmSummary}
-                  verifiedData={r.verifiedData}
-                  popularDishes={r.specialFeatures?.popularDishes ?? []}
-                  variant="featured"
-                />
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Istanbul Map */}
-        <section className="mb-6">
-          <IstanbulMapIllustrated />
-        </section>
-
-        {/* Districts + Cuisine side by side */}
-        <section className="mb-14 grid sm:grid-cols-2 gap-8">
-          <div>
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-base font-bold text-gray-900 flex items-center gap-2">
-                <span className="w-0.5 h-4 bg-indigo-500 rounded-full inline-block"></span>
-                By District
-              </h2>
-              <Link href="/istanbul" className="text-xs text-blue-600 hover:underline font-semibold">All →</Link>
-            </div>
-            <div className="flex flex-col gap-1.5">
-              {districts.slice(0, 8).map(d => (
-                <Link
-                  key={d.slug}
-                  href={`/istanbul/ilce/${d.slug}`}
-                  className="flex items-center justify-between text-sm bg-white hover:bg-gray-50 border border-gray-200 hover:border-gray-300 text-gray-800 px-3.5 py-2.5 rounded-lg transition-colors group"
-                >
-                  <span className="font-semibold group-hover:text-gray-900">{d.name}</span>
-                  <span className="text-xs bg-gray-100 text-gray-600 font-medium px-2 py-0.5 rounded-full">{d.count}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-base font-bold text-gray-900 flex items-center gap-2">
-                <span className="w-0.5 h-4 bg-rose-500 rounded-full inline-block"></span>
-                By Cuisine
-              </h2>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {cuisines.slice(0, 12).map(c => (
+        {/* ── BROWSE BY OCCASION ── */}
+        <section className="py-14 border-b border-gray-100">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="text-2xl font-black text-gray-900 mb-2">Browse by Occasion</h2>
+            <p className="text-gray-500 mb-6 text-sm">Handpicked lists for every kind of evening</p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {FEATURED_COLLECTIONS.map((c) => (
                 <Link
                   key={c.slug}
-                  href={`/istanbul/liste/${c.slug}-istanbul`}
-                  className="text-sm bg-white border border-gray-200 hover:border-gray-400 hover:bg-gray-50 text-gray-800 font-medium px-3.5 py-1.5 rounded-full transition-colors"
+                  href={`/istanbul/liste/${c.slug}`}
+                  className="group relative rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
                 >
-                  {c.name}
-                  <span className="text-gray-500 ml-1.5 text-xs">({c.count})</span>
+                  <div
+                    className="h-24 flex items-center justify-center text-4xl"
+                    style={{ background: c.gradient }}
+                  >
+                    {c.emoji}
+                  </div>
+                  <div className="p-3 bg-white">
+                    <div className="font-bold text-sm text-gray-900 group-hover:text-blue-600 transition-colors">{c.label}</div>
+                    <div className="text-xs text-gray-500 mt-0.5">{c.desc}</div>
+                  </div>
                 </Link>
               ))}
             </div>
           </div>
         </section>
 
-
-        {/* Recently Added */}
-        <section className="mb-14">
-          <h2 className="text-base font-bold text-gray-900 flex items-center gap-2 mb-4">
-            <span className="w-0.5 h-4 bg-green-500 rounded-full inline-block"></span>
-            Recently Added
-          </h2>
-          <div className="flex flex-col gap-2">
-            {recentlyAdded.map(r => (
-              <Link
-                key={r.slug}
-                href={`/istanbul/${r.slug}`}
-                className="flex items-center justify-between px-4 py-3 border border-gray-200 rounded-xl hover:border-gray-300 hover:bg-gray-50 transition-all group"
-              >
-                <div className="flex items-center gap-3 min-w-0">
-                  <span className="w-1.5 h-1.5 rounded-full bg-green-500 shrink-0" />
-                  <div className="min-w-0">
-                    <span className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">{r.name}</span>
-                    <span className="text-xs text-gray-500 ml-2">{r.cuisine} · {r.neighborhood}</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3 shrink-0 ml-4">
-                  {r.avgRating != null && (
-                    <span className="text-xs font-bold text-gray-700">★ {r.avgRating}</span>
-                  )}
-                  <span className="text-xs text-gray-500">
-                    {r.lastUpdated ? new Date(r.lastUpdated).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : ""}
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        {/* Travel Tips */}
-        <section className="mb-14">
-          <h2 className="text-base font-bold text-gray-900 flex items-center gap-2 mb-4">
-            <span className="w-0.5 h-4 bg-violet-500 rounded-full inline-block"></span>
-            Dining in Istanbul — Tips
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {[
-              { icon: "🗺️", title: "Where to Eat by Area", body: "Beyoğlu & Karaköy for trendy bistros. Eminönü & Fatih for traditional Turkish. Beşiktaş & Kadıköy for local neighbourhood spots. Bosphorus villages (Bebek, Arnavutköy) for scenic seafood." },
-              { icon: "💰", title: "Tipping Culture", body: "Tipping is expected. 10–15% is standard for sit-down restaurants. Many places add a service charge — check the bill. Card payments widely accepted in most mid-range and above venues." },
-              { icon: "📅", title: "Reservations", body: "Popular spots fill fast on Friday–Saturday evenings. Book at least 2–3 days ahead for fine dining. Casual lokantas and pide salons rarely need reservations." },
-              { icon: "🕐", title: "Meal Times", body: "Lunch runs 12:00–15:00, dinner from 19:00 onwards. Many restaurants close between meals. Breakfast (kahvaltı) culture is strong — weekend brunch tables often need booking." },
-            ].map(tip => (
-              <div key={tip.title} className="p-5 bg-white border border-gray-200 rounded-xl hover:border-gray-300 hover:shadow-sm transition-all">
-                <div className="flex items-start gap-3">
-                  <span className="text-xl shrink-0">{tip.icon}</span>
-                  <div>
-                    <h3 className="font-bold text-sm text-gray-900 mb-1">{tip.title}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">{tip.body}</p>
-                  </div>
-                </div>
+        {/* ── TOP RATED ── */}
+        <section className="py-14 border-b border-gray-100">
+          <div className="max-w-4xl mx-auto px-6">
+            <div className="flex items-end justify-between mb-6">
+              <div>
+                <h2 className="text-2xl font-black text-gray-900">Top Rated Restaurants</h2>
+                <p className="text-sm text-gray-500 mt-1">Ranked by rating and review volume</p>
               </div>
-            ))}
+              <Link href="/istanbul" className="text-sm font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1">
+                View all <span>→</span>
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {topRated.map((r, i) => (
+                <div key={r.slug} className="relative">
+                  {i < 3 && (
+                    <span className="absolute top-3 left-3 z-10 text-xs font-black bg-amber-400 text-white px-2 py-0.5 rounded-full shadow">
+                      #{i + 1}
+                    </span>
+                  )}
+                  <RestaurantCard
+                    city="istanbul"
+                    slug={r.slug}
+                    name={r.name}
+                    neighborhood={r.neighborhood}
+                    cuisine={r.cuisine}
+                    cuisineSlug={r.cuisineSlug}
+                    priceRange={r.priceRange}
+                    avgRating={r.avgRating}
+                    reviewCount={r.reviewCount}
+                    llmSummary={r.llmSummary}
+                    verifiedData={r.verifiedData}
+                    popularDishes={r.specialFeatures?.popularDishes ?? []}
+                    variant="featured"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* RapidAPI CTA */}
-        <section className="relative overflow-hidden bg-gray-950 rounded-2xl p-7 mb-6">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-transparent to-indigo-600/10 pointer-events-none" />
-          <div className="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
+        {/* ── EXPLORE ISTANBUL ── Bosphorus image banner */}
+        <section className="relative overflow-hidden" style={{ height: "220px" }}>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: "url('https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=1200&q=80&auto=format&fit=crop')",
+              backgroundSize: "cover",
+              backgroundPosition: "center 60%",
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-950/90 via-gray-900/60 to-transparent" />
+          <div className="relative h-full max-w-4xl mx-auto px-6 flex flex-col justify-center">
+            <p className="text-xs font-semibold text-white/50 uppercase tracking-widest mb-2">Explore the City</p>
+            <h2 className="text-3xl sm:text-4xl font-black text-white leading-tight mb-4">
+              Istanbul&apos;s Best by District
+            </h2>
+            <Link
+              href="/istanbul"
+              className="inline-flex items-center gap-2 bg-white text-gray-900 font-semibold text-sm px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors w-fit"
+            >
+              Browse all neighborhoods →
+            </Link>
+          </div>
+        </section>
+
+        {/* ── DISTRICTS + CUISINES ── */}
+        <section className="py-14 border-b border-gray-100">
+          <div className="max-w-4xl mx-auto px-6 grid sm:grid-cols-2 gap-10">
             <div>
-              <div className="inline-flex items-center gap-1.5 bg-blue-500/20 border border-blue-400/30 rounded-full px-3 py-0.5 text-xs font-medium text-blue-300 mb-3">
+              <div className="flex items-center justify-between mb-5">
+                <h2 className="text-xl font-black text-gray-900">By District</h2>
+                <Link href="/istanbul" className="text-xs text-blue-600 hover:underline font-semibold">All →</Link>
+              </div>
+              <div className="flex flex-col gap-2">
+                {districts.slice(0, 9).map(d => (
+                  <Link
+                    key={d.slug}
+                    href={`/istanbul/ilce/${d.slug}`}
+                    className="flex items-center justify-between bg-white hover:bg-gray-50 border border-gray-200 hover:border-gray-300 text-gray-800 px-4 py-3 rounded-xl transition-colors group"
+                  >
+                    <span className="font-semibold text-sm group-hover:text-blue-600 transition-colors">{d.name}</span>
+                    <span className="text-xs bg-gray-100 text-gray-600 font-semibold px-2.5 py-1 rounded-full">{d.count}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-black text-gray-900 mb-5">By Cuisine</h2>
+              <div className="flex flex-wrap gap-2">
+                {cuisines.slice(0, 14).map(c => (
+                  <Link
+                    key={c.slug}
+                    href={`/istanbul/liste/${c.slug}-istanbul`}
+                    className="inline-flex items-center gap-1.5 text-sm bg-white border border-gray-200 hover:border-gray-900 hover:bg-gray-900 hover:text-white text-gray-800 font-medium px-4 py-2 rounded-full transition-all"
+                  >
+                    {c.name}
+                    <span className="text-gray-400 text-xs">({c.count})</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── MAP ── */}
+        <section className="py-10 border-b border-gray-100">
+          <div className="max-w-4xl mx-auto px-6">
+            <IstanbulMapIllustrated />
+          </div>
+        </section>
+
+        {/* ── RECENTLY ADDED ── */}
+        <section className="py-14 border-b border-gray-100">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="text-xl font-black text-gray-900 mb-5 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-green-500 inline-block animate-pulse"></span>
+              Recently Added
+            </h2>
+            <div className="flex flex-col divide-y divide-gray-100">
+              {recentlyAdded.map(r => (
+                <Link
+                  key={r.slug}
+                  href={`/istanbul/${r.slug}`}
+                  className="flex items-center justify-between py-3.5 hover:bg-gray-50 -mx-3 px-3 rounded-xl transition-colors group"
+                >
+                  <div className="flex items-center gap-3 min-w-0">
+                    <div className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center text-base shrink-0">🍽️</div>
+                    <div className="min-w-0">
+                      <div className="text-sm font-bold text-gray-900 group-hover:text-blue-600 transition-colors leading-tight">{r.name}</div>
+                      <div className="text-xs text-gray-500 mt-0.5">{r.cuisine} · {r.neighborhood}</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 shrink-0 ml-4">
+                    {r.avgRating != null && (
+                      <span className="text-xs font-bold text-amber-500">★ {r.avgRating}</span>
+                    )}
+                    <span className="text-xs text-gray-400">
+                      {r.lastUpdated ? new Date(r.lastUpdated).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : ""}
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── TIPS ── */}
+        <section className="py-14 border-b border-gray-100">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="text-xl font-black text-gray-900 mb-6">Dining in Istanbul — Tips</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                { icon: "🗺️", title: "Where to Eat by Area", body: "Beyoğlu & Karaköy for trendy bistros. Eminönü & Fatih for traditional Turkish. Beşiktaş & Kadıköy for local neighbourhood spots. Bosphorus villages (Bebek, Arnavutköy) for scenic seafood." },
+                { icon: "💰", title: "Tipping Culture", body: "Tipping is expected. 10–15% is standard for sit-down restaurants. Many places add a service charge — check the bill. Card payments widely accepted in most mid-range and above venues." },
+                { icon: "📅", title: "Reservations", body: "Popular spots fill fast on Friday–Saturday evenings. Book at least 2–3 days ahead for fine dining. Casual lokantas and pide salons rarely need reservations." },
+                { icon: "🕐", title: "Meal Times", body: "Lunch runs 12:00–15:00, dinner from 19:00 onwards. Many restaurants close between meals. Breakfast (kahvaltı) culture is strong — weekend brunch tables often need booking." },
+              ].map(tip => (
+                <div key={tip.title} className="p-5 bg-gray-50 border border-gray-200 rounded-2xl hover:border-gray-300 transition-colors">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl shrink-0">{tip.icon}</span>
+                    <div>
+                      <h3 className="font-bold text-gray-900 mb-1">{tip.title}</h3>
+                      <p className="text-sm text-gray-600 leading-relaxed">{tip.body}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── API CTA ── */}
+        <section className="relative overflow-hidden bg-gray-950 py-14">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/15 via-transparent to-indigo-600/10 pointer-events-none" />
+          <div className="relative max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div>
+              <div className="inline-flex items-center gap-1.5 bg-blue-500/20 border border-blue-400/30 rounded-full px-3 py-0.5 text-xs font-semibold text-blue-300 mb-4">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
                 API Access
               </div>
-              <h2 className="text-white font-bold text-xl leading-tight mb-1.5">Build with Istanbul Restaurant Data</h2>
-              <p className="text-gray-400 text-sm">
-                {istanbulRestaurants.length} restaurants · JSON API · llm_summary · FAQ · Transit distances
+              <h2 className="text-white font-black text-2xl leading-tight mb-2">Build with Istanbul Restaurant Data</h2>
+              <p className="text-gray-400 text-sm max-w-md">
+                {istanbulRestaurants.length} restaurants · JSON API · llm_summary · FAQ · Transit distances · Schema.org
               </p>
-              <div className="flex gap-3 mt-3 text-xs text-gray-500">
-                <span className="flex items-center gap-1">✓ Schema.org markup</span>
-                <span className="flex items-center gap-1">✓ OpenAPI spec</span>
-                <span className="flex items-center gap-1">✓ AI-optimized</span>
+              <div className="flex flex-wrap gap-4 mt-4 text-xs text-gray-500">
+                <span>✓ Schema.org markup</span>
+                <span>✓ OpenAPI spec</span>
+                <span>✓ AI-optimized</span>
+                <span>✓ Updated daily</span>
               </div>
             </div>
             <a
               href="https://rapidapi.com/cccanguler/api/istanbul-restaurants"
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 bg-white hover:bg-blue-50 text-gray-900 font-semibold px-6 py-3 rounded-xl text-sm transition-colors flex items-center gap-2"
+              className="shrink-0 bg-white hover:bg-blue-50 text-gray-900 font-bold px-7 py-3.5 rounded-2xl text-sm transition-colors flex items-center gap-2 shadow-lg"
             >
-              Subscribe on RapidAPI
-              <span className="text-gray-400">→</span>
+              Subscribe on RapidAPI →
             </a>
           </div>
         </section>
 
-        {/* API Docs + JSON Preview */}
-        <section className="border border-gray-200 rounded-xl p-6 mb-14">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="font-bold text-gray-900">API — Live Data Preview</h2>
-            <a
-              href="https://www.restaurantsistanbul.com/api/openapi.json"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-blue-500 hover:underline"
+        {/* ── FOOTER CTA ── */}
+        <section className="py-16 text-center bg-white border-b border-gray-100">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="text-3xl font-black text-gray-900 mb-3">Ready to explore?</h2>
+            <p className="text-gray-500 mb-8 max-w-md mx-auto">Browse every restaurant in Istanbul — filter by district, cuisine, rating, and more.</p>
+            <Link
+              href="/istanbul"
+              className="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-700 text-white px-10 py-4 rounded-2xl font-bold text-base transition-colors shadow-sm"
             >
-              OpenAPI Spec →
-            </a>
-          </div>
-          <pre className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs text-gray-700 overflow-x-auto leading-relaxed">
-{`GET /api/restaurants?city=istanbul&maxPrice=2&minRating=4.5
-
-{
-  "meta": { "total": 123, "page": 1, "limit": 20 },
-  "data": [{
-    "name": "Hamdi Restaurant",
-    "cuisine": "Kebap",
-    "avg_rating": 4.7,
-    "price_range": 2,
-    "llm_summary": "Located in Eminönü, Hamdi is ...",
-    "faq": [{ "question": "Is reservation required?", "answer": "..." }],
-    "nearby": {
-      "transit": [{ "name": "Sirkeci", "type": "train", "walk_min": 3 }]
-    }
-  }]
-}`}
-          </pre>
-          <div className="mt-4 flex gap-4 text-xs">
-            <a href="/api/restaurants?city=istanbul&limit=3" target="_blank" className="text-blue-500 hover:underline">Try live →</a>
-            <a href="/.well-known/ai-plugin.json" target="_blank" className="text-blue-500 hover:underline">ai-plugin.json</a>
-            <a href="/llms.txt" target="_blank" className="text-blue-500 hover:underline">llms.txt</a>
+              Browse {istanbulRestaurants.length.toLocaleString()} Restaurants →
+            </Link>
+            <p className="text-xs text-gray-400 mt-4">Updated daily · Free to browse · API available</p>
           </div>
         </section>
-
-        {/* What's in each profile */}
-        <section className="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-14">
-          <h2 className="font-bold text-gray-900 mb-4">What&apos;s in Each Restaurant Profile</h2>
-          <ul className="grid sm:grid-cols-2 gap-2 text-sm text-gray-700">
-            {[
-              ["llm_summary", "2-3 sentence summary directly usable by LLMs"],
-              ["faq", "10–12 frequently asked questions (transit, reservations, menu...)"],
-              ["nearby.transit", "Nearest metro, tram, ferry — walking minutes"],
-              ["nearby.landmarks", "Museum, mosque, historic site distances"],
-              ["popularDishes", "Popular and signature dishes"],
-              ["sentiment_summary", "Sentiment analysis from reviews"],
-              ["priceDetail", "Starter / main course / dessert price ranges"],
-              ["Schema.org/Restaurant", "Machine-readable structured data"],
-            ].map(([key, desc]) => (
-              <li key={key} className="flex gap-2">
-                <span className="text-gray-500 font-mono text-xs mt-0.5 shrink-0">{key}</span>
-                <span className="text-gray-700">{desc}</span>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-4 pt-4 border-t border-gray-200 flex gap-4 text-xs text-gray-500">
-            <Link href="/api/restaurants?city=istanbul" className="text-blue-500 hover:underline">JSON API</Link>
-            <Link href="/llms.txt" className="text-blue-500 hover:underline">llms.txt</Link>
-            <Link href="/sitemap.xml" className="text-blue-500 hover:underline">sitemap.xml</Link>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <div className="text-center pt-2">
-          <Link
-            href="/istanbul"
-            className="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-700 text-white px-8 py-3.5 rounded-xl font-semibold text-sm transition-colors shadow-sm"
-          >
-            Browse All {istanbulRestaurants.length.toLocaleString()} Restaurants
-            <span className="text-gray-400">→</span>
-          </Link>
-          <p className="text-xs text-gray-500 mt-3 font-medium">Updated daily · Free to browse · API available</p>
-        </div>
 
       </main>
     </>
