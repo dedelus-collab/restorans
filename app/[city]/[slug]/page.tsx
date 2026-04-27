@@ -56,6 +56,62 @@ const TRANSIT_ICONS: Record<string, string> = {
   metro: "🚇", tramvay: "🚊", vapur: "⛴️", marmaray: "🚆", metrobus: "🚌",
 };
 
+const FALSY = new Set([
+  "false", "False", "hayır", "yanlış", "yanlıs", "yanlis", "yanıtsız",
+  "no", "0", "", "değil", "Hayır", "olmaz", "uygun degil", "devam",
+  "olay", "none", "Hemse",
+]);
+const SCENARIO_MAP: Record<string, string> = {
+  // affirmative
+  evet: "Yes", Evet: "Yes", true: "Yes", True: "Yes",
+  doğru: "Yes", uygun: "Suitable", Uygun: "Suitable", olabilir: "Possibly suitable",
+  // budget
+  orta: "Mid-range", ortada: "Mid-range", ortalama: "Mid-range", Orta: "Mid-range",
+  "ortaya yakın": "Mid-range",
+  // birthday
+  birthday: "Great for birthdays",
+  "birthday için uygun": "Suitable for birthdays",
+  "birthday için ideal": "Ideal for birthdays",
+  "birthdayne uygun": "Suitable for birthdays",
+  "birthday kutlama sunar": "Offers birthday celebrations",
+  "special occasion için uygun": "Suitable for special occasions",
+  "special occasion": "Great for special occasions",
+  önerilir: "Recommended",
+  dogum: "Great for birthdays",
+  "dogum gunu": "Great for birthdays",
+  // romantic
+  romantic: "Romantic setting",
+  // tourist
+  scenic: "Scenic location", manzarali: "Scenic views",
+  "Bosphorus view": "Bosphorus view",
+  seyyah: "Tourist friendly", seyahatçi: "Tourist friendly", tourist: "Tourist friendly",
+  // group / family
+  "iş yemeği": "Great for business meals",
+  "iş yemeği, büyük grup": "Great for business meals & large groups",
+  "iş yemeği/büyük grup": "Great for business meals & large groups",
+  "büyük grup": "Great for large groups", buyuk: "Large groups welcome",
+  "buyuk grup": "Great for large groups",
+  family: "Family friendly", "family dostu": "Family friendly",
+  "arkadaşları ile akşam yemeği için uygun": "Great for group dinners with friends",
+  // late night
+  gece: "Great for evenings",
+  "gec acik": "Open late", "gec açik": "Open late", "geç açık": "Open late",
+  "geç acik": "Open late", "Geç açıklık": "Open late",
+  "until late hours açık": "Open until late hours",
+  // quick lunch
+  "quick öğün": "Quick meal", "quick kahvaltı": "Quick breakfast",
+  "özellikle öğle arası": "Especially good for lunch",
+  "Tercih edilen": "Popular choice", kahvaltı: "Breakfast available",
+  "sahur kahvaltısı": "Early morning breakfast available",
+  // vegetarian
+  vegan: "Vegan-friendly",
+};
+
+function normalizeScenario(val: string | undefined): string | null {
+  if (!val || FALSY.has(val)) return null;
+  return SCENARIO_MAP[val] ?? val;
+}
+
 function Stars({ rating }: { rating: number }) {
   const full = Math.floor(rating);
   const half = rating % 1 >= 0.3 && rating % 1 < 0.8;
@@ -410,7 +466,8 @@ export default async function RestaurantPage({ params }: Props) {
                 { key: "family",     label: "👨‍👩‍👧 Family" },
                 { key: "lateNight",  label: "🌙 Late Night" },
               ] as const).map(({ key, label }) => {
-                const val = r.scenarioSummary?.[key as keyof typeof r.scenarioSummary];
+                const raw = r.scenarioSummary?.[key as keyof typeof r.scenarioSummary];
+                const val = normalizeScenario(raw);
                 return val ? (
                   <div key={key} className="flex gap-3 p-4 bg-gray-50 border border-gray-200 rounded-2xl text-sm">
                     <span className="font-bold text-gray-600 shrink-0">{label}</span>

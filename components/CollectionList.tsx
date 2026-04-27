@@ -179,18 +179,18 @@ function RichCard({ r, rank }: { r: Restaurant; rank: number }) {
               <span className="w-4 h-4 rounded-sm bg-gray-800 text-white flex items-center justify-center text-[9px] font-black shrink-0">
                 {TRANSIT_ICONS[transit.type] ?? "🚌"}
               </span>
-              {transit.name} <span className="text-gray-400">{transit.walk_min}dk</span>
+              {transit.name} <span className="text-gray-400">{transit.walk_min} min</span>
             </span>
           )}
           {avgCost && (
             <span className="text-xs text-gray-600 flex items-center gap-1">
-              <span className="text-gray-400">💰</span> {avgCost}<span className="text-gray-400">/kişi</span>
+              <span className="text-gray-400">💰</span> {avgCost}<span className="text-gray-400">/person</span>
             </span>
           )}
-          {hasTerrace && <span className="text-xs text-gray-500 bg-gray-50 border border-gray-200 px-1.5 py-0.5 rounded">🌿 Teras</span>}
-          {f.seaView && <span className="text-xs text-gray-500 bg-gray-50 border border-gray-200 px-1.5 py-0.5 rounded">🌊 Deniz</span>}
-          {f.wifi && <span className="text-xs text-gray-500 bg-gray-50 border border-gray-200 px-1.5 py-0.5 rounded">📶 WiFi</span>}
-          {hasReservation && <span className="text-xs text-gray-500 bg-gray-50 border border-gray-200 px-1.5 py-0.5 rounded">📅 Rezervasyon</span>}
+          {hasTerrace && <span className="text-xs text-gray-500 bg-gray-50 border border-gray-200 px-1.5 py-0.5 rounded">🌿 Terrace</span>}
+          {f.seaView && <span className="text-xs text-gray-500 bg-gray-50 border border-gray-200 px-1.5 py-0.5 rounded">🌊 Sea View</span>}
+          {f.wifi && <span className="text-xs text-gray-500 bg-gray-50 border border-gray-200 px-1.5 py-0.5 rounded">📶 Wi-Fi</span>}
+          {hasReservation && <span className="text-xs text-gray-500 bg-gray-50 border border-gray-200 px-1.5 py-0.5 rounded">📅 Reservation</span>}
         </div>
       </div>
     </Link>

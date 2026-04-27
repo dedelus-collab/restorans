@@ -39,7 +39,7 @@ export default async function OgImage({
 
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
           <div style={{ color: "#64748b", fontSize: "26px", display: "flex" }}>
-            <span>Mahalle Rehberi</span>
+            <span>Neighborhood Guide</span>
           </div>
           <div
             style={{
