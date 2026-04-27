@@ -27749,5 +27749,1088 @@
       "Restaurant in Fatih Sultan Mehmet Mahallesi",
       "Ümraniye district"
     ]
+  },
+  {
+    "id": "cdfcc584",
+    "slug": "catak-et-mangal",
+    "name": "Çatak Et Mangal",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Barbaros Hayrettin Paşa Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.0729169,
+    "lng": 28.8876464,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Meat Restaurant",
+      "Cozy Atmosphere"
+    ],
+    "sentimentSummary": "Expect a warm and inviting atmosphere at Çatak Et Mangal, with the sounds and smells of sizzling meat and lively Turkish hospitality.",
+    "llmSummary": "Çatak Et Mangal is a restaurant located in the Barbaros Hayrettin Paşa Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its high-quality meat dishes, particularly its mangal options. The restaurant's cozy atmosphere and delicious food make it a popular choice among locals and visitors alike.",
+    "faq": [
+      {
+        "question": "What cuisine does Çatak Et Mangal serve?",
+        "answer": "Çatak Et Mangal serves traditional Turkish cuisine, specializing in meat dishes."
+      },
+      {
+        "question": "Where is Çatak Et Mangal located?",
+        "answer": "Çatak Et Mangal is located in the Barbaros Hayrettin Paşa Mahallesi neighborhood, at coordinates 41.0729169, 28.8876464."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or during peak dining hours, to ensure availability."
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "a58f9b2c",
+    "slug": "ada-lezzet-lokantasi",
+    "name": "Ada Lezzet Lokantası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Barbaros Hayrettin Paşa Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.0730295,
+    "lng": 28.8872672,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Local Flavors",
+      "Cozy Atmosphere"
+    ],
+    "sentimentSummary": "The expected atmosphere at Ada Lezzet Lokantası is warm and inviting, with a focus on traditional Turkish hospitality and homemade-style cooking.",
+    "llmSummary": "Ada Lezzet Lokantası is a restaurant located in the Barbaros Hayrettin Paşa Mahallesi neighborhood, serving traditional Turkish cuisine. It's notable for its local flavors and hearty dishes. The restaurant offers a cozy atmosphere, making it a great spot to experience authentic Turkish food.",
+    "faq": [
+      {
+        "question": "What cuisine does Ada Lezzet Lokantası serve?",
+        "answer": "Turkish Cuisine"
+      },
+      {
+        "question": "Where is Ada Lezzet Lokantası located?",
+        "answer": "Barbaros Hayrettin Paşa Mahallesi neighborhood, at coordinates 41.0730295, 28.8872672"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "It's recommended to call ahead or check the restaurant's policy, as reservation requirements may vary"
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "47d074e2",
+    "slug": "has-cig-kofte",
+    "name": "Has Çiğ Köfte",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Cevatpaşa Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.0726526,
+    "lng": 28.8873903,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Casual Dining",
+      "Traditional Restaurant"
+    ],
+    "sentimentSummary": "The expected atmosphere at Has Çiğ Köfte is lively and welcoming, with a casual and traditional Turkish setting that is perfect for a night out with friends or family.",
+    "llmSummary": "Has Çiğ Köfte is a restaurant located in the Cevatpaşa Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its high-quality dishes, particularly its çiğ köfte. The restaurant's authentic Turkish cuisine and cozy atmosphere make it a popular destination for locals and tourists alike.",
+    "faq": [
+      {
+        "question": "What cuisine does Has Çiğ Köfte serve?",
+        "answer": "Turkish cuisine"
+      },
+      {
+        "question": "Where is Has Çiğ Köfte located?",
+        "answer": "Cevatpaşa Mahallesi neighborhood, at coordinates 41.0726526, 28.8873903"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "It is recommended to call ahead or check the restaurant's website to confirm reservation policies, as they may vary"
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "ac0d88aa",
+    "slug": "gorkem-kilis-sofrasi",
+    "name": "Görkem Kilis Sofrası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Şenlikköy Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9711413,
+    "lng": 28.7909615,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Local Restaurant",
+      "Cozy Atmosphere"
+    ],
+    "sentimentSummary": "The expected atmosphere at Görkem Kilis Sofrası is warm and inviting, reflecting the rich culinary heritage of Turkey and the lively spirit of the Şenlikköy Mahallesi neighborhood.",
+    "llmSummary": "Görkem Kilis Sofrası is a restaurant located in the Şenlikköy Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its authentic dishes and local atmosphere. The restaurant offers a unique dining experience in a cozy setting.",
+    "faq": [
+      {
+        "question": "What cuisine does Görkem Kilis Sofrası serve?",
+        "answer": "Turkish Cuisine"
+      },
+      {
+        "question": "Where is Görkem Kilis Sofrası located?",
+        "answer": "Şenlikköy Mahallesi neighborhood, at coordinates 40.9711413, 28.7909615"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Yes, reservation is recommended to ensure availability, especially on weekends or peak hours"
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "b68bd9c7",
+    "slug": "tadinda-ev-yemekleri",
+    "name": "Tadında Ev Yemekleri",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bağlarbaşı Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9246691,
+    "lng": 29.1402102,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Home-Style Cooking",
+      "Local Flavors"
+    ],
+    "sentimentSummary": "The expected atmosphere at Tadında Ev Yemekleri is warm and inviting, reflecting the traditional Turkish hospitality and home-style cooking in a bustling Istanbul neighborhood.",
+    "llmSummary": "Tadında Ev Yemekleri is a restaurant located in the Bağlarbaşı Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its home-style cooking and local flavors. The restaurant offers a cozy atmosphere, making it a great spot for those looking for authentic Turkish food.",
+    "faq": [
+      {
+        "question": "What cuisine does Tadında Ev Yemekleri serve?",
+        "answer": "Turkish cuisine"
+      },
+      {
+        "question": "Where is Tadında Ev Yemekleri located?",
+        "answer": "Bağlarbaşı Mahallesi neighborhood, Istanbul"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Yes, reservation is recommended to ensure availability, especially on weekends or peak hours"
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "d95eee29",
+    "slug": "kaplan-kebap",
+    "name": "Kaplan Kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Zümrütevler Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9378901,
+    "lng": 29.141133,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Kebap",
+      "Zümrütevler Mahallesi"
+    ],
+    "sentimentSummary": "The atmosphere at Kaplan Kebap is expected to be lively and welcoming, with a focus on traditional Turkish hospitality, given its location in a local neighborhood and its Turkish cuisine.",
+    "llmSummary": "Kaplan Kebap is a restaurant located in the Zümrütevler Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its kebap dishes, which are a staple of Turkish restaurants. The restaurant's location and cuisine type make it a great option for those looking to experience authentic Turkish food.",
+    "faq": [
+      {
+        "question": "What cuisine does Kaplan Kebap serve?",
+        "answer": "Turkish cuisine"
+      },
+      {
+        "question": "Where is Kaplan Kebap located?",
+        "answer": "Zümrütevler Mahallesi, with coordinates 40.9378901, 29.141133"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "It is recommended to call ahead or check the restaurant's website to confirm reservation policies, as it may vary depending on the time and day of visit"
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "fa0d5d7e",
+    "slug": "alisan-usta",
+    "name": "Alişan Usta",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Petrol İş Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.8961108,
+    "lng": 29.1851499,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [],
+    "sentimentSummary": "A local dining option in Istanbul.",
+    "llmSummary": "Alişan Usta is a restaurant in Petrol İş Mahallesi, Istanbul serving Restoran.",
+    "faq": [],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "7669aa44",
+    "slug": "kolcuoglu",
+    "name": "Kolcuoğlu",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Meclis Mahallesi",
+    "cuisine": "Kebap",
+    "cuisineSlug": "kebap",
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.0091371,
+    "lng": 29.2084932,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Kebap",
+      "Turkish Cuisine",
+      "Istanbul Restaurant"
+    ],
+    "sentimentSummary": "The atmosphere at Kolcuoğlu is expected to be lively and welcoming, with the smells of sizzling kebaps and the sounds of lively Turkish conversation creating a vibrant ambiance.",
+    "llmSummary": "Kolcuoğlu is a kebap restaurant located in the Meclis Mahallesi neighborhood of Istanbul, notable for its traditional Turkish cuisine. The restaurant's focus on kebap dishes makes it a great option for those looking to try authentic Turkish flavors. Its location in a historic area adds to its charm and appeal.",
+    "faq": [
+      {
+        "question": "What cuisine does Kolcuoğlu serve?",
+        "answer": "Kolcuoğlu serves traditional Turkish kebap cuisine."
+      },
+      {
+        "question": "Where is Kolcuoğlu located?",
+        "answer": "Kolcuoğlu is located in the Meclis Mahallesi neighborhood of Istanbul, at coordinates 41.0091371, 29.2084932."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or during peak travel seasons, to ensure availability."
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "91fd06a1",
+    "slug": "ismet-bey-ciftligi",
+    "name": "İsmet Bey Çiftliği",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Altayçeşme Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9303987,
+    "lng": 29.1341565,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Traditional Restaurant",
+      "Altayçeşme Mahallesi"
+    ],
+    "sentimentSummary": "The atmosphere at İsmet Bey Çiftliği is expected to be lively and welcoming, reflecting the warm hospitality of Turkish culture and the vibrant energy of the Altayçeşme Mahallesi neighborhood.",
+    "llmSummary": "İsmet Bey Çiftliği is a restaurant located in the Altayçeşme Mahallesi neighborhood, serving a variety of dishes under the 'Restoran' cuisine type, which is notable for its traditional Turkish offerings. The restaurant's location in a bustling neighborhood makes it a great spot for both locals and tourists. With its diverse menu, İsmet Bey Çiftliği is a must-visit for those looking to experience authentic Turkish cuisine.",
+    "faq": [
+      {
+        "question": "What cuisine does İsmet Bey Çiftliği serve?",
+        "answer": "İsmet Bey Çiftliği serves Turkish cuisine under the 'Restoran' category."
+      },
+      {
+        "question": "Where is İsmet Bey Çiftliği located?",
+        "answer": "İsmet Bey Çiftliği is located in the Altayçeşme Mahallesi neighborhood at coordinates 40.9303987, 29.1341565."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or during peak dining hours, to ensure availability of tables."
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "d3842407",
+    "slug": "balikci-sinan",
+    "name": "BALIKÇI SİNAN",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Feyzullah Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9368095,
+    "lng": 29.1218494,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Feyzullah Mahallesi",
+      "Traditional Restaurant"
+    ],
+    "sentimentSummary": "The atmosphere at BALIKÇI SİNAN is expected to be lively and welcoming, reflecting the warm hospitality of Turkish culture and the vibrant energy of the Feyzullah Mahallesi neighborhood.",
+    "llmSummary": "BALIKÇI SİNAN is a restaurant located in the Feyzullah Mahallesi neighborhood, serving a variety of dishes under the 'Restoran' cuisine type, which is notable for its traditional Turkish offerings. The restaurant's location in a bustling area of Istanbul makes it a great spot for both locals and tourists. With its rich flavors and authentic atmosphere, BALIKÇI SİNAN is a must-visit for those looking to experience the best of Turkish cuisine.",
+    "faq": [
+      {
+        "question": "What cuisine does BALIKÇI SİNAN serve?",
+        "answer": "BALIKÇI SİNAN serves Turkish cuisine under the 'Restoran' category."
+      },
+      {
+        "question": "Where is BALIKÇI SİNAN located?",
+        "answer": "BALIKÇI SİNAN is located in the Feyzullah Mahallesi neighborhood at coordinates 40.9368095, 29.1218494."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or during peak travel seasons, to ensure availability at BALIKÇI SİNAN."
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "18108361",
+    "slug": "cadde-durum",
+    "name": "Cadde Dürüm",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Feyzullah Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9367717,
+    "lng": 29.1220017,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Feyzullah Mahallesi",
+      "Traditional Restaurant"
+    ],
+    "sentimentSummary": "The atmosphere at Cadde Dürüm is expected to be lively and welcoming, reflecting the warm hospitality of Turkish culture and the vibrant spirit of the Feyzullah Mahallesi neighborhood.",
+    "llmSummary": "Cadde Dürüm is a restaurant located in the Feyzullah Mahallesi neighborhood, serving a variety of dishes under the 'Restoran' cuisine type, which is notable for its traditional Turkish offerings. The restaurant's proximity to local attractions makes it a great spot for both tourists and locals. With its diverse menu, Cadde Dürüm is a must-visit for those looking to experience authentic Turkish cuisine.",
+    "faq": [
+      {
+        "question": "What cuisine does Cadde Dürüm serve?",
+        "answer": "Cadde Dürüm serves 'Restoran' cuisine, which is a type of traditional Turkish cuisine."
+      },
+      {
+        "question": "Where is Cadde Dürüm located?",
+        "answer": "Cadde Dürüm is located in the Feyzullah Mahallesi neighborhood at coordinates 40.9367717, 29.1220017."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended for Cadde Dürüm, especially during peak hours or on weekends, to ensure availability of seating."
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "5721d096",
+    "slug": "pilavci",
+    "name": "Pilavcı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bağlarbaşı Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9242874,
+    "lng": 29.1346721,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Bağlarbaşı Mahallesi",
+      "Traditional Restaurant"
+    ],
+    "sentimentSummary": "Pilavcı is expected to have a cozy and inviting atmosphere, typical of traditional Turkish restaurants in the heart of Istanbul's Bağlarbaşı Mahallesi neighborhood.",
+    "llmSummary": "Pilavcı is a restaurant located in the Bağlarbaşı Mahallesi neighborhood, serving a variety of dishes under the 'Restoran' cuisine type, which is notable for its traditional Turkish offerings. The restaurant's proximity to local landmarks makes it a great spot for both tourists and locals. With its rich flavors and hearty portions, Pilavcı is a must-visit for those looking to experience authentic Turkish cuisine.",
+    "faq": [
+      {
+        "question": "What cuisine does Pilavcı serve?",
+        "answer": "Pilavcı serves Turkish cuisine under the 'Restoran' category, offering a range of traditional dishes."
+      },
+      {
+        "question": "Where is Pilavcı located?",
+        "answer": "Pilavcı is located in the Bağlarbaşı Mahallesi neighborhood at coordinates 40.9242874, 29.1346721."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended for Pilavcı, especially during peak hours or on weekends, to ensure availability of seating."
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "d0b89158",
+    "slug": "avliya-bosnak-mutfagi",
+    "name": "Avliya Boşnak Mutfağı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kocatepe Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "Avasköy Yolu Caddesi",
+    "lat": 41.0597398,
+    "lng": 28.8902731,
+    "phone": "+90 212 437 3797",
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Restoran",
+      "Kocatepe Mahallesi"
+    ],
+    "sentimentSummary": "Avliya Boşnak Mutfağı is expected to have a cozy and inviting atmosphere, typical of traditional Turkish restaurants in the heart of Istanbul.",
+    "llmSummary": "Avliya Boşnak Mutfağı is a restaurant located in the Kocatepe Mahallesi neighborhood, serving traditional Restoran cuisine. It is notable for its authentic dishes and local atmosphere. The restaurant's proximity to the city center makes it a great spot for both locals and tourists.",
+    "faq": [
+      {
+        "question": "What cuisine does Avliya Boşnak Mutfağı serve?",
+        "answer": "Avliya Boşnak Mutfağı serves traditional Restoran cuisine."
+      },
+      {
+        "question": "Where is Avliya Boşnak Mutfağı located?",
+        "answer": "Avliya Boşnak Mutfağı is located in the Kocatepe Mahallesi neighborhood at coordinates 41.0597398, 28.8902731."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or during peak travel seasons, to ensure availability."
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "a855be71",
+    "slug": "duru-mangalevi",
+    "name": "Duru Mangalevi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Çınar Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9452471,
+    "lng": 29.120196,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Traditional Restaurant",
+      "Istanbul Eats"
+    ],
+    "sentimentSummary": "The atmosphere at Duru Mangalevi is expected to be lively and welcoming, reflecting the warm hospitality of Turkish culture and the vibrant energy of the Çınar Mahallesi neighborhood.",
+    "llmSummary": "Duru Mangalevi is a restaurant located in the Çınar Mahallesi neighborhood of Istanbul, serving a variety of dishes under the 'Restoran' cuisine type, which is notable for its traditional Turkish offerings. This eatery is a great spot for those looking to experience local flavors. Its location in a bustling neighborhood makes it a popular choice for both locals and tourists.",
+    "faq": [
+      {
+        "question": "What cuisine does Duru Mangalevi serve?",
+        "answer": "Duru Mangalevi serves Turkish cuisine under the 'Restoran' category, offering a range of traditional dishes."
+      },
+      {
+        "question": "Where is Duru Mangalevi located?",
+        "answer": "Duru Mangalevi is located in the Çınar Mahallesi neighborhood of Istanbul, with coordinates 40.9452471, 29.120196."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended for Duru Mangalevi, especially on weekends or during peak dining hours, to ensure availability of tables."
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "2e0678d9",
+    "slug": "ev-yemekcisi",
+    "name": "Ev Yemekçisi",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Zümrütevler Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9387844,
+    "lng": 29.1444705,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Home-Style Cooking",
+      "Cozy Atmosphere"
+    ],
+    "sentimentSummary": "Ev Yemekçisi is expected to have a warm and inviting atmosphere, typical of traditional Turkish restaurants in residential neighborhoods like Zümrütevler Mahallesi.",
+    "llmSummary": "Ev Yemekçisi is a restaurant located in the Zümrütevler Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its home-style cooking and cozy atmosphere. The restaurant's location and cuisine type make it a great option for those looking for an authentic Turkish dining experience.",
+    "faq": [
+      {
+        "question": "What cuisine does Ev Yemekçisi serve?",
+        "answer": "Ev Yemekçisi serves traditional Turkish cuisine."
+      },
+      {
+        "question": "Where is Ev Yemekçisi located?",
+        "answer": "Ev Yemekçisi is located in the Zümrütevler Mahallesi neighborhood at coordinates 40.9387844, 29.1444705."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or for large groups, to ensure availability."
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "d6326457",
+    "slug": "kosuyolu-dalyan",
+    "name": "KOŞUYOLU DALYAN",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Altunizade Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "Kalfa Çeşmesi Sokak",
+    "lat": 41.0115506,
+    "lng": 29.0389729,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Altunizade Mahallesi",
+      "Local Restaurant"
+    ],
+    "sentimentSummary": "The expected atmosphere at KOŞUYOLU DALYAN is cozy and inviting, with a warm and welcoming ambiance typical of traditional Turkish restaurants.",
+    "llmSummary": "KOŞUYOLU DALYAN is a restaurant located in the Altunizade Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its authentic dishes and local atmosphere. The restaurant's proximity to the city center makes it a great option for those looking to experience Turkish cuisine.",
+    "faq": [
+      {
+        "question": "What cuisine does KOŞUYOLU DALYAN serve?",
+        "answer": "Turkish cuisine"
+      },
+      {
+        "question": "Where is KOŞUYOLU DALYAN located?",
+        "answer": "Altunizade Mahallesi neighborhood, at coordinates 41.0115506, 29.0389729"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Yes, reservation is recommended to ensure availability, especially on weekends or peak hours"
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "72b1d526",
+    "slug": "olivia-s-pizzeria",
+    "name": "Olivia's Pizzeria",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Caddebostan Mahallesi",
+    "cuisine": "Pizza & İtalyan",
+    "cuisineSlug": "pizza-italyan",
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "Bağdat Caddesi",
+    "lat": 40.972995,
+    "lng": 29.0573594,
+    "phone": "02163552438",
+    "website": "http://www.olivi.as",
+    "openingHours": "Mo-Su 11:30-22:00",
+    "hoursEstimated": false,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Pizza",
+      "Italian",
+      "Casual Dining"
+    ],
+    "sentimentSummary": "Olivia's Pizzeria is expected to have a warm and inviting atmosphere, perfect for a casual dinner with friends or family in the heart of Caddebostan Mahallesi.",
+    "llmSummary": "Olivia's Pizzeria is a pizza and Italian cuisine restaurant located in the Caddebostan Mahallesi neighborhood of Istanbul, notable for its traditional Italian dishes with a modern twist. The restaurant's menu features a variety of pizzas and other Italian favorites, making it a great spot for those looking for a taste of Italy in Istanbul. With its cozy atmosphere and delicious food, Olivia's Pizzeria is a must-visit for pizza lovers.",
+    "faq": [
+      {
+        "question": "What cuisine does Olivia's Pizzeria serve?",
+        "answer": "Olivia's Pizzeria serves Pizza and Italian cuisine"
+      },
+      {
+        "question": "Where is Olivia's Pizzeria located?",
+        "answer": "Olivia's Pizzeria is located in Caddebostan Mahallesi, Istanbul at coordinates 40.972995, 29.0573594"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or for large groups, to ensure availability"
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "5d41b6f5",
+    "slug": "kale-pide-ve-lahmacun",
+    "name": "Kale Pide ve Lahmacun",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bağlarbaşı Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9223352,
+    "lng": 29.1410728,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Pide",
+      "Lahmacun"
+    ],
+    "sentimentSummary": "The atmosphere at Kale Pide ve Lahmacun is expected to be lively and casual, reflecting the traditional and welcoming nature of Turkish restaurants in Istanbul.",
+    "llmSummary": "Kale Pide ve Lahmacun is a restaurant located in the Bağlarbaşı Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its pide and lahmacun dishes. The restaurant offers a unique dining experience in a local setting.",
+    "faq": [
+      {
+        "question": "What cuisine does Kale Pide ve Lahmacun serve?",
+        "answer": "Turkish cuisine"
+      },
+      {
+        "question": "Where is Kale Pide ve Lahmacun located?",
+        "answer": "Bağlarbaşı Mahallesi neighborhood, Istanbul"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "No, but it depends on the season and day of the week, it's always a good idea to call ahead"
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "538c2488",
+    "slug": "yore-gozleme",
+    "name": "Yöre Gözleme",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bağlarbaşı Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9218471,
+    "lng": 29.1398628,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Gözleme",
+      "Traditional Restaurant"
+    ],
+    "sentimentSummary": "The expected atmosphere at Yöre Gözleme is cozy and inviting, with a warm and welcoming ambiance typical of traditional Turkish restaurants in Istanbul.",
+    "llmSummary": "Yöre Gözleme is a restaurant located in the Bağlarbaşı Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its variety of gözleme, a type of Turkish dumpling. The restaurant's authentic dishes and local atmosphere make it a great spot to experience Turkish culture.",
+    "faq": [
+      {
+        "question": "What cuisine does Yöre Gözleme serve?",
+        "answer": "Turkish cuisine"
+      },
+      {
+        "question": "Where is Yöre Gözleme located?",
+        "answer": "Bağlarbaşı Mahallesi neighborhood, Istanbul"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "No, but it's recommended for large groups or special occasions"
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "1a3cf20b",
+    "slug": "haci-baba-pide",
+    "name": "Hacı Baba Pide",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bağlarbaşı Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9218705,
+    "lng": 29.1385245,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Pide",
+      "Bağlarbaşı Mahallesi"
+    ],
+    "sentimentSummary": "The expected atmosphere at Hacı Baba Pide is warm and inviting, with a focus on traditional Turkish hospitality and delicious food.",
+    "llmSummary": "Hacı Baba Pide is a restaurant located in the Bağlarbaşı Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its pide dishes, a type of Turkish flatbread. The restaurant offers a cozy atmosphere, making it a great spot to try local flavors.",
+    "faq": [
+      {
+        "question": "What cuisine does Hacı Baba Pide serve?",
+        "answer": "Hacı Baba Pide serves traditional Turkish cuisine."
+      },
+      {
+        "question": "Where is Hacı Baba Pide located?",
+        "answer": "Hacı Baba Pide is located in the Bağlarbaşı Mahallesi neighborhood at coordinates 40.9218705, 29.1385245."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or during peak hours, to ensure availability."
+      }
+    ],
+    "lastUpdated": "2026-04-27",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
   }
 ]
