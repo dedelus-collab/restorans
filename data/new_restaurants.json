@@ -114448,5 +114448,1071 @@
       "Seafood in Haraççı Mahallesi",
       "Arnavutköy district"
     ]
+  },
+  {
+    "id": "fc550303",
+    "slug": "affan-ocakbasi",
+    "name": "Affan Ocakbaşı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fenerbahçe Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9765916,
+    "lng": 29.0478166,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Seafood",
+      "Cozy Atmosphere"
+    ],
+    "sentimentSummary": "Affan Ocakbaşı is expected to have a lively and welcoming atmosphere, typical of Turkish restaurants, with a warm and inviting ambiance that makes guests feel at home.",
+    "llmSummary": "Affan Ocakbaşı is a restaurant located in the Fenerbahçe Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its high-quality dishes and cozy atmosphere. The restaurant's proximity to the sea and its reputation for excellent service make it a popular choice among locals and tourists.",
+    "faq": [
+      {
+        "question": "What cuisine does Affan Ocakbaşı serve?",
+        "answer": "Affan Ocakbaşı serves traditional Turkish cuisine."
+      },
+      {
+        "question": "Where is Affan Ocakbaşı located?",
+        "answer": "Affan Ocakbaşı is located in the Fenerbahçe Mahallesi neighborhood at coordinates 40.9765916, 29.0478166."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Yes, reservation is recommended, especially on weekends or during peak hours, to ensure availability of tables."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "a91edcd1",
+    "slug": "guneydogu-sofrasi",
+    "name": "Güneydoğu Sofrası",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Zeyrek Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.017141,
+    "lng": 28.9546538,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Zeyrek Mahallesi",
+      "Traditional Restaurant"
+    ],
+    "sentimentSummary": "Güneydoğu Sofrası is expected to have a warm and inviting atmosphere, typical of traditional Turkish restaurants, with a cozy ambiance and rich flavors.",
+    "llmSummary": "Güneydoğu Sofrası is a restaurant located in the Zeyrek Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its authentic dishes from the southeast region of Turkey. The restaurant's proximity to historic sites makes it a great spot for tourists and locals alike.",
+    "faq": [
+      {
+        "question": "What cuisine does Güneydoğu Sofrası serve?",
+        "answer": "Güneydoğu Sofrası serves traditional Turkish cuisine, specializing in dishes from the southeast region of Turkey."
+      },
+      {
+        "question": "Where is Güneydoğu Sofrası located?",
+        "answer": "Güneydoğu Sofrası is located in the Zeyrek Mahallesi neighborhood at coordinates 41.017141, 28.9546538."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or during peak travel seasons, to ensure availability."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "f2f11a69",
+    "slug": "vegan-istanbul",
+    "name": "Vegan Istanbul",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Firuzağa",
+    "cuisine": "Türk Mutfağı",
+    "cuisineSlug": "turk-mutfagi",
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "Türkgücü Caddesi",
+    "lat": 41.0309878,
+    "lng": 28.98181,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Vegan",
+      "Türk Mutfağı",
+      "Firuzağa"
+    ],
+    "sentimentSummary": "The atmosphere at Vegan Istanbul is expected to be cozy and inviting, reflecting the warm hospitality of Turkish culture in a lively neighborhood setting.",
+    "llmSummary": "Vegan Istanbul is a restaurant located in the Firuzağa neighborhood, serving traditional Türk Mutfağı cuisine with a vegan twist. What makes it notable is its unique approach to plant-based Turkish dishes. This restaurant is a great option for those looking to experience local flavors with a vegan spin.",
+    "faq": [
+      {
+        "question": "What cuisine does Vegan Istanbul serve?",
+        "answer": "Vegan Istanbul serves Türk Mutfağı, which is traditional Turkish cuisine with a vegan twist."
+      },
+      {
+        "question": "Where is Vegan Istanbul located?",
+        "answer": "Vegan Istanbul is located in the Firuzağa neighborhood at coordinates 41.0309878, 28.98181."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or for large groups, to ensure availability."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "bf49ed0e",
+    "slug": "meat-co-steak-house",
+    "name": "Meat Co Steak House",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Etiler Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.0807909,
+    "lng": 29.0348951,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Steakhouse",
+      "Upscale Dining",
+      "Etiler Mahallesi"
+    ],
+    "sentimentSummary": "The atmosphere at Meat Co Steak House is expected to be sophisticated and lively, reflecting the upscale steakhouse experience in a vibrant Istanbul neighborhood.",
+    "llmSummary": "Meat Co Steak House is a restaurant located in the Etiler Mahallesi neighborhood, serving a variety of steakhouse cuisine. It is notable for its high-quality meats and upscale dining experience. The restaurant's location in a bustling area of Istanbul makes it a great spot for both locals and tourists.",
+    "faq": [
+      {
+        "question": "What cuisine does Meat Co Steak House serve?",
+        "answer": "Meat Co Steak House serves steakhouse cuisine."
+      },
+      {
+        "question": "Where is Meat Co Steak House located?",
+        "answer": "Meat Co Steak House is located in the Etiler Mahallesi neighborhood at coordinates 41.0807909, 29.0348951."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Yes, reservation is recommended to ensure availability, especially on weekends or peak dining hours."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "86704a03",
+    "slug": "egg-burger",
+    "name": "Egg&Burger",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kılıçali Paşa",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "Yeni Yuva Sk.",
+    "lat": 41.0316133,
+    "lng": 28.9832084,
+    "phone": null,
+    "website": "http://eggandburger.com.tr",
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "casual dining",
+      "diverse cuisine",
+      "tourist-friendly"
+    ],
+    "sentimentSummary": "The atmosphere at Egg&Burger is expected to be casual and welcoming, given its location in a bustling neighborhood and its cuisine type, which suggests a wide range of options for different tastes and preferences.",
+    "llmSummary": "Egg&Burger is a restaurant located in the Kılıçali Paşa neighborhood, serving a variety of dishes under the 'Restoran' cuisine type, which is notable for its diverse offerings. The restaurant's proximity to the city center makes it a great spot for both locals and tourists. With its unique name, Egg&Burger is likely to stand out among other restaurants in the area.",
+    "faq": [
+      {
+        "question": "What cuisine does Egg&Burger serve?",
+        "answer": "Egg&Burger serves 'Restoran' cuisine, which is a diverse range of dishes."
+      },
+      {
+        "question": "Where is Egg&Burger located?",
+        "answer": "Egg&Burger is located in the Kılıçali Paşa neighborhood at coordinates 41.0316133, 28.9832084."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended for Egg&Burger, especially during peak hours or weekends, to ensure availability of seating."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "599614ed",
+    "slug": "yako-ocakbasi",
+    "name": "Yako Ocakbaşı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Fenerbahçe Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "Fener Kalamış Caddesi",
+    "lat": 40.9731689,
+    "lng": 29.0407496,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Ocakbaşı",
+      "Fenerbahçe Mahallesi"
+    ],
+    "sentimentSummary": "Yako Ocakbaşı is expected to have a lively and intimate atmosphere, typical of Turkish restaurants in Istanbul, with a focus on traditional cuisine and grilled specialties.",
+    "llmSummary": "Yako Ocakbaşı is a restaurant located in the Fenerbahçe Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its ocakbaşı-style dining experience, where guests can enjoy a variety of grilled meats. The restaurant's cozy atmosphere and high-quality dishes make it a popular destination for locals and visitors alike.",
+    "faq": [
+      {
+        "question": "What cuisine does Yako Ocakbaşı serve?",
+        "answer": "Turkish cuisine"
+      },
+      {
+        "question": "Where is Yako Ocakbaşı located?",
+        "answer": "Fenerbahçe Mahallesi, Istanbul"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Yes, reservation is recommended to ensure availability, especially on weekends or peak hours"
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "6cb43e49",
+    "slug": "ayla-tantuni-istiklal-sb",
+    "name": "Ayla Tantuni  istiklal Şb. مطعم",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Asmalı Mescit",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.033833,
+    "lng": 28.9778329,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Asmalı Mescit",
+      "Casual Dining"
+    ],
+    "sentimentSummary": "Given its location in the vibrant Asmalı Mescit neighborhood and its casual restaurant setting, Ayla Tantuni  istiklal Şb. مطعم is expected to have a lively and welcoming atmosphere.",
+    "llmSummary": "Ayla Tantuni  istiklal Şb. مطعم is a restaurant located in the Asmalı Mescit neighborhood, serving a variety of dishes. The cuisine is characterized as Restoran, which is a general term for a restaurant in Turkish. This eatery is notable for its location in a bustling area, making it a great spot to try local flavors.",
+    "faq": [
+      {
+        "question": "What cuisine does Ayla Tantuni  istiklal Şb. مطعم serve?",
+        "answer": "Ayla Tantuni  istiklal Şb. مطعم serves Turkish cuisine, specifically dishes categorized under the general term 'Restoran'."
+      },
+      {
+        "question": "Where is Ayla Tantuni  istiklal Şb. مطعم located?",
+        "answer": "Ayla Tantuni  istiklal Şb. مطعم is located in the Asmalı Mescit neighborhood at coordinates 41.033833, 28.9778329."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are generally recommended for popular restaurants, but it's best to call ahead or check the restaurant's policy to confirm availability and wait times."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "e144fbf5",
+    "slug": "develi-kebap",
+    "name": "Develi kebap",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Cami",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.8173802,
+    "lng": 29.3178759,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish cuisine",
+      "kebap",
+      "Cami neighborhood"
+    ],
+    "sentimentSummary": "Develi kebap is expected to have a lively and welcoming atmosphere, typical of a traditional Turkish restaurant in a busy neighborhood.",
+    "llmSummary": "Develi kebap is a restaurant located in the Cami neighborhood, serving traditional Turkish cuisine. It is notable for its kebap dishes, which are a staple of Turkish food culture. The restaurant's location in a bustling neighborhood makes it a great spot to experience local flavors.",
+    "faq": [
+      {
+        "question": "What cuisine does Develi kebap serve?",
+        "answer": "Develi kebap serves Turkish cuisine, specializing in kebap dishes."
+      },
+      {
+        "question": "Where is Develi kebap located?",
+        "answer": "Develi kebap is located at 40.8173802, 29.3178759 in the Cami neighborhood."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended for Develi kebap, especially during peak hours or on weekends, to ensure availability of seating."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "15369f45",
+    "slug": "serggea-resturant",
+    "name": "Serggea resturant",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Molla Gürani Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.0101797,
+    "lng": 28.9477375,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Istanbul",
+      "Molla Gürani Mahallesi",
+      "General Restaurant"
+    ],
+    "sentimentSummary": "The expected atmosphere at Serggea restaurant is likely to be casual and inviting, given its location in a historic neighborhood.",
+    "llmSummary": "Serggea restaurant is located in the Molla Gürani Mahallesi neighborhood and serves a variety of dishes as a general restaurant. The cuisine type is not specifically defined, but its location in a historic area makes it notable. Visitors can enjoy a meal in a potentially traditional setting.",
+    "faq": [
+      {
+        "question": "What cuisine does Serggea resturant serve?",
+        "answer": "Serggea restaurant serves general restaurant cuisine, but the specific type is not defined."
+      },
+      {
+        "question": "Where is Serggea resturant located?",
+        "answer": "Serggea restaurant is located in the Molla Gürani Mahallesi neighborhood at coordinates 41.0101797, 28.9477375."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservation recommendations are not available, but it's generally a good idea to call ahead or check the restaurant's website to confirm availability."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "7abebc41",
+    "slug": "nalia",
+    "name": "Nalia",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Bağlar Mahallesi",
+    "cuisine": "Regional_karadeniz_mutfağı",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.0204638,
+    "lng": 28.8270115,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Black Sea Cuisine",
+      "Traditional Turkish",
+      "Regional Specialties"
+    ],
+    "sentimentSummary": "Nalia is expected to have a cozy and inviting atmosphere, reflecting the warm hospitality of the Black Sea region and the rich cultural heritage of its cuisine.",
+    "llmSummary": "Nalia is a restaurant located in the Bağlar Mahallesi neighborhood, serving Regional Karadeniz mutfağı cuisine, which is notable for its traditional dishes from the Black Sea region. The restaurant's unique offerings and authentic flavors make it a standout in the area. With its rich culinary heritage, Nalia is a must-visit for those looking to experience the bold flavors of the Karadeniz region.",
+    "faq": [
+      {
+        "question": "What cuisine does Nalia serve?",
+        "answer": "Nalia serves Regional Karadeniz mutfağı cuisine, which is traditional to the Black Sea region of Turkey."
+      },
+      {
+        "question": "Where is Nalia located?",
+        "answer": "Nalia is located in the Bağlar Mahallesi neighborhood at coordinates 41.0204638, 28.8270115."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or during peak travel seasons, to ensure availability and a smooth dining experience."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "3b379aaf",
+    "slug": "yemek-kulubu",
+    "name": "Yemek Kulübü",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Asmalı Mescit",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.0294537,
+    "lng": 28.9751839,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Istanbul Restaurant",
+      "Asmalı Mescit",
+      "Restoran Cuisine"
+    ],
+    "sentimentSummary": "Yemek Kulübü is expected to have a lively and inviting atmosphere, given its location in the vibrant Asmalı Mescit neighborhood and its diverse 'Restoran' cuisine.",
+    "llmSummary": "Yemek Kulübü is a restaurant located in the Asmalı Mescit neighborhood, serving a variety of dishes under the 'Restoran' cuisine type, which is notable for its diverse and rich flavors. This eatery is a great spot for those looking to experience the local taste of Istanbul. With its unique offerings, Yemek Kulübü stands out as a must-visit destination in the heart of the city.",
+    "faq": [
+      {
+        "question": "What cuisine does Yemek Kulübü serve?",
+        "answer": "Yemek Kulübü serves 'Restoran' cuisine, offering a wide range of dishes."
+      },
+      {
+        "question": "Where is Yemek Kulübü located?",
+        "answer": "Yemek Kulübü is located in the Asmalı Mescit neighborhood, with coordinates 41.0294537, 28.9751839."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or during peak hours, to ensure availability and a smooth dining experience."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "ed87871e",
+    "slug": "nabu-karakoy",
+    "name": "Nabu Karakoy",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kemankeş Karamustafa Paşa",
+    "cuisine": "Pizza & İtalyan",
+    "cuisineSlug": "pizza-italyan",
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "Murakip Sokak",
+    "lat": 41.025256,
+    "lng": 28.9799279,
+    "phone": null,
+    "website": null,
+    "openingHours": "07:00-22:00",
+    "hoursEstimated": false,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [],
+    "sentimentSummary": "A local dining option in Istanbul.",
+    "llmSummary": "Nabu Karakoy is a restaurant in Kemankeş Karamustafa Paşa, Istanbul serving Pizza & İtalyan.",
+    "faq": [],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "7737f184",
+    "slug": "matbah",
+    "name": "Matbah",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Cankurtaran Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.0091035,
+    "lng": 28.978957,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Historic Neighborhood",
+      "Cozy Atmosphere"
+    ],
+    "sentimentSummary": "Matbah is expected to have a cozy and intimate atmosphere, perfect for those looking to experience traditional Turkish cuisine in a historic setting.",
+    "llmSummary": "Matbah is a restaurant located in the historic Cankurtaran Mahallesi neighborhood, serving traditional Turkish cuisine. It's notable for its authentic dishes and proximity to major landmarks. The restaurant offers a unique dining experience with its rich flavors and warm atmosphere.",
+    "faq": [
+      {
+        "question": "What cuisine does Matbah serve?",
+        "answer": "Matbah serves traditional Turkish cuisine."
+      },
+      {
+        "question": "Where is Matbah located?",
+        "answer": "Matbah is located in the Cankurtaran Mahallesi neighborhood, at coordinates 41.0091035, 28.978957."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Yes, reservation is recommended to ensure availability, especially during peak hours or seasons."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "f5925deb",
+    "slug": "saray-muhallebicis",
+    "name": "Saray Muhallebicis",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Hobyar Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "Reşadiye caddesi",
+    "lat": 41.0169734,
+    "lng": 28.973548,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Desserts",
+      "Traditional Restaurant"
+    ],
+    "sentimentSummary": "The atmosphere at Saray Muhallebicis is expected to be traditional and welcoming, reflecting the classic Turkish cuisine and the historic neighborhood of Hobyar Mahallesi.",
+    "llmSummary": "Saray Muhallebicis is a restaurant located in the Hobyar Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its wide variety of desserts and Turkish delights. The restaurant's rich history and high-quality food make it a popular destination for both locals and tourists.",
+    "faq": [
+      {
+        "question": "What cuisine does Saray Muhallebicis serve?",
+        "answer": "Turkish cuisine"
+      },
+      {
+        "question": "Where is Saray Muhallebicis located?",
+        "answer": "Hobyar Mahallesi neighborhood, Istanbul"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Yes, especially on weekends and holidays to ensure availability"
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "6fbc9e9a",
+    "slug": "eylul-cafe-and-restaurant",
+    "name": "Eylül Cafe and Restaurant",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kocatepe Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "Şehit Muhtar Bey Caddesi",
+    "lat": 41.0388286,
+    "lng": 28.984596,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Casual Dining",
+      "Local Flavors"
+    ],
+    "sentimentSummary": "Eylül Cafe and Restaurant is expected to have a warm and inviting atmosphere, typical of traditional Turkish restaurants, making it a great spot to relax and enjoy a meal in the heart of Istanbul.",
+    "llmSummary": "Eylül Cafe and Restaurant is located in the Kocatepe Mahallesi neighborhood and serves a variety of dishes under the 'Restoran' cuisine type, which is a traditional Turkish term for a casual dining restaurant. This eatery is notable for its local flavors and cozy atmosphere. It's a great spot to experience authentic Turkish cuisine in a welcoming setting.",
+    "faq": [
+      {
+        "question": "What cuisine does Eylül Cafe and Restaurant serve?",
+        "answer": "Eylül Cafe and Restaurant serves Turkish cuisine, categorized under the 'Restoran' type, which offers a range of traditional dishes."
+      },
+      {
+        "question": "Where is Eylül Cafe and Restaurant located?",
+        "answer": "Eylül Cafe and Restaurant is located in the Kocatepe Mahallesi neighborhood, with geographic coordinates 41.0388286, 28.984596."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended for Eylül Cafe and Restaurant, especially on weekends or during peak dining hours, to ensure availability of seating."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "3b1edeb9",
+    "slug": "old-damascus",
+    "name": "Old Damascus",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kalyoncu Kulluğu",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.037988,
+    "lng": 28.976522,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [],
+    "sentimentSummary": "A local dining option in Istanbul.",
+    "llmSummary": "Old Damascus is a restaurant in Kalyoncu Kulluğu, Istanbul serving Restoran.",
+    "faq": [],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "0f4694db",
+    "slug": "hasir-ev-yemekleri",
+    "name": "Hasır Ev Yemekleri",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Osmanağa Mahallesi",
+    "cuisine": "Restoran",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 40.9869128,
+    "lng": 29.0313778,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Home-Style Cooking",
+      "Cozy Atmosphere"
+    ],
+    "sentimentSummary": "The expected atmosphere at Hasır Ev Yemekleri is warm and inviting, with a focus on traditional Turkish hospitality and home-style cooking.",
+    "llmSummary": "Hasır Ev Yemekleri is a restaurant located in the Osmanağa Mahallesi neighborhood, serving traditional Turkish cuisine. It is notable for its home-style cooking and cozy atmosphere. The restaurant's traditional dishes make it a great option for those looking to experience authentic Turkish flavors.",
+    "faq": [
+      {
+        "question": "What cuisine does Hasır Ev Yemekleri serve?",
+        "answer": "Turkish cuisine"
+      },
+      {
+        "question": "Where is Hasır Ev Yemekleri located?",
+        "answer": "Osmanağa Mahallesi neighborhood, at coordinates 40.9869128, 29.0313778"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "It is recommended to call ahead or check the restaurant's website for reservation information, as availability may vary"
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "838a44c5",
+    "slug": "esmer",
+    "name": "Esmer",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Asmalı Mescit",
+    "cuisine": "Pasta",
+    "cuisineSlug": null,
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "",
+    "lat": 41.0352918,
+    "lng": 28.9814276,
+    "phone": null,
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Pasta",
+      "Italian",
+      "Asmalı Mescit"
+    ],
+    "sentimentSummary": "Given its location in a bustling neighborhood and its focus on pasta, Esmer is expected to have a cozy and inviting atmosphere, perfect for a casual dinner or night out with friends.",
+    "llmSummary": "Esmer is a pasta restaurant located in the Asmalı Mescit neighborhood of Istanbul, offering a unique take on traditional pasta dishes. What makes it notable is its creative approach to this Italian staple in the heart of a vibrant Turkish neighborhood. The combination of flavors and atmosphere makes Esmer a standout destination for foodies.",
+    "faq": [
+      {
+        "question": "What cuisine does Esmer serve?",
+        "answer": "Esmer serves pasta cuisine with a creative twist."
+      },
+      {
+        "question": "Where is Esmer located?",
+        "answer": "Esmer is located in the Asmalı Mescit neighborhood of Istanbul at coordinates 41.0352918, 28.9814276."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Reservations are recommended, especially on weekends or during peak dining hours, to ensure availability."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "40c3957e",
+    "slug": "park-fora",
+    "name": "Park Fora",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Kuruçeşme Mahallesi",
+    "cuisine": "Balık & Deniz Ürünleri",
+    "cuisineSlug": "balik",
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "Muallim Naci Caddesi",
+    "lat": 41.0539812,
+    "lng": 29.0349231,
+    "phone": "+902122655063",
+    "website": "https://www.parkfora.com/",
+    "openingHours": "Mo-Su 12:00-02:00",
+    "hoursEstimated": false,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Seafood",
+      "Waterfront",
+      "Istanbul"
+    ],
+    "sentimentSummary": "Park Fora is expected to have a lively and upscale atmosphere, given its seafood cuisine and waterfront location in a popular Istanbul neighborhood.",
+    "llmSummary": "Park Fora is a seafood restaurant located in the Kuruçeşme Mahallesi neighborhood of Istanbul, serving a variety of balık and deniz ürünleri dishes. It is notable for its waterfront location and fresh seafood options. The restaurant offers a unique dining experience with its stunning views of the surrounding area.",
+    "faq": [
+      {
+        "question": "What cuisine does Park Fora serve?",
+        "answer": "Park Fora serves balık and deniz ürünleri, which is Turkish for fish and seafood."
+      },
+      {
+        "question": "Where is Park Fora located?",
+        "answer": "Park Fora is located in the Kuruçeşme Mahallesi neighborhood of Istanbul, at coordinates 41.0539812, 29.0349231."
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Yes, reservation is recommended for Park Fora, especially on weekends or during peak dining hours, to ensure availability of tables with a waterfront view."
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
+  },
+  {
+    "id": "a4da7a67",
+    "slug": "kristal-ocakbasi",
+    "name": "Kristal Ocakbaşı",
+    "city": "İstanbul",
+    "citySlug": "istanbul",
+    "neighborhood": "Cumhuriyet Mahallesi",
+    "cuisine": "Türk Mutfağı",
+    "cuisineSlug": "turk-mutfagi",
+    "priceRange": 2,
+    "avgRating": 0,
+    "reviewCount": 0,
+    "address": "Eşref Efendi Sokak",
+    "lat": 41.052274,
+    "lng": 28.9864223,
+    "phone": "+90 2122243969",
+    "website": null,
+    "openingHours": "Mo-Su 12:00-22:00",
+    "hoursEstimated": true,
+    "features": {
+      "terrace": false,
+      "parking": false,
+      "wifi": false,
+      "reservation": false,
+      "romantic": false,
+      "seaView": false,
+      "liveMusic": false,
+      "vegan": false
+    },
+    "tags": [
+      "Turkish Cuisine",
+      "Ocakbaşı",
+      "Istanbul Restaurant"
+    ],
+    "sentimentSummary": "The atmosphere at Kristal Ocakbaşı is expected to be lively and welcoming, with the smells of grilled meats and the sounds of sizzling food creating a vibrant and authentic Turkish dining experience.",
+    "llmSummary": "Kristal Ocakbaşı is a Turkish cuisine restaurant located in the Cumhuriyet Mahallesi neighborhood of Istanbul, notable for its traditional Türk Mutfağı dishes. The restaurant's Ocakbaşı style of service, where food is cooked on a grill at the table, adds to its unique dining experience. This style of dining is a staple of Turkish culture and is sure to provide a memorable experience for visitors.",
+    "faq": [
+      {
+        "question": "What cuisine does Kristal Ocakbaşı serve?",
+        "answer": "Türk Mutfağı (Turkish Cuisine)"
+      },
+      {
+        "question": "Where is Kristal Ocakbaşı located?",
+        "answer": "Cumhuriyet Mahallesi, Istanbul, at coordinates 41.052274, 28.9864223"
+      },
+      {
+        "question": "Is reservation recommended?",
+        "answer": "Yes, reservation is recommended to ensure availability, especially on weekends or during peak travel seasons"
+      }
+    ],
+    "lastUpdated": "2026-05-04",
+    "verifiedData": false,
+    "confidenceScore": 0.5,
+    "specialFeatures": {}
   }
 ]
